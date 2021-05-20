@@ -3,7 +3,7 @@
 	<name>Rim-Effect: Asari and Reapers</name>
 	<author>Vanilla Expanded Team and Co.</author>
 	<supportedVersions><li>1.2</li></supportedVersions>
-	<packageId>RimEffect.Asari-Reapers</packageId>
+	<packageId>RimEffect.AsariReapers</packageId>
     <modDependencies>
         <li>
 			<packageId>RimEffect.Core</packageId>
