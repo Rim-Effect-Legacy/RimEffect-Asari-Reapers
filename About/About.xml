@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rim-Effect: Asari & Reapers</name>
+	<author>Vanilla Expanded Team and Co.</author>
+	<supportedVersions><li>1.2</li></supportedVersions>
+	<packageId>RimEffect.Asari-Reapers</packageId>
+    <modDependencies>
+        <li>
+			<packageId>RimEffect.Core</packageId>
+			<displayName>Rim-Effect: Core</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2479560240</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>brrainz.harmony</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>RimEffect.Core</li>
+	</loadAfter>
+	<description>Rim Effect is a large overhaul mod series, adding the story, races, objects, and conflicts of Mass Effect universe into RimWorld. The Mass Effect elements are not meant to stand out, and as such are blended into the RimWorld style by utilising the same naming conventions and writing styles.
+
+Much like Vanilla Factions Expanded, the Rim Effect mod series comes divided into sub-modules, firstly to allow the players to pick exactly what elements they want in their games, secondly to ease the production and design process.
+
+Rest is TBD
+
+CC BY-NC-ND 4.0
+	</description>
+</ModMetaData>
