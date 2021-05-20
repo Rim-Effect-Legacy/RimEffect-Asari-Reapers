@@ -46,7 +46,7 @@
     <defName>RE_AsariSculptures</defName>
     <label>asari sculptures</label>
     <description>Craft asari sculptures.</description>
-    <baseCost>2500</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Ultra</techLevel>
     <prerequisites>
       <li>RE_AsariCooperation</li>
