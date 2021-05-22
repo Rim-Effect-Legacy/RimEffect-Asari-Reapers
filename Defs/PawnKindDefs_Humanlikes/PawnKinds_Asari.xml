@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>RE_PlayerAsariTest</defName>
+    <label>asari</label>
+	<race>RE_Asari</race>
+    <defaultFactionType>RE_AlliancePlayerColony</defaultFactionType>
+    <chemicalAddictionChance>0.06</chemicalAddictionChance>
+    <apparelTags>
+      <li>RE_SpacerApparel</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>350~600</apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>300~1000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+	  <li>Advanced</li>
+      <li>RE_Implant</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+</Defs>
