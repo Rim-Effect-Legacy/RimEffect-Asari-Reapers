@@ -7,7 +7,24 @@
 		<description>The asari, native to the planet Thessia, are often considered the most influential and respected sentient species in the galaxy, and are known for their elegance, diplomacy, and biotic aptitude.</description>
 		<alienRace>
 			<generalSettings>
-				<alienPartGenerator>
+            <forcedRaceTraitEntries>
+                <li>
+                    <defName>Beauty</defName>
+                    <degree>1</degree>
+                    <chance>100</chance>
+                </li>
+                <li>
+                    <defName>RE_BioticRecoveryOffset</defName>
+					<degree>1</degree>
+                    <chance>70</chance>
+                </li>
+                <li>
+                    <defName>RE_BioticRecoveryOffset</defName>
+					<degree>2</degree>
+                    <chance>30</chance>
+                </li>
+            </forcedRaceTraitEntries>
+		    <alienPartGenerator>
             <bodyAddons>
                 <li>
 				<bodyPart>Head</bodyPart>
