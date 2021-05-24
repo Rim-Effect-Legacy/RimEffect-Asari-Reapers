@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="HumanFactionBase" Name="RE_AsariFactionBase" Abstract="True">
+        <pawnSingular>colonist</pawnSingular>
+        <pawnsPlural>colonists</pawnsPlural>
+        <categoryTag>RE_AsariRepublics</categoryTag>
+        <listOrderPriority>30</listOrderPriority>
+        <settlementGenerationWeight>0.8</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>matriarch</leaderTitle>
+        <fixedLeaderKinds>
+            <li>RE_Matriarch</li>
+        </fixedLeaderKinds>
+        <factionIconPath>UI/FactionIcons/AsariFaction</factionIconPath>
+        <factionNameMaker>NamerFaction_SystemsAlliance</factionNameMaker>
+        <settlementNameMaker>NamerFactionBases_SystemsAlliance</settlementNameMaker>
+        <techLevel>Ultra</techLevel>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Offworld</li>
+                </categories>
+                <commonality>0.25</commonality>
+            </li>
+            <li>
+                <categories>
+                    <li>SystemsAlliance</li>
+                </categories>
+                <commonality>0.75</commonality>
+            </li>
+        </backstoryFilters>
+        <geneticVariance>0.8</geneticVariance>
+        <hairTags>
+            <li></li>
+        </hairTags>
+        <caravanTraderKinds>
+            <li>RE_Caravan_Asari_BulkGoods</li>
+            <li>RE_Caravan_Asari_CombatSupplier</li>
+            <li>RE_Caravan_Asari_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>RE_Visitor_Asari_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>RE_Base_Asari_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <raidLootMaker>RE_AsariRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, standard mix -->
+                <kindDef>Combat</kindDef>
+                <options>
+                    <RE_AsariRecruit>5</RE_AsariRecruit>
+                    <RE_AsariMilitia>10</RE_AsariMilitia>
+                    <RE_AsariOfficer>1.5</RE_AsariOfficer>
+                    <RE_AsariRanger>7</RE_AsariRanger>
+                    <RE_Alliance_AsariMarine>10</RE_Alliance_AsariMarine>
+                    <RE_Alliance_AsariMarineHeavy>10</RE_Alliance_AsariMarineHeavy>
+                    <RE_Alliance_AsariMarineSniper>5</RE_Alliance_AsariMarineSniper>
+                </options>
+            </li>
+            <li>
+                <!-- adepts -->
+                <kindDef>Combat</kindDef>
+                <options>
+                    <RE_AsariRecruit>5</RE_AsariRecruit>
+                    <RE_AsariMilitia>10</RE_AsariMilitia>
+                    <RE_AsariOfficer>1.5</RE_AsariOfficer>
+                    <RE_AsariRanger>7</RE_AsariRanger>
+                    <RE_Alliance_AsariMarine>10</RE_Alliance_AsariMarine>
+                    <RE_Alliance_AsariMarineHeavy>10</RE_Alliance_AsariMarineHeavy>
+                    <RE_Alliance_AsariMarineSniper>3</RE_Alliance_AsariMarineSniper>
+                    <RE_Alliance_AsariAdept>5</RE_Alliance_AsariAdept>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <RE_AsariColonist>20</RE_AsariColonist>
+                    <RE_AsariFarmer>10</RE_AsariFarmer>
+                    <RE_AsariOfficial>5</RE_AsariOfficial>
+                    <RE_AsariRanger>8</RE_AsariRanger>
+                    <RE_AsariScientist>6</RE_AsariScientist>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <RE_AsariMerchant>1</RE_AsariMerchant>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <RE_AsariColonist>3</RE_AsariColonist>
+                    <RE_AsariRanger>7</RE_AsariRanger>
+                    <RE_AsariMilitia>10</RE_AsariMilitia>
+                    <RE_AsariRecruit>9</RE_AsariRecruit>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <RE_AsariColonist>20</RE_AsariColonist>
+                    <RE_AsariFarmer>10</RE_AsariFarmer>
+                    <RE_AsariOfficer>1.5</RE_AsariOfficer>
+                    <RE_Matriarch>1</RE_Matriarch>
+                    <RE_AsariScientist>4</RE_AsariScientist>
+                    <RE_AsariMedic>4</RE_AsariMedic>
+                    <RE_AsariRanger>5</RE_AsariRanger>
+                    <RE_AsariMilitia>7</RE_AsariMilitia>
+                    <RE_AsariRecruit>7</RE_AsariRecruit>
+                    <RE_AsariOfficial>10</RE_AsariOfficial>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/AllianceColonyExpanding</settlementTexturePath>
+    </FactionDef>
+
+    <ThingSetMakerDef>
+        <defName>RE_AsariRaidLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>MedicineIndustrial</li>
+                        <li>ComponentIndustrial</li>
+                        <li>RE_PrefabComponent</li>
+                        <li>ComponentSpacer</li>
+                        <li>MealSurvivalPack</li>
+                        <li>Neutroamine</li>
+                        <li>RE_MediGel</li>
+                        <li>MedicineUltratech</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+    <FactionDef ParentName="RE_AsariFactionBase">
+        <defName>RE_AsariRepublics</defName>
+        <label>Asari Republics</label>
+        <description>The Asari Republics are collectively one of the major nations in Citadel Space; actually a coalition of asari republican governments with a tradition of true and total democracy.</description>
+        <colorSpectrum>
+            <li>(0.27, 0.40, 0.74)</li>
+            <li>(0.28, 0.44, 0.72)</li>
+        </colorSpectrum>
+        <startingGoodwill>10</startingGoodwill>
+        <naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
+      <modExtensions>
+        <li Class="KCSG.FactionSettlement">
+          <useStructureLayout>True</useStructureLayout>
+          <chooseFromlayouts>
+            <li>AllianceFactionColony1</li>
+            <li>AllianceFactionColony2</li>
+            <li>AllianceFactionColony3</li>
+            <li>AllianceFactionColony4</li>
+            <li>AllianceFactionColony5</li>
+            <li>AllianceFactionColony6</li>
+            <li>AllianceFactionColony7</li>
+            <li>AllianceFactionColony8</li>
+          </chooseFromlayouts>
+        </li>
+	<li Class="KCSG.FactionSettlement">
+		<canSpawnSettlements>false</canSpawnSettlements>
+	</li>
+      </modExtensions>
+    </FactionDef>
+
+</Defs>
