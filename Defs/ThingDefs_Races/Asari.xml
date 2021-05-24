@@ -55,6 +55,35 @@
 				<drawnDesiccated>true</drawnDesiccated>
 				<colorChannel>skin</colorChannel>
                 </li>
+                <li>
+				<bodyPart>Head</bodyPart>
+				<path>Things/Pawn/Asari/Tattoos/AsariTattoo</path>
+				<inFrontOfBody>true</inFrontOfBody>
+				<layerInvert>false</layerInvert>
+				<alignWithHead>true</alignWithHead>
+							<drawSize>0.9</drawSize>
+							<layerOffset>0.2</layerOffset>
+							<offsets>
+								<north>
+									<bodyTypes>
+										<Female>(0, 0.32)</Female>
+									</bodyTypes>
+								</north>							
+								<south>
+									<bodyTypes>
+										<Female>(-0.424, 0.02)</Female>
+									</bodyTypes>
+								</south>
+								<east>
+									<bodyTypes>
+										<Female>(-0.4, 0.06)</Female>
+									</bodyTypes>
+								</east>
+							</offsets>		
+				<drawnInBed>true</drawnInBed>
+				<drawnDesiccated>true</drawnDesiccated>
+				<colorChannel>tattoo</colorChannel>
+                </li>
             </bodyAddons>
 					<aliencrowntypes>
 						<li>Asari_Average_Normal</li>
@@ -95,6 +124,37 @@
                                     <li>
                                         <weight>20</weight>
                                         <only>RGB(65,92,153)</only>
+                                    </li>
+                                </options>
+                            </first>
+                        </li>
+                        <li>
+                            <name>tattoo</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>20</weight>
+                                        <only>RGB(255,255,255)</only>
+                                    </li>
+                                    <li>
+                                        <weight>20</weight>
+                                        <only>RGB(79,79,79)</only>
+                                    </li>
+                                    <li>
+                                        <weight>20</weight>
+                                        <only>RGB(152,64,78)</only>
+                                    </li>
+                                    <li>
+                                        <weight>20</weight>
+                                        <only>RGB(45,48,99)</only>
+                                    </li>
+                                    <li>
+                                        <weight>20</weight>
+                                        <only>RGB(75,49,62)</only>
+                                    </li>
+                                    <li>
+                                        <weight>20</weight>
+                                        <only>RGB(191,181,190)</only>
                                     </li>
                                 </options>
                             </first>
