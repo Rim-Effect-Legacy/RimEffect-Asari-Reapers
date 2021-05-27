@@ -21,14 +21,6 @@
       <lifeExpectancy>2500</lifeExpectancy>
       <bloodDef>Filth_MachineBits</bloodDef>
     </race>
-    <comps>
-      <li Class="CompProperties_CanBeDormant" />
-      <li Class="CompProperties_WakeUpDormant">
-        <wakeUpOnDamage>true</wakeUpOnDamage>
-        <anyColonistCloseCheckRadius>30</anyColonistCloseCheckRadius>
-        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
-      </li>
-    </comps>
   </ThingDef>
 
   <PawnKindDef Name="BaseHuskKind" Abstract="True">
@@ -206,6 +198,78 @@
     <weaponMoney>1500~9999</weaponMoney>
     <weaponTags>
       <li>GoliathCannon</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ravager -->
+  <ThingDef ParentName="BaseHusk">
+    <defName>RE_Husk_Ravager</defName>
+    <label>ravager</label>
+    <description>Ravagers are synthetic-organic creatures derived from rachni through the use of Reaper technology. They are often used as medium-range anti-tank units thanks to their two powerful mass accelerator cannons.</description>
+    <statBases>
+      <MoveSpeed>1.1</MoveSpeed>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <PsychicSensitivity>0.6</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2.8</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>RE_RachniLike</body>
+      <baseBodySize>1.8</baseBodySize>
+      <baseHealthScale>1.4</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>RE_Pawn_Husk_Ravager_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Husk_Ravager_Death</soundDeath>
+          <soundCall>RE_Pawn_Husk_Ravager_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>20</Steel>
+      <Plasteel>5</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseHuskKind">
+    <defName>RE_Husk_Ravager</defName>
+    <label>ravager</label>
+    <race>RE_Husk_Ravager</race>
+    <combatPower>450</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Reaper/Ravager/Ravager</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>1500~9999</weaponMoney>
+    <weaponTags>
+      <li>RavagerCannon</li>
     </weaponTags>
   </PawnKindDef>
 
