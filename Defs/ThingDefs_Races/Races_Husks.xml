@@ -67,7 +67,7 @@
         </capacities>
         <power>17</power>
         <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
       <li>
@@ -77,7 +77,7 @@
         </capacities>
         <power>17</power>
         <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
@@ -111,7 +111,7 @@
     <defName>RE_Husk_Banshee</defName>
     <label>banshee</label>
     <race>RE_Husk_Banshee</race>
-    <combatPower>300</combatPower>
+    <combatPower>600</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -135,6 +135,78 @@
 		<giveRandomAbilities>true</giveRandomAbilities>
 		</li>
     </modExtensions>
+  </PawnKindDef>
+  
+  <!-- goliath -->
+  <ThingDef ParentName="BaseHusk">
+    <defName>RE_Husk_Goliath</defName>
+    <label>goliath</label>
+    <description>Synthetic-organic creature created using a mechanoid Centipede frame. Goliaths are often used as a heavily armored force to punch through fortified defenses. Their heavy armor and firepower makes them very effective against bunched-up static defenders. They are somewhat vulnerable to mobile hit-and-run tactics.</description>
+    <statBases>
+      <MoveSpeed>1.9</MoveSpeed>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+      <PsychicSensitivity>0.6</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>MechanicalCentipede</body>
+      <baseBodySize>1.8</baseBodySize>
+      <baseHealthScale>4.4</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>30</Steel>
+      <Plasteel>15</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseHuskKind">
+    <defName>RE_Husk_Goliath</defName>
+    <label>goliath</label>
+    <race>RE_Husk_Goliath</race>
+    <combatPower>450</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Reaper/Goliath/Goliath</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>1500~9999</weaponMoney>
+    <weaponTags>
+      <li>GoliathCannon</li>
+    </weaponTags>
   </PawnKindDef>
 
 </Defs>
