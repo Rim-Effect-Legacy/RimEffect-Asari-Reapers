@@ -229,7 +229,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>RE_Bullet_RavagerRocket</defaultProjectile>
-        <warmupTime>2.0</warmupTime>
+        <warmupTime>16.0</warmupTime>
 		<forcedMissRadius>2.9</forcedMissRadius>
 		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
         <range>59.9</range>
