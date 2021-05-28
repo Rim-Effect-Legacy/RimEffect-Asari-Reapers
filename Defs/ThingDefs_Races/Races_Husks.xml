@@ -14,7 +14,7 @@
     </statBases>
     <receivesSignals>true</receivesSignals>
     <race>
-      <fleshType>Mechanoid</fleshType>
+      <fleshType>RE_Husk</fleshType>
       <needsRest>false</needsRest>
       <hasGenders>false</hasGenders>
       <foodType>None</foodType>

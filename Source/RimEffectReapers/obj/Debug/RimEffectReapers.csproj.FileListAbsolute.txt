@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-Asari-Reapers\Assemblies\RimEffectReapers.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-Asari-Reapers\Source\RimEffectReapers\obj\Debug\RimEffectReapers.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-Asari-Reapers\Source\RimEffectReapers\obj\Debug\RimEffectReapers.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimEffect-Asari-Reapers\Source\RimEffectReapers\obj\Debug\RimEffectReapers.dll
