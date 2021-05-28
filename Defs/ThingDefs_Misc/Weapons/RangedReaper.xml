@@ -77,7 +77,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <explosionRadius>3.9</explosionRadius>
+      <explosionRadius>2.9</explosionRadius>
       <speed>70</speed>
     </projectile>
   </ThingDef>
