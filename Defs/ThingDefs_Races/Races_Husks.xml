@@ -224,6 +224,22 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_RavagerRocket</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+		<forcedMissRadius>2.9</forcedMissRadius>
+		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>59.9</range>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>RE_Shot_Ravager</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
     <race>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
@@ -268,9 +284,6 @@
       </li>
     </lifeStages>
     <weaponMoney>1500~9999</weaponMoney>
-    <weaponTags>
-      <li>RavagerCannon</li>
-    </weaponTags>
   </PawnKindDef>
 
 </Defs>
