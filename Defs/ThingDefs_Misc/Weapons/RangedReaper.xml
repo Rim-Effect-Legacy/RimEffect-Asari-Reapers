@@ -21,7 +21,7 @@
     <label>goliath cannon</label>
     <description>Advanced charge blaster design improved with Reaper tech, Goliath cannons can melt through heavy defenses in no time.</description>
     <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ChargeBlasterHeavy</texPath>
+      <texPath>Things/Pawn/Reaper/Goliath/GoliathCannon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
