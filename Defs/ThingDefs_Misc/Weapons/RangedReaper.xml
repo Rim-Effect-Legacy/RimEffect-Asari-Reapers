@@ -70,7 +70,7 @@
     <defName>RE_Bullet_RavagerRocket</defName>
     <label>ravager cannon shot</label>
     <graphicData>
-      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -80,58 +80,6 @@
       <explosionRadius>3.9</explosionRadius>
       <speed>70</speed>
     </projectile>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseGunWithQuality">
-    <defName>RE_Gun_RavagerCannon</defName>
-    <label>ravager cannon</label>
-    <description>Advanced charge blaster design improved with Reaper tech, Ravager cannons can melt through heavy defenses in no time.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/Reaper/RavagerCannon</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>1500</MarketValue>
-      <Mass>30</Mass>
-      <AccuracyTouch>0.3</AccuracyTouch>
-      <AccuracyShort>0.55</AccuracyShort>
-      <AccuracyMedium>0.6</AccuracyMedium>
-      <AccuracyLong>0.75</AccuracyLong>
-      <RangedWeapon_Cooldown>9.5</RangedWeapon_Cooldown>
-    </statBases>
-    <techLevel>Ultra</techLevel>
-    <menuHidden>True</menuHidden>
-    <tradeability>None</tradeability>
-    <destroyOnDrop>true</destroyOnDrop>
-    <tools>
-      <li>
-        <label>barrel</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>2.5</cooldownTime>
-      </li>
-    </tools>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>RE_Bullet_RavagerRocket</defaultProjectile>
-        <warmupTime>2.0</warmupTime>
-		<forcedMissRadius>2.9</forcedMissRadius>
-		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-        <range>59.9</range>
-        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-        <burstShotCount>2</burstShotCount>
-        <soundCast>RE_Shot_Ravager</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-    <weaponTags>
-      <li>RavagerCannon</li>
-    </weaponTags>
   </ThingDef>
 
 </Defs>
