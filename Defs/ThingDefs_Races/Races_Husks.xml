@@ -76,7 +76,7 @@
     <race>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
-      <body>RE_Asari</body>
+      <body>RE_Banshee</body>
       <baseBodySize>1.2</baseBodySize>
       <baseHealthScale>2.3</baseHealthScale>
       <lifeStageAges>
@@ -245,7 +245,7 @@
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>RE_RachniLike</body>
       <baseBodySize>1.8</baseBodySize>
-      <baseHealthScale>1.4</baseHealthScale>
+      <baseHealthScale>1.0</baseHealthScale>
       <lifeStageAges>
         <li>
           <def>MechanoidFullyFormed</def>
@@ -283,7 +283,117 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <weaponMoney>1500~9999</weaponMoney>
+  </PawnKindDef>
+  
+  <!-- husk -->
+  <ThingDef ParentName="BaseHusk">
+    <defName>RE_Husk_Husk</defName>
+    <label>husk</label>
+    <description>Synthetic-organic zombie created by dragon’s teeth - huge reaper-tech spikes that pierce the abdomen of a humanoid and slowly enhance their DNA with reaper nanites. Whilst weak and feeble, husks pose a great threat to morale and are an excellent psychological weapon.</description>
+    <statBases>
+      <MoveSpeed>3.2</MoveSpeed>
+      <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+      <PsychicSensitivity>0.6</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>RE_Husk</body>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>0.8</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>RE_Pawn_Husk_Husk_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Husk_Husk_Death</soundDeath>
+          <soundCall>RE_Pawn_Husk_Husk_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>10</Steel>
+    </butcherProducts>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseHuskKind">
+    <defName>RE_Husk_Husk</defName>
+    <label>husk</label>
+    <race>RE_Husk_Husk</race>
+    <combatPower>50</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Reaper/Husk/Husk</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
   </PawnKindDef>
 
 </Defs>
