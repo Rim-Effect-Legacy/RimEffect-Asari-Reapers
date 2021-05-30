@@ -244,6 +244,7 @@
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>RE_RachniLike</body>
+	  <deathActionWorkerClass>RimEffectReapers.DeathActionWorker_Spawner</deathActionWorkerClass>
       <baseBodySize>1.8</baseBodySize>
       <baseHealthScale>1.0</baseHealthScale>
       <lifeStageAges>
@@ -264,6 +265,12 @@
       <Steel>20</Steel>
       <Plasteel>5</Plasteel>
     </butcherProducts>
+      <modExtensions>
+        <li Class="RimEffectReapers.DefModExt_DeathSpawnerProps">
+          <kindDef>RE_Husk_Swarmer</kindDef>
+          <quantityRange>3~5</quantityRange>
+        </li>
+      </modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseHuskKind">
@@ -391,6 +398,77 @@
           <texPath>Things/Pawn/Reaper/Husk/Husk</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
 		  <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <ThingDef ParentName="BaseHusk">
+    <defName>RE_Husk_Swarmer</defName>
+    <label>swarmer</label>
+    <description>Synthetic-organic creature made using megascarab DNA improved with Reaper technology. Swarmers are dangerous in large swarms as they are fast, small and difficult to hit. Swarms of these creatures can disrupt even the most organised infantry lines.</description>
+    <statBases>
+      <MoveSpeed>3.75</MoveSpeed>
+      <ArmorRating_Blunt>0.16</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+	  <PsychicSensitivity>0.3</PsychicSensitivity>
+    </statBases>
+    <uiIconScale>2</uiIconScale>
+    <tools>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>RE_Swarmer</body>
+      <baseBodySize>0.2</baseBodySize>
+      <baseHealthScale>0.45</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>RE_Pawn_Husk_Swarmer_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Husk_Swarmer_Death</soundDeath>
+          <soundCall>RE_Pawn_Husk_Swarmer_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>3</Steel>
+    </butcherProducts>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseHuskKind">
+    <defName>RE_Husk_Swarmer</defName>
+    <label>swarmer</label>
+    <race>RE_Husk_Swarmer</race>
+    <combatPower>50</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Reaper/Swarmer/Swarmer</texPath>
+          <drawSize>1</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
