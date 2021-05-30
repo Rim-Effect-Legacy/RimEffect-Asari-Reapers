@@ -162,9 +162,9 @@
         <li>
           <def>MechanoidFullyFormed</def>
           <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
-          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+          <soundWounded>RE_Pawn_Husk_Goliath_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Husk_Goliath_Death</soundDeath>
+          <soundCall>RE_Pawn_Husk_Goliath_Call</soundCall>
         </li>
       </lifeStageAges>
       <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
