@@ -23,10 +23,11 @@ namespace RimEffectReapers
             }
 
             int spawnCount = props.quantityRange.RandomInRange;
+            Faction faction = FactionUtility.DefaultFactionFrom(props.kindDef.defaultFactionType) ?? Faction.OfMechanoids;
 
             PawnGenerationRequest request = new PawnGenerationRequest(
                 kind: props.kindDef,
-                faction: corpse.InnerPawn.Faction,
+                faction: faction,
                 newborn: true,
                 forceGenerateNewPawn: true,
                 canGeneratePawnRelations: false
