@@ -83,7 +83,6 @@
     <defName>RE_HuskNeck</defName>
     <label>neck</label>
     <hitPoints>25</hitPoints>
-    <bleedRate>4</bleedRate>
     <skinCovered>true</skinCovered>
     <tags>
       <li>BreathingPathway</li>
