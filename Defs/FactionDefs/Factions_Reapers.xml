@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>RE_Reapers</defName>
+    <label>Reapers</label>
+    <pawnSingular>husk</pawnSingular>
+    <pawnsPlural>husks</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <factionNameMaker>NamerFactionMechanoid</factionNameMaker>
+    <factionIconPath>UI/FactionIcons/ReaperShip</factionIconPath>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(300,  0)</li>
+        <li>(700,  1)</li>
+        <li>(1400, 2)</li>
+        <li>(2800, 2.5)</li>
+        <li>(4000, 2.8)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <raidLootMaker>RE_ReaperRaidLootMaker</raidLootMaker>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     8)</li>
+        <li>(100,   60)</li>
+        <li>(1000, 250)</li>
+        <li>(2000, 400)</li>
+        <li>(4000, 500)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <humanlikeFaction>false</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <techLevel>Ultra</techLevel>
+    <earliestRaidDays>45</earliestRaidDays>
+    <permanentEnemy>true</permanentEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- All types-->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <RE_Husk_Colossus>5</RE_Husk_Colossus>
+          <RE_Husk_Brute>5</RE_Husk_Brute>
+          <RE_Husk_Marauder>10</RE_Husk_Marauder>
+          <RE_Husk_Cannibal>10</RE_Husk_Cannibal>
+          <RE_Husk_Husk>15</RE_Husk_Husk>
+          <RE_Husk_Ravager>10</RE_Husk_Ravager>
+          <RE_Husk_Goliath>10</RE_Husk_Goliath>
+		  <RE_Husk_Banshee>5</RE_Husk_Banshee>
+        </options>
+      </li>
+      <li>
+        <!-- Ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+          <RE_Husk_Marauder>10</RE_Husk_Marauder>
+          <RE_Husk_Cannibal>10</RE_Husk_Cannibal>
+          <RE_Husk_Ravager>10</RE_Husk_Ravager>
+          <RE_Husk_Goliath>10</RE_Husk_Goliath>
+          <RE_Husk_Colossus>5</RE_Husk_Colossus>
+        </options>
+      </li>
+      <li>
+        <!-- Melee only-->
+        <kindDef>Combat</kindDef>
+        <commonality>70</commonality>
+        <options>
+          <RE_Husk_Husk>10</RE_Husk_Husk>
+		  <RE_Husk_Banshee>5</RE_Husk_Banshee>
+		  <RE_Husk_Brute>8</RE_Husk_Brute>
+        </options>
+      </li>
+      <li>
+        <!-- Top-tier only -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <RE_Husk_Colossus>10</RE_Husk_Colossus>
+		  <RE_Husk_Brute>10</RE_Husk_Brute>
+		  <RE_Husk_Goliath>10</RE_Husk_Goliath>
+		  <RE_Husk_Banshee>10</RE_Husk_Banshee>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>UI/FactionIcons/ReaperShip</settlementTexturePath>
+    <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+  </FactionDef>
+  
+  <ThingSetMakerDef>
+    <defName>RE_ReaperRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+
+</Defs>
