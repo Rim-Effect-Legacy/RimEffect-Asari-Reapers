@@ -56,7 +56,7 @@
         <range>26.9</range>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <burstShotCount>26</burstShotCount>
-        <soundCast>Shot_ChargeBlaster</soundCast>
+        <soundCast>RE_Shot_GoliathCannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -133,12 +133,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>RE_Bullet_GoliathCannon</defaultProjectile>
+        <defaultProjectile>RE_Bullet_CannibalCaster</defaultProjectile>
         <warmupTime>1.3</warmupTime>
         <range>19.9</range>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
-        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCast>RE_Shot_CannibalCaster</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -146,6 +146,71 @@
     <weaponTags>
       <li>CannibalCaster</li>
     </weaponTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>RE_Gun_MarauderRifle</defName>
+    <label>marauder rifle</label>
+    <description>Derived from a Turian Pheaston rifle improved with Reaper tech, this rifle is capable of dealing tremendous damage in long, controlled bursts</description>
+    <graphicData>
+      <texPath>Things/Pawn/Reaper/Marauder/MarauderRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>6.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.6</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <menuHidden>True</menuHidden>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_MarauderRifle</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+        <burstShotCount>4</burstShotCount>
+        <soundCast>RE_Shot_MarauderRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MarauderRifle</li>
+    </weaponTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_MarauderRifle</defName>
+    <label>marauder rifle shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_MarauderRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>0.7</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
   </ThingDef>
 
 </Defs>
