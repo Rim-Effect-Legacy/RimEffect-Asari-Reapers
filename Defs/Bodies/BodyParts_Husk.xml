@@ -101,6 +101,7 @@
     <tags>
       <li>MovingLimbCore</li>
     </tags>
+	<bleedRate>0</bleedRate>
   </BodyPartDef>
 
   <BodyPartDef>
@@ -112,6 +113,7 @@
     <tags>
       <li>MovingLimbSegment</li>
     </tags>
+	<bleedRate>0</bleedRate>
   </BodyPartDef>
 
 </Defs>
