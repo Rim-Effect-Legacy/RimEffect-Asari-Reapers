@@ -229,7 +229,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>RE_Bullet_RavagerRocket</defaultProjectile>
-        <warmupTime>12.0</warmupTime>
+        <warmupTime>6.0</warmupTime>
 		<forcedMissRadius>2.9</forcedMissRadius>
 		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
         <range>59.9</range>
@@ -779,8 +779,8 @@
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>RE_Brute</body>
-      <baseBodySize>2.0</baseBodySize>
-      <baseHealthScale>5.4</baseHealthScale>
+      <baseBodySize>4.0</baseBodySize>
+      <baseHealthScale>9.0</baseHealthScale>
       <lifeStageAges>
         <li>
           <def>MechanoidFullyFormed</def>
@@ -815,6 +815,103 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
+  </PawnKindDef>
+  
+  <ThingDef ParentName="BaseHusk">
+    <defName>RE_Husk_Colossus</defName>
+    <label>colossus</label>
+    <description>Synthetic-organic creature derived from Thrumbos native to many planets on the galactic rim. The Thrumbo DNA has been improved with Reaper technology, changing the normally docile beasts into Reaper ground artillery. They carry a large long-range missile launcher and often try to keep their distance from the enemy, but in close distance they can utilise their metal horn to cut structures, vehicles and flesh in half.</description>
+    <statBases>
+      <MoveSpeed>3.0</MoveSpeed>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <PsychicSensitivity>0.4</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>horn</label>
+        <capacities>
+          <li>Scratch</li>
+          <li>Stab</li>
+        </capacities>
+        <power>28</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>left foot</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right foot</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>RE_Colossus</body>
+      <baseBodySize>3.8</baseBodySize>
+      <baseHealthScale>8.0</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>RE_Pawn_Husk_Brute_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Husk_Brute_Death</soundDeath>
+          <soundCall>RE_Pawn_Husk_Brute_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>30</Steel>
+	  <Plasteel>15</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseHuskKind">
+    <defName>RE_Husk_Colossus</defName>
+    <label>colossus</label>
+    <race>RE_Husk_Colossus</race>
+    <combatPower>600</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Reaper/Colossus/Colossus</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>4.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>ColossusArtillery</li>
+    </weaponTags>
   </PawnKindDef>
 
 </Defs>

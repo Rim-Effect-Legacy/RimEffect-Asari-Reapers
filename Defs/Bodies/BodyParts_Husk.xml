@@ -115,5 +115,20 @@
     </tags>
 	<bleedRate>0</bleedRate>
   </BodyPartDef>
+  
+  <BodyPartDef Name="RE_HuskBody">
+    <defName>RE_HuskBody</defName>
+    <label>body</label>
+    <hitPoints>40</hitPoints>
+    <skinCovered>true</skinCovered>
+	<bleedRate>0</bleedRate>
+  </BodyPartDef>
+  
+  <BodyPartDef ParentName="RE_HuskBody">
+    <defName>RE_HuskBodyCanManipulate</defName>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
 
 </Defs>

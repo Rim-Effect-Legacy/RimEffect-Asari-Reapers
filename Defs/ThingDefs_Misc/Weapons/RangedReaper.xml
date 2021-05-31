@@ -212,5 +212,69 @@
       <speed>80</speed>
     </projectile>
   </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>RE_Gun_ColossusArtillery</defName>
+    <label>colossus artillery</label>
+    <description>Powerful, long range missile launcher used by Colossi to bombard the fortified enemy positions with mass torpedoes.</description>
+    <tickerType>Normal</tickerType>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Reaper/Colossus/ColossusArtillery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>56</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>ColossusArtillery</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_ColossusRocket</defaultProjectile>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>14.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+        <range>85.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>RE_Shot_ColossusArtillery</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_ColossusRocket</defName>
+    <label>colossus artillery shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_ColossusArtillery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>3.9</explosionRadius>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
 
 </Defs>
