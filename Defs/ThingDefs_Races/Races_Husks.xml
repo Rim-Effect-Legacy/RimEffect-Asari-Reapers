@@ -36,7 +36,7 @@
     <label>banshee</label>
     <description>Banshees are synthetic-organic creatures derived from asari and mutated by Reaper technology. Frighteningly intelligent, Banshees are advanced pressure units usually found leading a Reaper strike force.</description>
     <statBases>
-      <MoveSpeed>1.9</MoveSpeed>
+      <MoveSpeed>2.8</MoveSpeed>
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
       <PsychicSensitivity>0.8</PsychicSensitivity>
@@ -229,7 +229,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>RE_Bullet_RavagerRocket</defaultProjectile>
-        <warmupTime>16.0</warmupTime>
+        <warmupTime>12.0</warmupTime>
 		<forcedMissRadius>2.9</forcedMissRadius>
 		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
         <range>59.9</range>
@@ -245,7 +245,7 @@
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>RE_RachniLike</body>
 	  <deathActionWorkerClass>RimEffectReapers.DeathActionWorker_Spawner</deathActionWorkerClass>
-      <baseBodySize>1.8</baseBodySize>
+      <baseBodySize>1.7</baseBodySize>
       <baseHealthScale>1.0</baseHealthScale>
       <lifeStageAges>
         <li>
@@ -679,6 +679,142 @@
     <weaponTags>
       <li>MarauderRifle</li>
     </weaponTags>
+  </PawnKindDef>
+  
+<!-- brute -->
+  <ThingDef ParentName="BaseHusk">
+    <defName>RE_Husk_Brute</defName>
+    <label>brute</label>
+    <description>Brutes are synthetic-organic creatures derived from krogan and turians and mutated by Reaper technology. True to their name, they fulfill the heavy melee offense role in ground assaults and can pummel smaller units into bloody paste. They are fast, strong, and are known to get faster and stronger the more damaged they are.</description>
+    <statBases>
+      <MoveSpeed>2.6</MoveSpeed>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+      <PsychicSensitivity>0.4</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Cut</li>
+		  <li>Scratch</li>
+        </capacities>
+        <power>36.0</power>
+        <cooldownTime>4</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>48</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Cut</li>
+		  <li>Scratch</li>
+        </capacities>
+        <power>36.0</power>
+        <cooldownTime>4</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>48</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right foot</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24.0</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>36</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>left foot</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>24.0</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>36</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>36</power>
+        <cooldownTime>4</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>RE_Brute</body>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>5.4</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>RE_Pawn_Husk_Brute_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Husk_Brute_Death</soundDeath>
+          <soundCall>RE_Pawn_Husk_Brute_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>50</Steel>
+	  <Plasteel>25</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseHuskKind">
+    <defName>RE_Husk_Brute</defName>
+    <label>brute</label>
+    <race>RE_Husk_Brute</race>
+    <combatPower>600</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Reaper/Brute/Brute</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>4.2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
   </PawnKindDef>
 
 </Defs>
