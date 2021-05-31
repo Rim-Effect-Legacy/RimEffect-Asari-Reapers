@@ -24,7 +24,7 @@
   </ThingDef>
 
   <PawnKindDef Name="BaseHuskKind" Abstract="True">
-    <defaultFactionType>Mechanoid</defaultFactionType>
+    <defaultFactionType>RE_Reapers</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
     <destroyGearOnDrop>true</destroyGearOnDrop>
   </PawnKindDef>
@@ -116,17 +116,6 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <modExtensions>
-	  <li Class="RimEffect.PawnKindAbilityExtension">
-		<giveAbilities>
-			<li>RE_Biotic_Charge</li>
-			<li>RE_Biotic_Singularity</li>
-		</giveAbilities>
-		<implantDef>RE_BioticAmpHediff</implantDef>
-		<initialLevel>3</initialLevel>
-		<giveRandomAbilities>true</giveRandomAbilities>
-		</li>
-    </modExtensions>
   </PawnKindDef>
   
   <!-- goliath -->
