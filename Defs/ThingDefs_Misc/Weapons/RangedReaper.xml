@@ -135,7 +135,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>RE_Bullet_GoliathCannon</defaultProjectile>
         <warmupTime>1.3</warmupTime>
-        <range>35.9</range>
+        <range>19.9</range>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <burstShotCount>1</burstShotCount>
         <soundCast>ChargeLance_Fire</soundCast>
