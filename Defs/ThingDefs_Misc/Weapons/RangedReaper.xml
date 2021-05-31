@@ -5,7 +5,7 @@
     <defName>RE_Bullet_GoliathCannon</defName>
     <label>goliath cannon shot</label>
     <graphicData>
-      <texPath>Things/Projectile/Charge_Small</texPath>
+      <texPath>Things/Projectiles/Shot_GoliathCannon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -70,7 +70,7 @@
     <defName>RE_Bullet_RavagerRocket</defName>
     <label>ravager cannon shot</label>
     <graphicData>
-      <texPath>Things/Projectile/Shot_MassAccelerated_Large</texPath>
+      <texPath>Things/Projectiles/Shot_RavagerCannon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
