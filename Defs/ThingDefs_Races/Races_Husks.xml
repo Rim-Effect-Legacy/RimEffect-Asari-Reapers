@@ -235,7 +235,7 @@
         <range>59.9</range>
         <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
         <burstShotCount>2</burstShotCount>
-        <soundCast>RE_Shot_Ravager</soundCast>
+        <soundCast>RE_Shot_RavagerCannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

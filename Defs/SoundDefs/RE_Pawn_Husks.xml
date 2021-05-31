@@ -266,24 +266,6 @@
   </SoundDef>
   
   <SoundDef>
-    <defName>RE_Shot_Ravager</defName>  
-    <context>MapOnly</context>  
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Reaper/Ravager_Shot</clipFolderPath>
-          </li>
-        </grains>      
-        <volumeRange>45.2941~45.2941</volumeRange>      
-        <pitchRange>1.091765~1</pitchRange>      
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-  <SoundDef>
     <defName>RE_Pawn_Husk_Banshee_Teleport</defName>  
     <context>MapOnly</context>  
     <maxVoices>1</maxVoices>  
