@@ -397,7 +397,7 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Reaper/Husk/Husk</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-		  <drawSize>1.5</drawSize>
+		  <drawSize>1.6</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -481,7 +481,7 @@
     <label>cannibal</label>
     <description>Synthetic-organic creature derived from batarians and humans mutated by Reaper technology into one, walking monstrosity. They use a large mass-accelerator gun to mow down enemy forces, which they then consume to regain strength and grow additional armor.</description>
     <statBases>
-      <MoveSpeed>3.2</MoveSpeed>
+      <MoveSpeed>3.0</MoveSpeed>
       <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
       <PsychicSensitivity>0.6</PsychicSensitivity>
@@ -520,18 +520,6 @@
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
-      </li>
-      <li>
-        <label>teeth</label>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>10.0</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.07</chanceFactor>
-        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
-        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
       </li>
       <li>
         <label>head</label>
@@ -587,6 +575,109 @@
 	<weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
       <li>CannibalCaster</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <ThingDef ParentName="BaseHusk">
+    <defName>RE_Husk_Marauder</defName>
+    <label>marauder</label>
+    <description>Synthetic-organic creature derived from Turians, mutated using Reaper technology. Marauders command and protect Reaper forces by providing support for the invasion forces. The lean, armored creatures present a significant threat in and of themselves, but they are especially dangerous when leading a Reaper task force.</description>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <PsychicSensitivity>0.6</PsychicSensitivity>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>9.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>9.0</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>RE_Marauder</body>
+      <baseBodySize>1.1</baseBodySize>
+      <baseHealthScale>1.6</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>RE_Pawn_Husk_Marauder_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Husk_Marauder_Death</soundDeath>
+          <soundCall>RE_Pawn_Husk_Marauder_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>20</Steel>
+	  <Plasteel>5</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="BaseHuskKind">
+    <defName>RE_Husk_Marauder</defName>
+    <label>marauder</label>
+    <race>RE_Husk_Marauder</race>
+    <combatPower>150</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Reaper/Marauder/Marauder</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>1.7</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+	<weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>MarauderRifle</li>
     </weaponTags>
   </PawnKindDef>
 
