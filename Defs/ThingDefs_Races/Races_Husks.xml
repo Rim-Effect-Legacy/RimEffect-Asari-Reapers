@@ -97,6 +97,21 @@
       <Steel>40</Steel>
       <Plasteel>20</Plasteel>
     </butcherProducts>
+<comps>
+ <li Class="VFEMech.CompProperties_ShieldMechBubble">
+  <compClass>RimEffect.CompAbilities</compClass>
+  <blockRangedAttack>True</blockRangedAttack>
+  <blockMeleeAttack>False</blockMeleeAttack>
+  <showWhenDrafted>True</showWhenDrafted>
+  <showOnHostiles>True</showOnHostiles>
+  <showOnNeutralInCombat>True</showOnNeutralInCombat>
+  <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+  <minShieldSize>1</minShieldSize>
+  <maxShieldSize>1.5</maxShieldSize>
+  <shieldColor>(1, 1, 1, 1)</shieldColor>
+  <EnergyLossPerDamage>1</EnergyLossPerDamage>
+</li>
+</comps>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseHuskKind">
@@ -116,6 +131,17 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
+    <modExtensions>
+	  <li Class="RimEffect.PawnKindAbilityExtension">
+		<giveAbilities>
+			<li>RE_Biotic_Charge</li>
+			<li>RE_Biotic_Singularity</li>
+		</giveAbilities>
+		<implantDef>RE_BioticAmpHediff</implantDef>
+		<initialLevel>3</initialLevel>
+		<giveRandomAbilities>true</giveRandomAbilities>
+		</li>
+    </modExtensions>
   </PawnKindDef>
   
   <!-- goliath -->

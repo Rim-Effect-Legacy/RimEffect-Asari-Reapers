@@ -282,7 +282,7 @@
                   </groups>
                   <parts>
                     <li>
-                      <def>ArtificialBrain</def>
+                      <def>Brain</def>
                       <coverage>0.8</coverage>
                       <groups>
                         <li>UpperHead</li>
