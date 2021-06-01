@@ -648,6 +648,13 @@
       <Steel>20</Steel>
 	  <Plasteel>5</Plasteel>
     </butcherProducts>
+	<comps>
+		<li Class="VFEMech.CompProperties_ShieldMechBubble">
+			<EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>30</EnergyShieldEnergyMax>
+			<showAlways>true</showAlways>
+		</li>
+	</comps>
   </ThingDef>
   
   <PawnKindDef ParentName="BaseHuskKind">
