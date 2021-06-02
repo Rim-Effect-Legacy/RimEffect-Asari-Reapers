@@ -239,7 +239,9 @@
         <forcedMissRadius>1.9</forcedMissRadius>
         <warmupTime>14.5</warmupTime>
         <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
-        <range>85.9</range>
+		<requireLineOfSight>false</requireLineOfSight>
+        <range>200.9</range>
+		<minRange>10.9</minRange>
         <burstShotCount>1</burstShotCount>
         <soundCast>RE_Shot_ColossusArtillery</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
