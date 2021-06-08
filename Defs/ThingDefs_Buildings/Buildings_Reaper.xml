@@ -612,5 +612,228 @@
 			<Uranium>45</Uranium>
 		</killedLeavings>
 	</ThingDef>
+	
+<!-- claws -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawRight</defName>
+		<label>reaper claw (right)</label>
+		<description>A reaper's claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawRight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.05,2.05)</drawSize>
+			<shadowData>
+				<volume>(1, 0.2, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(4,2)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>20</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+	
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawLeft</defName>
+		<label>reaper claw (left)</label>
+		<description>A reaper's claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawLeft</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.05,2.05)</drawSize>
+			<shadowData>
+				<volume>(1, 0.2, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(4,2)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>20</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+	
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawSmallLeft</defName>
+		<label>reaper small claw (left)</label>
+		<description>A reaper's small claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawSmallLeft</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,4.05)</drawSize>
+			<shadowData>
+				<volume>(1, 0.2, 4)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>15</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+	
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawSmallRight</defName>
+		<label>reaper small claw (right)</label>
+		<description>A reaper's small claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawSmallRight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,4.05)</drawSize>
+			<shadowData>
+				<volume>(1, 0.2, 4)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>15</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+	
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawLargeLeft</defName>
+		<label>reaper large claw (left)</label>
+		<description>A reaper's large claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawLargeLeft</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.05,6.05)</drawSize>
+			<shadowData>
+				<volume>(2, 0.2, 6)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,6)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>25</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+	
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawLargeRight</defName>
+		<label>reaper large claw (right)</label>
+		<description>A reaper's large claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawLargeRight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.05,6.05)</drawSize>
+			<shadowData>
+				<volume>(2, 0.2, 6)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,6)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>25</Plasteel>
+		</killedLeavings>
+	</ThingDef>
 
 </Defs>
