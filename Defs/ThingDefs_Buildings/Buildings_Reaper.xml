@@ -444,5 +444,47 @@
       </li>
     </comps>
 	</ThingDef>
+	
+	<!-- storm generator -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperStormGenerator</defName>
+		<label>reaper storm generator</label>
+		<description>A massive reaper construction that generates storms.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperStormGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.05,4.05)</drawSize>
+			<shadowData>
+				<volume>(4, 0.2, 4)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>100</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(4,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<RE_ElementZero>40</RE_ElementZero>
+			<Uranium>60</Uranium>
+		</killedLeavings>
+	</ThingDef>
 
 </Defs>
