@@ -301,5 +301,56 @@
 			<Uranium>35</Uranium>
 		</killedLeavings>
 	</ThingDef>
+	
+	<!-- fuel cell -->
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperFuelCell</defName>
+		<label>reaper fuel cell</label>
+		<description>A cell with element zero. Extremely vulnerable to damage, explodes upon destruction.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperFuelCell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,1.05)</drawSize>
+			<shadowData>
+				<volume>(1, 0.2, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>5</Plasteel>
+			<RE_ElementZero>5</RE_ElementZero>
+		</killedLeavings>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>9.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explodeOnKilled>true</explodeOnKilled>
+        <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+        <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+      </li>
+    </comps>
+	</ThingDef>
 
 </Defs>
