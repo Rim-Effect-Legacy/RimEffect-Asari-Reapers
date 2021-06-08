@@ -571,7 +571,7 @@
 		</killedLeavings>
 	</ThingDef>
 	
-	<!-- unit storage -->
+	<!-- control node -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperControlNode</defName>
 		<label>reaper control node</label>
