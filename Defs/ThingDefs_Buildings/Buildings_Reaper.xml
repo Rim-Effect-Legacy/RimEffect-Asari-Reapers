@@ -92,7 +92,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.8,4.1)</drawSize>
 			<shadowData>
-				<volume>(2.04, 1.0, 5.75)</volume>
+				<volume>(1.04, 1.0, 3.75)</volume>
 			</shadowData>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
