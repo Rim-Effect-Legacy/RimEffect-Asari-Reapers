@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Base -->
+
+	<ThingDef ParentName="BuildingBase" Name="RE_ReaperPart" Abstract="True">
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<!-- <thingClass>MyLovelyThingClass</thingClass> -->
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<passability>Impassable</passability>
+		<fillPercent>1.0</fillPercent>
+		<tickerType>Normal</tickerType>
+		<rotatable>true</rotatable>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<selectable>true</selectable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<drawerType>MapMeshOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<!-- <designationCategory Inherit='False' /> -->
+		<designationCategory>Ship</designationCategory>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<soundAmbient>CrashedShipPart_Ambience</soundAmbient>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<statBases>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+
+	<!-- 1x1 hull piece -->
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_1x1Hull</defName>
+		<label>reaper ship hull</label>
+		<description>A block of nearly impenetrable plasteel shield. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperHull</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
+			<shadowData>
+				<volume>(1, 0.2, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>true</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>5</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+</Defs>
