@@ -45,13 +45,13 @@
 	<!-- 1x1 hull piece -->
 
 	<ThingDef ParentName="RE_ReaperPart">
-		<defName>RE_1x1Hull</defName>
+		<defName>RE_Reaper1x1Hull</defName>
 		<label>reaper ship hull</label>
 		<description>A block of nearly impenetrable plasteel shield. This element is usually a part of a much larger ship.</description>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_ReaperHull</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.1,1.1)</drawSize>
+			<drawSize>(1.05,1.05)</drawSize>
 			<shadowData>
 				<volume>(1, 0.2, 1)</volume>
 			</shadowData>
@@ -79,6 +79,52 @@
 		</building>
 		<killedLeavings>
 			<Plasteel>5</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+	
+<!-- support beam -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperSupportBeam</defName>
+		<label>reaper support beam</label>
+		<description>A structural beam to support a ship. It can be destroyed to obtain valuable resources. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_SupportBeam4x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.8,4.1)</drawSize>
+			<shadowData>
+				<volume>(2.04, 1.0, 5.75)</volume>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>true</canOverlapZones>
+		<statBases>
+			<WorkToBuild>8000</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<uiIconScale>1.2</uiIconScale>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
 		</killedLeavings>
 	</ThingDef>
 
