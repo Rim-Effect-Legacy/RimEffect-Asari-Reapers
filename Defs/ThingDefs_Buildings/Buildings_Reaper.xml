@@ -128,6 +128,7 @@
 		</killedLeavings>
 	</ThingDef>
 	
+	<!-- reaper machinery -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperMachinery</defName>
 		<label>reaper machinery</label>
@@ -167,6 +168,7 @@
 		</killedLeavings>
 	</ThingDef>
 	
+	<!-- resource container -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperResourceContainer</defName>
 		<label>reaper resource container</label>
@@ -210,6 +212,46 @@
 			<Steel>100</Steel>
 			<Gold>10</Gold>
 			<Uranium>20</Uranium>
+		</killedLeavings>
+	</ThingDef>
+	
+	<!-- 2x2 hull plate -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_Reaper2x2Hull</defName>
+		<label>reaper hull plate</label>
+		<description>A block of nearly impenetrable plasteel shield. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperHull</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.05,2.05)</drawSize>
+			<shadowData>
+				<volume>(2, 0.2, 2)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>15</Plasteel>
+			<Uranium>5</Uranium>
 		</killedLeavings>
 	</ThingDef>
 
