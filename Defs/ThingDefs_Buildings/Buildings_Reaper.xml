@@ -221,7 +221,7 @@
 		<label>reaper hull plate</label>
 		<description>A block of nearly impenetrable plasteel shield. This element is usually a part of a much larger ship.</description>
 		<graphicData>
-			<texPath>Things/Building/Reaper/Reaper_ReaperHull</texPath>
+			<texPath>Things/Building/Reaper/Reaper_ReaperHullPlate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.05,2.05)</drawSize>
 			<shadowData>
@@ -351,6 +351,46 @@
         <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
       </li>
     </comps>
+	</ThingDef>
+	
+	<!-- 3x3 hull layer -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_Reaper3x3Hull</defName>
+		<label>reaper hull layer</label>
+		<description>A block of nearly impenetrable plasteel shield. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_HullLayer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.05,3.05)</drawSize>
+			<shadowData>
+				<volume>(2, 0.2, 2)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,3)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>40</Plasteel>
+			<Uranium>15</Uranium>
+		</killedLeavings>
 	</ThingDef>
 
 </Defs>
