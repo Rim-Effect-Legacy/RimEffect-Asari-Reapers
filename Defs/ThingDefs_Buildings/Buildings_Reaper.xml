@@ -40,6 +40,7 @@
 				<multiplier>0</multiplier>
 			</li>
 		</damageMultipliers>
+		<castEdgeShadows>false</castEdgeShadows>
 	</ThingDef>
 
 	<!-- 1x1 hull piece -->
@@ -177,9 +178,9 @@
 			<texPath>Things/Building/Reaper/Reaper_ReaperResourceContainer</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.2,3)</drawSize>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(0.9, 1.0, 0.9)</volume>
-			</shadowData>
+			</shadowData>-->
 			<damageData>
 				<rect>(0.5, 0.1, 3, 2.8)</rect>
 			</damageData>
@@ -664,9 +665,9 @@
 			<texPath>Things/Building/Reaper/Reaper_ClawRight</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4.05,2.05)</drawSize>
-			<shadowData>
-				<volume>(1, 0.2, 1)</volume>
-			</shadowData>
+			<!--<shadowData>
+				<volume>(3,0, 0.2, 1)</volume>
+			</shadowData>-->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -701,9 +702,9 @@
 			<texPath>Things/Building/Reaper/Reaper_ClawLeft</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4.05,2.05)</drawSize>
-			<shadowData>
-				<volume>(1, 0.2, 1)</volume>
-			</shadowData>
+			<!-- <shadowData>
+				<volume>(3,0, 0.2, 1)</volume>
+			</shadowData> -->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -738,9 +739,9 @@
 			<texPath>Things/Building/Reaper/Reaper_ClawSmallLeft</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.05,4.05)</drawSize>
-			<shadowData>
-				<volume>(1, 0.2, 4)</volume>
-			</shadowData>
+			<!-- <shadowData>
+				<volume>(0,5, 0.2, 2)</volume>
+			</shadowData> -->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -775,9 +776,9 @@
 			<texPath>Things/Building/Reaper/Reaper_ClawSmallRight</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.05,4.05)</drawSize>
-			<shadowData>
-				<volume>(1, 0.2, 4)</volume>
-			</shadowData>
+			<!-- <shadowData>
+				<volume>(0,5, 0.2, 2)</volume>
+			</shadowData> -->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -812,9 +813,9 @@
 			<texPath>Things/Building/Reaper/Reaper_ClawLargeLeft</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.05,6.05)</drawSize>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(2, 0.2, 6)</volume>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>60</pathCost>
@@ -849,9 +850,9 @@
 			<texPath>Things/Building/Reaper/Reaper_ClawLargeRight</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.05,6.05)</drawSize>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(2, 0.2, 6)</volume>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>60</pathCost>
@@ -888,9 +889,9 @@
 			<texPath>Things/Building/Reaper/Reaper_Ramp4x1Left</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.05,4.05)</drawSize>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(1, 0.2, 4)</volume>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -925,9 +926,9 @@
 			<texPath>Things/Building/Reaper/Reaper_Ramp4x1Right</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.05,4.05)</drawSize>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(1, 0.2, 4)</volume>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -962,9 +963,9 @@
 			<texPath>Things/Building/Reaper/Reaper_Ramp5x2Left</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.05,5.05)</drawSize>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(2, 0.2, 5)</volume>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -999,9 +1000,9 @@
 			<texPath>Things/Building/Reaper/Reaper_Ramp5x2Right</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.05,5.05)</drawSize>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(2, 0.2, 5)</volume>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
@@ -1043,10 +1044,10 @@
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(1.27,0.25,1.27)</volume>
 				<offset>(0,0,0)</offset>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<size>(1,1)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_BolterTurret_Top</uiIconPath>
@@ -1156,10 +1157,10 @@
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(2.27,0.25,2.27)</volume>
 				<offset>(0,0,0)</offset>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_HeavyBolter_Top</uiIconPath>
@@ -1271,10 +1272,10 @@
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(2.27,0.25,2.27)</volume>
 				<offset>(0,0,0)</offset>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<size>(2,2)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_MissileLauncher_Top</uiIconPath>
@@ -1388,10 +1389,10 @@
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(3.27,0.25,3.27)</volume>
 				<offset>(0,0,0)</offset>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<size>(3,3)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_KineticArtillery_Top</uiIconPath>
@@ -1505,10 +1506,10 @@
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
-			<shadowData>
+			<!--<shadowData>
 				<volume>(3.27,0.25,3.27)</volume>
 				<offset>(0,0,0)</offset>
-			</shadowData>
+			</shadowData>-->
 		</graphicData>
 		<size>(3,3)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_BeamTargeter_Top</uiIconPath>
