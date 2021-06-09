@@ -1196,7 +1196,7 @@
 		<passability>Impassable</passability>
 		<fillPercent>0.8</fillPercent>
 		<hasTooltip>true</hasTooltip>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<building>
 			<buildingTags>
 				<li>RE_Reaper</li>
@@ -1282,7 +1282,7 @@
 		<stealable>false</stealable>
 		<rotatable>false</rotatable>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>0</Flammability>
 			<Mass>35</Mass>
 			<ShootingAccuracyTurret>0.86</ShootingAccuracyTurret>
@@ -1311,7 +1311,7 @@
 		<passability>Impassable</passability>
 		<fillPercent>0.8</fillPercent>
 		<hasTooltip>true</hasTooltip>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<buildingTags>
 				<li>RE_Reaper</li>
@@ -1371,6 +1371,123 @@
       <damageDef>Bomb</damageDef>
       <explosionRadius>3.9</explosionRadius>
       <speed>60</speed>
+    </projectile>
+	</ThingDef>
+	
+<!-- kinetic artillery -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_Turret_ReaperKineticArtillery</defName>
+		<label>reaper kinetic artillery</label>
+		<description>A large kinetic artillery, firing devastating improved bolter shells over long distances at low accuracy.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_KineticArtillery_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.1,3.1)</drawSize>
+			<!-- <drawOffset>(0,0,-0.11)</drawOffset> -->
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(3.27,0.25,3.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(3,3)</size>
+		<uiIconPath>Things/Building/Reaper/Reaper_KineticArtillery_Top</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>50</Mass>
+			<ShootingAccuracyTurret>0.72</ShootingAccuracyTurret>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>420</wickTicks>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+		</comps>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</killedLeavings>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<turretTopDrawSize>5</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+			<combatPower>250</combatPower>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RE_Gun_ReaperKineticArtillery</turretGunDef>
+			<turretBurstCooldownTime>6</turretBurstCooldownTime>
+			<turretBurstWarmupTime>5</turretBurstWarmupTime>
+		</building>
+		<!-- <designationCategory Inherit='False' /> -->
+		<designationCategory>Ship</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RE_Gun_ReaperKineticArtillery</defName>
+		<label>reaper kinetic artillery</label>
+		<description>A powerful, reaper-tech kinetic artillery.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_KineticArtillery_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponTags>
+			<li>Reaper_Turret</li>
+		</weaponTags>
+		<uiIconScale>1</uiIconScale>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>RE_Bullet_ReaperKineticArtillery</defaultProjectile>
+				<warmupTime>6</warmupTime>
+				<range>59.9</range>
+				<minRange>10.9</minRange>
+				<forcedMissRadius>5.9</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>5.9</ai_AvoidFriendlyFireRadius>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>RE_Shot_MarauderRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+	<defName>RE_Bullet_ReaperKineticArtillery</defName>
+	<label>reaper kinetic artillery shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/KineticArtillery_Shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>3.0</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>5.9</explosionRadius>
+      <speed>70</speed>
     </projectile>
 	</ThingDef>
 
