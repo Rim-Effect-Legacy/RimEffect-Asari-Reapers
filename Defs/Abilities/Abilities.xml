@@ -37,7 +37,7 @@
     <graphicData>
       <texPath>Things/AbilityEffects/BioticLance_Shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>Transparent</shaderType>
+      <shaderType>Transparent</shaderType>
     </graphicData>
     <projectile>
       <damageDef>Cut</damageDef>
@@ -48,4 +48,72 @@
       <speed>40</speed>
     </projectile>
   </ThingDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Warp</defName>
+    <label>biotic warp</label>
+    <description>Create rapidly shifting mass effect fields that shred a target apart, lowering it's armor. Further biotic attacks can cause detonation.</description>
+    <abilityClass>RimEffect.Ability_Blank</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <castTime>60</castTime>
+    <range>24</range>
+    <castSound>RE_Biotic_Pull</castSound>
+    <iconPath>UI/Abilities/Biotic_Warp</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>2</minimumLevel>
+    </requiredHediff>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Hediff">
+        <hediff>RE_BioticWarp</hediff>
+      </li>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>10</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_BioticWarp</defName>
+    <label>warped</label>
+    <labelNoun>warped</labelNoun>
+    <description>Rapidly shifting mass effect fields that shred a target apart, lowering it's armor. Further biotic attacks can cause detonation.</description>
+    <comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_WarpEffecter</stateEffecter>
+      </li>
+    </comps>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <ArmorRating_Sharp>0</ArmorRating_Sharp>
+          <ArmorRating_Heat>0</ArmorRating_Heat>
+          <ArmorRating_Blunt>0</ArmorRating_Blunt>
+        </statFactors>
+        <statOffsets>
+          <ArmorRating_Sharp>-1</ArmorRating_Sharp>
+          <ArmorRating_Heat>-1</ArmorRating_Heat>
+          <ArmorRating_Blunt>-1</ArmorRating_Blunt>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <EffecterDef>
+    <defName>RE_WarpEffecter</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <scale>0.7~0.9</scale>
+        <chancePerTick>0.09</chancePerTick>
+        <positionRadius>0.3</positionRadius>
+        <moteDef>Mote_Dominate</moteDef>
+        <speed>0.18~0.18</speed>
+        <angle>10~80</angle>
+      </li>
+    </children>
+  </EffecterDef>
 </Defs>
