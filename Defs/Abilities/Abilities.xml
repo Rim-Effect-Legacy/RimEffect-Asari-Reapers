@@ -5,7 +5,7 @@
     <label>biotic lance</label>
     <description>Devastates a small area with a swiftly thrown shaft of energy</description>
     <abilityClass>RimEffect.Ability_ShootProjectile</abilityClass>
-    <targetMode>Pawn</targetMode>
+    <targetMode>Location</targetMode>
     <castTime>60</castTime>
     <range>48</range>
     <radius>3</radius>
