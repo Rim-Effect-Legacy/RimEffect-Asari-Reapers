@@ -1088,7 +1088,7 @@
 			<buildingTags>
 				<li>RE_Reaper</li>
 			</buildingTags>
-			<turretTopDrawSize>3</turretTopDrawSize>
+			<turretTopDrawSize>2.5</turretTopDrawSize>
 			<turretTopOffset>(0, 0)</turretTopOffset>
 			<combatPower>100</combatPower>
 			<ai_combatDangerous>true</ai_combatDangerous>
@@ -1202,7 +1202,7 @@
 			<buildingTags>
 				<li>RE_Reaper</li>
 			</buildingTags>
-			<turretTopDrawSize>4</turretTopDrawSize>
+			<turretTopDrawSize>3.5</turretTopDrawSize>
 			<turretTopOffset>(0, 0)</turretTopOffset>
 			<combatPower>125</combatPower>
 			<ai_combatDangerous>true</ai_combatDangerous>
@@ -1317,7 +1317,7 @@
 			<buildingTags>
 				<li>RE_Reaper</li>
 			</buildingTags>
-			<turretTopDrawSize>4</turretTopDrawSize>
+			<turretTopDrawSize>3.5</turretTopDrawSize>
 			<turretTopOffset>(0, 0)</turretTopOffset>
 			<combatPower>150</combatPower>
 			<ai_combatDangerous>true</ai_combatDangerous>
@@ -1433,7 +1433,7 @@
 			<buildingTags>
 				<li>RE_Reaper</li>
 			</buildingTags>
-			<turretTopDrawSize>5</turretTopDrawSize>
+			<turretTopDrawSize>4.5</turretTopDrawSize>
 			<turretTopOffset>(0, 0)</turretTopOffset>
 			<combatPower>250</combatPower>
 			<ai_combatDangerous>true</ai_combatDangerous>
@@ -1550,7 +1550,7 @@
 			<buildingTags>
 				<li>RE_Reaper</li>
 			</buildingTags>
-			<turretTopDrawSize>3</turretTopDrawSize>
+			<turretTopDrawSize>2.5</turretTopDrawSize>
 			<turretTopOffset>(0, 0)</turretTopOffset>
 			<combatPower>300</combatPower>
 			<ai_combatDangerous>true</ai_combatDangerous>
@@ -1664,7 +1664,7 @@
 			<buildingTags>
 				<li>RE_Reaper</li>
 			</buildingTags>
-			<turretTopDrawSize>5</turretTopDrawSize>
+			<turretTopDrawSize>4.5</turretTopDrawSize>
 			<turretTopOffset>(0, 0)</turretTopOffset>
 			<combatPower>500</combatPower>
 			<ai_combatDangerous>true</ai_combatDangerous>
