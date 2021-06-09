@@ -59,7 +59,7 @@
 		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
-		<fillPercent>0.4</fillPercent>
+		<fillPercent>0.5</fillPercent>
 		<blockWind>true</blockWind>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
@@ -119,7 +119,7 @@
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<uiIconScale>1.2</uiIconScale>
 		<killedLeavings>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
@@ -201,7 +201,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
@@ -231,7 +231,7 @@
 		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
-		<fillPercent>0.4</fillPercent>
+		<fillPercent>0.6</fillPercent>
 		<blockWind>true</blockWind>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
@@ -245,7 +245,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
@@ -288,7 +288,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
@@ -369,7 +369,7 @@
 		<rotatable>false</rotatable>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
-		<fillPercent>0.4</fillPercent>
+		<fillPercent>0.8</fillPercent>
 		<blockWind>true</blockWind>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
@@ -383,7 +383,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
@@ -423,7 +423,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
@@ -475,7 +475,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
@@ -517,7 +517,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
@@ -559,7 +559,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
@@ -601,7 +601,7 @@
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
@@ -610,6 +610,48 @@
 			<ComponentSpacer>7</ComponentSpacer>
 			<RE_ElementZero>30</RE_ElementZero>
 			<Uranium>45</Uranium>
+		</killedLeavings>
+	</ThingDef>
+	
+	<!-- long range missile launcher -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperLongRangeMissileLauncher</defName>
+		<label>reaper long range missile launcher</label>
+		<description>A battery of devastating missiles.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_LongRangeMissileBay</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.05,3.05)</drawSize>
+			<shadowData>
+				<volume>(3, 0.2, 3)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>100</pathCost>
+		<fillPercent>0.6</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,3)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+			<RE_ElementZero>10</RE_ElementZero>
+			<Uranium>30</Uranium>
 		</killedLeavings>
 	</ThingDef>
 	
@@ -1289,7 +1331,7 @@
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RE_Gun_ReaperMissileLauncher</defName>
 		<label>reaper missile launcher</label>
-		<description>A powerful, reaper-tech missile laucher.</description>
+		<description>A powerful, reaper-tech missile launcher.</description>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_MissileLauncher_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1317,7 +1359,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 	<defName>RE_Bullet_ReaperMissileLauncher</defName>
-	<label>reaper missile laucher rocket</label>
+	<label>reaper missile launcher rocket</label>
     <graphicData>
       <texPath>Things/Projectiles/ReaperMissileLauncher_Shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
