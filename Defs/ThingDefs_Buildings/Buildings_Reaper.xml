@@ -1604,5 +1604,119 @@
             <speed>80</speed>
 		</projectile>
 	</ThingDef>
+	
+<!-- reaper beam -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_Turret_ReaperBeam</defName>
+		<label>reaper beam</label>
+		<description>A large laser cannon.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5.1,5.1)</drawSize>
+			<!-- <drawOffset>(0,0,-0.11)</drawOffset> -->
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(5.27,0.25,5.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(5,5)</size>
+		<uiIconPath>Things/Building/Reaper/Reaper_ReaperBeam_Top</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>420</wickTicks>
+				<explosiveRadius>14.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+		</comps>
+		<killedLeavings>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+			<RE_ElementZero>30</RE_ElementZero>
+			<Uranium>40</Uranium>
+		</killedLeavings>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<turretTopDrawSize>5</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+			<combatPower>500</combatPower>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RE_Gun_ReaperBeam</turretGunDef>
+			<turretBurstCooldownTime>12</turretBurstCooldownTime>
+			<turretBurstWarmupTime>11</turretBurstWarmupTime>
+		</building>
+		<!-- <designationCategory Inherit='False' /> -->
+		<designationCategory>Ship</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RE_Gun_ReaperBeam</defName>
+		<label>reaper orbital beam targeter</label>
+		<description>A reaper-tech orbital beam targeter.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponTags>
+			<li>Reaper_Turret</li>
+		</weaponTags>
+		<uiIconScale>1</uiIconScale>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>RE_Bullet_ReaperBeam</defaultProjectile>
+				<warmupTime>12</warmupTime>
+				<range>299.9</range>
+				<minRange>19.9</minRange>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>RE_Shot_MarauderRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RE_Bullet_ReaperBeam</defName>
+		<label>reaper beam</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Shot_MarauderRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>14</damageAmountBase>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
+            <speed>80</speed>
+		</projectile>
+	</ThingDef>
 
 </Defs>
