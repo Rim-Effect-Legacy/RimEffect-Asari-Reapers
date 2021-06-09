@@ -236,7 +236,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>RE_Bullet_ColossusRocket</defaultProjectile>
-        <forcedMissRadius>1.9</forcedMissRadius>
+        <forcedMissRadius>4.9</forcedMissRadius>
         <warmupTime>14.5</warmupTime>
         <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
 		<requireLineOfSight>false</requireLineOfSight>
@@ -274,7 +274,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <explosionRadius>3.9</explosionRadius>
+      <explosionRadius>4.9</explosionRadius>
       <speed>50</speed>
 	  <flyOverhead>true</flyOverhead>
     </projectile>
