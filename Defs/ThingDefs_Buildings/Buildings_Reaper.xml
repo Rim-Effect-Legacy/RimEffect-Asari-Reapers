@@ -991,14 +991,13 @@
 	<!-- reaper bolter -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_Turret_ReaperBolter</defName>
-		<label>charge railgun</label>
-		<description>tbd.</description>
+		<label>reaper bolter</label>
+		<description>A small turret with low damage and 3 shot burst.</description>
 		<thingClass>Building_TurretGun</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_BolterTurret_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.1,1.1)</drawSize>
-			<!-- <drawOffset>(0,0,-0.11)</drawOffset> -->
 			<damageData>
 				<rect>(0.2,0.2,0.6,0.6)</rect>
 			</damageData>
@@ -1029,7 +1028,7 @@
 		<comps>
 			<li Class="CompProperties_Explosive">
 				<wickTicks>320</wickTicks>
-				<explosiveRadius>1.9</explosiveRadius>
+				<explosiveRadius>0.9</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 			</li>
 		</comps>
@@ -1060,8 +1059,8 @@
 
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RE_Gun_ReaperBolter</defName>
-		<label>charge railgun</label>
-		<description>A powerful, mechanoid-tech charge railgun.</description>
+		<label>reaper bolter</label>
+		<description>A powerful, reaper-tech bolter.</description>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_BolterTurret_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1097,6 +1096,121 @@
             <damageDef>Bullet</damageDef>
             <damageAmountBase>14</damageAmountBase>
             <armorPenetrationBase>0.6</armorPenetrationBase>
+            <speed>80</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- reaper heavy bolter -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_Turret_ReaperHeavyBolter</defName>
+		<label>reaper heavy bolter</label>
+		<description>A medium-sized turret that fires bursts of 2 shots.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_LargeTurret_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.1,2.1)</drawSize>
+			<!-- <drawOffset>(0,0,-0.11)</drawOffset> -->
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(2.27,0.25,2.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(2,2)</size>
+		<uiIconPath>Things/Building/Reaper/Reaper_HeavyBolter_Top</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>35</Mass>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>320</wickTicks>
+				<explosiveRadius>1.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+		</comps>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</killedLeavings>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<turretTopDrawSize>4</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+			<combatPower>125</combatPower>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RE_Gun_ReaperHeavyBolter</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretBurstWarmupTime>1.5</turretBurstWarmupTime>
+		</building>
+		<!-- <designationCategory Inherit='False' /> -->
+		<designationCategory>Ship</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RE_Gun_ReaperHeavyBolter</defName>
+		<label>reaper heavy bolter</label>
+		<description>A powerful, reaper-tech heavy bolter.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_HeavyBolter_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponTags>
+			<li>Reaper_Turret</li>
+		</weaponTags>
+		<uiIconScale>1</uiIconScale>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>RE_Bullet_ReaperHeavyBolter</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>RE_Shot_MarauderRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RE_Bullet_ReaperHeavyBolter</defName>
+		<label>reaper heavy bolter shot</label>
+		<graphicData>
+			<texPath>Things/Projectiles/ReaperHeavyBolter_Shot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.7</armorPenetrationBase>
             <speed>80</speed>
 		</projectile>
 	</ThingDef>
