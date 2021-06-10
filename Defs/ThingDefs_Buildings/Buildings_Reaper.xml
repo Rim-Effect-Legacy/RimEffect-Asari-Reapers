@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BuildingBase" Name="RE_ReaperPart" Abstract="True">
 		<pathCost>50</pathCost>
 		<blockWind>true</blockWind>
-		<!-- <thingClass>MyLovelyThingClass</thingClass> -->
+		<thingClass>RimEffectReapers.Building_Reaper</thingClass>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<passability>Impassable</passability>
 		<fillPercent>1.0</fillPercent>
@@ -214,6 +214,12 @@
 			<Gold>10</Gold>
 			<Uranium>20</Uranium>
 		</killedLeavings>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_LootOnDestroy">
+				<amount>150</amount>
+				<maxValuePerItem>10</maxValuePerItem>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<!-- 2x2 hull plate -->
@@ -301,6 +307,12 @@
 			<Gold>25</Gold>
 			<Uranium>35</Uranium>
 		</killedLeavings>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_LootOnDestroy">
+				<amount>200</amount>
+				<maxValuePerItem>20</maxValuePerItem>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<!-- fuel cell -->
@@ -535,6 +547,7 @@
 		<defName>RE_ReaperUnitStorage</defName>
 		<label>reaper unit storage</label>
 		<description>A large shell storing reaper units.</description>
+		<thingClass>RimEffectReapers.Building_Reaper_UnitStorage</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_UnitStorage</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -57,6 +57,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buildings\Building_Reaper.cs" />
+    <Compile Include="Buildings\Building_Reaper_UnitStorage.cs" />
+    <Compile Include="Comps\CompLootOnDestroy.cs" />
+    <Compile Include="ReaperUtils.cs" />
     <Compile Include="DeathActionWorker_Spawner.cs" />
     <Compile Include="DefModExt_DeathSpawnerProps.cs" />
     <Compile Include="Harmony\AffectedByEMP_Patch.cs" />
@@ -68,5 +72,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
