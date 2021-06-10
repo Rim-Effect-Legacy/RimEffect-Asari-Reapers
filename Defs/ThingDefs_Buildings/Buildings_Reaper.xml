@@ -463,6 +463,7 @@
 		<defName>RE_ReaperStormGenerator</defName>
 		<label>reaper storm generator</label>
 		<description>A large, complex machinery that summons a perpetual reaper storm wherever it is.</description>
+		<thingClass>RimEffectReapers.Building_Reaper_Storm</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_ReaperStormGenerator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

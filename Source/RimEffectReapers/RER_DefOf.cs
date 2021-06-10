@@ -12,5 +12,7 @@ namespace RimEffectReapers
         public static ThingDef RE_ReaperPowerBeam;
         public static ThingDef RER_ReaperLongRangeMissile_Leaving;
         public static ThingDef RER_ReaperLongRangeMissile_Arriving;
+        public static WeatherDef RER_ReaperLightningStorm;
+        public static GameConditionDef RER_ReaperWeather;
     }
 }
