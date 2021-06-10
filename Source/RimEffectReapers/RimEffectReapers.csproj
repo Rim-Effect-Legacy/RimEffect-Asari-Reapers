@@ -60,6 +60,7 @@
     <Compile Include="Buildings\Building_Reaper.cs" />
     <Compile Include="Buildings\Building_ReaperTurret.cs" />
     <Compile Include="Buildings\Building_ReaperTurret_MarkTarget.cs" />
+    <Compile Include="Buildings\Building_Reaper_LongRangeMissile.cs" />
     <Compile Include="Buildings\Building_Reaper_UnitStorage.cs" />
     <Compile Include="Comps\CompLootOnDestroy.cs" />
     <Compile Include="ReaperUtils.cs" />

@@ -632,6 +632,7 @@
 		<defName>RE_ReaperLongRangeMissileLauncher</defName>
 		<label>reaper long range missile launcher</label>
 		<description>A battery of devastating missiles.</description>
+		<thingClass>RimEffectReapers.Building_Reaper_LongRangeMissile</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_LongRangeMissileBay</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

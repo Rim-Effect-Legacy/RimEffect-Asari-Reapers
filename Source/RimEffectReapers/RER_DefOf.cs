@@ -10,5 +10,7 @@ namespace RimEffectReapers
         public static ThingDef RE_ReaperUnitStorage;
         public static FactionDef RE_Reapers;
         public static ThingDef RE_ReaperPowerBeam;
+        public static ThingDef RER_ReaperLongRangeMissile_Leaving;
+        public static ThingDef RER_ReaperLongRangeMissile_Arriving;
     }
 }
