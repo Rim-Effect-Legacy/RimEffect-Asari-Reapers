@@ -9,5 +9,6 @@ namespace RimEffectReapers
         public static FleshTypeDef RE_Husk;
         public static ThingDef RE_ReaperUnitStorage;
         public static FactionDef RE_Reapers;
+        public static ThingDef RE_ReaperPowerBeam;
     }
 }

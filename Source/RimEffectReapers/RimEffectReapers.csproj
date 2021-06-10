@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buildings\Building_Reaper.cs" />
+    <Compile Include="Buildings\Building_ReaperTurret.cs" />
+    <Compile Include="Buildings\Building_ReaperTurret_MarkTarget.cs" />
     <Compile Include="Buildings\Building_Reaper_UnitStorage.cs" />
     <Compile Include="Comps\CompLootOnDestroy.cs" />
     <Compile Include="ReaperUtils.cs" />
@@ -68,6 +70,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RER_DefOf.cs" />
     <Compile Include="ReaperRotTweak.cs" />
+    <Compile Include="Verbs\Verb_ReaperOrbitalBeam.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -9,7 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-.suo
+.vs
 *.DotSettings
 
 # User-specific files (MonoDevelop/Xamarin Studio)
@@ -344,3 +344,8 @@ healthchecksdb
 */.vs/*
 */obj/*
 **/*.suo
+
+obj
+bin
+.vs
+.vscode
