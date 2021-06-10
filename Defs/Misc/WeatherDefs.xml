@@ -16,7 +16,7 @@
                 <eventClass>RimEffectReapers.WeatherEvent_ReaperLightningFlash</eventClass>
             </li>
             <li>
-                <averageInterval>1200</averageInterval>
+                <averageInterval>600</averageInterval>
                 <eventClass>RimEffectReapers.WeatherEvent_ReaperLightningStrike</eventClass>
             </li>
         </eventMakers>

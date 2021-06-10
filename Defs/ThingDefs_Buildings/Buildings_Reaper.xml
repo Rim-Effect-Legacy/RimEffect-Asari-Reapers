@@ -521,12 +521,12 @@
 		<blockWind>true</blockWind>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Rare</tickerType>
 		<statBases>
 			<WorkToBuild>16000</WorkToBuild>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
-		<tickerType>Normal</tickerType>
 		<size>(4,4)</size>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
@@ -541,6 +541,15 @@
 			<RE_ElementZero>60</RE_ElementZero>
 			<Uranium>50</Uranium>
 		</killedLeavings>
+    <comps>
+      <li Class="RimEffectReapers.CompProperties_Hediff">
+	  <compClass>RimEffectReapers.CompMapWideHediff</compClass>
+		<affectNonReapers>true</affectNonReapers>
+		<hediff>RER_Indoctrinated</hediff>
+		<severityPerTick>0.0001</severityPerTick>
+		<relevantStat>PsychicSensitivity</relevantStat>
+      </li>
+    </comps>
 	</ThingDef>
 	
 	<!-- unit storage -->
@@ -611,7 +620,7 @@
 			<MaxHitPoints>400</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
-		<tickerType>Normal</tickerType>
+		<tickerType>Rare</tickerType>
 		<size>(5,5)</size>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
@@ -626,6 +635,14 @@
 			<RE_ElementZero>30</RE_ElementZero>
 			<Uranium>45</Uranium>
 		</killedLeavings>
+    <comps>
+      <li Class="RimEffectReapers.CompProperties_Hediff">
+	  <compClass>RimEffectReapers.CompMapWideHediff</compClass>
+        <affectReapers>true</affectReapers>
+		<hediff>RER_DirectControl</hediff>
+		<vanishesInstantly>true</vanishesInstantly>
+      </li>
+    </comps>
 	</ThingDef>
 	
 	<!-- long range missile launcher -->

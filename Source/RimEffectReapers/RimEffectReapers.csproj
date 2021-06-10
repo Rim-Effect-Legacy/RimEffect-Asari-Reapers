@@ -63,7 +63,9 @@
     <Compile Include="Buildings\Building_Reaper_LongRangeMissile.cs" />
     <Compile Include="Buildings\Building_Reaper_Storm.cs" />
     <Compile Include="Buildings\Building_Reaper_UnitStorage.cs" />
+    <Compile Include="Comps\CompMapWideHediff.cs" />
     <Compile Include="GameCondition_ReaperWeather.cs" />
+    <Compile Include="HediffFromBuilding.cs" />
     <Compile Include="WeatherEvents.cs" />
     <Compile Include="Comps\CompLootOnDestroy.cs" />
     <Compile Include="ReaperUtils.cs" />

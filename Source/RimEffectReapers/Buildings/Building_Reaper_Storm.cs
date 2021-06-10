@@ -14,12 +14,15 @@ namespace RimEffectReapers
             caused.conditionCauser = this;
             map.GameConditionManager.RegisterCondition(caused);
             Map.weatherManager.TransitionTo(RER_DefOf.RER_ReaperLightningStorm);
+            Map.weatherDecider.StartNextWeather();
         }
 
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {
             caused.End();
             Map.weatherManager.TransitionTo(WeatherDefOf.Clear);
+            Map.weatherDecider.DisableRainFor(GenDate.TicksPerDay / 2);
+            Map.weatherDecider.StartNextWeather();
             base.Destroy(mode);
         }
 
