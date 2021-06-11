@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using UnityEngine;
-using RimWorld;
-using Verse;
-
-using HarmonyLib;
+﻿using Verse;
 
 namespace RimEffectReapers
 {
     [StaticConstructorOnStartup]
     public static class HarmonyInit
     {
+        public static HarmonyLib.Harmony Harm;
+
         static HarmonyInit()
         {
-            new Harmony("OskarPotocki.RimEffectReapers").PatchAll();
+            Harm = new HarmonyLib.Harmony("OskarPotocki.RimEffectReapers");
+            Harm.PatchAll();
         }
     }
 }

@@ -34,7 +34,7 @@ namespace RimEffectReapers
         {
             if (Props.vanishesInstantly)
             {
-                var pawns = parent.Map.mapPawns.AllPawnsSpawned.Where(p => p.health != null);
+                var pawns = previousMap.mapPawns.AllPawnsSpawned.Where(p => p.health != null);
                 if (!Props.affectReapers) pawns = pawns.Where(p => p.RaceProps.FleshType != RER_DefOf.RE_Husk);
                 if (!Props.affectNonReapers) pawns = pawns.Where(p => p.RaceProps.FleshType == RER_DefOf.RE_Husk);
                 foreach (var pawn in pawns)

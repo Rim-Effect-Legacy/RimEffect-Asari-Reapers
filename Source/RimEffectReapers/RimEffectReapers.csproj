@@ -65,6 +65,7 @@
     <Compile Include="Buildings\Building_Reaper_UnitStorage.cs" />
     <Compile Include="Comps\CompMapWideHediff.cs" />
     <Compile Include="GameCondition_ReaperWeather.cs" />
+    <Compile Include="Harmony\AvoidGrid_Patch.cs" />
     <Compile Include="HediffFromBuilding.cs" />
     <Compile Include="WeatherEvents.cs" />
     <Compile Include="Comps\CompLootOnDestroy.cs" />
