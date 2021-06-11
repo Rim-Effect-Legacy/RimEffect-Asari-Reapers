@@ -15,5 +15,6 @@ namespace RimEffectReapers
         public static WeatherDef RER_ReaperLightningStorm;
         public static GameConditionDef RER_ReaperWeather;
         public static HediffDef RER_DirectControl;
+        public static ThingDef RER_ReaperBeamGraphic;
     }
 }

@@ -67,6 +67,7 @@
     <Compile Include="GameCondition_ReaperWeather.cs" />
     <Compile Include="Harmony\AvoidGrid_Patch.cs" />
     <Compile Include="HediffFromBuilding.cs" />
+    <Compile Include="ReaperBeam.cs" />
     <Compile Include="WeatherEvents.cs" />
     <Compile Include="Comps\CompLootOnDestroy.cs" />
     <Compile Include="ReaperUtils.cs" />

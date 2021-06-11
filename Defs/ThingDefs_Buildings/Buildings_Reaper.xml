@@ -1633,7 +1633,7 @@
 		<defName>RE_Turret_ReaperBeam</defName>
 		<label>reaper beam</label>
 		<description>A large laser cannon.</description>
-		<thingClass>Building_TurretGun</thingClass>
+		<thingClass>RimEffectReapers.Building_ReaperTurret_MarkTarget</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1700,8 +1700,8 @@
 
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RE_Gun_ReaperBeam</defName>
-		<label>reaper orbital beam targeter</label>
-		<description>A reaper-tech orbital beam targeter.</description>
+		<label>reaper beam cannon</label>
+		<description>A reaper-tech massive beam cannon.</description>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1714,14 +1714,15 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<defaultProjectile>RE_Bullet_ReaperBeam</defaultProjectile>
-				<warmupTime>12</warmupTime>
+				<warmupTime>11</warmupTime>
 				<range>299.9</range>
 				<minRange>19.9</minRange>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<soundCast>RE_Shot_MarauderRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>16</muzzleFlashScale>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<forcedMissRadius>10</forcedMissRadius>
 			</li>
 		</verbs>
 	</ThingDef>
@@ -1729,17 +1730,18 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>RE_Bullet_ReaperBeam</defName>
 		<label>reaper beam</label>
+		<thingClass>RimEffectReapers.ReaperBeam</thingClass>
 		<graphicData>
-			<texPath>Things/Projectiles/Shot_MarauderRifle</texPath>
+			<texPath>Things/Projectiles/ReaperBeam</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>14</damageAmountBase>
-            <armorPenetrationBase>0.6</armorPenetrationBase>
-            <speed>80</speed>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>500</damageAmountBase>
+			<explosionRadius>5.9</explosionRadius>
+			<armorPenetrationBase>5</armorPenetrationBase>
+      		<speed>10000</speed>
 		</projectile>
 	</ThingDef>
-
 </Defs>

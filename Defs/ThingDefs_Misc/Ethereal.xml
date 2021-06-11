@@ -62,4 +62,26 @@
       <movementType>Accelerate</movementType>
     </skyfaller>
   </ThingDef>
+  
+  <ThingDef>
+    <defName>RER_ReaperBeamGraphic</defName>
+    <thingClass>RimEffectReapers.ReaperBeamDraw</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+    <label>reaper beam</label>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <comps>
+      <li Class="CompProperties_AffectsSky">
+        <skyColors>
+          <sky>(120, 90, 90)</sky>
+          <shadow>(0, 0, 0)</shadow>
+          <overlay>(0,0,0,200)</overlay>
+          <saturation>1.3</saturation>
+        </skyColors>
+      </li>
+    </comps>
+  </ThingDef>
 </Defs>
