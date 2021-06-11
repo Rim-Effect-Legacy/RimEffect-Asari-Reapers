@@ -49,7 +49,7 @@ namespace RimEffectReapers
             base.SpawnSetup(map, respawningAfterLoad);
             if (respawningAfterLoad)
                 drawMatrix.SetTRS((a + b) / 2 + Vector3.up * AltitudeLayer.MoteOverhead.AltitudeFor(),
-                    Quaternion.LookRotation(b - a), new Vector3(10f, 1f, (b - a).magnitude));
+                    Quaternion.LookRotation(b - a), new Vector3(5f, 1f, (b - a).magnitude));
         }
 
         public override void Tick()
