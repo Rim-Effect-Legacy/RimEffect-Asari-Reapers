@@ -98,5 +98,65 @@
       <li Class="CompProperties_BiocodableApparel"/>
     </comps>
   </ThingDef>
+  
+   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+    <defName>RE_Apparel_DancerBodysuit</defName>
+    <label>dancer bodysuit</label>
+    <description>The standard uniform for dancers.</description>
+    <recipeMaker>
+      <researchPrerequisite>RE_AsariCooperation</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Items/Apparel/DancerOutfit/DancerOutfit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>3200</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.22</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.28</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.22</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.75</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Items/Apparel/DancerOutfit/DancerOutfit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>RE_AsariDancer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>RE_AsariDancer</li>
+    </tradeTags>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <SocialImpact>0.50</SocialImpact>
+	  <TradePriceImprovement>-1.0</TradePriceImprovement>
+    </equippedStatOffsets>
+  </ThingDef>
 
 </Defs>
