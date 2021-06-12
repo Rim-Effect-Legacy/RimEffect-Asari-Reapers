@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>RE_Apparel_AsariJusticarArmor</defName>
+    <label>asari justicar armor</label>
+    <description>A suit of light armor most often used by Biotics who require more flexibility and less encumbrance. This lighter armor is also available to Alliance colonists making their new lives out on the edge of civilization. \n\nThis armored hardsuit consists of several layers. The base layer is fabric with kinetic padding, with ablative plates over vital areas. The outer layer consists of kinetic barriers that trigger automatically when incoming projectiles are detected, providing a combination of protection and maneuverability that other armor technologies can't match.</description>
+    <techLevel>Ultra</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>RE_AsariCooperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Items/Apparel/AsariJusticarArmor/AsariJusticarArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <tradeTags>
+      <li>RE_AsariArmoury</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>46000</WorkToMake>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Mass>9</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.51</ArmorRating_Heat>
+      <Insulation_Cold>36</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <EquipDelay>11</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>75</Plasteel>
+      <Uranium>10</Uranium>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Items/Apparel/AsariJusticarArmor/AsariJusticarArmor</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <tags>
+        <li>RE_AsariArmoury</li>
+      </tags>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <thingSetMakerTags>
+      <li>RE_AsariReward</li>
+    </thingSetMakerTags>
+    <equippedStatOffsets>
+      <RE_BioticEnergyMax>1.0</RE_BioticEnergyMax>
+	  <RE_BioticEnergyRecoveryRate>1.0</RE_BioticEnergyRecoveryRate>
+    </equippedStatOffsets>
+    <comps>
+      <li Class="CompProperties_BiocodableApparel"/>
+    </comps>
+  </ThingDef>
+
+</Defs>
