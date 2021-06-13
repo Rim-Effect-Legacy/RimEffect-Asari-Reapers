@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GameConditionDef>
+        <defName>RER_ReaperWeather</defName>
+        <conditionClass>RimEffectReapers.GameCondition_ReaperWeather</conditionClass>
+        <label>reaper storm</label>
+        <description>A reaper storm generator is causing unsual weather conditions.text_todo</description>
+    </GameConditionDef>
+</Defs>

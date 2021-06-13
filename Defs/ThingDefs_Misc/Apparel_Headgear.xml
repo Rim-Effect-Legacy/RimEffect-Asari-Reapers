@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>RE_Apparel_AsariJusticarCrown</defName>
+		<label>asari justicar crown</label>
+		<description>A light-armored crown that greatly improves biotic power recharge rate.</description>
+		<techLevel>Ultra</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>RE_AsariCooperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RE_ManufacturingBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Apparel/AsariJusticarCrown/AsariJusticarCrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.9, 0.9)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<tradeTags>
+			<li>RE_AsariArmoury</li>
+		</tradeTags>
+		<generateCommonality>2</generateCommonality>
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>1</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>35</Plasteel>
+			<RE_ElementZero>10</RE_ElementZero>
+		</costList>
+		<apparel>
+			<tags>
+				<li>RE_AsariArmoury</li>
+			</tags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/AsariJusticarCrown/AsariJusticarCrown</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+		<thingSetMakerTags>
+			<li>RE_AsariReward</li>
+		</thingSetMakerTags>
+    <equippedStatOffsets>
+	  <RE_BioticEnergyRecoveryRate>2.0</RE_BioticEnergyRecoveryRate>
+    </equippedStatOffsets>
+		<comps>
+			<li Class="CompProperties_BiocodableApparel"/>
+		</comps>
+	</ThingDef>
+
+</Defs>

@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BuildingBase" Name="RE_ReaperPart" Abstract="True">
 		<pathCost>50</pathCost>
 		<blockWind>true</blockWind>
-		<!-- <thingClass>MyLovelyThingClass</thingClass> -->
+		<thingClass>RimEffectReapers.Building_Reaper</thingClass>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<passability>Impassable</passability>
 		<fillPercent>1.0</fillPercent>
@@ -214,6 +214,12 @@
 			<Gold>10</Gold>
 			<Uranium>20</Uranium>
 		</killedLeavings>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_LootOnDestroy">
+				<amount>150</amount>
+				<maxValuePerItem>10</maxValuePerItem>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<!-- 2x2 hull plate -->
@@ -301,6 +307,12 @@
 			<Gold>25</Gold>
 			<Uranium>35</Uranium>
 		</killedLeavings>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_LootOnDestroy">
+				<amount>200</amount>
+				<maxValuePerItem>20</maxValuePerItem>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<!-- fuel cell -->
@@ -451,6 +463,7 @@
 		<defName>RE_ReaperStormGenerator</defName>
 		<label>reaper storm generator</label>
 		<description>A large, complex machinery that summons a perpetual reaper storm wherever it is.</description>
+		<thingClass>RimEffectReapers.Building_Reaper_Storm</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_ReaperStormGenerator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -508,12 +521,12 @@
 		<blockWind>true</blockWind>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Rare</tickerType>
 		<statBases>
 			<WorkToBuild>16000</WorkToBuild>
 			<MaxHitPoints>400</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
-		<tickerType>Normal</tickerType>
 		<size>(4,4)</size>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
@@ -528,6 +541,15 @@
 			<RE_ElementZero>60</RE_ElementZero>
 			<Uranium>50</Uranium>
 		</killedLeavings>
+    <comps>
+      <li Class="RimEffectReapers.CompProperties_Hediff">
+	  <compClass>RimEffectReapers.CompMapWideHediff</compClass>
+		<affectNonReapers>true</affectNonReapers>
+		<hediff>RER_Indoctrinated</hediff>
+		<severityPerTick>0.0001</severityPerTick>
+		<relevantStat>PsychicSensitivity</relevantStat>
+      </li>
+    </comps>
 	</ThingDef>
 	
 	<!-- unit storage -->
@@ -535,6 +557,7 @@
 		<defName>RE_ReaperUnitStorage</defName>
 		<label>reaper unit storage</label>
 		<description>A large shell storing reaper units.</description>
+		<thingClass>RimEffectReapers.Building_Reaper_UnitStorage</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_UnitStorage</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -597,7 +620,7 @@
 			<MaxHitPoints>400</MaxHitPoints>
 			<Flammability>0</Flammability>
 		</statBases>
-		<tickerType>Normal</tickerType>
+		<tickerType>Rare</tickerType>
 		<size>(5,5)</size>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
@@ -612,6 +635,14 @@
 			<RE_ElementZero>30</RE_ElementZero>
 			<Uranium>45</Uranium>
 		</killedLeavings>
+    <comps>
+      <li Class="RimEffectReapers.CompProperties_Hediff">
+	  <compClass>RimEffectReapers.CompMapWideHediff</compClass>
+        <affectReapers>true</affectReapers>
+		<hediff>RER_DirectControl</hediff>
+		<vanishesInstantly>true</vanishesInstantly>
+      </li>
+    </comps>
 	</ThingDef>
 	
 	<!-- long range missile launcher -->
@@ -619,6 +650,7 @@
 		<defName>RE_ReaperLongRangeMissileLauncher</defName>
 		<label>reaper long range missile launcher</label>
 		<description>A battery of devastating missiles.</description>
+		<thingClass>RimEffectReapers.Building_Reaper_LongRangeMissile</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_LongRangeMissileBay</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1036,7 +1068,7 @@
 		<defName>RE_Turret_ReaperBolter</defName>
 		<label>reaper bolter</label>
 		<description>A small turret with low damage and 3 shot burst.</description>
-		<thingClass>Building_TurretGun</thingClass>
+		<thingClass>RimEffectReapers.Building_ReaperTurret</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_BolterTurret_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1148,7 +1180,7 @@
 		<defName>RE_Turret_ReaperHeavyBolter</defName>
 		<label>reaper heavy bolter</label>
 		<description>A medium-sized turret that fires bursts of 2 shots.</description>
-		<thingClass>Building_TurretGun</thingClass>
+		<thingClass>RimEffectReapers.Building_ReaperTurret</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_LargeTurret_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1263,7 +1295,7 @@
 		<defName>RE_Turret_ReaperMissileLauncher</defName>
 		<label>reaper missile launcher</label>
 		<description>A medium-sized missile turret that fires single missiles over medium range.</description>
-		<thingClass>Building_TurretGun</thingClass>
+		<thingClass>RimEffectReapers.Building_ReaperTurret</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_LargeTurret_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1380,7 +1412,7 @@
 		<defName>RE_Turret_ReaperKineticArtillery</defName>
 		<label>reaper kinetic artillery</label>
 		<description>A large kinetic artillery, firing devastating improved bolter shells over long distances at low accuracy.</description>
-		<thingClass>Building_TurretGun</thingClass>
+		<thingClass>RimEffectReapers.Building_ReaperTurret</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_KineticArtillery_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1497,7 +1529,7 @@
 		<defName>RE_Turret_ReaperOrbitalBeamTargeter</defName>
 		<label>reaper orbital beam targeter</label>
 		<description>A large laser targeter that takes a long time to mark the target, which then gets bombarded by a Reaper beam from orbit.</description>
-		<thingClass>Building_TurretGun</thingClass>
+		<thingClass>RimEffectReapers.Building_ReaperTurret_MarkTarget</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_BeamTargeter_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1572,38 +1604,28 @@
 		</graphicData>
 		<weaponTags>
 			<li>Reaper_Turret</li>
+			<li>Artillery_BaseDestroyer</li>
 		</weaponTags>
 		<uiIconScale>1</uiIconScale>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<defaultProjectile>RE_Bullet_ReaperOrbitalBeamTargeter</defaultProjectile>
-				<warmupTime>8</warmupTime>
-				<range>299.9</range>
-				<minRange>19.9</minRange>
+				<verbClass>RimEffectReapers.Verb_ReaperOrbitalBeam</verbClass>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>4</warmupTime>
+				<minRange>12.9</minRange>
+				<range>500</range>
 				<burstShotCount>1</burstShotCount>
-				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>RE_Shot_MarauderRifle</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>16</muzzleFlashScale>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<soundAiming>OrbitalTargeter_Aiming</soundAiming>
+				<soundCast>OrbitalTargeter_Fire</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<requireLineOfSight>false</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseBullet">
-		<defName>RE_Bullet_ReaperOrbitalBeamTargeter</defName>
-		<label>reaper orbital beam</label>
-		<graphicData>
-			<texPath>Things/Projectiles/Shot_MarauderRifle</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>14</damageAmountBase>
-            <armorPenetrationBase>0.6</armorPenetrationBase>
-            <speed>80</speed>
-		</projectile>
 	</ThingDef>
 	
 <!-- reaper beam -->
@@ -1611,7 +1633,7 @@
 		<defName>RE_Turret_ReaperBeam</defName>
 		<label>reaper beam</label>
 		<description>A large laser cannon.</description>
-		<thingClass>Building_TurretGun</thingClass>
+		<thingClass>RimEffectReapers.Building_ReaperTurret_MarkTarget</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1678,8 +1700,8 @@
 
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>RE_Gun_ReaperBeam</defName>
-		<label>reaper orbital beam targeter</label>
-		<description>A reaper-tech orbital beam targeter.</description>
+		<label>reaper beam cannon</label>
+		<description>A reaper-tech massive beam cannon.</description>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1692,14 +1714,15 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<defaultProjectile>RE_Bullet_ReaperBeam</defaultProjectile>
-				<warmupTime>12</warmupTime>
+				<warmupTime>11</warmupTime>
 				<range>299.9</range>
 				<minRange>19.9</minRange>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<soundCast>RE_Shot_MarauderRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>16</muzzleFlashScale>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<forcedMissRadius>10</forcedMissRadius>
 			</li>
 		</verbs>
 	</ThingDef>
@@ -1707,17 +1730,18 @@
 	<ThingDef ParentName="BaseBullet">
 		<defName>RE_Bullet_ReaperBeam</defName>
 		<label>reaper beam</label>
+		<thingClass>RimEffectReapers.ReaperBeam</thingClass>
 		<graphicData>
-			<texPath>Things/Projectiles/Shot_MarauderRifle</texPath>
+			<texPath>Things/Projectiles/ReaperBeam</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>14</damageAmountBase>
-            <armorPenetrationBase>0.6</armorPenetrationBase>
-            <speed>80</speed>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>500</damageAmountBase>
+			<explosionRadius>5.9</explosionRadius>
+			<armorPenetrationBase>5</armorPenetrationBase>
+      		<speed>10000</speed>
 		</projectile>
 	</ThingDef>
-
 </Defs>
