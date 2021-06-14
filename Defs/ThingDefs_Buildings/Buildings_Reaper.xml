@@ -1152,7 +1152,7 @@
 				<range>24.9</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-				<soundCast>RE_Shot_MarauderRifle</soundCast>
+				<soundCast>RE_Shot_ReaperBolter</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>16</muzzleFlashScale>
 			</li>
@@ -1266,7 +1266,7 @@
 				<range>30.9</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>RE_Shot_MarauderRifle</soundCast>
+				<soundCast>RE_Shot_HeavyBolter</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>16</muzzleFlashScale>
 			</li>
@@ -1383,7 +1383,7 @@
 				<ai_AvoidFriendlyFireRadius>3.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>RE_Shot_MarauderRifle</soundCast>
+				<soundCast>RE_Shot_ReaperMissileLauncher</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>16</muzzleFlashScale>
 			</li>
@@ -1500,7 +1500,7 @@
 				<ai_AvoidFriendlyFireRadius>5.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>RE_Shot_MarauderRifle</soundCast>
+				<soundCast>RE_Shot_ReaperKineticArtillery</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>16</muzzleFlashScale>
 			</li>
@@ -1616,8 +1616,8 @@
 				<range>500</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-				<soundAiming>OrbitalTargeter_Aiming</soundAiming>
-				<soundCast>OrbitalTargeter_Fire</soundCast>
+				<soundAiming>RE_Targeting_ReaperOrbitalBeam</soundAiming>
+				<soundCast>RE_ReaperOrbitalBombardment</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<requireLineOfSight>false</requireLineOfSight>
@@ -1719,7 +1719,7 @@
 				<minRange>19.9</minRange>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<soundCast>RE_Shot_MarauderRifle</soundCast>
+				<soundCast>RE_Shot_ReaperBeam</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<forcedMissRadius>10</forcedMissRadius>
