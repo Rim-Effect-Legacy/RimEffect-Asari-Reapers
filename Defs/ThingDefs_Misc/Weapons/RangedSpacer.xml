@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AsariAssaultRifle</defName>
     <label>asari assault rifle</label>
-    <description>An ultra-light, quick draw assault rifle. It is so light it can be used by biotic users.</description>
+    <description>An ultralight micromunition assault rifle. This weapon uses shells packed with microscale submunitions to deal staggering amounts of damage, punching far above it's weight class.\n\nThe Priestess is a medium range assault rifle, made incredibly light for use by Asari biotic commandos.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Items/Weapons/AsariAssaultRifle</texPath>
@@ -113,7 +113,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AsariShotgun</defName>
     <label>asari shotgun</label>
-    <description>An ultra-light, quick draw shotgun. It is so light it can be used by biotic users.</description>
+    <description>An ultralight micromunition Shotgun. This weapon uses shells packed with microscale submunitions to deal staggering amounts of damage, punching far above it's weight class.\n\nThe Disciple is a shotgun, originally designed exclusively for the use of the Justicars, it has since made its way into the hands of other Asari biotic commandos.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Items/Weapons/AsariShotgun</texPath>
@@ -197,7 +197,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AsariSniperRifle</defName>
     <label>asari sniper rifle</label>
-    <description>An ultra-light, quick draw sniper rifle. It is so light it can be used by biotic users. Whilst it has a long range, it deals blunt damage.</description>
+    <description>An ultralight warp sniper rifle. Firing fire advanced ammunition similar to that of an impact-triggered resonant warp bomb, its projectile deals blunt damage.\n\nThe Huntress is a long range blunt weapon, made incredibly light for use by Asari biotic commandos.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Items/Weapons/AsariSniperRifle</texPath>
@@ -296,7 +296,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>RE_Gun_AsariPistol</defName>
     <label>asari pistol</label>
-    <description>An ultra-light, quick draw pistol with very low armor piercing. Its shots deal blunt damage.</description>
+    <description>An ultralight warp pistol. Firing fire advanced ammunition similar to that of an impact-triggered resonant warp bomb, its projectile deals blunt damage.\n\nThe Acolyte is a short range blunt weapon, and is the standard sidearm used by Asari biotic commandos.</description>
     <techLevel>Ultra</techLevel>
     <graphicData>
       <texPath>Things/Items/Weapons/AsariPistol</texPath>
