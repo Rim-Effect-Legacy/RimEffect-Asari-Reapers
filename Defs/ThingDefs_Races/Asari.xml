@@ -171,6 +171,11 @@
 					<head>Things/Pawn/Asari/Heads/</head>
 				</li>
 			</graphicPaths>
+    <raceRestriction>
+        <apparelList>
+            <li>RE_Apparel_AsariRespirator</li>
+         </apparelList>
+    </raceRestriction>
 		</alienRace>
     <statBases>
       <MarketValue>2000</MarketValue>
