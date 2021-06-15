@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+	
+        <xpath>Defs/ThingDef[defName="CraftingSpot"]/recipes</xpath>
+        <value>
+            <li>RE_SmashCorpseHusk</li>
+		</value>
+		
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+	
+        <xpath>Defs/ThingDef[defName="TableMachining"]/recipes</xpath>
+        <value>
+            <li>RE_ButcherCorpseHusk</li>
+		</value>
+		
+    </Operation>
+	
+</Patch>
