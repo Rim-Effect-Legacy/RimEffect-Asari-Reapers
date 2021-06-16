@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>RE_ArdatYakshi</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>ardat yakshi</label>
+        <description>{PAWN_nameDef} is a Demon of the Night Winds.</description>
+        <statFactors>
+          <RE_BioticEnergyMax>2</RE_BioticEnergyMax>
+          <RE_BioticEnergyRecoveryRate>2</RE_BioticEnergyRecoveryRate>
+        </statFactors>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>
