@@ -116,4 +116,29 @@
       </li>
     </children>
   </EffecterDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Flight</defName>
+    <label>biotic flight</label>
+    <description>Using biotic energy, lift yourself in the air to travel a short distance over any obstacles.</description>
+    <abilityClass>RimEffectAsari.Ability_Flight</abilityClass>
+    <targetMode>Location</targetMode>
+    <castTime>60</castTime>
+    <range>10</range>
+	  <castSound>RE_Biotic_Pull</castSound>
+    <iconPath>UI/Abilities/Biotic_Flight</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
+    </requiredHediff>
+    <requiredTrait>RE_ArdatYakshi</requiredTrait>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>10</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
 </Defs>
