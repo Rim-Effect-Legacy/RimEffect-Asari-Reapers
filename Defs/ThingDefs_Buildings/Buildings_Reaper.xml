@@ -1616,9 +1616,6 @@
 				<range>500</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-				<soundAiming>RE_Targeting_ReaperOrbitalBeam</soundAiming>
-				<soundCast>RE_ReaperOrbitalBombardment</soundCast>
-				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<requireLineOfSight>false</requireLineOfSight>
 				<targetParams>
@@ -1720,7 +1717,6 @@
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<soundCast>RE_Shot_ReaperBeam</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<forcedMissRadius>10</forcedMissRadius>
 			</li>

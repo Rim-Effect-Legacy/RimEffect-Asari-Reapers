@@ -50,6 +50,8 @@
     <defName>RE_ReaperOrbitalBombardment</defName>  
     <context>MapOnly</context>  
     <maxSimultaneous>1</maxSimultaneous>  
+    <sustain>true</sustain>
+    <priorityMode>PrioritizeNearest</priorityMode>  
     <subSounds>
       <li>
         <grains>
@@ -57,6 +59,11 @@
             <clipFolderPath>ReaperShipSounds/ReaperOrbitalBombardment</clipFolderPath>
           </li>
         </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>100~100</volumeRange>
+        <sustainAttack>0.25</sustainAttack>      
+        <sustainRelease>1</sustainRelease>
+        <muteWhenPaused>True</muteWhenPaused>    
       </li>
     </subSounds>
   </SoundDef>
@@ -87,6 +94,8 @@
             <clipFolderPath>ReaperShipSounds/Shot_ReaperBeam</clipFolderPath>
           </li>
         </grains>
+        <volumeRange>300~300</volumeRange>
+        <distRange>300~500</distRange>
       </li>
     </subSounds>
   </SoundDef>

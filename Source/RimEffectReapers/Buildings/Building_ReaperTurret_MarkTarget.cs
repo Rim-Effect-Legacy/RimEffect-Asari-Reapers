@@ -1,5 +1,7 @@
 ﻿using RimWorld;
+using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace RimEffectReapers
 {
@@ -17,6 +19,13 @@ namespace RimEffectReapers
             var a = this.TrueCenter();
             a.y = b.y = AltitudeLayer.MetaOverlays.AltitudeFor();
             GenDraw.DrawLineBetween(a, b, ForcedTargetLineMat);
+        }
+
+        public override void Tick()
+        {
+            base.Tick();
+            if (Mathf.Approximately(5f, burstWarmupTicksLeft.TicksToSeconds()))
+                RER_DefOf.RE_Targeting_ReaperOrbitalBeam.PlayOneShot(SoundInfo.InMap(this));
         }
     }
 }

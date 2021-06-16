@@ -3,6 +3,7 @@ using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace RimEffectReapers
 {
@@ -17,7 +18,7 @@ namespace RimEffectReapers
         {
             base.DrawExtraSelectionOverlays();
             if (cooldownTicksLeft > 0)
-                GenDraw.DrawAimPieRaw(this.TrueCenter() -
+                GenDraw.DrawAimPieRaw(DrawPos -
                     Quaternion.AngleAxis(0f, Vector3.up) * Vector3.forward * 0.8f + Vector3.up * 5f, 0f,
                     cooldownTicksLeft / COOLDOWN_TICKS * 360);
         }
@@ -51,6 +52,7 @@ namespace RimEffectReapers
                 (LongRangeMissile) SkyfallerMaker.SpawnSkyfaller(RER_DefOf.RER_ReaperLongRangeMissile_Leaving, Position,
                     Map);
             missile.Init(this);
+            RER_DefOf.RE_Launch_ReaperLongRangeMissile.PlayOneShot(SoundInfo.InMap(missile, MaintenanceType.PerTick));
         }
 
         public void Incoming()
@@ -70,6 +72,7 @@ namespace RimEffectReapers
             missile.Init(this);
             missile.angle =
                 target.DrawPos.AngleToFlat(new Vector3(Map.Size.ToVector3().x, target.DrawPos.y, DrawPos.z));
+            RER_DefOf.RE_Incoming_ReaperLongRangeMissile.PlayOneShot(SoundInfo.InMap(missile, MaintenanceType.PerTick));
         }
 
         public void QueueIncoming()

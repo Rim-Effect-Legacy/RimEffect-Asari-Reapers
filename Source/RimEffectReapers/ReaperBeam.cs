@@ -13,7 +13,12 @@ namespace RimEffectReapers
         {
             Log.Message(
                 $"Hit {hitThing} while aiming at {intendedTarget} and really hit {usedTarget} while at {Position}");
-            if (hitThing != null) Position = hitThing.Position;
+            if (hitThing != null)
+            {
+                Position = hitThing.Position;
+                destination = hitThing.DrawPos;
+            }
+
             base.Impact(hitThing);
             var graphic = (ReaperBeamDraw) ThingMaker.MakeThing(RER_DefOf.RER_ReaperBeamGraphic);
             graphic.Setup(launcher, origin, destination);

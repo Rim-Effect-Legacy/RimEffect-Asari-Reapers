@@ -8,7 +8,7 @@
       <li Class="CompProperties_OrbitalBeam">
         <width>8</width>
         <color>(255,0,0,255)</color>
-        <sound>OrbitalBeam</sound> <!-- Custom sound for reaper orbital strike can go here -->
+        <sound>RE_ReaperOrbitalBombardment</sound> <!-- Custom sound for reaper orbital strike can go here -->
       </li>
       <li Class="CompProperties_CameraShaker">
         <mag>0.05</mag>
@@ -60,6 +60,7 @@
       <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
       <speed>0.4</speed>
       <movementType>Accelerate</movementType>
+      <ticksToImpactRange>300~300</ticksToImpactRange>
     </skyfaller>
   </ThingDef>
   

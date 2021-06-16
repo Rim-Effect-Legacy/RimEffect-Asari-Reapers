@@ -16,5 +16,8 @@ namespace RimEffectReapers
         public static GameConditionDef RER_ReaperWeather;
         public static HediffDef RER_DirectControl;
         public static ThingDef RER_ReaperBeamGraphic;
+        public static SoundDef RE_Launch_ReaperLongRangeMissile;
+        public static SoundDef RE_Incoming_ReaperLongRangeMissile;
+        public static SoundDef RE_Targeting_ReaperOrbitalBeam;
     }
 }
