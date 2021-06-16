@@ -125,7 +125,7 @@
     <targetMode>Location</targetMode>
     <castTime>60</castTime>
     <range>10</range>
-	  <castSound>RE_Biotic_Pull</castSound>
+    <castSound>RE_Biotic_Pull</castSound>
     <iconPath>UI/Abilities/Biotic_Flight</iconPath>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
@@ -141,4 +141,73 @@
       </li>
     </modExtensions>
   </RimEffect.AbilityDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Charm</defName>
+    <label>biotic charm</label>
+    <description>Upon next recruitment attempt, Ardat Yakshi has 100% chance to recruit a prisoner. Prisoner recruited this way will be unable to gain any knowledge for the rest of their life.</description>
+    <abilityClass>RimEffect.Ability_Blank</abilityClass>
+    <targetMode>Self</targetMode>
+    <castTime>60</castTime>
+    <iconPath>UI/Abilities/Biotic_Charm</iconPath>
+    <castSound>RE_Biotic_Focus</castSound>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>1</minimumLevel>
+    </requiredHediff>
+    <requiredTrait>RE_ArdatYakshi</requiredTrait>
+    <casterHediff>RE_Biotic_Focus</casterHediff>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>50</energyUsed>
+      </li>
+      <li Class="RimEffect.AbilityExtension_Hediff">
+        <hediff>RE_Biotic_CharmHediff</hediff>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_CharmHediff</defName>
+    <label>biotic charm</label>
+    <labelNoun>biotic charm</labelNoun>
+    <description>Biotic charm state.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>60000~60000</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_CharmEffecter</stateEffecter>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <EffecterDef>
+    <defName>RE_CharmEffecter</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <scale>0.4~0.5</scale>
+        <chancePerTick>0.09</chancePerTick>
+        <positionRadius>0.3</positionRadius>
+        <moteDef>Mote_Dominate</moteDef>
+        <speed>0.18~0.18</speed>
+        <angle>10~80</angle>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_CharmedHediff</defName>
+    <label>charmed</label>
+    <labelNoun>Charmed</labelNoun>
+    <description>Have you seen her? She's so beautiful. I want to spend my whole life with her.</description>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <GlobalLearningFactor>0</GlobalLearningFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
 </Defs>
