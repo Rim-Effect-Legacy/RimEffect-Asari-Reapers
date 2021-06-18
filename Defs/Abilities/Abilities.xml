@@ -270,4 +270,64 @@
       </li>
     </children>
   </EffecterDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Sphere</defName>
+    <label>biotic sphere</label>
+    <description>Create a defensive shield that surrounds the caster and nearby allies. Drains biotic energy quickly, creating a shield around the user and any nearby allies.</description>
+    <abilityClass>RimEffectAsari.Ability_Sphere</abilityClass>
+    <targetMode>Self</targetMode>
+    <castTime>60</castTime>
+    <radius>5</radius>
+    <power>600</power>
+    <castSound>RE_Biotic_Pull</castSound>
+    <iconPath>UI/Abilities/Biotic_BioticSphere</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>4</minimumLevel>
+    </requiredHediff>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Hediff">
+        <hediff>RE_Biotic_SphereHediff</hediff>
+      </li>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>25</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_SphereHediff</defName>
+    <label>sphere</label>
+    <labelNoun>sphere</labelNoun>
+    <description>Sustaining a defensive shield.</description>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <MoveSpeed>0.3</MoveSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>RE_Biotic_SphereShield</defName>
+    <label>biotic sphere</label>
+    <description>A defensive shield that surrounds the caster and nearby allies. Drains biotic energy quickly, creating a shield around the user and any nearby allies.</description>
+    <thingClass>RimEffectAsari.BioticSphere</thingClass>
+    <graphicData>
+      <texPath>Things/AbilityEffects/BioticSphere</texPath>
+      <color>(255,255,255,255)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>Transparent</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+  </ThingDef>
 </Defs>
