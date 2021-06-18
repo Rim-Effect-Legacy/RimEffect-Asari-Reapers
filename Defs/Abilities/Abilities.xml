@@ -68,7 +68,7 @@
     </targetMotes>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Hediff">
-        <hediff>RE_BioticWarp</hediff>
+        <hediff>RE_Biotic_WarpHediff</hediff>
       </li>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>10</energyUsed>
@@ -77,7 +77,7 @@
   </RimEffect.AbilityDef>
 
   <HediffDef ParentName="DiseaseBase">
-    <defName>RE_BioticWarp</defName>
+    <defName>RE_Biotic_WarpHediff</defName>
     <label>warped</label>
     <labelNoun>warped</labelNoun>
     <description>Rapidly shifting mass effect fields that shred a target apart, lowering it's armor. Further biotic attacks can cause detonation.</description>
@@ -93,11 +93,6 @@
           <ArmorRating_Heat>0</ArmorRating_Heat>
           <ArmorRating_Blunt>0</ArmorRating_Blunt>
         </statFactors>
-        <statOffsets>
-          <ArmorRating_Sharp>-1</ArmorRating_Sharp>
-          <ArmorRating_Heat>-1</ArmorRating_Heat>
-          <ArmorRating_Blunt>-1</ArmorRating_Blunt>
-        </statOffsets>
       </li>
     </stages>
   </HediffDef>
