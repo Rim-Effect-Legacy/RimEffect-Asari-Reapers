@@ -9,5 +9,6 @@
         public static HediffDef RE_Biotic_CharmedHediff;
         public static HediffDef RE_Biotic_CharmHediff;
         public static HediffDef RE_Biotic_WarpHediff;
+        public static HediffDef RE_Biotic_StasisHediff;
     }
 }

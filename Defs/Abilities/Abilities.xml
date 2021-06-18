@@ -205,4 +205,69 @@
       </li>
     </stages>
   </HediffDef>
+
+  <RimEffect.AbilityDef>
+    <defName>RE_Biotic_Stasis</defName>
+    <label>biotic stasis</label>
+    <description>Locks a target in space and time, preventing anything from affecting them for the duration of the stasis effect. The target cannot be damaged, cannot attack or move.</description>
+    <abilityClass>RimEffectAsari.Ability_Stasis</abilityClass>
+    <targetMode>Pawn</targetMode>
+    <castTime>60</castTime>
+    <range>24</range>
+    <castSound>RE_Biotic_Pull</castSound>
+    <iconPath>UI/Abilities/Biotic_Stasis</iconPath>
+    <requiredHediff>
+      <hediffDef>RE_BioticAmpHediff</hediffDef>
+      <minimumLevel>3</minimumLevel>
+    </requiredHediff>
+    <targetMotes>
+      <li>RE_Mote_BioticDistortion</li>
+    </targetMotes>
+    <modExtensions>
+      <li Class="RimEffect.AbilityExtension_Hediff">
+        <hediff>RE_Biotic_StasisHediff</hediff>
+      </li>
+      <li Class="RimEffect.AbilityExtension_Biotic">
+        <energyUsed>10</energyUsed>
+      </li>
+    </modExtensions>
+  </RimEffect.AbilityDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_StasisHediff</defName>
+    <label>stasis</label>
+    <labelNoun>stasised</labelNoun>
+    <description>Target locked in space and time, preventing anything from affecting them for the duration of the stasis effect. Cannot be damaged, cannot attack or move.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>1200~1200</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_StasisEffecter</stateEffecter>
+      </li>
+    </comps>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <IncomingDamageFactor>0</IncomingDamageFactor>
+          <WorkSpeedGlobal>0</WorkSpeedGlobal>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <EffecterDef>
+    <defName>RE_StasisEffecter</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <scale>0.6~0.9</scale>
+        <chancePerTick>0.05</chancePerTick>
+        <positionRadius>0.5</positionRadius>
+        <moteDef>Mote_Dominate</moteDef>
+        <speed>0.18~0.18</speed>
+        <angle>10~80</angle>
+      </li>
+    </children>
+  </EffecterDef>
 </Defs>
