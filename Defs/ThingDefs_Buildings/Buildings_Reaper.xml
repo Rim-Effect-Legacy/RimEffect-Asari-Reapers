@@ -438,16 +438,6 @@
 			<RE_ElementZero>80</RE_ElementZero>
 			<Uranium>80</Uranium>
 		</killedLeavings>
-    <comps>
-      <li Class="CompProperties_Explosive">
-        <wickTicks>380</wickTicks>
-        <explosiveRadius>17.9</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explodeOnKilled>true</explodeOnKilled>
-        <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
-        <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
-      </li>
-    </comps>
 	</ThingDef>
 	
 	<!-- storm generator -->
@@ -1086,13 +1076,6 @@
 			</li>
 		</damageMultipliers>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>320</wickTicks>
-				<explosiveRadius>0.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-		</comps>
 		<killedLeavings>
 			<ChunkSlagSteel>1</ChunkSlagSteel>
 			<Plasteel>20</Plasteel>
@@ -1198,13 +1181,6 @@
 			</li>
 		</damageMultipliers>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>320</wickTicks>
-				<explosiveRadius>1.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-		</comps>
 		<killedLeavings>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 			<Plasteel>25</Plasteel>
@@ -1312,13 +1288,6 @@
 			</li>
 		</damageMultipliers>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>320</wickTicks>
-				<explosiveRadius>2.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-		</comps>
 		<killedLeavings>
 			<ChunkSlagSteel>2</ChunkSlagSteel>
 			<Plasteel>30</Plasteel>
@@ -1428,13 +1397,6 @@
 			</li>
 		</damageMultipliers>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>420</wickTicks>
-				<explosiveRadius>4.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-		</comps>
 		<killedLeavings>
 			<ChunkSlagSteel>4</ChunkSlagSteel>
 			<Plasteel>50</Plasteel>
@@ -1544,13 +1506,6 @@
 			</li>
 		</damageMultipliers>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>420</wickTicks>
-				<explosiveRadius>4.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-		</comps>
 		<killedLeavings>
 			<ChunkSlagSteel>4</ChunkSlagSteel>
 			<Plasteel>40</Plasteel>
@@ -1643,13 +1598,6 @@
 			</li>
 		</damageMultipliers>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>420</wickTicks>
-				<explosiveRadius>14.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-		</comps>
 		<killedLeavings>
 			<Plasteel>70</Plasteel>
 			<ComponentSpacer>8</ComponentSpacer>
