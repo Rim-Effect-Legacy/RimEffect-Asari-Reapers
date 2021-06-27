@@ -233,6 +233,9 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
     </li>
   </layouts>
+  <tags>
+    <li>Reaper</li>
+  </tags>
 </KCSG.StructureLayoutDef>
 
 <KCSG.StructureLayoutDef>
@@ -292,6 +295,9 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
     </li>
   </layouts>
+  <tags>
+    <li>Reaper</li>
+  </tags>
 </KCSG.StructureLayoutDef>
 
 <KCSG.StructureLayoutDef>
@@ -332,6 +338,9 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
     </li>
   </layouts>
+  <tags>
+    <li>Reaper</li>
+  </tags>
 </KCSG.StructureLayoutDef>
 
 <KCSG.StructureLayoutDef>
@@ -369,6 +378,176 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
     </li>
   </layouts>
+  <tags>
+    <li>Reaper</li>
+  </tags>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>RE_Reaper3_North</defName>
+  <layouts>
+    <li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Turret_ReaperBolter_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperClawSmallLeft_North,RE__RE_ReaperClawSmallRight_North,.,.,RE__RE_ReaperClawSmallLeft_North,.,RE__RE_ReaperClawSmallRight_North,.,.,RE__RE_ReaperClawSmallLeft_North,RE__RE_ReaperClawSmallRight_North,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperSupportBeam_South,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperClawLargeLeft_North,.,RE__RE_ReaperClawLargeRight_North,.,RE__RE_ReaperClawLargeLeft_North,.,.,RE__RE_ReaperClawLargeRight_North,.,RE__RE_ReaperClawLargeLeft_North,.,RE__RE_ReaperClawLargeRight_North,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperSupportBeam_South,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Turret_ReaperHeavyBolter_North,.,.,.,.,.,.,RE__RE_Turret_ReaperHeavyBolter_North,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper2x5RampLeft_North,.,.,.,.,.,RE__RE_Turret_ReaperBeam_North,.,.,.,.,RE__RE_Reaper2x5RampRight_North,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,RE__RE_ReaperClawLeft_North,.,.,.,.,RE__RE_Reaper2x2Hull_North,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_North,.,.,.,.,RE__RE_ReaperClawRight_North,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,RE__RE_ReaperClawLeft_North,.,.,RE__RE_Reaper2x2Hull_North,.,.,.,.,.,RE__RE_ReaperMachinery_North,.,.,.,.,RE__RE_Reaper2x2Hull_North,.,.,RE__RE_ReaperClawRight_North,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperUnitStorage_North,.,.,RE__RE_ReaperMachinery_North,.,RE__RE_ReaperUnitStorage_North,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,RE__RE_ReaperClawLeft_North,.,.,RE__RE_Turret_ReaperMissileLauncher_North,.,.,.,.,.,RE__RE_ReaperMachinery_North,.,.,.,.,RE__RE_Turret_ReaperMissileLauncher_North,.,.,RE__RE_ReaperClawRight_North,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_North,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_ReaperResourceContainer_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper2x2Hull_North,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_North,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampRight_North,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Turret_ReaperBolter_North,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper3x3Hull_North,.,.,.,RE__RE_Turret_ReaperOrbitalBeamTargeter_North,.,RE__RE_Reaper1x1Hull_North,RE__RE_Turret_ReaperBolter_North,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Turret_ReaperBolter_North,RE__RE_Reaper1x1Hull_North,.,.,.,RE__RE_ReaperResourceContainer_North,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Turret_ReaperBolter_North,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_North,.,RE__RE_ReaperUnitStorage_North,.,.,.,.,RE__RE_ReaperUnitStorage_North,.,.,RE__RE_Reaper1x4RampRight_North,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperResourceContainer_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_North,.,RE__RE_ReaperLongRangeMissileLauncher_North,.,RE__RE_ReaperResourceContainer_North,.,RE__RE_ReaperLongRangeMissileLauncher_North,.,RE__RE_Reaper1x4RampRight_North,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_North,.,.,RE__RE_Reaper2x2Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_North,.,.,.,.,.,RE__RE_Reaper1x4RampRight_North,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_North,.,.,RE__RE_Reaper2x2Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_North,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x4RampRight_North,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_North,.,RE__RE_Reaper1x4RampRight_North,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    </li>
+  </layouts>
+  <tags>
+    <li>Reaper</li>
+  </tags>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>RE_Reaper3_South</defName>
+  <layouts>
+    <li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampRight_South,.,RE__RE_Reaper1x4RampLeft_South,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampRight_South,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x4RampLeft_South,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_South,.,.,RE__RE_Reaper2x2Hull_South,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampRight_South,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_South,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_South,.,.,RE__RE_Reaper2x2Hull_South,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampRight_South,.,RE__RE_ReaperLongRangeMissileLauncher_South,.,RE__RE_ReaperResourceContainer_North,.,RE__RE_ReaperLongRangeMissileLauncher_South,.,RE__RE_Reaper1x4RampLeft_South,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperUnitStorage_North,.,.,RE__RE_ReaperResourceContainer_North,.,RE__RE_ReaperUnitStorage_North,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampRight_South,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_South,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,RE__RE_Turret_ReaperBolter_North,RE__RE_Reaper1x1Hull_North,.,.,.,RE__RE_ReaperResourceContainer_North,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Turret_ReaperBolter_North,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,RE__RE_Turret_ReaperBolter_North,RE__RE_Reaper1x1Hull_North,.,RE__RE_Turret_ReaperOrbitalBeamTargeter_South,.,.,.,RE__RE_Reaper3x3Hull_South,.,RE__RE_Reaper1x1Hull_North,RE__RE_Turret_ReaperBolter_North,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampRight_South,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_South,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_South,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_ReaperResourceContainer_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper2x2Hull_South,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE__RE_ReaperClawRight_South,.,.,RE__RE_Turret_ReaperMissileLauncher_South,.,RE__RE_ReaperUnitStorage_North,.,.,RE__RE_ReaperMachinery_North,.,RE__RE_ReaperUnitStorage_North,.,.,.,RE__RE_Turret_ReaperMissileLauncher_South,.,.,RE__RE_ReaperClawLeft_South,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperMachinery_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE__RE_ReaperClawRight_South,.,.,RE__RE_Reaper2x2Hull_South,.,.,.,.,RE__RE_ReaperMachinery_North,.,.,.,.,.,RE__RE_Reaper2x2Hull_South,.,.,RE__RE_ReaperClawLeft_South,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE__RE_ReaperClawRight_South,.,.,.,.,RE__RE_Reaper2x2Hull_South,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_South,.,.,.,.,RE__RE_ReaperClawLeft_South,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper2x5RampRight_South,.,.,.,.,RE__RE_Turret_ReaperBeam_South,.,.,.,.,.,RE__RE_Reaper2x5RampLeft_South,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Turret_ReaperHeavyBolter_South,.,.,.,.,.,.,RE__RE_Turret_ReaperHeavyBolter_South,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperSupportBeam_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperClawLargeRight_South,.,RE__RE_ReaperClawLargeLeft_South,.,RE__RE_ReaperClawLargeRight_South,.,.,RE__RE_ReaperClawLargeLeft_South,.,RE__RE_ReaperClawLargeRight_South,.,RE__RE_ReaperClawLargeLeft_South,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperSupportBeam_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperClawSmallRight_South,RE__RE_ReaperClawSmallLeft_South,.,.,RE__RE_ReaperClawSmallRight_South,.,RE__RE_ReaperClawSmallLeft_South,.,.,RE__RE_ReaperClawSmallRight_South,RE__RE_ReaperClawSmallLeft_South,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Turret_ReaperBolter_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    </li>
+  </layouts>
+  <tags>
+    <li>Reaper</li>
+  </tags>
+</KCSG.StructureLayoutDef>
+
+<KCSG.StructureLayoutDef>
+  <defName>RE_Reaper3_East</defName>
+  <layouts>
+    <li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperClawRight_East,.,RE__RE_ReaperClawRight_East,.,RE__RE_ReaperClawRight_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x4RampRight_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE__RE_ReaperClawSmallRight_East,.,.,.,.,RE__RE_ReaperClawLargeRight_East,.,.,.,.,.,RE__RE_Reaper2x5RampRight_East,.,.,RE__RE_Reaper2x2Hull_East,.,RE__RE_Turret_ReaperMissileLauncher_East,.,.,.,RE__RE_Turret_ReaperBolter_North,RE__RE_Turret_ReaperBolter_North,.,RE__RE_Reaper1x4RampRight_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE__RE_ReaperClawSmallLeft_East,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_East,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,RE__RE_Reaper1x4RampRight_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperClawLargeLeft_East,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Turret_ReaperHeavyBolter_East,.,RE__RE_Reaper2x2Hull_East,.,.,RE__RE_ReaperUnitStorage_North,.,.,RE__RE_Reaper1x1Hull_East,.,.,.,.,RE__RE_ReaperUnitStorage_North,.,.,.,.,.,RE__RE_Reaper1x1Hull_East,.,RE__RE_Reaper1x4RampRight_East,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_East,.,RE__RE_Turret_ReaperOrbitalBeamTargeter_East,.,.,.,.,.,.,RE__RE_ReaperLongRangeMissileLauncher_East,.,RE__RE_Reaper1x1Hull_East,.,.,.,.,.,RE__RE_Reaper1x4RampRight_East,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE__RE_ReaperClawSmallRight_East,.,.,.,.,RE__RE_ReaperClawLargeRight_East,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_East,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_East,RE__RE_Reaper2x2Hull_East,.,RE__RE_Reaper2x2Hull_East,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x4RampRight_East,.,.,.,.</li>
+      <li>.,.,.,.,.,.,RE__RE_Turret_ReaperBolter_North,.,.,RE__RE_ReaperSupportBeam_West,.,RE__RE_Reaper1x1Hull_North,.,.,RE__RE_ReaperSupportBeam_West,.,.,.,RE__RE_Turret_ReaperBeam_East,.,.,RE__RE_ReaperMachinery_North,RE__RE_ReaperMachinery_North,RE__RE_ReaperMachinery_North,.,RE__RE_ReaperResourceContainer_East,.,.,RE__RE_ReaperResourceContainer_East,.,.,RE__RE_ReaperResourceContainer_East,.,.,RE__RE_ReaperResourceContainer_East,.,RE__RE_Reaper1x1Hull_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE__RE_ReaperClawSmallLeft_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_East,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_East,.,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,RE__RE_Reaper1x4RampLeft_East,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperClawLargeLeft_East,.,.,.,.,.,.,.,.,.,RE__RE_ReaperUnitStorage_North,.,.,RE__RE_Reaper1x1Hull_East,.,RE__RE_Reaper3x3Hull_East,.,.,RE__RE_ReaperUnitStorage_North,.,.,.,RE__RE_ReaperLongRangeMissileLauncher_East,.,RE__RE_Reaper1x1Hull_East,RE__RE_Reaper2x2Hull_East,.,RE__RE_Reaper2x2Hull_East,.,.,RE__RE_Reaper1x4RampLeft_East,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_East,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_East,.,RE__RE_Reaper1x4RampLeft_East,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE__RE_ReaperClawSmallRight_East,.,.,.,.,RE__RE_ReaperClawLargeRight_East,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Turret_ReaperHeavyBolter_East,.,RE__RE_Reaper2x2Hull_East,.,.,.,.,.,.,.,RE__RE_Reaper1x1Hull_North,RE__RE_Reaper1x1Hull_North,.,.,.,.,.,RE__RE_Reaper1x4RampLeft_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,RE__RE_ReaperClawSmallLeft_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_Reaper2x2Hull_East,.,RE__RE_Turret_ReaperBolter_North,RE__RE_Turret_ReaperBolter_North,.,RE__RE_Reaper1x4RampLeft_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperClawLargeLeft_East,.,.,.,.,.,RE__RE_Reaper2x5RampLeft_East,.,.,RE__RE_Reaper2x2Hull_East,.,RE__RE_Turret_ReaperMissileLauncher_East,.,.,RE__RE_Reaper1x4RampLeft_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,RE__RE_ReaperClawLeft_East,.,RE__RE_ReaperClawLeft_East,.,RE__RE_ReaperClawLeft_East,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    </li>
+  </layouts>
+  <tags>
+    <li>Reaper</li>
+  </tags>
 </KCSG.StructureLayoutDef>
 
 </Defs>
