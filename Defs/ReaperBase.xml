@@ -7,6 +7,7 @@
         <worldObjectClass>RimEffectReapers.ReaperShip</worldObjectClass>
         <expandingIcon>true</expandingIcon>
         <texture>UI/FactionIcons/ReaperShip</texture>
+        <expandingIconTexture>UI/FactionIcons/ReaperShip</expandingIconTexture>
         <canBePlayerHome>false</canBePlayerHome>
         <comps>
             <li Class="WorldObjectCompProperties_Abandon" />
@@ -15,7 +16,6 @@
             <li Class="WorldObjectCompProperties_TimedDetectionRaids" />
             <li Class="WorldObjectCompProperties_EnterCooldown" />
         </comps>
-        <!-- <mapGenerator>KCSG_WorldObject_Gen</mapGenerator> -->
         <modExtensions>
             <li Class="KCSG.FactionSettlement">
                 <useStructureLayout>True</useStructureLayout>

@@ -81,8 +81,8 @@
 			<Plasteel>5</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
-<!-- support beam -->
+
+	<!-- support beam -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperSupportBeam</defName>
 		<label>reaper support beam</label>
@@ -127,7 +127,7 @@
 			<Plasteel>10</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<!-- reaper machinery -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperMachinery</defName>
@@ -166,7 +166,7 @@
 			<ComponentIndustrial>5</ComponentIndustrial>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<!-- resource container -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperResourceContainer</defName>
@@ -218,7 +218,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<!-- 2x2 hull plate -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_Reaper2x2Hull</defName>
@@ -257,7 +257,7 @@
 			<Uranium>5</Uranium>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<!-- cargo module -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperCargoModule</defName>
@@ -309,7 +309,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<!-- fuel cell -->
 
 	<ThingDef ParentName="RE_ReaperPart">
@@ -348,18 +348,18 @@
 			<Plasteel>5</Plasteel>
 			<RE_ElementZero>5</RE_ElementZero>
 		</killedLeavings>
-    <comps>
-      <li Class="CompProperties_Explosive">
-        <wickTicks>240</wickTicks>
-        <explosiveRadius>9.9</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <explodeOnKilled>true</explodeOnKilled>
-        <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
-        <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
-      </li>
-    </comps>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>9.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explodeOnKilled>true</explodeOnKilled>
+				<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+				<extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+			</li>
+		</comps>
 	</ThingDef>
-	
+
 	<!-- 3x3 hull layer -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_Reaper3x3Hull</defName>
@@ -398,7 +398,7 @@
 			<Uranium>15</Uranium>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<!-- eezoo core -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperElementZeroCore</defName>
@@ -439,7 +439,7 @@
 			<Uranium>80</Uranium>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<!-- storm generator -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperStormGenerator</defName>
@@ -481,7 +481,7 @@
 			<Uranium>60</Uranium>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<!-- storm generator -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperIndoctrinationCore</defName>
@@ -521,17 +521,17 @@
 			<RE_ElementZero>60</RE_ElementZero>
 			<Uranium>50</Uranium>
 		</killedLeavings>
-    <comps>
-      <li Class="RimEffectReapers.CompProperties_Hediff">
-	  <compClass>RimEffectReapers.CompMapWideHediff</compClass>
-		<affectNonReapers>true</affectNonReapers>
-		<hediff>RER_Indoctrinated</hediff>
-		<severityPerTick>0.0001</severityPerTick>
-		<relevantStat>PsychicSensitivity</relevantStat>
-      </li>
-    </comps>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_Hediff">
+				<compClass>RimEffectReapers.CompMapWideHediff</compClass>
+				<affectNonReapers>true</affectNonReapers>
+				<hediff>RER_Indoctrinated</hediff>
+				<severityPerTick>0.0001</severityPerTick>
+				<relevantStat>PsychicSensitivity</relevantStat>
+			</li>
+		</comps>
 	</ThingDef>
-	
+
 	<!-- unit storage -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperUnitStorage</defName>
@@ -573,7 +573,7 @@
 			<Uranium>40</Uranium>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<!-- control node -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperControlNode</defName>
@@ -613,16 +613,16 @@
 			<RE_ElementZero>30</RE_ElementZero>
 			<Uranium>45</Uranium>
 		</killedLeavings>
-    <comps>
-      <li Class="RimEffectReapers.CompProperties_Hediff">
-	  <compClass>RimEffectReapers.CompMapWideHediff</compClass>
-        <affectReapers>true</affectReapers>
-		<hediff>RER_DirectControl</hediff>
-		<vanishesInstantly>true</vanishesInstantly>
-      </li>
-    </comps>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_Hediff">
+				<compClass>RimEffectReapers.CompMapWideHediff</compClass>
+				<affectReapers>true</affectReapers>
+				<hediff>RER_DirectControl</hediff>
+				<vanishesInstantly>true</vanishesInstantly>
+			</li>
+		</comps>
 	</ThingDef>
-	
+
 	<!-- long range missile launcher -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperLongRangeMissileLauncher</defName>
@@ -664,8 +664,8 @@
 			<Uranium>30</Uranium>
 		</killedLeavings>
 	</ThingDef>
-	
-<!-- claws -->
+
+	<!-- claws -->
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperClawRight</defName>
 		<label>reaper claw (right)</label>
@@ -702,7 +702,7 @@
 			<Plasteel>20</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperClawLeft</defName>
 		<label>reaper claw (left)</label>
@@ -739,7 +739,7 @@
 			<Plasteel>20</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperClawSmallLeft</defName>
 		<label>reaper small claw (left)</label>
@@ -776,7 +776,7 @@
 			<Plasteel>15</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperClawSmallRight</defName>
 		<label>reaper small claw (right)</label>
@@ -813,7 +813,7 @@
 			<Plasteel>15</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperClawLargeLeft</defName>
 		<label>reaper large claw (left)</label>
@@ -850,7 +850,7 @@
 			<Plasteel>25</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperClawLargeRight</defName>
 		<label>reaper large claw (right)</label>
@@ -887,9 +887,9 @@
 			<Plasteel>25</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<!-- ramps -->
-	
+
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_Reaper1x4RampLeft</defName>
 		<label>reaper small ramp (left)</label>
@@ -926,7 +926,7 @@
 			<Plasteel>15</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_Reaper1x4RampRight</defName>
 		<label>reaper small ramp (right)</label>
@@ -963,7 +963,7 @@
 			<Plasteel>15</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_Reaper2x5RampLeft</defName>
 		<label>reaper large ramp (left)</label>
@@ -1000,7 +1000,7 @@
 			<Plasteel>25</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_Reaper2x5RampRight</defName>
 		<label>reaper large ramp (right)</label>
@@ -1037,9 +1037,9 @@
 			<Plasteel>25</Plasteel>
 		</killedLeavings>
 	</ThingDef>
-	
+
 	<!--============================================ Turrets =============================================-->
-	
+
 	<!-- reaper bolter -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_Turret_ReaperBolter</defName>
@@ -1137,13 +1137,13 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>14</damageAmountBase>
-            <armorPenetrationBase>0.6</armorPenetrationBase>
-            <speed>80</speed>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>80</speed>
 		</projectile>
 	</ThingDef>
-	
+
 	<!-- reaper heavy bolter -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_Turret_ReaperHeavyBolter</defName>
@@ -1244,13 +1244,13 @@
 			<drawSize>2</drawSize>
 		</graphicData>
 		<projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>20</damageAmountBase>
-            <armorPenetrationBase>0.7</armorPenetrationBase>
-            <speed>80</speed>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<speed>80</speed>
 		</projectile>
 	</ThingDef>
-	
+
 	<!-- missile launcher -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_Turret_ReaperMissileLauncher</defName>
@@ -1344,23 +1344,23 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-	<defName>RE_Bullet_ReaperMissileLauncher</defName>
-	<label>reaper missile launcher rocket</label>
-    <graphicData>
-      <texPath>Things/Projectiles/ReaperMissileLauncher_Shot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-	  <drawSize>2.5</drawSize>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <damageDef>Bomb</damageDef>
-      <explosionRadius>3.9</explosionRadius>
-      <speed>60</speed>
-    </projectile>
+		<defName>RE_Bullet_ReaperMissileLauncher</defName>
+		<label>reaper missile launcher rocket</label>
+		<graphicData>
+			<texPath>Things/Projectiles/ReaperMissileLauncher_Shot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>3.9</explosionRadius>
+			<speed>60</speed>
+		</projectile>
 	</ThingDef>
-	
-<!-- kinetic artillery -->
+
+	<!-- kinetic artillery -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_Turret_ReaperKineticArtillery</defName>
 		<label>reaper kinetic artillery</label>
@@ -1453,23 +1453,24 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
-	<defName>RE_Bullet_ReaperKineticArtillery</defName>
-	<label>reaper kinetic artillery shot</label>
-    <graphicData>
-      <texPath>Things/Projectiles/KineticArtillery_Shot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-	  <drawSize>3.0</drawSize>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <damageDef>Bomb</damageDef>
-      <explosionRadius>5.9</explosionRadius>
-      <speed>70</speed>
-    </projectile>
+		<defName>RE_Bullet_ReaperKineticArtillery</defName>
+		<label>reaper kinetic artillery shot</label>
+		<graphicData>
+			<texPath>Things/Projectiles/KineticArtillery_Shot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>3.0</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>5.9</explosionRadius>
+			<speed>70</speed>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
 	</ThingDef>
-	
-<!-- orbital beam targeter -->
+
+	<!-- orbital beam targeter -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_Turret_ReaperOrbitalBeamTargeter</defName>
 		<label>reaper orbital beam targeter</label>
@@ -1561,8 +1562,8 @@
 			</li>
 		</verbs>
 	</ThingDef>
-	
-<!-- reaper beam -->
+
+	<!-- reaper beam -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_Turret_ReaperBeam</defName>
 		<label>reaper beam</label>
@@ -1662,11 +1663,12 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
-            <damageDef>Bomb</damageDef>
-            <damageAmountBase>500</damageAmountBase>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>500</damageAmountBase>
 			<explosionRadius>5.9</explosionRadius>
 			<armorPenetrationBase>5</armorPenetrationBase>
-      		<speed>10000</speed>
+			<speed>10000</speed>
+			<flyOverhead>true</flyOverhead>
 		</projectile>
 	</ThingDef>
 </Defs>

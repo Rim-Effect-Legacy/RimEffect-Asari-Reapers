@@ -11,15 +11,7 @@ namespace RimEffectReapers
 
         protected override void Impact(Thing hitThing)
         {
-            Log.Message(
-                $"Hit {hitThing} while aiming at {intendedTarget} and really hit {usedTarget} while at {Position}");
-            if (hitThing != null)
-            {
-                Position = hitThing.Position;
-                destination = hitThing.DrawPos;
-            }
-
-            base.Impact(hitThing);
+            base.Impact(null);
             var graphic = (ReaperBeamDraw) ThingMaker.MakeThing(RER_DefOf.RER_ReaperBeamGraphic);
             graphic.Setup(launcher, origin, destination);
             GenSpawn.Spawn(graphic, ExactPosition.ToIntVec3(), launcher.Map);

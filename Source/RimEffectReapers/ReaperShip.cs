@@ -13,7 +13,6 @@ namespace RimEffectReapers
             trader = null;
         }
 
-
         public override Material Material =>
             def.Material;
 

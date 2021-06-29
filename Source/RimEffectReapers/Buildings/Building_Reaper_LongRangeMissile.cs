@@ -71,7 +71,7 @@ namespace RimEffectReapers
                     target.Position, Map);
             missile.Init(this);
             missile.angle =
-                target.DrawPos.AngleToFlat(new Vector3(Map.Size.ToVector3().x, target.DrawPos.y, DrawPos.z));
+                new Vector3(Map.Size.ToVector3().x, target.DrawPos.y, DrawPos.z).AngleToFlat(target.DrawPos);
             RER_DefOf.RE_Incoming_ReaperLongRangeMissile.PlayOneShot(SoundInfo.InMap(missile, MaintenanceType.PerTick));
         }
 
