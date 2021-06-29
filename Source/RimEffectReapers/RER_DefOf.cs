@@ -19,5 +19,6 @@ namespace RimEffectReapers
         public static SoundDef RE_Launch_ReaperLongRangeMissile;
         public static SoundDef RE_Incoming_ReaperLongRangeMissile;
         public static SoundDef RE_Targeting_ReaperOrbitalBeam;
+        public static WorldObjectDef RE_Reaper;
     }
 }

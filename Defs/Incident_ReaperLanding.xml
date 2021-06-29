@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentDef>
+        <defName>RE_ReaperLanding</defName>
+        <label>reaper landing</label>
+        <category>ThreatBig</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <workerClass>RimEffectReapers.IncidentWorker_ReaperLanding</workerClass>
+        <baseChance>0.1</baseChance>
+        <minRefireDays>0</minRefireDays>
+        <letterDef>RE_ReaperLanding</letterDef>
+        <letterLabel>Reaper Landed</letterLabel>
+        <letterText>A Reaper has landed not far from your location.\nEach Reaper increases the Reaper presence on the surface, resulting in larger assault forces patrolling the area and a bigger invasion force when attacking settlements - yours included.\nDestroying the Reaper can be very difficult, but will decrease their presence on the planet.</letterText>
+    </IncidentDef>
+
+    <LetterDef ParentName="ThreatBig">
+        <defName>RE_ReaperLanding</defName>
+        <arriveSound>RE_LetterArrive_ReaperLandingAlert</arriveSound>
+    </LetterDef>
+</Defs>
