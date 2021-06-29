@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLeft_North</defName>
+  <thing>RE_ReaperClawLeft</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperClawLeft_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLargeLeft_North</defName>
+  <thing>RE_ReaperClawLargeLeft</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperClawLargeLeft_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x5RampLeft_North</defName>
+  <thing>RE_Reaper2x5RampLeft</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Reaper2x5RampLeft_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x2Hull_North</defName>
+  <thing>RE_Reaper2x2Hull</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Reaper2x2Hull_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperHeavyBolter_North</defName>
+  <thing>RE_Turret_ReaperHeavyBolter</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Turret_ReaperHeavyBolter_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x4RampLeft_North</defName>
+  <thing>RE_Reaper1x4RampLeft</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Reaper1x4RampLeft_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawSmallLeft_North</defName>
+  <thing>RE_ReaperClawSmallLeft</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperClawSmallLeft_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x1Hull_North</defName>
+  <thing>RE_Reaper1x1Hull</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Reaper1x1Hull_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperBolter_North</defName>
+  <thing>RE_Turret_ReaperBolter</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Turret_ReaperBolter_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawSmallRight_North</defName>
+  <thing>RE_ReaperClawSmallRight</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperClawSmallRight_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLargeRight_North</defName>
+  <thing>RE_ReaperClawLargeRight</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperClawLargeRight_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperMissileLauncher_North</defName>
+  <thing>RE_Turret_ReaperMissileLauncher</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Turret_ReaperMissileLauncher_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperStormGenerator_North</defName>
+  <thing>RE_ReaperStormGenerator</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperStormGenerator_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperMachinery_North</defName>
+  <thing>RE_ReaperMachinery</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperMachinery_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperUnitStorage_North</defName>
+  <thing>RE_ReaperUnitStorage</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperUnitStorage_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperResourceContainer_East</defName>
+  <thing>RE_ReaperResourceContainer</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperResourceContainer_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperOrbitalBeamTargeter_North</defName>
+  <thing>RE_Turret_ReaperOrbitalBeamTargeter</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Turret_ReaperOrbitalBeamTargeter_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperLongRangeMissileLauncher_North</defName>
+  <thing>RE_ReaperLongRangeMissileLauncher</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperLongRangeMissileLauncher_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperControlNode_North</defName>
+  <thing>RE_ReaperControlNode</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperControlNode_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperSupportBeam_North</defName>
+  <thing>RE_ReaperSupportBeam</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperSupportBeam_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperFuelCell_North</defName>
+  <thing>RE_ReaperFuelCell</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperFuelCell_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperElementZeroCore_North</defName>
+  <thing>RE_ReaperElementZeroCore</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperElementZeroCore_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper3x3Hull_North</defName>
+  <thing>RE_Reaper3x3Hull</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Reaper3x3Hull_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperIndoctrinationCore_North</defName>
+  <thing>RE_ReaperIndoctrinationCore</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperIndoctrinationCore_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperKineticArtillery_North</defName>
+  <thing>RE_Turret_ReaperKineticArtillery</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Turret_ReaperKineticArtillery_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x4RampRight_North</defName>
+  <thing>RE_Reaper1x4RampRight</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Reaper1x4RampRight_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperCargoModule_North</defName>
+  <thing>RE_ReaperCargoModule</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperCargoModule_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x5RampRight_North</defName>
+  <thing>RE_Reaper2x5RampRight</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Reaper2x5RampRight_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawRight_North</defName>
+  <thing>RE_ReaperClawRight</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperClawRight_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawRight_South</defName>
+  <thing>RE_ReaperClawRight</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperClawRight_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x4RampRight_South</defName>
+  <thing>RE_Reaper1x4RampRight</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Reaper1x4RampRight_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperHeavyBolter_South</defName>
+  <thing>RE_Turret_ReaperHeavyBolter</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Turret_ReaperHeavyBolter_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x2Hull_South</defName>
+  <thing>RE_Reaper2x2Hull</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Reaper2x2Hull_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x5RampRight_South</defName>
+  <thing>RE_Reaper2x5RampRight</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Reaper2x5RampRight_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLargeRight_South</defName>
+  <thing>RE_ReaperClawLargeRight</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperClawLargeRight_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperBolter_South</defName>
+  <thing>RE_Turret_ReaperBolter</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Turret_ReaperBolter_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x1Hull_South</defName>
+  <thing>RE_Reaper1x1Hull</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Reaper1x1Hull_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperCargoModule_South</defName>
+  <thing>RE_ReaperCargoModule</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperCargoModule_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawSmallRight_South</defName>
+  <thing>RE_ReaperClawSmallRight</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperClawSmallRight_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperIndoctrinationCore_South</defName>
+  <thing>RE_ReaperIndoctrinationCore</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperIndoctrinationCore_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperMachinery_South</defName>
+  <thing>RE_ReaperMachinery</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperMachinery_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperElementZeroCore_South</defName>
+  <thing>RE_ReaperElementZeroCore</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperElementZeroCore_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperMissileLauncher_South</defName>
+  <thing>RE_Turret_ReaperMissileLauncher</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Turret_ReaperMissileLauncher_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLargeLeft_South</defName>
+  <thing>RE_ReaperClawLargeLeft</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperClawLargeLeft_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawSmallLeft_South</defName>
+  <thing>RE_ReaperClawSmallLeft</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperClawSmallLeft_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperKineticArtillery_South</defName>
+  <thing>RE_Turret_ReaperKineticArtillery</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Turret_ReaperKineticArtillery_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper3x3Hull_South</defName>
+  <thing>RE_Reaper3x3Hull</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Reaper3x3Hull_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperControlNode_South</defName>
+  <thing>RE_ReaperControlNode</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperControlNode_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperSupportBeam_South</defName>
+  <thing>RE_ReaperSupportBeam</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperSupportBeam_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperFuelCell_South</defName>
+  <thing>RE_ReaperFuelCell</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperFuelCell_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x4RampLeft_South</defName>
+  <thing>RE_Reaper1x4RampLeft</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Reaper1x4RampLeft_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperLongRangeMissileLauncher_South</defName>
+  <thing>RE_ReaperLongRangeMissileLauncher</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperLongRangeMissileLauncher_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperUnitStorage_South</defName>
+  <thing>RE_ReaperUnitStorage</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperUnitStorage_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperOrbitalBeamTargeter_South</defName>
+  <thing>RE_Turret_ReaperOrbitalBeamTargeter</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Turret_ReaperOrbitalBeamTargeter_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperStormGenerator_South</defName>
+  <thing>RE_ReaperStormGenerator</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperStormGenerator_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x5RampLeft_South</defName>
+  <thing>RE_Reaper2x5RampLeft</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Reaper2x5RampLeft_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLeft_South</defName>
+  <thing>RE_ReaperClawLeft</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperClawLeft_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawSmallRight_East</defName>
+  <thing>RE_ReaperClawSmallRight</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperClawSmallRight_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawSmallLeft_East</defName>
+  <thing>RE_ReaperClawSmallLeft</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperClawSmallLeft_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x1Hull_East</defName>
+  <thing>RE_Reaper1x1Hull</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Reaper1x1Hull_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperSupportBeam_East</defName>
+  <thing>RE_ReaperSupportBeam</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperSupportBeam_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLargeRight_East</defName>
+  <thing>RE_ReaperClawLargeRight</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperClawLargeRight_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLargeLeft_East</defName>
+  <thing>RE_ReaperClawLargeLeft</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperClawLargeLeft_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperBolter_East</defName>
+  <thing>RE_Turret_ReaperBolter</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Turret_ReaperBolter_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperFuelCell_East</defName>
+  <thing>RE_ReaperFuelCell</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperFuelCell_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperMachinery_East</defName>
+  <thing>RE_ReaperMachinery</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperMachinery_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x5RampRight_East</defName>
+  <thing>RE_Reaper2x5RampRight</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Reaper2x5RampRight_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperControlNode_East</defName>
+  <thing>RE_ReaperControlNode</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperControlNode_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x5RampLeft_East</defName>
+  <thing>RE_Reaper2x5RampLeft</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Reaper2x5RampLeft_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x2Hull_East</defName>
+  <thing>RE_Reaper2x2Hull</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Reaper2x2Hull_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperMissileLauncher_East</defName>
+  <thing>RE_Turret_ReaperMissileLauncher</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Turret_ReaperMissileLauncher_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawRight_East</defName>
+  <thing>RE_ReaperClawRight</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperClawRight_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperElementZeroCore_East</defName>
+  <thing>RE_ReaperElementZeroCore</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperElementZeroCore_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperStormGenerator_East</defName>
+  <thing>RE_ReaperStormGenerator</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperStormGenerator_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLeft_East</defName>
+  <thing>RE_ReaperClawLeft</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperClawLeft_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperHeavyBolter_East</defName>
+  <thing>RE_Turret_ReaperHeavyBolter</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Turret_ReaperHeavyBolter_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x4RampRight_East</defName>
+  <thing>RE_Reaper1x4RampRight</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Reaper1x4RampRight_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperCargoModule_East</defName>
+  <thing>RE_ReaperCargoModule</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperCargoModule_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x4RampLeft_East</defName>
+  <thing>RE_Reaper1x4RampLeft</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Reaper1x4RampLeft_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper3x3Hull_East</defName>
+  <thing>RE_Reaper3x3Hull</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Reaper3x3Hull_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperOrbitalBeamTargeter_East</defName>
+  <thing>RE_Turret_ReaperOrbitalBeamTargeter</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Turret_ReaperOrbitalBeamTargeter_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperIndoctrinationCore_East</defName>
+  <thing>RE_ReaperIndoctrinationCore</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperIndoctrinationCore_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperUnitStorage_East</defName>
+  <thing>RE_ReaperUnitStorage</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperUnitStorage_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperKineticArtillery_East</defName>
+  <thing>RE_Turret_ReaperKineticArtillery</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Turret_ReaperKineticArtillery_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperLongRangeMissileLauncher_East</defName>
+  <thing>RE_ReaperLongRangeMissileLauncher</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_ReaperLongRangeMissileLauncher_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x4RampLeft_West</defName>
+  <thing>RE_Reaper1x4RampLeft</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Reaper1x4RampLeft_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x4RampRight_West</defName>
+  <thing>RE_Reaper1x4RampRight</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Reaper1x4RampRight_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperSupportBeam_West</defName>
+  <thing>RE_ReaperSupportBeam</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperSupportBeam_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperHeavyBolter_West</defName>
+  <thing>RE_Turret_ReaperHeavyBolter</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Turret_ReaperHeavyBolter_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x2Hull_West</defName>
+  <thing>RE_Reaper2x2Hull</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Reaper2x2Hull_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper1x1Hull_West</defName>
+  <thing>RE_Reaper1x1Hull</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Reaper1x1Hull_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperMachinery_West</defName>
+  <thing>RE_ReaperMachinery</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperMachinery_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperLongRangeMissileLauncher_West</defName>
+  <thing>RE_ReaperLongRangeMissileLauncher</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperLongRangeMissileLauncher_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperResourceContainer_West</defName>
+  <thing>RE_ReaperResourceContainer</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperResourceContainer_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperKineticArtillery_West</defName>
+  <thing>RE_Turret_ReaperKineticArtillery</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Turret_ReaperKineticArtillery_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperUnitStorage_West</defName>
+  <thing>RE_ReaperUnitStorage</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperUnitStorage_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperIndoctrinationCore_West</defName>
+  <thing>RE_ReaperIndoctrinationCore</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperIndoctrinationCore_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperFuelCell_West</defName>
+  <thing>RE_ReaperFuelCell</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperFuelCell_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperBolter_West</defName>
+  <thing>RE_Turret_ReaperBolter</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Turret_ReaperBolter_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperOrbitalBeamTargeter_West</defName>
+  <thing>RE_Turret_ReaperOrbitalBeamTargeter</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Turret_ReaperOrbitalBeamTargeter_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper3x3Hull_West</defName>
+  <thing>RE_Reaper3x3Hull</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Reaper3x3Hull_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperCargoModule_West</defName>
+  <thing>RE_ReaperCargoModule</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperCargoModule_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperResourceContainer_North</defName>
+  <thing>RE_ReaperResourceContainer</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_ReaperResourceContainer_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperResourceContainer_South</defName>
+  <thing>RE_ReaperResourceContainer</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_ReaperResourceContainer_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLeft_West</defName>
+  <thing>RE_ReaperClawLeft</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperClawLeft_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperStormGenerator_West</defName>
+  <thing>RE_ReaperStormGenerator</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperStormGenerator_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperElementZeroCore_West</defName>
+  <thing>RE_ReaperElementZeroCore</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperElementZeroCore_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawRight_West</defName>
+  <thing>RE_ReaperClawRight</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperClawRight_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x5RampLeft_West</defName>
+  <thing>RE_Reaper2x5RampLeft</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Reaper2x5RampLeft_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperMissileLauncher_West</defName>
+  <thing>RE_Turret_ReaperMissileLauncher</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Turret_ReaperMissileLauncher_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperControlNode_West</defName>
+  <thing>RE_ReaperControlNode</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperControlNode_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Reaper2x5RampRight_West</defName>
+  <thing>RE_Reaper2x5RampRight</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Reaper2x5RampRight_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLargeLeft_West</defName>
+  <thing>RE_ReaperClawLargeLeft</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperClawLargeLeft_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawLargeRight_West</defName>
+  <thing>RE_ReaperClawLargeRight</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperClawLargeRight_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawSmallLeft_West</defName>
+  <thing>RE_ReaperClawSmallLeft</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperClawSmallLeft_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_ReaperClawSmallRight_West</defName>
+  <thing>RE_ReaperClawSmallRight</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_ReaperClawSmallRight_West</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperBeam_North</defName>
+  <thing>RE_Turret_ReaperBeam</thing>
+  <rotation>North</rotation>
+  <symbol>RE__RE_Turret_ReaperBeam_North</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperBeam_South</defName>
+  <thing>RE_Turret_ReaperBeam</thing>
+  <rotation>South</rotation>
+  <symbol>RE__RE_Turret_ReaperBeam_South</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperBeam_East</defName>
+  <thing>RE_Turret_ReaperBeam</thing>
+  <rotation>East</rotation>
+  <symbol>RE__RE_Turret_ReaperBeam_East</symbol>
+</KCSG.SymbolDef>
+<KCSG.SymbolDef>
+  <defName>RE__RE_Turret_ReaperBeam_West</defName>
+  <thing>RE_Turret_ReaperBeam</thing>
+  <rotation>West</rotation>
+  <symbol>RE__RE_Turret_ReaperBeam_West</symbol>
+</KCSG.SymbolDef>
+
+
+</Defs>
