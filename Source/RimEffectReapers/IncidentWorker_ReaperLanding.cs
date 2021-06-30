@@ -26,7 +26,7 @@ namespace RimEffectReapers
             if (settlement.Tile < 0)
                 settlement.Tile = TileFinder.RandomSettlementTileFor(faction);
 
-            settlement.Name = "Sovereign"; // TODO: Generated names
+            settlement.Name = NameGenerator.GenerateName(RER_DefOf.RE_NameGenerate);
             Find.WorldObjects.Add(settlement);
 
             var letterLabel = def.letterLabel;

@@ -22,5 +22,6 @@ namespace RimEffectReapers
         public static WorldObjectDef RE_Reaper;
         public static GenStepDef RE_Reaperify;
         public static GenStepDef RE_DragonsTeeth;
+        public static RulePackDef RE_NameGenerate;
     }
 }
