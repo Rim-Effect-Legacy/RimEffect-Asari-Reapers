@@ -39,6 +39,10 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="KCSG">
+      <HintPath>..\..\..\VanillaExpandedFramework\1.2\Assemblies\KCSG.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,8 +74,11 @@
     <Compile Include="Harmony\SettlementDefeatedUtility_Patch.cs" />
     <Compile Include="HediffFromBuilding.cs" />
     <Compile Include="IncidentWorker_ReaperLanding.cs" />
+    <Compile Include="PawnsArrivalModeWorker_ReaperPlanetfall.cs" />
+    <Compile Include="RaidStrategyWorker_ReaperPlanetfall.cs" />
     <Compile Include="ReaperBeam.cs" />
     <Compile Include="ReaperShip.cs" />
+    <Compile Include="Reaper_Skyfaller.cs" />
     <Compile Include="SymbolResolverReaper.cs" />
     <Compile Include="WeatherEvents.cs" />
     <Compile Include="Comps\CompLootOnDestroy.cs" />

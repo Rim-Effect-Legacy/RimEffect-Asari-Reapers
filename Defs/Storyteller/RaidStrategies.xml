@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <RaidStrategyDef ParentName="SiegeBase">
+    <defName>RE_ReaperPlanetfallStrategy</defName>
+    <workerClass>RimEffectReapers.RaidStrategyWorker_ReaperPlanetfall</workerClass>
+    <minPawns>2</minPawns>
+    <arriveModes>
+      <li>RE_ReaperPlanetfallArrival</li>
+    </arriveModes>
+    <selectionWeightPerPointsCurve>
+      <points>
+        <li>(100, 0)</li>
+        <li>(300, 0.2)</li>
+        <li>(700, 0.6)</li>
+      </points>
+    </selectionWeightPerPointsCurve>
+    <letterLabelEnemy>Reaper planetfall</letterLabelEnemy>
+    <arrivalTextEnemy>Reaper units that landed with it will attack immediately. The Reaper will lay covering fire and begin the siege as soon as possible.text_todo</arrivalTextEnemy>
+  </RaidStrategyDef>
+</Defs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <PawnsArrivalModeDef>
+    <defName>RE_ReaperPlanetfallArrival</defName>
+    <workerClass>RimEffectReapers.PawnsArrivalModeWorker_ReaperPlanetfall</workerClass>
+    <textEnemy>A Reaper ship from {0} landed nearby.text_todo</textEnemy>
+    <selectionWeightCurve>
+      <points>
+        <li>(100, 0)</li>
+        <li>(300, 0.2)</li>
+        <li>(700, 0.6)</li>
+      </points>
+    </selectionWeightCurve>
+  </PawnsArrivalModeDef>
+</Defs>

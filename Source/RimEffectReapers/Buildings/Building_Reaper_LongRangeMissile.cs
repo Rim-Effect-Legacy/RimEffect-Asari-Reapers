@@ -32,6 +32,7 @@ namespace RimEffectReapers
         public override void Tick()
         {
             base.Tick();
+            if (!Spawned) return;
             if (cooldownTicksLeft > 0) cooldownTicksLeft--;
             if (cooldownTicksLeft <= 0)
             {
