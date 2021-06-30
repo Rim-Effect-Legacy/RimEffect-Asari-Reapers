@@ -57,8 +57,9 @@ namespace RimEffectReapers
 
         public void Incoming()
         {
-            var target = Map.listerBuildings.allBuildingsColonistCombatTargets.Cast<Thing>()
-                .Concat(Map.mapPawns.SpawnedPawnsInFaction(Faction.OfPlayer)).RandomElement();
+            var target = Map.listerThings.ThingsInGroup(ThingRequestGroup.AttackTarget)
+                .Where(t => t.Faction.HostileTo(Faction))
+                .Concat(Map.mapPawns.AllPawnsSpawned.Where(p => p.Faction.HostileTo(Faction))).RandomElement();
             if (target == null)
             {
                 incoming.Add(

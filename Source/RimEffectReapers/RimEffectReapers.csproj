@@ -66,6 +66,8 @@
     <Compile Include="Comps\CompMapWideHediff.cs" />
     <Compile Include="GameCondition_ReaperWeather.cs" />
     <Compile Include="Harmony\AvoidGrid_Patch.cs" />
+    <Compile Include="Harmony\Raid_Patches.cs" />
+    <Compile Include="Harmony\SettlementDefeatedUtility_Patch.cs" />
     <Compile Include="HediffFromBuilding.cs" />
     <Compile Include="IncidentWorker_ReaperLanding.cs" />
     <Compile Include="ReaperBeam.cs" />

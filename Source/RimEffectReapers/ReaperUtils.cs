@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using System.Linq;
+using RimWorld;
 using Verse;
 using Verse.AI.Group;
 
@@ -23,6 +24,12 @@ namespace RimEffectReapers
             }
 
             lord.AddPawn(pawn);
+        }
+
+        public static int ReaperPresence()
+        {
+            return Find.WorldObjects.Settlements.Count(s =>
+                s.Faction.def == RER_DefOf.RE_Reapers && s.def == RER_DefOf.RE_Reaper) * 2000;
         }
     }
 }
