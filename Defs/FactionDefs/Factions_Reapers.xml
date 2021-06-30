@@ -92,6 +92,21 @@
 		  <RE_Husk_Banshee>10</RE_Husk_Banshee>
         </options>
       </li>
+      <li>
+        <!-- Settlement Defense (used for Dark Settlements)-->
+        <kindDef>Settlement</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <RE_Husk_Colossus>5</RE_Husk_Colossus>
+          <RE_Husk_Brute>5</RE_Husk_Brute>
+          <RE_Husk_Marauder>10</RE_Husk_Marauder>
+          <RE_Husk_Cannibal>10</RE_Husk_Cannibal>
+          <RE_Husk_Husk>15</RE_Husk_Husk>
+          <RE_Husk_Ravager>10</RE_Husk_Ravager>
+          <RE_Husk_Goliath>10</RE_Husk_Goliath>
+		  <RE_Husk_Banshee>5</RE_Husk_Banshee>
+        </options>
+      </li>
     </pawnGroupMakers>
     <settlementTexturePath>UI/FactionIcons/ReaperShip</settlementTexturePath>
     <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>

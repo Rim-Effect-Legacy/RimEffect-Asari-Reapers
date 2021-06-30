@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentDef>
+        <defName>RE_DarkSettlement</defName>
+        <label>dark settlement</label>
+        <category>ThreatBig</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <workerClass>RimEffectReapers.IncidentWorker_DarkSettlement</workerClass>
+        <baseChance>0.1</baseChance>
+        <minRefireDays>0</minRefireDays>
+        <letterDef>ThreatBig</letterDef>
+        <letterLabel>Settlement gone dark</letterLabel>
+        <letterText>A local settlement has stopped responding to communications.\nThere were reports of Reaper activity around that area, so many fear the worst.</letterText>
+    </IncidentDef>
+</Defs>

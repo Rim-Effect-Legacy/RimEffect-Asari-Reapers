@@ -1,4 +1,6 @@
-﻿using Verse;
+﻿using HarmonyLib;
+using Verse;
+using Verse.AI.Group;
 
 namespace RimEffectReapers
 {
@@ -11,6 +13,18 @@ namespace RimEffectReapers
         {
             Harm = new HarmonyLib.Harmony("OskarPotocki.RimEffectReapers");
             Harm.PatchAll();
+        }
+    }
+
+    [HarmonyPatch(typeof(Trigger_UrgentlyHungry), "ActivateOn")]
+    public class Trigger_UrgentlyHungry_Patch
+    {
+        [HarmonyPrefix]
+        public static bool Prefix(Lord lord, ref bool __result)
+        {
+            if (lord.faction.def != RER_DefOf.RE_Reapers) return true;
+            __result = false;
+            return false;
         }
     }
 }

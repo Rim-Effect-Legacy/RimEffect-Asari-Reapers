@@ -68,12 +68,16 @@
     <Compile Include="Buildings\Building_Reaper_Storm.cs" />
     <Compile Include="Buildings\Building_Reaper_UnitStorage.cs" />
     <Compile Include="Comps\CompMapWideHediff.cs" />
+    <Compile Include="DarkSettlement.cs" />
     <Compile Include="GameCondition_ReaperWeather.cs" />
+    <Compile Include="GenSteps.cs" />
     <Compile Include="Harmony\AvoidGrid_Patch.cs" />
     <Compile Include="Harmony\Raid_Patches.cs" />
     <Compile Include="Harmony\SettlementDefeatedUtility_Patch.cs" />
     <Compile Include="HediffFromBuilding.cs" />
+    <Compile Include="IncidentWorker_DarkSettlement.cs" />
     <Compile Include="IncidentWorker_ReaperLanding.cs" />
+    <Compile Include="LordJob_ReaperDefendBase.cs" />
     <Compile Include="PawnsArrivalModeWorker_ReaperPlanetfall.cs" />
     <Compile Include="RaidStrategyWorker_ReaperPlanetfall.cs" />
     <Compile Include="ReaperBeam.cs" />
