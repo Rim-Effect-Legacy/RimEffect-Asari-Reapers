@@ -2,6 +2,7 @@
 using System.Linq;
 using KCSG;
 using RimWorld;
+using RimWorld.Planet;
 using Verse;
 using Verse.AI.Group;
 
@@ -70,6 +71,18 @@ namespace RimEffectReapers
                 if (c > maxTries) return IntVec3.Invalid;
                 c++;
             }
+        }
+
+        public static bool HasAnyOtherBase(Settlement defeatedFactionBase)
+        {
+            var settlements = Find.WorldObjects.Settlements;
+            for (var i = 0; i < settlements.Count; i++)
+            {
+                var settlement = settlements[i];
+                if (settlement.Faction == defeatedFactionBase.Faction && settlement != defeatedFactionBase) return true;
+            }
+
+            return false;
         }
     }
 }

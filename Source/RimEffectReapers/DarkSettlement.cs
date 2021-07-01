@@ -35,5 +35,11 @@ namespace RimEffectReapers
         }
 
         public override Texture2D ExpandingIcon => OldFaction.def.FactionIcon;
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_References.Look(ref OldFaction, "oldFaction");
+        }
     }
 }

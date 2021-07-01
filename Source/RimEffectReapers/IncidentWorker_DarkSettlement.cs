@@ -38,8 +38,17 @@ namespace RimEffectReapers
             Find.WorldObjects.Remove(settlement);
             Find.WorldObjects.Add(darkSettlement);
 
+            var letterText = def.letterText;
+
+            if (!ReaperUtils.HasAnyOtherBase(settlement))
+            {
+                settlement.Faction.defeated = true;
+                letterText +=
+                    $"\n\n\n{"LetterFactionBaseDefeated_FactionDestroyed".Translate(settlement.Faction.Name)}";
+            }
+
             SendStandardLetter(def.letterLabel + ": " + settlement.Name,
-                def.letterText, def.letterDef, parms, darkSettlement);
+                letterText, def.letterDef, parms, darkSettlement);
             return true;
         }
     }

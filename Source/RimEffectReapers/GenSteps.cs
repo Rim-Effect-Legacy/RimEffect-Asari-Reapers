@@ -18,10 +18,8 @@ namespace RimEffectReapers
                 if (pawn.RaceProps.FleshType != RER_DefOf.RE_Husk)
                     try
                     {
-                        var kind = RER_DefOf.RE_Reapers.pawnGroupMakers.MaxBy(pgm => pgm.commonality).options
-                            .RandomElementByWeight(opt => opt.selectionWeight).kind;
-                        var newPawn = PawnGenerator.GeneratePawn(kind, reapers);
-                        GenSpawn.Spawn(newPawn, pawn.Position, map, pawn.Rotation);
+                        GenSpawn.Spawn(PawnGenerator.GeneratePawn(reapers.RandomPawnKind(), reapers), pawn.Position,
+                            map, pawn.Rotation);
                     }
                     catch (NullReferenceException e)
                     {
@@ -45,8 +43,13 @@ namespace RimEffectReapers
                 }
             }
 
-            foreach (var thing in map.listerThings.AllThings.Where(thing => thing.Faction != null))
+            foreach (var thing in map.listerThings.AllThings.Where(thing =>
+                thing.Faction != null && thing.Faction.def != RER_DefOf.RE_Reapers))
                 thing.SetFaction(Find.FactionManager.FirstFactionOfDef(RER_DefOf.RE_Reapers));
+
+            foreach (var thing in map.listerThings.ThingsInGroup(ThingRequestGroup.AttackTarget)
+                .Where(t => !ThingRequestGroup.Pawn.Includes(t.def)).ToList())
+                thing.Destroy();
         }
     }
 
