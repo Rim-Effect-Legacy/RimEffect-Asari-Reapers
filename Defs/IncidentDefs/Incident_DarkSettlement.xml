@@ -12,6 +12,20 @@
         <minRefireDays>0</minRefireDays>
         <letterDef>ThreatBig</letterDef>
         <letterLabel>Settlement gone dark</letterLabel>
-        <letterText>A local settlement has stopped responding to communications.\nThere were reports of Reaper activity around that area, so many fear the worst.</letterText>
+        <letterText>A local settlement has stopped responding to communications.\nThere were reports of Reaper activity around that area, so many fear the worst.text_todo</letterText>
+    </IncidentDef>
+    <IncidentDef>
+        <defName>RE_DarkSettlementReclaimed</defName>
+        <label>dark settlement reclaimed</label>
+        <category>AllyAssistance</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <workerClass>RimEffectReapers.IncidentWorker_DarkSettlementReclaimed</workerClass>
+        <baseChance>0.01</baseChance>
+        <minRefireDays>0</minRefireDays>
+        <letterDef>PositiveEvent</letterDef>
+        <letterLabel>Dark settlement reclaimed</letterLabel>
+        <letterText>A local settlement that had gone dark has been taken back from the reapers by {0}.text_todo</letterText>
     </IncidentDef>
 </Defs>

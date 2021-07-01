@@ -35,7 +35,7 @@ namespace RimEffectReapers
 
             darkSettlement.PostMake();
 
-            Find.WorldObjects.Remove(settlement);
+            settlement.Destroy();
             Find.WorldObjects.Add(darkSettlement);
 
             var letterText = def.letterText;

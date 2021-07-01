@@ -75,8 +75,10 @@
     <Compile Include="Harmony\Raid_Patches.cs" />
     <Compile Include="Harmony\SettlementDefeatedUtility_Patch.cs" />
     <Compile Include="HediffFromBuilding.cs" />
-    <Compile Include="IncidentWorker_DarkSettlement.cs" />
-    <Compile Include="IncidentWorker_ReaperLanding.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_DarkSettlement.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_DarkSettlementReclaimed.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_ReaperDown.cs" />
+    <Compile Include="IncidentWorkers\IncidentWorker_ReaperLanding.cs" />
     <Compile Include="LordJob_ReaperDefendBase.cs" />
     <Compile Include="PawnsArrivalModeWorker_ReaperPlanetfall.cs" />
     <Compile Include="RaidStrategyWorker_ReaperPlanetfall.cs" />

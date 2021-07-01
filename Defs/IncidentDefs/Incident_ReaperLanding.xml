@@ -19,4 +19,19 @@
         <defName>RE_ReaperLanding</defName>
         <arriveSound>RE_LetterArrive_ReaperLandingAlert</arriveSound>
     </LetterDef>
+
+    <IncidentDef>
+        <defName>RE_ReaperDown</defName>
+        <label>reaper taken down</label>
+        <category>AllyAssistance</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <workerClass>RimEffectReapers.IncidentWorker_ReaperDown</workerClass>
+        <baseChance>0.01</baseChance>
+        <minRefireDays>0</minRefireDays>
+        <letterDef>PositiveEvent</letterDef>
+        <letterLabel>Reaper destroyed</letterLabel>
+        <letterText>{0} has successfully destroyed the reaper {1}. This is a huge moment for the survival of everyone.text_todo</letterText>
+    </IncidentDef>
 </Defs>
