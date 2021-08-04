@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <FactionDef ParentName="HumanFactionBase" Name="RE_AsariFactionBase" Abstract="True">
+    <FactionDef ParentName="FactionBase" Name="RE_AsariFactionBase" Abstract="True">
         <pawnSingular>colonist</pawnSingular>
         <pawnsPlural>colonists</pawnsPlural>
         <categoryTag>RE_AsariRepublics</categoryTag>
@@ -19,6 +19,32 @@
         <factionNameMaker>NamerFaction_SystemsAlliance</factionNameMaker>
         <settlementNameMaker>NamerFactionBases_SystemsAlliance</settlementNameMaker>
         <techLevel>Ultra</techLevel>
+        <disallowedMemes>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+        </disallowedMemes>
+    <structureMemeWeights>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+    </structureMemeWeights>
         <backstoryFilters>
             <li>
                 <categories>
@@ -34,9 +60,6 @@
             </li>
         </backstoryFilters>
         <geneticVariance>0.8</geneticVariance>
-        <hairTags>
-            <li></li>
-        </hairTags>
         <caravanTraderKinds>
             <li>RE_Caravan_Asari_BulkGoods</li>
             <li>RE_Caravan_Asari_CombatSupplier</li>
@@ -163,8 +186,6 @@
             <li>(0.27, 0.40, 0.74)</li>
             <li>(0.28, 0.44, 0.72)</li>
         </colorSpectrum>
-        <startingGoodwill>10</startingGoodwill>
-        <naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
       <modExtensions>
         <li Class="KCSG.FactionSettlement">
           <useStructureLayout>True</useStructureLayout>

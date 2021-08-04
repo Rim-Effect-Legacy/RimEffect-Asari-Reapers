@@ -53,6 +53,8 @@
         </factionColourApparelLayerList>
       </li>
     </modExtensions>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>12~24</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -97,6 +99,8 @@
         </factionColourApparelLayerList>
       </li>
     </modExtensions>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>12~24</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -142,6 +146,8 @@
         </factionColourApparelLayerList>
       </li>
     </modExtensions>
+    <initialWillRange>2~3</initialWillRange>
+    <initialResistanceRange>14~26</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -167,6 +173,8 @@
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>8~14</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -192,6 +200,8 @@
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>8~14</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -224,6 +234,8 @@
       <li>RE_Implant</li>
     </techHediffsTags>
     <techHediffsMaxAmount>2</techHediffsMaxAmount>
+    <initialWillRange>2~3</initialWillRange>
+    <initialResistanceRange>12~20</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -279,6 +291,8 @@
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>10~18</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -309,6 +323,8 @@
       <li>ImplantEmpireCommon</li>
       <li>RE_Implant</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>8~14</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -339,6 +355,8 @@
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>8~14</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -365,6 +383,8 @@
       <li>ImplantEmpireCommon</li>
       <li>RE_Implant</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>12~18</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -396,6 +416,8 @@
       <li>ImplantEmpireCommon</li>
       <li>RE_Implant</li>
     </techHediffsTags>
+	<initialWillRange>3~4</initialWillRange>
+	<initialResistanceRange>18~28</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -428,6 +450,8 @@
       <li>ImplantEmpireCommon</li>
       <li>RE_Implant</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>10~18</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -460,6 +484,8 @@
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>10~18</initialResistanceRange>
   </PawnKindDef>
   
   <PawnKindDef ParentName="AsariPawnBase">
@@ -512,6 +538,8 @@
 		<giveRandomAbilities>true</giveRandomAbilities>
 		</li>
     </modExtensions>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>12~24</initialResistanceRange>
   </PawnKindDef>
   
 </Defs>
