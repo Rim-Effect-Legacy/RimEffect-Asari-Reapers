@@ -24,7 +24,6 @@ namespace RimEffectReapers
                     {
                         corpseDef.comps.RemoveAll(compProperties => compProperties is CompProperties_Rottable);
                         corpseDef.comps.RemoveAll(compProperties => compProperties is CompProperties_SpawnerFilth);
-                        corpseDef.ingestible = null;
                     }
                 }
             }
