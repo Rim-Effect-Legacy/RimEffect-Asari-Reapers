@@ -1,182 +1,182 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="RE_Asari">
-		<defName>RE_Asari</defName>
-		<label>asari</label>
-		<description>The asari, native to the planet Thessia, are often considered the most influential and respected sentient species in the galaxy, and are known for their elegance, diplomacy, and biotic aptitude.</description>
-		<alienRace>
-			<generalSettings>
-            <forcedRaceTraitEntries>
-                <li>
-                    <defName>Beauty</defName>
-                    <degree>1</degree>
-                    <chance>100</chance>
-                </li>
-                <li>
-                    <defName>RE_BioticRecoveryOffset</defName>
-					<degree>1</degree>
-                    <chance>70</chance>
-                </li>
-                <li>
-                    <defName>RE_BioticRecoveryOffset</defName>
-					<degree>2</degree>
-                    <chance>30</chance>
-                </li>
-            </forcedRaceTraitEntries>
-		    <alienPartGenerator>
-            <bodyAddons>
-                <li>
-				<bodyPart>Head</bodyPart>
-				<path>Things/Pawn/Asari/Crest/Asari_Crest</path>
-				<inFrontOfBody>true</inFrontOfBody>
-				<layerInvert>false</layerInvert>
-				<alignWithHead>true</alignWithHead>
-							<drawSize>0.9</drawSize>
-							<layerOffset>0.2</layerOffset>
-							<offsets>
-								<north>
-									<bodyTypes>
-										<Female>(0, 0.52)</Female>
-									</bodyTypes>
-								</north>							
-								<south>
-									<bodyTypes>
-										<Female>(-0.424, 0.22)</Female>
-									</bodyTypes>
-								</south>
-								<east>
-									<bodyTypes>
-										<Female>(-0.4, 0.26)</Female>
-									</bodyTypes>
-								</east>
-							</offsets>		
-				<drawnInBed>true</drawnInBed>
-				<drawnDesiccated>true</drawnDesiccated>
-				<colorChannel>skin</colorChannel>
-                </li>
-                <li>
-				<bodyPart>Head</bodyPart>
-				<path>Things/Pawn/Asari/Tattoos/AsariTattoo</path>
-				<inFrontOfBody>true</inFrontOfBody>
-				<layerInvert>false</layerInvert>
-				<alignWithHead>true</alignWithHead>
-							<drawSize>0.9</drawSize>
-							<layerOffset>0.2</layerOffset>
-							<offsets>
-								<north>
-									<bodyTypes>
-										<Female>(0, 0.32)</Female>
-									</bodyTypes>
-								</north>							
-								<south>
-									<bodyTypes>
-										<Female>(-0.424, 0.02)</Female>
-									</bodyTypes>
-								</south>
-								<east>
-									<bodyTypes>
-										<Female>(-0.4, 0.06)</Female>
-									</bodyTypes>
-								</east>
-							</offsets>		
-				<drawnInBed>true</drawnInBed>
-				<drawnDesiccated>true</drawnDesiccated>
-				<colorChannel>tattoo</colorChannel>
-                </li>
-            </bodyAddons>
-					<aliencrowntypes>
-						<li>Asari_Average_Normal</li>
-						<li>Asari_Average_Pointy</li>
-						<li>Asari_Average_Wide</li>
-						<li>Asari_Narrow_Normal</li>
-						<li>Asari_Narrow_Pointy</li>
-						<li>Asari_Narrow_Wide</li>
-					</aliencrowntypes>
-					<alienbodytypes>
-						<li>Female</li>
-					</alienbodytypes>
-                    <colorChannels>
-                        <li>
-                            <name>skin</name>
-                            <first Class="ColorGenerator_Options">
-                                <options>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(114,107,149)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(154,181,138)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(91,118,189)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(72,169,188)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(152,192,184)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(65,92,153)</only>
-                                    </li>
-                                </options>
-                            </first>
-                        </li>
-                        <li>
-                            <name>tattoo</name>
-                            <first Class="ColorGenerator_Options">
-                                <options>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(255,255,255)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(79,79,79)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(152,64,78)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(45,48,99)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(75,49,62)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>RGB(191,181,190)</only>
-                                    </li>
-                                </options>
-                            </first>
-                        </li>
-                    </colorChannels>
-					<useGenderedHeads>false</useGenderedHeads>
-				</alienPartGenerator>
-			</generalSettings>
-			<hairSettings>
-				<hasHair>false</hasHair>
-			</hairSettings>
-			<graphicPaths>
-				<li>
-					<head>Things/Pawn/Asari/Heads/</head>
-				</li>
-			</graphicPaths>
-    <raceRestriction>
+  <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="RE_Asari">
+    <defName>RE_Asari</defName>
+    <label>asari</label>
+    <description>The asari, native to the planet Thessia, are often considered the most influential and respected sentient species in the galaxy, and are known for their elegance, diplomacy, and biotic aptitude.</description>
+    <alienRace>
+      <generalSettings>
+        <forcedRaceTraitEntries>
+          <li>
+            <defName>Beauty</defName>
+            <degree>1</degree>
+            <chance>100</chance>
+          </li>
+          <li>
+            <defName>RE_BioticRecoveryOffset</defName>
+            <degree>1</degree>
+            <chance>70</chance>
+          </li>
+          <li>
+            <defName>RE_BioticRecoveryOffset</defName>
+            <degree>2</degree>
+            <chance>30</chance>
+          </li>
+        </forcedRaceTraitEntries>
+        <alienPartGenerator>
+          <bodyAddons>
+            <li>
+              <bodyPart>Head</bodyPart>
+              <path>Things/Pawn/Asari/Crest/Asari_Crest</path>
+              <inFrontOfBody>true</inFrontOfBody>
+              <layerInvert>false</layerInvert>
+              <alignWithHead>true</alignWithHead>
+              <drawSize>0.9</drawSize>
+              <layerOffset>0.2</layerOffset>
+              <offsets>
+                <north>
+                  <bodyTypes>
+                    <Female>(0, 0.52)</Female>
+                  </bodyTypes>
+                </north>
+                <south>
+                  <bodyTypes>
+                    <Female>(-0.424, 0.22)</Female>
+                  </bodyTypes>
+                </south>
+                <east>
+                  <bodyTypes>
+                    <Female>(-0.4, 0.26)</Female>
+                  </bodyTypes>
+                </east>
+              </offsets>
+              <drawnInBed>true</drawnInBed>
+              <drawnDesiccated>true</drawnDesiccated>
+              <colorChannel>skin</colorChannel>
+            </li>
+            <li>
+              <bodyPart>Head</bodyPart>
+              <path>Things/Pawn/Asari/Tattoos/AsariTattoo</path>
+              <inFrontOfBody>true</inFrontOfBody>
+              <layerInvert>false</layerInvert>
+              <alignWithHead>true</alignWithHead>
+              <drawSize>0.9</drawSize>
+              <layerOffset>0.2</layerOffset>
+              <offsets>
+                <north>
+                  <bodyTypes>
+                    <Female>(0, 0.32)</Female>
+                  </bodyTypes>
+                </north>
+                <south>
+                  <bodyTypes>
+                    <Female>(-0.424, 0.02)</Female>
+                  </bodyTypes>
+                </south>
+                <east>
+                  <bodyTypes>
+                    <Female>(-0.4, 0.06)</Female>
+                  </bodyTypes>
+                </east>
+              </offsets>
+              <drawnInBed>true</drawnInBed>
+              <drawnDesiccated>true</drawnDesiccated>
+              <colorChannel>tattoo</colorChannel>
+            </li>
+          </bodyAddons>
+          <aliencrowntypes>
+            <li>Asari_Average_Normal</li>
+            <li>Asari_Average_Pointy</li>
+            <li>Asari_Average_Wide</li>
+            <li>Asari_Narrow_Normal</li>
+            <li>Asari_Narrow_Pointy</li>
+            <li>Asari_Narrow_Wide</li>
+          </aliencrowntypes>
+          <alienbodytypes>
+            <li>Female</li>
+          </alienbodytypes>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(114,107,149)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(154,181,138)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(91,118,189)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(72,169,188)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(152,192,184)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(65,92,153)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+            <li>
+              <name>tattoo</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(255,255,255)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(79,79,79)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(152,64,78)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(45,48,99)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(75,49,62)</only>
+                  </li>
+                  <li>
+                    <weight>20</weight>
+                    <only>RGB(191,181,190)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>
+          <useGenderedHeads>false</useGenderedHeads>
+        </alienPartGenerator>
+      </generalSettings>
+      <hairSettings>
+        <hasHair>false</hasHair>
+      </hairSettings>
+      <graphicPaths>
+        <li>
+          <head>Things/Pawn/Asari/Heads/</head>
+        </li>
+      </graphicPaths>
+      <raceRestriction>
         <apparelList>
-            <li>RE_Apparel_AsariRespirator</li>
-         </apparelList>
-    </raceRestriction>
-		</alienRace>
+          <li>RE_Apparel_AsariRespirator</li>
+        </apparelList>
+      </raceRestriction>
+    </alienRace>
     <statBases>
       <MarketValue>2000</MarketValue>
       <MoveSpeed>4.6</MoveSpeed>
@@ -260,8 +260,8 @@
       <meatMarketValue>0.8</meatMarketValue>
       <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-	  <hasGenders>false</hasGenders>
-	  <nameGenerator>RE_NameGeneratorAsari</nameGenerator>
+      <hasGenders>false</hasGenders>
+      <nameGenerator>RE_NameGeneratorAsari</nameGenerator>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -300,6 +300,6 @@
         <li>Human</li>
       </hediffGiverSets>
     </race>
-	</AlienRace.ThingDef_AlienRace>
+  </AlienRace.ThingDef_AlienRace>
 
 </Defs>

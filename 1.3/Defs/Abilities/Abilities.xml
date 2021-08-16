@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <RimEffect.AbilityDef>
+  <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Lance</defName>
     <label>biotic lance</label>
     <description>Devastates a small area with a swiftly thrown shaft of energy</description>
-    <abilityClass>RimEffect.Ability_ShootProjectile</abilityClass>
+    <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
     <targetMode>Location</targetMode>
     <castTime>60</castTime>
     <range>48</range>
@@ -12,28 +12,28 @@
     <iconPath>UI/Abilities/Biotic_Lance</iconPath>
     <power>20</power>
     <castSound>RE_Biotic_Throw</castSound>
-    <castMote>Mote_BlastDry</castMote>
-    <targetMotes>
-      <li>RE_Mote_BioticDistortion</li>
-    </targetMotes>
+    <castFleck>Fleck_BlastDry</castFleck>
+    <targetFlecks>
+      <li>RE_Fleck_BioticDistortion</li>
+    </targetFlecks>
     <requiredHediff>
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>1</minimumLevel>
     </requiredHediff>
     <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Projectile">
+      <li Class="VFECore.Abilities.AbilityExtension_Projectile">
         <projectile>RE_Biotic_LanceProjectile</projectile>
       </li>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>20</energyUsed>
       </li>
     </modExtensions>
-  </RimEffect.AbilityDef>
+  </VFECore.Abilities.AbilityDef>
 
   <ThingDef ParentName="BaseBullet">
     <defName>RE_Biotic_LanceProjectile</defName>
     <label>biotic lance</label>
-    <thingClass>RimEffect.AbilityProjectile</thingClass>
+    <thingClass>VFECore.Abilities.AbilityProjectile</thingClass>
     <graphicData>
       <texPath>Things/AbilityEffects/BioticLance_Shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -49,11 +49,11 @@
     </projectile>
   </ThingDef>
 
-  <RimEffect.AbilityDef>
+  <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Warp</defName>
     <label>biotic warp</label>
     <description>Create rapidly shifting mass effect fields that shred a target apart, lowering it's armor. Further biotic attacks can cause detonation.</description>
-    <abilityClass>RimEffect.Ability_Blank</abilityClass>
+    <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
     <targetMode>Pawn</targetMode>
     <castTime>60</castTime>
     <range>24</range>
@@ -63,18 +63,18 @@
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>2</minimumLevel>
     </requiredHediff>
-    <targetMotes>
-      <li>RE_Mote_BioticDistortion</li>
-    </targetMotes>
+    <targetFlecks>
+      <li>RE_Fleck_BioticDistortion</li>
+    </targetFlecks>
     <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Hediff">
+      <li Class="VFECore.Abilities.AbilityExtension_Hediff">
         <hediff>RE_Biotic_WarpHediff</hediff>
       </li>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>10</energyUsed>
       </li>
     </modExtensions>
-  </RimEffect.AbilityDef>
+  </VFECore.Abilities.AbilityDef>
 
   <HediffDef ParentName="DiseaseBase">
     <defName>RE_Biotic_WarpHediff</defName>
@@ -112,7 +112,7 @@
     </children>
   </EffecterDef>
 
-  <RimEffect.AbilityDef>
+  <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Flight</defName>
     <label>biotic flight</label>
     <description>Using biotic energy, lift yourself in the air to travel a short distance over any obstacles.</description>
@@ -127,21 +127,21 @@
       <minimumLevel>1</minimumLevel>
     </requiredHediff>
     <requiredTrait>RE_ArdatYakshi</requiredTrait>
-    <targetMotes>
-      <li>RE_Mote_BioticDistortion</li>
-    </targetMotes>
+    <targetFlecks>
+      <li>RE_Fleck_BioticDistortion</li>
+    </targetFlecks>
     <modExtensions>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>10</energyUsed>
       </li>
     </modExtensions>
-  </RimEffect.AbilityDef>
+  </VFECore.Abilities.AbilityDef>
 
-  <RimEffect.AbilityDef>
+  <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Charm</defName>
     <label>biotic charm</label>
     <description>Upon next recruitment attempt, Ardat Yakshi has 100% chance to recruit a prisoner. Prisoner recruited this way will be unable to gain any knowledge for the rest of their life.</description>
-    <abilityClass>RimEffect.Ability_Blank</abilityClass>
+    <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
     <targetMode>Self</targetMode>
     <castTime>60</castTime>
     <iconPath>UI/Abilities/Biotic_Charm</iconPath>
@@ -156,11 +156,11 @@
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>50</energyUsed>
       </li>
-      <li Class="RimEffect.AbilityExtension_Hediff">
+      <li Class="VFECore.Abilities.AbilityExtension_Hediff">
         <hediff>RE_Biotic_CharmHediff</hediff>
       </li>
     </modExtensions>
-  </RimEffect.AbilityDef>
+  </VFECore.Abilities.AbilityDef>
 
   <HediffDef ParentName="DiseaseBase">
     <defName>RE_Biotic_CharmHediff</defName>
@@ -206,7 +206,7 @@
     </stages>
   </HediffDef>
 
-  <RimEffect.AbilityDef>
+  <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Stasis</defName>
     <label>biotic stasis</label>
     <description>Locks a target in space and time, preventing anything from affecting them for the duration of the stasis effect. The target cannot be damaged, cannot attack or move.</description>
@@ -220,18 +220,18 @@
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>3</minimumLevel>
     </requiredHediff>
-    <targetMotes>
-      <li>RE_Mote_BioticDistortion</li>
-    </targetMotes>
+    <targetFlecks>
+      <li>RE_Fleck_BioticDistortion</li>
+    </targetFlecks>
     <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Hediff">
+      <li Class="VFECore.Abilities.AbilityExtension_Hediff">
         <hediff>RE_Biotic_StasisHediff</hediff>
       </li>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>10</energyUsed>
       </li>
     </modExtensions>
-  </RimEffect.AbilityDef>
+  </VFECore.Abilities.AbilityDef>
 
   <HediffDef ParentName="DiseaseBase">
     <defName>RE_Biotic_StasisHediff</defName>
@@ -271,7 +271,7 @@
     </children>
   </EffecterDef>
 
-  <RimEffect.AbilityDef>
+  <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Sphere</defName>
     <label>biotic sphere</label>
     <description>Create a defensive shield that surrounds the caster and nearby allies. Drains biotic energy quickly, creating a shield around the user and any nearby allies.</description>
@@ -286,18 +286,18 @@
       <hediffDef>RE_BioticAmpHediff</hediffDef>
       <minimumLevel>4</minimumLevel>
     </requiredHediff>
-    <targetMotes>
-      <li>RE_Mote_BioticDistortion</li>
-    </targetMotes>
+    <targetFlecks>
+      <li>RE_Fleck_BioticDistortion</li>
+    </targetFlecks>
     <modExtensions>
-      <li Class="RimEffect.AbilityExtension_Hediff">
+      <li Class="VFECore.Abilities.AbilityExtension_Hediff">
         <hediff>RE_Biotic_SphereHediff</hediff>
       </li>
       <li Class="RimEffect.AbilityExtension_Biotic">
         <energyUsed>25</energyUsed>
       </li>
     </modExtensions>
-  </RimEffect.AbilityDef>
+  </VFECore.Abilities.AbilityDef>
 
   <HediffDef ParentName="DiseaseBase">
     <defName>RE_Biotic_SphereHediff</defName>

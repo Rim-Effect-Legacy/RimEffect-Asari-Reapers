@@ -30,7 +30,7 @@
   </PawnKindDef>
 
   <!-- Banshee -->
-  
+
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Banshee</defName>
     <label>banshee</label>
@@ -97,21 +97,21 @@
       <Steel>40</Steel>
       <Plasteel>20</Plasteel>
     </butcherProducts>
-<comps>
- <li Class="VFECore.CompProperties_ShieldBubble">
-  <compClass>RimEffect.CompAbilities</compClass>
-  <blockRangedAttack>True</blockRangedAttack>
-  <blockMeleeAttack>False</blockMeleeAttack>
-  <showWhenDrafted>True</showWhenDrafted>
-  <showOnHostiles>True</showOnHostiles>
-  <showOnNeutralInCombat>True</showOnNeutralInCombat>
-  <shieldTexPath>Other/ShieldBubble</shieldTexPath>
-  <minShieldSize>1</minShieldSize>
-  <maxShieldSize>1.5</maxShieldSize>
-  <shieldColor>(1, 1, 1, 1)</shieldColor>
-  <EnergyLossPerDamage>1</EnergyLossPerDamage>
-</li>
-</comps>
+    <comps>
+      <li Class="VFECore.CompProperties_ShieldBubble">
+        <compClass>VFECore.Abilities.CompAbilities</compClass>
+        <blockRangedAttack>True</blockRangedAttack>
+        <blockMeleeAttack>False</blockMeleeAttack>
+        <showWhenDrafted>True</showWhenDrafted>
+        <showOnHostiles>True</showOnHostiles>
+        <showOnNeutralInCombat>True</showOnNeutralInCombat>
+        <shieldTexPath>Other/ShieldBubble</shieldTexPath>
+        <minShieldSize>1</minShieldSize>
+        <maxShieldSize>1.5</maxShieldSize>
+        <shieldColor>(1, 1, 1, 1)</shieldColor>
+        <EnergyLossPerDamage>1</EnergyLossPerDamage>
+      </li>
+    </comps>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseHuskKind">
@@ -132,18 +132,18 @@
       </li>
     </lifeStages>
     <modExtensions>
-	  <li Class="RimEffect.PawnKindAbilityExtension">
-		<giveAbilities>
-			<li>RE_Biotic_Charge</li>
-			<li>RE_Biotic_Singularity</li>
-		</giveAbilities>
-		<implantDef>RE_BioticAmpHediff</implantDef>
-		<initialLevel>3</initialLevel>
-		<giveRandomAbilities>true</giveRandomAbilities>
-		</li>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Charge</li>
+          <li>RE_Biotic_Singularity</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>3</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
     </modExtensions>
   </PawnKindDef>
-  
+
   <!-- goliath -->
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Goliath</defName>
@@ -215,7 +215,7 @@
       <li>GoliathCannon</li>
     </weaponTags>
   </PawnKindDef>
-  
+
   <!-- ravager -->
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Ravager</defName>
@@ -245,8 +245,8 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>RE_Bullet_RavagerRocket</defaultProjectile>
         <warmupTime>6.0</warmupTime>
-		<forcedMissRadius>2.9</forcedMissRadius>
-		<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <forcedMissRadius>2.9</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
         <range>59.9</range>
         <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
         <burstShotCount>2</burstShotCount>
@@ -259,7 +259,7 @@
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
       <body>RE_RachniLike</body>
-	  <deathActionWorkerClass>RimEffectReapers.DeathActionWorker_Spawner</deathActionWorkerClass>
+      <deathActionWorkerClass>RimEffectReapers.DeathActionWorker_Spawner</deathActionWorkerClass>
       <baseBodySize>1.7</baseBodySize>
       <baseHealthScale>1.0</baseHealthScale>
       <lifeStageAges>
@@ -280,12 +280,12 @@
       <Steel>20</Steel>
       <Plasteel>5</Plasteel>
     </butcherProducts>
-      <modExtensions>
-        <li Class="RimEffectReapers.DefModExt_DeathSpawnerProps">
-          <kindDef>RE_Husk_Swarmer</kindDef>
-          <quantityRange>3~5</quantityRange>
-        </li>
-      </modExtensions>
+    <modExtensions>
+      <li Class="RimEffectReapers.DefModExt_DeathSpawnerProps">
+        <kindDef>RE_Husk_Swarmer</kindDef>
+        <quantityRange>3~5</quantityRange>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseHuskKind">
@@ -306,7 +306,7 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-  
+
   <!-- husk -->
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Husk</defName>
@@ -401,7 +401,7 @@
       <Steel>10</Steel>
     </butcherProducts>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="BaseHuskKind">
     <defName>RE_Husk_Husk</defName>
     <label>husk</label>
@@ -412,12 +412,12 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Reaper/Husk/Husk</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-		  <drawSize>1.6</drawSize>
+          <drawSize>1.6</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
-  
+
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Swarmer</defName>
     <label>swarmer</label>
@@ -426,7 +426,7 @@
       <MoveSpeed>3.75</MoveSpeed>
       <ArmorRating_Blunt>0.16</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-	  <PsychicSensitivity>0.3</PsychicSensitivity>
+      <PsychicSensitivity>0.3</PsychicSensitivity>
     </statBases>
     <uiIconScale>2</uiIconScale>
     <tools>
@@ -473,7 +473,7 @@
       <Steel>3</Steel>
     </butcherProducts>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="BaseHuskKind">
     <defName>RE_Husk_Swarmer</defName>
     <label>swarmer</label>
@@ -488,9 +488,9 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-  
+
   <!-- cannibal -->
-  
+
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Cannibal</defName>
     <label>cannibal</label>
@@ -572,7 +572,7 @@
       <Steel>15</Steel>
     </butcherProducts>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="BaseHuskKind">
     <defName>RE_Husk_Cannibal</defName>
     <label>cannibal</label>
@@ -583,16 +583,16 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Reaper/Cannibal/Cannibal</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-		  <drawSize>1.8</drawSize>
+          <drawSize>1.8</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
-	<weaponMoney>9999~9999</weaponMoney>
+    <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
       <li>CannibalCaster</li>
     </weaponTags>
   </PawnKindDef>
-  
+
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Marauder</defName>
     <label>marauder</label>
@@ -672,17 +672,17 @@
     </race>
     <butcherProducts>
       <Steel>20</Steel>
-	  <Plasteel>5</Plasteel>
+      <Plasteel>5</Plasteel>
     </butcherProducts>
-	<comps>
-		<li Class="VFECore.CompProperties_ShieldBubble">
-			<EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>30</EnergyShieldEnergyMax>
-			<showAlways>true</showAlways>
-		</li>
-	</comps>
+    <comps>
+      <li Class="VFECore.CompProperties_ShieldBubble">
+        <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+        <EnergyShieldEnergyMax>30</EnergyShieldEnergyMax>
+        <showAlways>true</showAlways>
+      </li>
+    </comps>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="BaseHuskKind">
     <defName>RE_Husk_Marauder</defName>
     <label>marauder</label>
@@ -693,17 +693,17 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Reaper/Marauder/Marauder</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-		  <drawSize>1.7</drawSize>
+          <drawSize>1.7</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
-	<weaponMoney>9999~9999</weaponMoney>
+    <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
       <li>MarauderRifle</li>
     </weaponTags>
   </PawnKindDef>
-  
-<!-- brute -->
+
+  <!-- brute -->
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Brute</defName>
     <label>brute</label>
@@ -719,7 +719,7 @@
         <label>left claw</label>
         <capacities>
           <li>Cut</li>
-		  <li>Scratch</li>
+          <li>Scratch</li>
         </capacities>
         <power>36.0</power>
         <cooldownTime>4</cooldownTime>
@@ -737,7 +737,7 @@
         <label>right claw</label>
         <capacities>
           <li>Cut</li>
-		  <li>Scratch</li>
+          <li>Scratch</li>
         </capacities>
         <power>36.0</power>
         <cooldownTime>4</cooldownTime>
@@ -819,10 +819,10 @@
     </race>
     <butcherProducts>
       <Steel>50</Steel>
-	  <Plasteel>25</Plasteel>
+      <Plasteel>25</Plasteel>
     </butcherProducts>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="BaseHuskKind">
     <defName>RE_Husk_Brute</defName>
     <label>brute</label>
@@ -833,12 +833,12 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Reaper/Brute/Brute</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-		  <drawSize>4.2</drawSize>
+          <drawSize>4.2</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
-  
+
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Colossus</defName>
     <label>colossus</label>
@@ -912,10 +912,10 @@
     </race>
     <butcherProducts>
       <Steel>30</Steel>
-	  <Plasteel>15</Plasteel>
+      <Plasteel>15</Plasteel>
     </butcherProducts>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="BaseHuskKind">
     <defName>RE_Husk_Colossus</defName>
     <label>colossus</label>
@@ -926,11 +926,11 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Reaper/Colossus/Colossus</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-		  <drawSize>4.8</drawSize>
+          <drawSize>4.8</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
-	<weaponMoney>9999~9999</weaponMoney>
+    <weaponMoney>9999~9999</weaponMoney>
     <weaponTags>
       <li>ColossusArtillery</li>
     </weaponTags>

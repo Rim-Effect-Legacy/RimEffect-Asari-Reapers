@@ -20,7 +20,7 @@
     </apparelTags>
     <apparelMoney>4000~4500</apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-	<apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
     <weaponTags>
       <li>AllianceGun</li>
     </weaponTags>
@@ -68,7 +68,7 @@
     </apparelTags>
     <apparelMoney>3500~4500</apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-	<apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
     <weaponTags>
       <li>AllianceGunSniper</li>
     </weaponTags>
@@ -114,7 +114,7 @@
     </apparelTags>
     <apparelMoney>5000~6500</apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-	<apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
     <weaponTags>
       <li>AllianceGunHeavy</li>
     </weaponTags>
@@ -223,7 +223,7 @@
       <li>RE_AllianceSpacerApparel</li>
       <li>IndustrialBasic</li>
     </apparelTags>
-	<apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
     <apparelMoney>300~1000</apparelMoney>
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <techHediffsChance>0.1</techHediffsChance>
@@ -330,7 +330,7 @@
   <PawnKindDef ParentName="AsariPawnBase">
     <defName>RE_AsariMerchant</defName>
     <label>merchant</label>
-	<trader>true</trader>
+    <trader>true</trader>
     <combatPower>50</combatPower>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
@@ -416,8 +416,8 @@
       <li>ImplantEmpireCommon</li>
       <li>RE_Implant</li>
     </techHediffsTags>
-	<initialWillRange>3~4</initialWillRange>
-	<initialResistanceRange>18~28</initialResistanceRange>
+    <initialWillRange>3~4</initialWillRange>
+    <initialResistanceRange>18~28</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
@@ -487,7 +487,7 @@
     <initialWillRange>1~2</initialWillRange>
     <initialResistanceRange>10~18</initialResistanceRange>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="AsariPawnBase">
     <defName>RE_Alliance_AsariAdept</defName>
     <label>adept</label>
@@ -509,7 +509,7 @@
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
-	<apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
     <modExtensions>
       <li Class="VFECore.PawnKindDefExtension">
         <factionColourApparelPartList>
@@ -529,17 +529,17 @@
           <li>OnSkin</li>
         </factionColourApparelLayerList>
       </li>
-	  <li Class="RimEffect.PawnKindAbilityExtension">
-		<giveAbilities>
-			<li>RE_Biotic_Throw</li>
-		</giveAbilities>
-		<implantDef>RE_BioticAmpHediff</implantDef>
-		<initialLevel>1</initialLevel>
-		<giveRandomAbilities>true</giveRandomAbilities>
-		</li>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Throw</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>1</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
     </modExtensions>
     <initialWillRange>1~2</initialWillRange>
     <initialResistanceRange>12~24</initialResistanceRange>
   </PawnKindDef>
-  
+
 </Defs>
