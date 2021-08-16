@@ -47,14 +47,13 @@ namespace RimEffectReapers
             boltMesh = LightningBoltMeshPool.RandomBoltMesh;
             if (!strikeLoc.Fogged(map))
             {
-                GenExplosion.DoExplosion(strikeLoc, map, 3.8f, DamageDefOf.Flame, null, -1, -1f, null, null,
-                    null, null, null, 0f, 1, false, null, 0f, 1, 0f, false, null);
+                GenExplosion.DoExplosion(strikeLoc, map, 3.8f, DamageDefOf.Flame, null);
                 var loc = strikeLoc.ToVector3Shifted();
                 for (var i = 0; i < 4; i++)
                 {
-                    MoteMaker.ThrowSmoke(loc, map, 1.5f);
-                    MoteMaker.ThrowMicroSparks(loc, map);
-                    MoteMaker.ThrowLightningGlow(loc, map, 1.5f);
+                    FleckMaker.ThrowSmoke(loc, map, 1.5f);
+                    FleckMaker.ThrowMicroSparks(loc, map);
+                    FleckMaker.ThrowLightningGlow(loc, map, 1.5f);
                 }
             }
 

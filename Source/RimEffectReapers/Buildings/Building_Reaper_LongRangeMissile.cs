@@ -150,7 +150,7 @@ namespace RimEffectReapers
 
                 if (betterTicksToImpact <= 0) ticksToImpact = 219;
                 if (Find.TickManager.TicksGame % 3 == 0)
-                    MoteMaker.ThrowSmoke(DrawPos - new Vector3(0, 0, Graphic.drawSize.y / 2), Map, 1.5f);
+                    FleckMaker.ThrowSmoke(DrawPos - new Vector3(0, 0, Graphic.drawSize.y / 2), Map, 1.5f);
             }
         }
 

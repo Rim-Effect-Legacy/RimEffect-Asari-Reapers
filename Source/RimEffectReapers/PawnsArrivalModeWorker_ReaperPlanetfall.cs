@@ -16,7 +16,7 @@ namespace RimEffectReapers
         {
             IntVec3 near;
             if (!DropCellFinder.TryFindRaidDropCenterClose(out near, map))
-                near = DropCellFinder.FindRaidDropCenterDistant_NewTemp(map);
+                near = DropCellFinder.FindRaidDropCenterDistant(map);
 
             TransportPodsArrivalActionUtility.DropTravelingTransportPods(dropPods, near, map);
         }

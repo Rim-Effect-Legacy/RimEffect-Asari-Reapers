@@ -21,7 +21,7 @@ namespace RimEffectReapers
                         GenSpawn.Spawn(PawnGenerator.GeneratePawn(reapers.RandomPawnKind(), reapers), pawn.Position,
                             map, pawn.Rotation);
                     }
-                    catch (NullReferenceException e)
+                    catch (NullReferenceException)
                     {
                     }
                     finally
