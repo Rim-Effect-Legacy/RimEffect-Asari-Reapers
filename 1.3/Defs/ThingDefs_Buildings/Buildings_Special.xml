@@ -6,7 +6,7 @@
     <label>asari terminal</label>
     <description>A structure which enables nearby research benches to investigate advanced projects, it increases research speed and allows for researching of asari technologies.</description>
     <graphicData>
-      <texPath>Things/Building/Furniture/Special/TerminalAlliance</texPath>
+      <texPath>Things/Building/TerminalAsari/TerminalAsari</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
