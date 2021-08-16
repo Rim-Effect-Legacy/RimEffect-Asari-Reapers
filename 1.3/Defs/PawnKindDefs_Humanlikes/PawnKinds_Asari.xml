@@ -263,6 +263,8 @@
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>10~18</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">

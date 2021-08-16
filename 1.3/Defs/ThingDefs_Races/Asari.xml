@@ -33,7 +33,6 @@
               <layerInvert>false</layerInvert>
               <alignWithHead>true</alignWithHead>
               <drawSize>0.9</drawSize>
-              <layerOffset>0.2</layerOffset>
               <offsets>
                 <north>
                   <bodyTypes>
@@ -62,7 +61,6 @@
               <layerInvert>false</layerInvert>
               <alignWithHead>true</alignWithHead>
               <drawSize>0.9</drawSize>
-              <layerOffset>0.2</layerOffset>
               <offsets>
                 <north>
                   <bodyTypes>
@@ -163,9 +161,14 @@
           <useGenderedHeads>false</useGenderedHeads>
         </alienPartGenerator>
       </generalSettings>
-      <hairSettings>
-        <hasHair>false</hasHair>
-      </hairSettings>
+            <styleSettings>
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+			</styleSettings>
       <graphicPaths>
         <li>
           <head>Things/Pawn/Asari/Heads/</head>

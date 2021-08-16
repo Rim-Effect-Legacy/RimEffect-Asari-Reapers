@@ -12,7 +12,7 @@
     <iconPath>UI/Abilities/Biotic_Lance</iconPath>
     <power>20</power>
     <castSound>RE_Biotic_Throw</castSound>
-    <castFleck>Fleck_BlastDry</castFleck>
+    <castFleck>BlastDry</castFleck>
     <targetFlecks>
       <li>RE_Fleck_BioticDistortion</li>
     </targetFlecks>
