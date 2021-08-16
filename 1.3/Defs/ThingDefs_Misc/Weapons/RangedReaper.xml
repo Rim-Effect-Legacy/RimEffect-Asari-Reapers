@@ -34,7 +34,6 @@
       <RangedWeapon_Cooldown>7.5</RangedWeapon_Cooldown>
     </statBases>
     <techLevel>Ultra</techLevel>
-    <menuHidden>True</menuHidden>
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
     <tools>
@@ -64,6 +63,7 @@
     <weaponTags>
       <li>GoliathCannon</li>
     </weaponTags>
+	<relicChance>0</relicChance>
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
@@ -117,7 +117,6 @@
       <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
     </statBases>
     <techLevel>Ultra</techLevel>
-    <menuHidden>True</menuHidden>
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
     <tools>
@@ -147,6 +146,7 @@
     <weaponTags>
       <li>CannibalCaster</li>
     </weaponTags>
+	<relicChance>0</relicChance>
   </ThingDef>
   
   <ThingDef ParentName="BaseGunWithQuality">
@@ -167,7 +167,6 @@
       <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
     </statBases>
     <techLevel>Ultra</techLevel>
-    <menuHidden>True</menuHidden>
     <tradeability>None</tradeability>
     <destroyOnDrop>true</destroyOnDrop>
     <tools>
@@ -197,6 +196,7 @@
     <weaponTags>
       <li>MarauderRifle</li>
     </weaponTags>
+	<relicChance>0</relicChance>
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">
@@ -229,6 +229,8 @@
       <Mass>56</Mass>
       <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
     </statBases>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
     <weaponTags>
       <li>ColossusArtillery</li>
     </weaponTags>
@@ -262,6 +264,7 @@
         <cooldownTime>2.6</cooldownTime>
       </li>
     </tools>
+	<relicChance>0</relicChance>
   </ThingDef>
   
   <ThingDef ParentName="BaseBullet">

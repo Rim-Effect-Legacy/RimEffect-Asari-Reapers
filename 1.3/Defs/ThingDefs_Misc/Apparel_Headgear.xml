@@ -89,7 +89,7 @@
 	  <RE_BioticEnergyRecoveryRate>2.0</RE_BioticEnergyRecoveryRate>
     </equippedStatOffsets>
 		<comps>
-			<li Class="CompProperties_BiocodableApparel"/>
+			<li Class="CompProperties_Biocodable"/>
 		</comps>
 	</ThingDef>
 	
@@ -181,7 +181,7 @@
 	  <ToxicSensitivity>-0.75</ToxicSensitivity>
     </equippedStatOffsets>
 		<comps>
-			<li Class="CompProperties_BiocodableApparel"/>
+			<li Class="CompProperties_Biocodable"/>
 		</comps>
 	</ThingDef>
 

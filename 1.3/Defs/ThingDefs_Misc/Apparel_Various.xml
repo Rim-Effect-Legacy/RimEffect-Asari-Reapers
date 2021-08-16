@@ -95,7 +95,7 @@
 	  <RE_BioticEnergyRecoveryRate>1.0</RE_BioticEnergyRecoveryRate>
     </equippedStatOffsets>
     <comps>
-      <li Class="CompProperties_BiocodableApparel"/>
+      <li Class="CompProperties_Biocodable"/>
     </comps>
   </ThingDef>
   

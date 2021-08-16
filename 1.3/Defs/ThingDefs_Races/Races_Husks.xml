@@ -98,7 +98,7 @@
       <Plasteel>20</Plasteel>
     </butcherProducts>
 <comps>
- <li Class="VFEMech.CompProperties_ShieldMechBubble">
+ <li Class="VFECore.CompProperties_ShieldBubble">
   <compClass>RimEffect.CompAbilities</compClass>
   <blockRangedAttack>True</blockRangedAttack>
   <blockMeleeAttack>False</blockMeleeAttack>
@@ -675,7 +675,7 @@
 	  <Plasteel>5</Plasteel>
     </butcherProducts>
 	<comps>
-		<li Class="VFEMech.CompProperties_ShieldMechBubble">
+		<li Class="VFECore.CompProperties_ShieldBubble">
 			<EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
 			<EnergyShieldEnergyMax>30</EnergyShieldEnergyMax>
 			<showAlways>true</showAlways>
