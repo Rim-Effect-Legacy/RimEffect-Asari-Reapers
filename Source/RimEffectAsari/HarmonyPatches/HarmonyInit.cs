@@ -6,9 +6,7 @@
     [StaticConstructorOnStartup]
     internal static class HarmonyInit
     {
-        static HarmonyInit()
-        {
+        static HarmonyInit() => 
             new Harmony("OskarPotocki.RimEffectAsari").PatchAll();
-        }
     }
 }

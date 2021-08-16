@@ -2,9 +2,9 @@
 {
     using HarmonyLib;
     using RimWorld;
-    using UnityEngine;
     using Verse;
 
+    /*
     [HarmonyPatch(typeof(RecruitUtility), nameof(RecruitUtility.RecruitChanceFinalByPawn))]
     public static class RecruitChanceFinal_Patch
     {
@@ -14,7 +14,7 @@
             if (recruiter.health?.hediffSet.HasHediff(REA_DefOf.RE_Biotic_CharmHediff) ?? false) 
                 __result = 1f;
         }
-    }
+    }*/
 
     [HarmonyPatch(typeof(InteractionWorker_RecruitAttempt), nameof(InteractionWorker_RecruitAttempt.Interacted))]
     public static class RecruitInteractionWorker_Patch

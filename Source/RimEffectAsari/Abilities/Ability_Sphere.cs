@@ -12,7 +12,8 @@ namespace RimEffectAsari
     using UnityEngine;
     using Verse;
     using Verse.Sound;
-    using Ability = RimEffect.Ability;
+    using Ability = VFECore.Abilities.Ability;
+
 
     public class Ability_Sphere : Ability
     {
@@ -25,8 +26,8 @@ namespace RimEffectAsari
             bioticSphere.radius    = this.GetRadiusForPawn();
             bioticSphere.damage    = this.GetPowerForPawn();
 
-            if (this.def.targetMotes.Any())
-                bioticSphere.mote = this.def.targetMotes.First();
+            if (this.def.targetFlecks.Any())
+                bioticSphere.fleck = this.def.targetFlecks.First();
         }
 
         public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
@@ -43,8 +44,7 @@ namespace RimEffectAsari
         public static readonly ProjectileDelegate projectileImpactSomethingDelegate = AccessTools.MethodDelegate<ProjectileDelegate>(AccessTools.Method(typeof(Projectile), "ImpactSomething"));
 
         public Pawn             caster;
-        public ThingDef         mote;
-        public Mote             moteThing;
+        public FleckDef         fleck;
         public Hediff_BioticAmp bioticAmp;
 
         public float radius;
@@ -75,6 +75,12 @@ namespace RimEffectAsari
             }
         }
 
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            FleckMaker.Static(this.DrawPos, this.Map, this.fleck);
+        }
+
         public override void Tick()
         {
             if (this.damage <= 0 || this.caster == null || !this.bioticAmp.SufficientEnergyPresent(1))
@@ -87,10 +93,12 @@ namespace RimEffectAsari
 
             this.bioticAmp.UseEnergy(0.5f);
 
+            /*
             if (this.moteThing is null)
-                this.moteThing = MoteMaker.MakeStaticMote(this.DrawPos, this.Map, this.mote);
+                this.moteThing = MoteMaker.MakeStaticMote(this.DrawPos, this.Map, this.fleck);
             else
                 this.moteThing.Maintain();
+            */
 
             if (this.IsHashIntervalTick(GenTicks.TickRareInterval / 2) && this.caster.Position.DistanceToSquared(this.cachedPos) > 2f)
             {
@@ -100,10 +108,10 @@ namespace RimEffectAsari
 
             if (this.IsHashIntervalTick(2))
             {
-                var thingsWithinRadius = new HashSet<Thing>();
-                foreach (var cell in this.cachedCells)
+                HashSet<Thing> thingsWithinRadius = new HashSet<Thing>();
+                foreach (IntVec3 cell in this.cachedCells)
                 {
-                    List<Thing> thingList = cell.GetThingList(MapHeld);
+                    List<Thing> thingList = cell.GetThingList(this.MapHeld);
                     for (int i = 0; i < thingList.Count; i++)
                         thingsWithinRadius.Add(thingList[i]);
                 }
@@ -138,11 +146,11 @@ namespace RimEffectAsari
             this.impactAngleVect = Vector3Utility.HorizontalVectorFromAngle(angle);
             Vector3 loc       = this.TrueCenter() + this.impactAngleVect.RotatedBy(180f) * (this.radius / 2);
             float   flashSize = Mathf.Min(10f, 2f + amount / 10f);
-            MoteMaker.MakeStaticMote(loc, this.Map, ThingDefOf.Mote_ExplosionFlash, flashSize);
+            FleckMaker.Static(loc, this.Map, FleckDefOf.ExplosionFlash, flashSize);
             int dustCount = (int)flashSize;
             for (int i = 0; i < dustCount; i++)
             {
-                MoteMaker.ThrowDustPuff(loc, this.Map, Rand.Range(0.8f, 1.2f));
+                FleckMaker.ThrowDustPuff(loc, this.Map, Rand.Range(0.8f, 1.2f));
             }
             float energyLoss = amount;
             this.damage -= energyLoss;
