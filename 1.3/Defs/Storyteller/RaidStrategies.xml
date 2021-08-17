@@ -2,7 +2,7 @@
 <Defs>
   <RaidStrategyDef>
     <defName>RE_ReaperPlanetfallStrategy</defName>
-    <workerClass>RimEffectReapers.RaidStrategyWorker_ReaperPlanetfall</workerClass>
+    <workerClass>KCSG.FallingStructureStrategy</workerClass>
     <minPawns>2</minPawns>
     <raidLootValueFactor>1</raidLootValueFactor>
     <arriveModes>
@@ -19,5 +19,33 @@
     <arrivalTextEnemy>Reaper units that landed with it will attack immediately. The Reaper will lay covering fire and begin the siege as soon as possible.text_todo</arrivalTextEnemy>
     <letterLabelFriendly>Friendlies</letterLabelFriendly>
     <arrivalTextFriendly>It looks like they want to use siege tactics to help you.</arrivalTextFriendly>
+    <modExtensions>
+      <li Class="KCSG.FallingStructure">
+        <weightedStruct>
+          <li>RE_Reaper1_North</li>
+          <li>RE_Reaper1_South</li>
+          <li>RE_Reaper1_East</li>
+          <li>RE_Reaper1_West</li>
+          <li>RE_Reaper2_North</li>
+          <li>RE_Reaper2_South</li>
+          <li>RE_Reaper2_East</li>
+          <li>RE_Reaper2_West</li>
+          <li>RE_Reaper3_North</li>
+          <li>RE_Reaper3_South</li>
+          <li>RE_Reaper3_East</li>
+          <li>RE_Reaper3_West</li>
+          <li>RE_Reaper4_North</li>
+          <li>RE_Reaper4_South</li>
+          <li>RE_Reaper4_East</li>
+          <li>RE_Reaper4_West</li>
+        </weightedStruct>
+        <canBeUsedBy>
+          <li>RE_Reapers</li>
+        </canBeUsedBy>
+        <needToHaveSettlements>true</needToHaveSettlements>
+        <spawnDormantWhenPossible>false</spawnDormantWhenPossible>
+        <skyfaller>RimEffectReapers.Reaper_Skyfaller</skyfaller>
+      </li>
+    </modExtensions>
   </RaidStrategyDef>
 </Defs>

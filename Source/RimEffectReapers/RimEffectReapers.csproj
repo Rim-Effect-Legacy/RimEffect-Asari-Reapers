@@ -40,7 +40,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="KCSG">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.3\Assemblies\KCSG.dll</HintPath>
+      <HintPath>..\..\..\Vanilla-Expanded-Framework\1.3\Assemblies\KCSG.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -81,12 +81,9 @@
     <Compile Include="IncidentWorkers\IncidentWorker_ReaperDown.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_ReaperLanding.cs" />
     <Compile Include="LordJob_ReaperDefendBase.cs" />
-    <Compile Include="PawnsArrivalModeWorker_ReaperPlanetfall.cs" />
-    <Compile Include="RaidStrategyWorker_ReaperPlanetfall.cs" />
     <Compile Include="ReaperBeam.cs" />
     <Compile Include="ReaperShip.cs" />
     <Compile Include="Reaper_Skyfaller.cs" />
-    <Compile Include="SymbolResolverReaper.cs" />
     <Compile Include="WeatherEvents.cs" />
     <Compile Include="Comps\CompLootOnDestroy.cs" />
     <Compile Include="ReaperUtils.cs" />
