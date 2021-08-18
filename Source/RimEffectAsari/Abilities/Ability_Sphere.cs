@@ -75,12 +75,6 @@ namespace RimEffectAsari
             }
         }
 
-        public override void SpawnSetup(Map map, bool respawningAfterLoad)
-        {
-            base.SpawnSetup(map, respawningAfterLoad);
-            FleckMaker.Static(this.DrawPos, this.Map, this.fleck);
-        }
-
         public override void Tick()
         {
             if (this.damage <= 0 || this.caster == null || !this.bioticAmp.SufficientEnergyPresent(1))
@@ -103,6 +97,7 @@ namespace RimEffectAsari
             if (this.IsHashIntervalTick(GenTicks.TickRareInterval / 2) && this.caster.Position.DistanceToSquared(this.cachedPos) > 2f)
             {
                 this.cachedPos   = this.caster.Position;
+                FleckMaker.Static(this.DrawPos, this.Map, this.fleck);
                 this.cachedCells = new HashSet<IntVec3>(GenRadial.RadialCellsAround(this.caster.Position, this.radius+1, true));
             }
 
