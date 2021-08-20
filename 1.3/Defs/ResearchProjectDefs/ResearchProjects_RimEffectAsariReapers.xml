@@ -56,7 +56,26 @@
       <li>MultiAnalyzer</li>
 	  <li>RE_AsariTerminal</li>
     </requiredResearchFacilities>
-    <researchViewX>2.0</researchViewX>
+    <researchViewX>3.0</researchViewX>
+    <researchViewY>3.5</researchViewY>
+	<tab>RimEffect</tab>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
+    <defName>RE_AsariApparel</defName>
+    <label>asari apparel</label>
+    <description>Craft asari apparel.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>RE_AsariCooperation</li>
+    </prerequisites>
+    <requiredResearchBuilding>RE_SpacerTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+	  <li>RE_AsariTerminal</li>
+    </requiredResearchFacilities>
+    <researchViewX>1.0</researchViewX>
     <researchViewY>3.5</researchViewY>
 	<tab>RimEffect</tab>
   </ResearchProjectDef>
