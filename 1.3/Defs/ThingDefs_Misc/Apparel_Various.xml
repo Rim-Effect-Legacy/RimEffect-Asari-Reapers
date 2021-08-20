@@ -318,5 +318,88 @@
       <li>RE_AsariApparel</li>
     </tradeTags>
   </ThingDef>
+  
+  <ThingDef ParentName="RE_SpacerApparelMakeableBase">
+    <defName>RE_Apparel_MatriarchDress</defName>
+    <label>matriarch dress</label>
+    <description>A full-body elegant dress befitting of the Matriarch title.</description>
+    <recipeMaker>
+      <researchPrerequisite>RE_AsariCooperation</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Items/Apparel/MatriarchDress/MatriarchDress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.5</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Items/Apparel/MatriarchDress/MatriarchDress</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>RE_AsariApparelMatriarch</li>
+		<li>RE_RoyaltyAllowed</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.4,0.3,0.15)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.5,0.5,0.5)</min>
+          <max>(1,1,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>RE_AsariApparel</li>
+    </tradeTags>
+    <equippedStatOffsets>
+      <SocialImpact>0.35</SocialImpact>
+    </equippedStatOffsets>
+  </ThingDef>
 
 </Defs>
