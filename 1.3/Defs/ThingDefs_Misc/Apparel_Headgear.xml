@@ -190,7 +190,7 @@
     <label>matriarch crown</label>
     <description>An elegant crown befitting of the Matriarch title.</description>
     <recipeMaker>
-      <researchPrerequisite>RE_AsariCooperation</researchPrerequisite>
+      <researchPrerequisite>RE_AsariApparel</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Items/Apparel/MatriarchDress/MatriarchCrown</texPath>
