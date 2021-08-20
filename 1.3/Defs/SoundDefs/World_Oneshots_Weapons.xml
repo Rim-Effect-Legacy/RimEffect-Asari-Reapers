@@ -129,6 +129,39 @@
     </subSounds>
   </SoundDef>
   
+  <SoundDef>
+    <defName>RE_MeleeHit_AsariSword</defName>  
+    <context>MapOnly</context> 
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/AsariSword/AttackA_AsariSword</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>17~20</volumeRange>      
+        <pitchRange>0.9152174~1.169566</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Interact_AsariSword</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/AsariSword/Interact_AsariSword</clipPath>
+          </li>
+        </grains>
+        <volumeRange>32~32</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
   <!-- reaper stuff -->
   
   <SoundDef>
