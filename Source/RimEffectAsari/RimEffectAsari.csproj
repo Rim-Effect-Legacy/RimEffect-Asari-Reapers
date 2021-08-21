@@ -73,6 +73,7 @@
     <Compile Include="HarmonyPatches\ApplyArmor_Patch.cs" />
     <Compile Include="HarmonyPatches\CalculateBleedRate_Patch.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />
+    <Compile Include="HarmonyPatches\Lovin_Patch.cs" />
     <Compile Include="HarmonyPatches\RecruitChanceFinal_Patch.cs" />
     <Compile Include="HarmonyPatches\SkinColor_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -211,6 +211,22 @@
     </stages>
   </HediffDef>
 
+  <ThoughtDef>
+    <defName>RE_CharmThought</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>20</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+        <li>
+            <label>charmed</label>
+            <description>Have you seen her? She's so beautiful. I want to spend my whole life with her.</description>
+            <baseMoodEffect>50</baseMoodEffect>
+            <baseOpinionOffset>200</baseOpinionOffset>
+        </li>
+    </stages>
+</ThoughtDef>
+
   <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Stasis</defName>
     <label>biotic stasis</label>

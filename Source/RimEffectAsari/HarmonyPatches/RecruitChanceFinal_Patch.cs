@@ -34,6 +34,7 @@
             {
                 initiator.health.hediffSet.hediffs.Remove(def);
                 recipient.health?.AddHediff(REA_DefOf.RE_Biotic_CharmedHediff);
+                recipient.needs.mood?.thoughts.memories.TryGainMemory(REA_DefOf.RE_CharmThought, initiator);
             }
         }
     }
