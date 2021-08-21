@@ -69,6 +69,7 @@
     <Compile Include="Abilities\Ability_Flight.cs" />
     <Compile Include="Abilities\Ability_Sphere.cs" />
     <Compile Include="Abilities\Ability_Stasis.cs" />
+    <Compile Include="Abilities\Ability_Warp.cs" />
     <Compile Include="HarmonyPatches\ApplyArmor_Patch.cs" />
     <Compile Include="HarmonyPatches\CalculateBleedRate_Patch.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />

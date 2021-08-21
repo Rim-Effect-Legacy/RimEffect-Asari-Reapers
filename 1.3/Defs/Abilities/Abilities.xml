@@ -85,6 +85,11 @@
       <li Class="HediffCompProperties_Effecter">
         <stateEffecter>RE_WarpEffecter</stateEffecter>
       </li>
+      <li Class="RimEffectAsari.HediffCompProperties_WarpTargetReact">
+        <radius>5.9</radius>
+        <damageDef>Blunt</damageDef>
+        <baseDamage>20</baseDamage>
+      </li>
     </comps>
     <stages Inherit="False">
       <li>
