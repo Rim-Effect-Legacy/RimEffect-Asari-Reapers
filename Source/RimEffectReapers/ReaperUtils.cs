@@ -30,7 +30,7 @@ namespace RimEffectReapers
         }
 
         public static int ReaperPresence() => 
-            (int)Find.World.worldObjects.Settlements.Sum(s => s.def.GetModExtension<ReaperBaseExtension>()?.raisesPresence ?? 0f);
+            (int)Find.World.worldObjects.Settlements.Sum(s => s.def.GetModExtension<ReaperBaseExtension>()?.raisesPresence ?? 0f) + 1;
 
         public static bool HasAnyOtherBase(Settlement defeatedFactionBase)
         {

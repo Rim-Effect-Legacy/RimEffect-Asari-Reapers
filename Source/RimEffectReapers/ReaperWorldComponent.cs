@@ -38,7 +38,7 @@ namespace RimEffectReapers
                     }
                 }
 
-                int ticksTillNextInvasion = ReaperMod.settings.reaperTimeInterval.RandomInRange * (1000* 1 / ReaperUtils.ReaperPresence());
+                int ticksTillNextInvasion = ReaperMod.settings.reaperTimeInterval.RandomInRange * (1000 * 1 / ReaperUtils.ReaperPresence());
                 this.nextReaperSpawn = Find.TickManager.TicksGame + ticksTillNextInvasion;
             }
         }
