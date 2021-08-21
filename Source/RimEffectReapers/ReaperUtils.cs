@@ -29,11 +29,8 @@ namespace RimEffectReapers
             lord.AddPawn(pawn);
         }
 
-        public static int ReaperPresence()
-        {
-            return Find.WorldObjects.Settlements.Count(s =>
-                s.Faction.def == RER_DefOf.RE_Reapers && s.def == RER_DefOf.RE_Reaper) * 2000;
-        }
+        public static int ReaperPresence() => 
+            (int)Find.World.worldObjects.Settlements.Sum(s => s.def.GetModExtension<ReaperBaseExtension>()?.raisesPresence ?? 0f);
 
         public static bool HasAnyOtherBase(Settlement defeatedFactionBase)
         {

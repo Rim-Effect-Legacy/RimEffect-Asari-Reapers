@@ -17,6 +17,10 @@
       <li Class="WorldObjectCompProperties_EnterCooldown" />
     </comps>
     <modExtensions>
+      <li Class="RimEffectReapers.ReaperBaseExtension">
+        <raisesPresence>500</raisesPresence>
+        <nameMaker>RE_NameGenerate</nameMaker>
+      </li>
       <li Class="KCSG.FactionSettlement">
         <useStructureLayout>True</useStructureLayout>
         <chooseFromlayouts>

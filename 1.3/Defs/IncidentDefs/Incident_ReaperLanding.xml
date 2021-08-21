@@ -13,6 +13,15 @@
         <letterDef>RE_ReaperLanding</letterDef>
         <letterLabel>Reaper Landed</letterLabel>
         <letterText>A Reaper has landed not far from your location.\nEach Reaper increases the Reaper presence on the surface, resulting in larger assault forces patrolling the area and a bigger invasion force when attacking settlements - yours included.\nDestroying the Reaper can be very difficult, but will decrease their presence on the planet.</letterText>
+        <modExtensions>
+            <li Class="RimEffectReapers.ReaperIncidentExtension">
+              <baseToPlace>RE_Reaper</baseToPlace>
+              <minDistance>5</minDistance>
+              <maxDistance>90</maxDistance>
+              <minimumColonistCount>3</minimumColonistCount>
+              <minimumWealth>100000</minimumWealth>
+            </li>
+          </modExtensions>
     </IncidentDef>
 
     <LetterDef ParentName="ThreatBig">
