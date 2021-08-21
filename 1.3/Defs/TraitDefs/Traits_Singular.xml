@@ -11,6 +11,7 @@
         <statFactors>
           <RE_BioticEnergyMax>2</RE_BioticEnergyMax>
           <RE_BioticEnergyRecoveryRate>2</RE_BioticEnergyRecoveryRate>
+          <RE_BioticAbilityCostMultiplier>0.5</RE_BioticAbilityCostMultiplier>
         </statFactors>
       </li>
     </degreeDatas>

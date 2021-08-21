@@ -187,6 +187,10 @@
       <ComfyTemperatureMax>26</ComfyTemperatureMax>
       <LeatherAmount>50</LeatherAmount>
       <RoyalFavorValue>4</RoyalFavorValue>
+      <PawnBeauty>2</PawnBeauty>
+      <RE_BioticEnergyMax>2</RE_BioticEnergyMax>
+      <RE_BioticEnergyRecoveryRate>2</RE_BioticEnergyRecoveryRate>
+      <RE_BioticAbilityCostMultiplier>0.5</RE_BioticAbilityCostMultiplier>
     </statBases>
     <tools>
       <li>
