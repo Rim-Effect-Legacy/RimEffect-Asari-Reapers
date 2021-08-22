@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="DiseaseBase">
+        <defName>RE_ArdatYakshi_Partner</defName>
+        <label>ardat yakshi mate</label>
+        <labelNoun>neural overload</labelNoun>
+        <lethalSeverity>1</lethalSeverity>
+        <description>During mating the Ardat-Yakshi's nervous system completely overpowers and dominates that of her mate's, causing hemorrhaging in the victim's brain, and ultimately death. But the Ardat-Yakshi becomes smarter, stronger, and deadlier after each encounter.</description>
+        <comps>
+            <li Class="HediffCompProperties_Effecter">
+                <stateEffecter>RE_Dominate</stateEffecter>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>RE_ArdatYakshi_Power</defName>
+        <label>ardat yakshi power</label>
+        <labelNoun>ardat yakshi power</labelNoun>
+        <isBad>false</isBad>
+        <description>Ardat-Yakshi becomes smarter, stronger, and deadlier after each encounter.</description>
+        <comps>
+          <li Class="HediffCompProperties_Effecter">
+            <stateEffecter>RE_ArdatYakshi_Effecter</stateEffecter>
+          </li>
+        </comps>
+        <stages>
+          <li>
+              <statFactorEffectMultiplier>RE_ArdatYakshiPower</statFactorEffectMultiplier>
+              <statFactors>
+                <RE_BioticEnergyMax>1.1</RE_BioticEnergyMax>
+                <RE_BioticEnergyRecoveryRate>1.1</RE_BioticEnergyRecoveryRate>
+                <RE_BioticAbilityCostMultiplier>0.9</RE_BioticAbilityCostMultiplier>
+              </statFactors>
+          </li>
+        </stages>
+      </HediffDef>
+
+      <ThingDef ParentName="MoteBase">
+        <defName>RE_ArdatYakshi_Mote</defName>
+        <graphicData>
+          <texPath>Things/AbilityEffects/Motes/Mote_Dominate</texPath>
+        </graphicData>
+        <thingClass>MoteThrownAttached</thingClass>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+        <mote>
+          <fadeInTime>0.50</fadeInTime>
+          <solidTime>1.5</solidTime>
+          <fadeOutTime>2</fadeOutTime>
+          <attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
+        </mote>
+      </ThingDef>
+
+      <EffecterDef>
+        <defName>RE_ArdatYakshi_Effecter</defName>
+        <children>
+          <li>
+            <color>(72,169,188)</color>
+            <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+            <scale>0.7~0.9</scale>
+            <chancePerTick>0.03</chancePerTick>
+            <positionRadius>0.3</positionRadius>
+            <moteDef>RE_ArdatYakshi_Mote</moteDef>
+            <speed>0.18~0.18</speed>
+            <angle>10~80</angle>
+          </li>
+        </children>
+      </EffecterDef>
+</Defs>

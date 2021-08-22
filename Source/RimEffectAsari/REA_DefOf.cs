@@ -14,9 +14,10 @@
 
         public static ThingDef RE_Biotic_SphereShield;
 
-        public static TraitDef RE_ArdatYakshi;
-        public static ThingDef RE_Asari;
-
+        public static HediffDef  RE_ArdatYakshi_Power;
+        public static TraitDef   RE_ArdatYakshi;
+        public static ThingDef   RE_Asari;
+        public static HediffDef  RE_ArdatYakshi_Partner;
         public static ThoughtDef RE_EmbracingEternity;
         public static ThoughtDef RE_CharmThought;
         public static FleckDef   RE_Fleck_EmbracingEternity;

@@ -78,6 +78,7 @@
     <Compile Include="HarmonyPatches\SkinColor_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="REA_DefOf.cs" />
+    <Compile Include="StatWorker_ArdatYakshiPower.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

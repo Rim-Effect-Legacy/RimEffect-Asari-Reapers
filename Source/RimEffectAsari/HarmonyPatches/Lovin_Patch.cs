@@ -52,6 +52,19 @@
                 return REA_DefOf.RE_EmbracingEternity;
             return ThoughtDefOf.GotSomeLovin;
         }
+
+        [HarmonyPostfix]
+        public static void Postfix(JobDriver_Lovin __instance, int ___ticksLeft)
+        {
+            if(__instance.pawn.story.traits.HasTrait(REA_DefOf.RE_ArdatYakshi) && ___ticksLeft <= GenTicks.TicksPerRealSecond)
+            {
+                Hediff hediff  = __instance.pawn.health.hediffSet.GetFirstHediffOfDef(REA_DefOf.RE_ArdatYakshi_Power) ?? __instance.pawn.health.AddHediff(REA_DefOf.RE_ArdatYakshi_Power);
+                hediff.Severity += 1f;
+                
+                Pawn   partner = ((Pawn)__instance.job.GetTarget(TargetIndex.A));
+                partner.health.AddHediff(REA_DefOf.RE_ArdatYakshi_Partner, partner.health.hediffSet.GetBrain()).Severity = 1f;
+            }
+        }
     }
 
     [HarmonyPatch]
@@ -173,6 +186,43 @@
 
             if (___pawn.story.traits.HasTrait(REA_DefOf.RE_ArdatYakshi))
                 __result += 10f;
+        }
+    }
+
+    [HarmonyPatch(typeof(JobDriver_Lovin), "GenerateRandomMinTicksToNextLovin")]
+    public static class TicksToNextLovin_Patch
+    {
+        [HarmonyPostfix]
+        public static void Postfix(ref int __result) => 
+            __result *= 3;
+    }
+
+    [HarmonyPatch]
+    public static class LovinJobDriverInit_Patch
+    {
+        [HarmonyTargetMethod]
+        public static MethodBase TargetMethod()
+        {
+            MethodInfo info = AccessTools.Method(typeof(Pawn_JobTracker), nameof(Pawn_JobTracker.StartJob));
+
+            foreach (MethodInfo method in AccessTools.GetDeclaredMethods(typeof(JobDriver_Lovin)))
+            {
+                IEnumerable<KeyValuePair<OpCode, object>> instructions = PatchProcessor.ReadMethodBody(method);
+                if (instructions.Any(i => i.Value is MethodInfo mi && mi == info))
+                    return method;
+            }
+
+            return null;
+        }
+        
+        [HarmonyPostfix]
+        public static void Postfix(JobDriver __instance)
+        {
+            if (__instance.pawn.story.traits.HasTrait(REA_DefOf.RE_ArdatYakshi))
+            {
+                Pawn partner = ((Pawn)__instance.job.GetTarget(TargetIndex.A));
+                Messages.Message("RE_ArdatYakshiDeathIncoming".Translate(__instance.pawn.Named("ARDATYAKSHI"), partner.Named("VICTIM")), __instance.pawn, MessageTypeDefOf.ThreatSmall);
+            }
         }
     }
 }
