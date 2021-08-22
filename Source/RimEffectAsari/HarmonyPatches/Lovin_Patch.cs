@@ -21,7 +21,7 @@
             foreach (MethodInfo method in AccessTools.GetDeclaredMethods(typeof(JobDriver_Lovin)))
             {
                 IEnumerable<KeyValuePair<OpCode, object>> instructions = PatchProcessor.ReadMethodBody(method);
-                if (instructions.Any(i => i.Value == lovinInfo))
+                if (instructions.Any(i => i.Value is FieldInfo fi && fi == lovinInfo))
                     return method;
             }
 
@@ -65,7 +65,7 @@
             foreach (MethodInfo method in AccessTools.GetDeclaredMethods(typeof(JobDriver_Lovin)))
             {
                 IEnumerable<KeyValuePair<OpCode, object>> instructions = PatchProcessor.ReadMethodBody(method);
-                if (instructions.Any(i => i.Value == heartInfo))
+                if (instructions.Any(i => i.Value is FieldInfo fi && fi == heartInfo))
                     return method;
             }
 
@@ -75,10 +75,18 @@
         [HarmonyTranspiler]
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            FieldInfo heartInfo = AccessTools.Field(typeof(FleckDefOf), nameof(FleckDefOf.Heart));
+            FieldInfo  heartInfo = AccessTools.Field(typeof(FleckDefOf), nameof(FleckDefOf.Heart));
+            MethodInfo posInfo   = AccessTools.PropertyGetter(typeof(Pawn), nameof(Pawn.Position));
+
             foreach (CodeInstruction instruction in instructions)
             {
-                if (instruction.LoadsField(heartInfo))
+                if (instruction.Calls(posInfo))
+                {
+                    yield return new CodeInstruction(OpCodes.Ldarg_0);
+                    yield return new CodeInstruction(OpCodes.Call, AccessTools.PropertyGetter(typeof(JobDriver_Lovin), "Partner"));
+                    yield return CodeInstruction.Call(typeof(LovinJobDriverFleck_Patch), nameof(GetBioticPos));
+                }
+                else if (instruction.LoadsField(heartInfo))
                 {
                     yield return new CodeInstruction(OpCodes.Ldarg_0);
                     yield return new CodeInstruction(OpCodes.Ldfld, AccessTools.Field(typeof(JobDriver), nameof(JobDriver.pawn)));
@@ -88,6 +96,9 @@
                     yield return instruction;
             }
         }
+
+        public static IntVec3 GetBioticPos(Pawn pawn, Pawn partner) => 
+            pawn.def == REA_DefOf.RE_Asari ? pawn.Position + ((partner.Position.ToVector3() - pawn.Position.ToVector3())/2).ToIntVec3() : pawn.Position;
 
         public static FleckDef GetLovinFleck(Pawn pawn)
         {
