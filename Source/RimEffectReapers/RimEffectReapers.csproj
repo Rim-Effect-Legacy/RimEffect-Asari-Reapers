@@ -80,9 +80,12 @@
     <Compile Include="GameCondition_ReaperWeather.cs" />
     <Compile Include="GenSteps.cs" />
     <Compile Include="Harmony\AvoidGrid_Patch.cs" />
+    <Compile Include="Harmony\HealthTrackerPainShock_Patch.cs" />
     <Compile Include="Harmony\Raid_Patches.cs" />
     <Compile Include="Harmony\SettlementDefeatedUtility_Patch.cs" />
+    <Compile Include="Harmony\DamageFactor_Patch.cs" />
     <Compile Include="Harmony\ThingDefIsIngestible_Patch.cs" />
+    <Compile Include="Harmony\CalculateCapacity_Patch.cs" />
     <Compile Include="HediffFromBuilding.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_DarkSettlement.cs" />
     <Compile Include="IncidentWorkers\IncidentWorker_DarkSettlementReclaimed.cs" />
