@@ -87,43 +87,40 @@
                 <!-- Normal fights, standard mix -->
                 <kindDef>Combat</kindDef>
                 <options>
-                    <RE_AsariRecruit>5</RE_AsariRecruit>
-                    <RE_AsariMilitia>10</RE_AsariMilitia>
-                    <RE_AsariOfficer>1.5</RE_AsariOfficer>
-                    <RE_AsariRanger>7</RE_AsariRanger>
                     <RE_Alliance_AsariMarine>10</RE_Alliance_AsariMarine>
-                    <RE_Alliance_AsariMarineHeavy>10</RE_Alliance_AsariMarineHeavy>
-                    <RE_Alliance_AsariMarineSniper>5</RE_Alliance_AsariMarineSniper>
+                    <RE_AsariCommando>5</RE_AsariCommando>
+                    <RE_AsariMarineSniper>8</RE_AsariMarineSniper>
+                    <RE_AsariJusticar>2</RE_AsariJusticar>
+                    <RE_AsariCommandoSpecialist>3</RE_AsariCommandoSpecialist>
+                    <RE_AsariMarineSniper>5</RE_AsariMarineSniper>
                 </options>
             </li>
             <li>
                 <!-- adepts -->
                 <kindDef>Combat</kindDef>
                 <options>
-                    <RE_AsariRecruit>5</RE_AsariRecruit>
-                    <RE_AsariMilitia>10</RE_AsariMilitia>
-                    <RE_AsariOfficer>1.5</RE_AsariOfficer>
-                    <RE_AsariRanger>7</RE_AsariRanger>
                     <RE_Alliance_AsariMarine>10</RE_Alliance_AsariMarine>
-                    <RE_Alliance_AsariMarineHeavy>10</RE_Alliance_AsariMarineHeavy>
-                    <RE_Alliance_AsariMarineSniper>3</RE_Alliance_AsariMarineSniper>
-                    <RE_Alliance_AsariAdept>5</RE_Alliance_AsariAdept>
+                    <RE_AsariCommando>5</RE_AsariCommando>
+                    <RE_AsariMarineSniper>8</RE_AsariMarineSniper>
+                    <RE_AsariJusticar>2</RE_AsariJusticar>
+                    <RE_AsariCommandoSpecialist>3</RE_AsariCommandoSpecialist>
+                    <RE_AsariMarineSniper>5</RE_AsariMarineSniper>
+                    <RE_AsariAdept>10</RE_AsariAdept>
                 </options>
             </li>
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <RE_AsariColonist>20</RE_AsariColonist>
-                    <RE_AsariFarmer>10</RE_AsariFarmer>
+                    <RE_AsariDancer>1</RE_AsariDancer>
+                    <RE_AsariExplorer>7</RE_AsariExplorer>
                     <RE_AsariOfficial>5</RE_AsariOfficial>
-                    <RE_AsariRanger>8</RE_AsariRanger>
-                    <RE_AsariScientist>6</RE_AsariScientist>
+                    <RE_AsariScientist>3</RE_AsariScientist>
                 </options>
             </li>
             <li>
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <RE_AsariMerchant>1</RE_AsariMerchant>
+                    <RE_AsariTrader>1</RE_AsariTrader>
                 </traders>
                 <carriers>
                     <Muffalo>6</Muffalo>
@@ -132,25 +129,19 @@
                     <Elephant>1</Elephant>
                 </carriers>
                 <guards>
-                    <RE_AsariColonist>3</RE_AsariColonist>
-                    <RE_AsariRanger>7</RE_AsariRanger>
-                    <RE_AsariMilitia>10</RE_AsariMilitia>
-                    <RE_AsariRecruit>9</RE_AsariRecruit>
+                    <RE_AsariDancer>1</RE_AsariDancer>
+                    <RE_AsariExplorer>7</RE_AsariExplorer>
+                    <RE_AsariOfficial>5</RE_AsariOfficial>
                 </guards>
             </li>
             <li>
                 <kindDef>Settlement</kindDef>
                 <options>
-                    <RE_AsariColonist>20</RE_AsariColonist>
-                    <RE_AsariFarmer>10</RE_AsariFarmer>
-                    <RE_AsariOfficer>1.5</RE_AsariOfficer>
-                    <RE_Matriarch>1</RE_Matriarch>
-                    <RE_AsariScientist>4</RE_AsariScientist>
-                    <RE_AsariMedic>4</RE_AsariMedic>
-                    <RE_AsariRanger>5</RE_AsariRanger>
-                    <RE_AsariMilitia>7</RE_AsariMilitia>
-                    <RE_AsariRecruit>7</RE_AsariRecruit>
-                    <RE_AsariOfficial>10</RE_AsariOfficial>
+                    <RE_AsariDancer>1</RE_AsariDancer>
+					<RE_Matriarch>1</RE_Matriarch>
+                    <RE_AsariExplorer>7</RE_AsariExplorer>
+                    <RE_AsariOfficial>5</RE_AsariOfficial>
+                    <RE_AsariScientist>3</RE_AsariScientist>
                 </options>
             </li>
         </pawnGroupMakers>
