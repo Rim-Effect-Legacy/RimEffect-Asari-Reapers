@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>RE_ArdatYakshiJoins</defName>
+    <rootSelectionWeight>0.6</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>0.3</expireDaysRange>
+    <rootIncreasesPopulation>true</rootIncreasesPopulation>
+    <defaultCharity>true</defaultCharity>
+    <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityFulfilled_ThreatReward_Joiner</successHistoryEvent>
+    <failedOrExpiredHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityRefused_ThreatReward_Joiner</failedOrExpiredHistoryEvent>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Saving Ardat Yakshi</li>
+        <li>questName->The Salvation of Ardat Yakshi</li>
+        <li>questName->Helping Ardat Yakshi</li>
+        <li>questName->Accepting Ardat Yakshi]</li>
+        <li>questName->[enemyFaction_pawnsPlural] hunting Ardat Yakshi</li>
+        <li>questName->Ardat Yakshi on the Run</li>
+        <li>questName->Ardat Yakshi Seeks a Home</li>
+        <li>questName->Ardat Yakshi Chased by [enemyFaction_pawnsPlural]</li>
+        <li>questName->Ardat Yakshi and [enemyFaction_pawnsPlural]</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->An Ardat Yakshi named [joiner_nameDef] is calling from nearby. [joiner_pronoun] is being chased by [enemyFaction_pawnsPlural] from [enemyFaction_name]!
+\n[joiner_pronoun] begs for safety and offers to join you at [map_definite].[joiner_relationInfo]
+\nIf you accept, you'll have to fight off the [enemyFaction_pawnsPluralDef] on [joiner_possessive] tail. The group of [enemyFaction_pawnsPlural] is composed of: \n\n[raid/raidPawnKinds]
+\n[joiner_nameDef] is too frantic to offer more information.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_SubScript">
+          <def>Util_RandomizePointsChallengeRating</def>
+        </li>
+        <li Class="QuestNode_GetMap" />
+
+        <!-- Get a walk-in spot so joiner and raid come from the same spot -->
+        <li Class="QuestNode_GetWalkInSpot" /> 
+
+        <!-- Get raider faction -->
+        <li Class="QuestNode_GetFaction">
+          <allowEnemy>true</allowEnemy>
+          <mustBePermanentEnemy>true</mustBePermanentEnemy>
+          <storeAs>enemyFaction</storeAs>
+        </li>
+
+         <!-- Charity on accept -->
+        <li Class="QuestNode_RecordHistoryEvent" MayRequire="Ludeon.RimWorld.Ideology">
+          <historyDef>CharityFulfilled_ThreatReward_Joiner</historyDef>
+        </li>
+
+        <!-- Joiner arrives -->
+        <li Class="QuestNode_SubScript">
+          <def>Util_JoinerThreat_ArdatYakshi</def>
+        </li>
+
+        <!-- Raid arrives -->
+        <!-- Note that the joiner has a delay, so the raid needs an even longer delay -->
+        <li Class="QuestNode_Set">
+          <name>raidDelayTicks</name>
+          <value>$(roundToTicksRough(randInt(1800, 2400)))</value>
+        </li>
+        <li Class="QuestNode_Delay">
+          <delayTicks>$raidDelayTicks</delayTicks>
+          <node Class="QuestNode_SubScript">
+            <def>Util_Raid</def>
+            <prefix>raid</prefix>
+            <parms>
+              <inSignal>$inSignal</inSignal>
+              <map>$map</map>
+              <points>$points</points>
+              <enemyFaction>$enemyFaction</enemyFaction>
+              <walkInSpot>$walkInSpot</walkInSpot>
+              <customLetterLabel TKey="LetterLabelCashing">{BASELABEL} chasing [../joiner_nameDef]</customLetterLabel>
+              <customLetterText TKey="LetterTextCashing">{BASETEXT}
+              \nThe [enemyFaction_pawnsPlural] have come to get [../joiner_nameDef].</customLetterText>
+            </parms>
+          </node>
+        </li>
+
+        <!-- End a few seconds after raid arrives -->
+        <li Class="QuestNode_Delay">
+          <delayTicks>$($raidDelayTicks+600)</delayTicks>
+          <node Class="QuestNode_End" />
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+  
+  
+  <!-- util -->
+  
+  <QuestScriptDef>
+    <defName>Util_JoinerThreat_ArdatYakshi</defName>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_Delay">
+          <delayTicks>$(randInt(600,1200))</delayTicks>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_SubScript">
+                <def>Util_JoinerWalkIn_ArdatYakshi</def>
+              </li>
+              <li Class="QuestNode_SendSignals">
+                <outSignals>JoinerArrived</outSignals>
+              </li>
+            </nodes>
+          </node>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+  
+  <QuestScriptDef>
+    <defName>Util_JoinerWalkIn_ArdatYakshi</defName>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>rewardDescription->a [joiner_age]-year-old Ardat Yakshi named [joiner_nameDef] will arrive and join you. [joiner_relationInfo]</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GeneratePawn">
+          <storeAs>joiner</storeAs>
+          <kindDef>RE_ArdatYakshi</kindDef>
+        </li>
+
+        <li Class="QuestNode_PawnsArrive">
+          <pawns>$joiner</pawns>
+          <joinPlayer>true</joinPlayer>
+          <customLetterLabel>$customLetterLabel</customLetterLabel>
+          <customLetterText>$customLetterText</customLetterText>
+          <customLetterLabelRules>$customLetterLabelRules</customLetterLabelRules>
+          <customLetterTextRules>$customLetterTextRules</customLetterTextRules>
+          <isSingleReward>true</isSingleReward>
+          <rewardDetailsHidden>true</rewardDetailsHidden>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+</Defs>
