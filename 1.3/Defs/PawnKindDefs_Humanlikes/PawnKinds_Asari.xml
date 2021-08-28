@@ -177,63 +177,6 @@
   </PawnKindDef>
   
   <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariCommando</defName>
-    <label>asari commando</label>
-    <combatPower>315</combatPower>
-    <isFighter>true</isFighter>
-    <gearHealthRange>0.8~2</gearHealthRange>
-    <apparelTags>
-      <li>RE_CommandoArmoury</li>
-    </apparelTags>
-	<apparelRequired>
-      <li>RE_Apparel_AsariCommandoArmor</li>
-    </apparelRequired>
-    <apparelMoney>3500~4500</apparelMoney>
-    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-    <weaponTags>
-	  <li>RE_AsariGun</li>
-    </weaponTags>
-    <weaponMoney>1500~2400</weaponMoney>
-    <techHediffsChance>0.04</techHediffsChance>
-    <techHediffsMoney>700~1200</techHediffsMoney>
-    <techHediffsTags>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
-    <modExtensions>
-      <li Class="VFECore.PawnKindDefExtension">
-        <factionColourApparelPartList>
-          <li>FullHead</li>
-          <li>Torso</li>
-          <li>Torso</li>
-          <li>Torso</li>
-          <li>Torso</li>
-          <li>Legs</li>
-        </factionColourApparelPartList>
-        <factionColourApparelLayerList>
-          <li>Overhead</li>
-          <li>OnSkin</li>
-          <li>Middle</li>
-          <li>Shell</li>
-          <li>VFEC_OuterShell</li>
-          <li>OnSkin</li>
-        </factionColourApparelLayerList>
-      </li>
-      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
-        <giveAbilities>
-          <li>RE_Biotic_Throw</li>
-        </giveAbilities>
-        <implantDef>RE_BioticAmpHediff</implantDef>
-        <initialLevel>2</initialLevel>
-        <giveRandomAbilities>true</giveRandomAbilities>
-      </li>
-    </modExtensions>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>12~24</initialResistanceRange>
-  </PawnKindDef>
-  
-  <PawnKindDef ParentName="AsariPawnBase">
     <defName>RE_AsariCommandoSpecialist</defName>
     <label>asari commando specialist</label>
     <combatPower>315</combatPower>
@@ -585,6 +528,68 @@
     </modExtensions>
     <initialWillRange>1~2</initialWillRange>
     <initialResistanceRange>12~24</initialResistanceRange>
+  </PawnKindDef>
+  
+  <!-- ardat yakshi -->
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_ArdatYakshi</defName>
+    <label>ardat yakshi</label>
+    <combatPower>315</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~2</gearHealthRange>
+    <apparelTags>
+      <li>RE_CommandoArmoury</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>RE_Apparel_AsariCommandoArmor</li>
+    </apparelRequired>
+    <apparelMoney>3500~4500</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <weaponTags>
+	  <li>RE_AsariGun</li>
+    </weaponTags>
+    <weaponMoney>1500~2400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>700~1200</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Flight</li>
+		  <li>RE_Biotic_Charm</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>4</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
+    </modExtensions>
+    <forcedTraits>
+	    <li>RE_ArdatYakshi</li>
+    </forcedTraits>
+    <initialWillRange>4~5</initialWillRange>
+    <initialResistanceRange>24~36</initialResistanceRange>
   </PawnKindDef>
 
 </Defs>
