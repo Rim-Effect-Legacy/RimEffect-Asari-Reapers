@@ -330,7 +330,6 @@
 	<apparelRequired>
       <li>RE_Apparel_DancerBodysuit</li>
     </apparelRequired>
-    <weaponMoney>740~800</weaponMoney>
     <apparelMoney>200~400</apparelMoney>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <techHediffsChance>0.08</techHediffsChance>
