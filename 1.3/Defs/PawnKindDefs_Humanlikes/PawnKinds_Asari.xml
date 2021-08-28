@@ -330,6 +330,9 @@
 	<apparelRequired>
       <li>RE_Apparel_DancerBodysuit</li>
     </apparelRequired>
+    <apparelTags>
+      <li>RE_AsariDancer</li>
+    </apparelTags>
     <apparelMoney>200~400</apparelMoney>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <techHediffsChance>0.08</techHediffsChance>
@@ -358,6 +361,10 @@
       <li>IndustrialBasic</li>
 	  <li>RE_OfficialApparel</li>
     </apparelTags>
+    <apparelRequired>
+      <li>RE_Apparel_AsariDress</li>
+      <li>RE_Apparel_FormalShirt</li>
+    </apparelRequired>
     <apparelMoney>200~600</apparelMoney>
     <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
     <techHediffsChance>0.08</techHediffsChance>
@@ -412,11 +419,11 @@
     </weaponTags>
     <weaponMoney>740~800</weaponMoney>
     <apparelRequired>
-      <li>RE_Apparel_FormalJacket</li>
-      <li>RE_Apparel_FormalShirt</li>
+      <li>RE_Apparel_MatriarchCrown</li>
+      <li>RE_Apparel_MatriarchDress</li>
     </apparelRequired>
     <apparelTags>
-      <li>RE_SpacerApparelCivilian</li>
+      <li>RE_AsariApparelMatriarch</li>
       <li>IndustrialBasic</li>
     </apparelTags>
     <apparelMoney>200~800</apparelMoney>
