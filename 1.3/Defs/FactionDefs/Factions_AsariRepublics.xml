@@ -176,19 +176,6 @@
             <li>(0.28, 0.44, 0.72)</li>
         </colorSpectrum>
       <modExtensions>
-        <li Class="KCSG.FactionSettlement">
-          <useStructureLayout>True</useStructureLayout>
-          <chooseFromlayouts>
-            <li>AllianceFactionColony1</li>
-            <li>AllianceFactionColony2</li>
-            <li>AllianceFactionColony3</li>
-            <li>AllianceFactionColony4</li>
-            <li>AllianceFactionColony5</li>
-            <li>AllianceFactionColony6</li>
-            <li>AllianceFactionColony7</li>
-            <li>AllianceFactionColony8</li>
-          </chooseFromlayouts>
-        </li>
 	<li Class="KCSG.FactionSettlement">
 		<canSpawnSettlements>false</canSpawnSettlements>
 	</li>
