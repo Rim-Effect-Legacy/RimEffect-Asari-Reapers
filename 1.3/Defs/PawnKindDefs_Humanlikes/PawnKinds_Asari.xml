@@ -11,7 +11,7 @@
 
   <PawnKindDef ParentName="AsariPawnBase">
     <defName>RE_Alliance_AsariMarine</defName>
-    <label>marine</label>
+    <label>asari soldier</label>
     <combatPower>175</combatPower>
     <isFighter>true</isFighter>
     <gearHealthRange>0.6~2</gearHealthRange>
@@ -52,14 +52,22 @@
           <li>OnSkin</li>
         </factionColourApparelLayerList>
       </li>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Throw</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>1</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
     </modExtensions>
     <initialWillRange>1~2</initialWillRange>
     <initialResistanceRange>12~24</initialResistanceRange>
   </PawnKindDef>
 
   <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_Alliance_AsariMarineSniper</defName>
-    <label>sniper</label>
+    <defName>RE_AsariMarineSniper</defName>
+    <label>asari sniper</label>
     <combatPower>215</combatPower>
     <isFighter>true</isFighter>
     <gearHealthRange>0.8~2</gearHealthRange>
@@ -98,411 +106,35 @@
           <li>OnSkin</li>
         </factionColourApparelLayerList>
       </li>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Throw</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>1</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
     </modExtensions>
     <initialWillRange>1~2</initialWillRange>
     <initialResistanceRange>12~24</initialResistanceRange>
   </PawnKindDef>
-
+  
   <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_Alliance_AsariMarineHeavy</defName>
-    <label>heavy marine</label>
-    <combatPower>275</combatPower>
-    <isFighter>true</isFighter>
-    <gearHealthRange>0.8~2</gearHealthRange>
-    <apparelTags>
-      <li>RE_AllianceNavyGearHeavy</li>
-    </apparelTags>
-    <apparelMoney>5000~6500</apparelMoney>
-    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
-    <weaponTags>
-      <li>AllianceGunHeavy</li>
-    </weaponTags>
-    <weaponMoney>2050~4900</weaponMoney>
-    <techHediffsChance>0.1</techHediffsChance>
-    <techHediffsMoney>800~1700</techHediffsMoney>
-    <techHediffsTags>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-      <li>RE_Implant</li>
-    </techHediffsTags>
-    <modExtensions>
-      <li Class="VFECore.PawnKindDefExtension">
-        <factionColourApparelPartList>
-          <li>FullHead</li>
-          <li>Torso</li>
-          <li>Torso</li>
-          <li>Torso</li>
-          <li>Torso</li>
-          <li>Legs</li>
-        </factionColourApparelPartList>
-        <factionColourApparelLayerList>
-          <li>Overhead</li>
-          <li>OnSkin</li>
-          <li>Middle</li>
-          <li>Shell</li>
-          <li>VFEC_OuterShell</li>
-          <li>OnSkin</li>
-        </factionColourApparelLayerList>
-      </li>
-    </modExtensions>
-    <initialWillRange>2~3</initialWillRange>
-    <initialResistanceRange>14~26</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariColonist</defName>
-    <label>colonist</label>
-    <combatPower>50</combatPower>
-    <itemQuality>Normal</itemQuality>
-    <isFighter>false</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <weaponTags>
-      <li>AllianceGunLight</li>
-    </weaponTags>
-    <weaponMoney>740~1500</weaponMoney>
-    <apparelTags>
-      <li>RE_SpacerApparelCivilian</li>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>200~500</apparelMoney>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <techHediffsChance>0.08</techHediffsChance>
-    <techHediffsMoney>300~800</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>8~14</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariFarmer</defName>
-    <label>farmer</label>
-    <combatPower>45</combatPower>
-    <itemQuality>Poor</itemQuality>
-    <isFighter>false</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <weaponTags>
-      <li>AllianceGunLight</li>
-    </weaponTags>
-    <weaponMoney>740~800</weaponMoney>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>200~400</apparelMoney>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <techHediffsChance>0.08</techHediffsChance>
-    <techHediffsMoney>100~500</techHediffsMoney>
-    <techHediffsTags>
-      <li>Poor</li>
-      <li>Simple</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>8~14</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariOfficer</defName>
-    <label>alliance officer</label>
-    <combatPower>65</combatPower>
-    <itemQuality>Normal</itemQuality>
-    <isFighter>true</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <weaponTags>
-      <li>AllianceGunLight</li>
-    </weaponTags>
-    <weaponMoney>740~2000</weaponMoney>
-    <apparelRequired>
-      <li>RE_Apparel_AllianceDressJacket</li>
-      <li>RE_Apparel_AllianceOfficerHat</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>RE_AllianceSpacerApparel</li>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
-    <apparelMoney>300~1000</apparelMoney>
-    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
-    <techHediffsChance>0.1</techHediffsChance>
-    <techHediffsMoney>500~1100</techHediffsMoney>
-    <techHediffsTags>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-      <li>RE_Implant</li>
-    </techHediffsTags>
-    <techHediffsMaxAmount>2</techHediffsMaxAmount>
-    <initialWillRange>2~3</initialWillRange>
-    <initialResistanceRange>12~20</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariRecruit</defName>
-    <label>alliance recruit</label>
-    <combatPower>55</combatPower>
-    <itemQuality>Poor</itemQuality>
-    <isFighter>true</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <weaponTags>
-      <li>AllianceGunLight</li>
-    </weaponTags>
-    <weaponMoney>740~1800</weaponMoney>
-    <apparelRequired>
-      <li>RE_Apparel_BattleUniform</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>RE_SpacerApparel</li>
-    </apparelTags>
-    <apparelMoney>300~600</apparelMoney>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <techHediffsChance>0.08</techHediffsChance>
-    <techHediffsMoney>400~900</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>10~18</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariMilitia</defName>
-    <label>militia</label>
-    <combatPower>60</combatPower>
-    <itemQuality>Normal</itemQuality>
-    <isFighter>true</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <weaponTags>
-      <li>AllianceGun</li>
-    </weaponTags>
-    <weaponMoney>1100~3000</weaponMoney>
-    <apparelRequired>
-      <li>RE_Apparel_Fatigues</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>RE_SpacerApparel</li>
-    </apparelTags>
-    <apparelMoney>300~600</apparelMoney>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <techHediffsChance>0.08</techHediffsChance>
-    <techHediffsMoney>400~1000</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>10~18</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariOfficial</defName>
-    <label>official</label>
-    <combatPower>50</combatPower>
-    <itemQuality>Normal</itemQuality>
-    <isFighter>false</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <weaponTags>
-      <li>AllianceGunLight</li>
-    </weaponTags>
-    <weaponMoney>740~800</weaponMoney>
-    <apparelRequired>
-      <li>RE_Apparel_FormalJacket</li>
-      <li>RE_Apparel_FormalShirt</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>RE_SpacerApparelCivilian</li>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>200~600</apparelMoney>
-    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
-    <techHediffsChance>0.08</techHediffsChance>
-    <techHediffsMoney>300~800</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>ImplantEmpireCommon</li>
-      <li>RE_Implant</li>
-    </techHediffsTags>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>8~14</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariMerchant</defName>
-    <label>merchant</label>
-    <trader>true</trader>
-    <combatPower>50</combatPower>
-    <itemQuality>Normal</itemQuality>
-    <isFighter>false</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <weaponTags>
-      <li>AllianceGunLight</li>
-    </weaponTags>
-    <weaponMoney>740~800</weaponMoney>
-    <apparelRequired>
-      <li>RE_Apparel_FormalJacket</li>
-      <li>RE_Apparel_FormalShirt</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>RE_SpacerApparelCivilian</li>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>200~600</apparelMoney>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <techHediffsChance>0.04</techHediffsChance>
-    <techHediffsMoney>300~800</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>8~14</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariRanger</defName>
-    <label>ranger</label>
-    <combatPower>60</combatPower>
-    <itemQuality>Normal</itemQuality>
-    <isFighter>true</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <weaponTags>
-      <li>AllianceGunSniper</li>
-    </weaponTags>
-    <weaponMoney>1410~1800</weaponMoney>
-    <apparelTags>
-      <li>RE_SpacerApparel</li>
-      <li>RE_Apparel_LightAllianceArmor</li>
-    </apparelTags>
-    <apparelMoney>500~2500</apparelMoney>
-    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-    <techHediffsChance>0.08</techHediffsChance>
-    <techHediffsMoney>400~1000</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>ImplantEmpireCommon</li>
-      <li>RE_Implant</li>
-    </techHediffsTags>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>12~18</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_Matriarch</defName>
-    <label>matriarch</label>
-    <combatPower>40</combatPower>
-    <itemQuality>Excellent</itemQuality>
-    <isFighter>false</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <factionLeader>true</factionLeader>
-    <weaponTags>
-      <li>AllianceGunLight</li>
-    </weaponTags>
-    <weaponMoney>740~800</weaponMoney>
-    <apparelRequired>
-      <li>RE_Apparel_FormalJacket</li>
-      <li>RE_Apparel_FormalShirt</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>RE_SpacerApparelCivilian</li>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>200~800</apparelMoney>
-    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
-    <techHediffsChance>0.08</techHediffsChance>
-    <techHediffsMoney>800~1800</techHediffsMoney>
-    <techHediffsTags>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-      <li>RE_Implant</li>
-    </techHediffsTags>
-    <initialWillRange>3~4</initialWillRange>
-    <initialResistanceRange>18~28</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariScientist</defName>
-    <label>scientist</label>
-    <combatPower>40</combatPower>
-    <itemQuality>Normal</itemQuality>
-    <isFighter>false</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <factionLeader>true</factionLeader>
-    <weaponTags>
-      <li>AllianceGunLight</li>
-    </weaponTags>
-    <weaponMoney>740~800</weaponMoney>
-    <apparelRequired>
-      <li>RE_Apparel_ScienceUniform</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>RE_SpacerApparelCivilian</li>
-      <li>RE_SpacerApparelScience</li>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelMoney>200~800</apparelMoney>
-    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
-    <techHediffsChance>0.08</techHediffsChance>
-    <techHediffsMoney>400~1000</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-      <li>RE_Implant</li>
-    </techHediffsTags>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>10~18</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_AsariMedic</defName>
-    <label>medic</label>
-    <combatPower>40</combatPower>
-    <itemQuality>Normal</itemQuality>
-    <isFighter>false</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
-    <factionLeader>true</factionLeader>
-    <weaponTags>
-      <li>AllianceGunLight</li>
-    </weaponTags>
-    <weaponMoney>740~800</weaponMoney>
-    <apparelRequired>
-      <li>RE_Apparel_ScienceUniform</li>
-    </apparelRequired>
-    <apparelTags>
-      <li>RE_SpacerApparelCivilian</li>
-      <li>RE_SpacerApparelScience</li>
-      <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelColor>(136,0,0)</apparelColor>
-    <apparelMoney>200~800</apparelMoney>
-    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
-    <techHediffsChance>0.08</techHediffsChance>
-    <techHediffsMoney>400~1000</techHediffsMoney>
-    <techHediffsTags>
-      <li>Simple</li>
-      <li>Advanced</li>
-      <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <initialWillRange>1~2</initialWillRange>
-    <initialResistanceRange>10~18</initialResistanceRange>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="AsariPawnBase">
-    <defName>RE_Alliance_AsariAdept</defName>
-    <label>adept</label>
+    <defName>RE_AsariCommando</defName>
+    <label>asari commando</label>
     <combatPower>315</combatPower>
     <isFighter>true</isFighter>
     <gearHealthRange>0.8~2</gearHealthRange>
     <apparelTags>
-      <li>RE_AllianceNavyGearLight</li>
+      <li>RE_CommandoArmoury</li>
     </apparelTags>
+	<apparelRequired>
+      <li>RE_Apparel_AsariCommandoArmor</li>
+    </apparelRequired>
     <apparelMoney>3500~4500</apparelMoney>
-    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <weaponTags>
-      <li>AllianceGunLight</li>
+	  <li>RE_AsariGun</li>
     </weaponTags>
     <weaponMoney>1500~2400</weaponMoney>
     <techHediffsChance>0.04</techHediffsChance>
@@ -536,7 +168,418 @@
           <li>RE_Biotic_Throw</li>
         </giveAbilities>
         <implantDef>RE_BioticAmpHediff</implantDef>
-        <initialLevel>1</initialLevel>
+        <initialLevel>2</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
+    </modExtensions>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>12~24</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_AsariCommando</defName>
+    <label>asari commando</label>
+    <combatPower>315</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~2</gearHealthRange>
+    <apparelTags>
+      <li>RE_CommandoArmoury</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>RE_Apparel_AsariCommandoArmor</li>
+    </apparelRequired>
+    <apparelMoney>3500~4500</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <weaponTags>
+	  <li>RE_AsariGun</li>
+    </weaponTags>
+    <weaponMoney>1500~2400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>700~1200</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Throw</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>2</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
+    </modExtensions>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>12~24</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_AsariCommandoSpecialist</defName>
+    <label>asari commando specialist</label>
+    <combatPower>315</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~2</gearHealthRange>
+    <apparelTags>
+      <li>RE_CommandoArmoury</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>RE_Apparel_AsariCommandoArmor</li>
+    </apparelRequired>
+    <apparelMoney>3500~4500</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <weaponTags>
+	  <li>RE_CommandoSpecialist</li>
+    </weaponTags>
+    <weaponMoney>1500~2400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>700~1200</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Throw</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>2</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
+    </modExtensions>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>12~24</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_AsariJusticar</defName>
+    <label>asari commando</label>
+    <combatPower>315</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~2</gearHealthRange>
+    <apparelTags>
+      <li>RE_CommandoArmoury</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>RE_Apparel_AsariCommandoArmor</li>
+	  <li>RE_Apparel_AsariCommandoArmor</li>
+    </apparelRequired>
+    <apparelMoney>3500~4500</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponTags>
+	  <li>RE_AsariGun</li>
+	  <li>RE_AsariSword</li>
+    </weaponTags>
+    <weaponMoney>1500~2400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>700~1200</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Throw</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>4</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
+    </modExtensions>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>12~24</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_AsariExplorer</defName>
+    <label>asari explorer</label>
+    <combatPower>50</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>RE_AsariGunLight</li>
+	  <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~1500</weaponMoney>
+    <apparelTags>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~500</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>300~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>8~14</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_AsariDancer</defName>
+    <label>asari dancer</label>
+    <combatPower>30</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+	<apparelRequired>
+      <li>RE_Apparel_DancerBodysuit</li>
+    </apparelRequired>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelMoney>200~400</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>100~500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>8~14</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_AsariOfficial</defName>
+    <label>asari official</label>
+    <combatPower>50</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+	  <li>RE_OfficialApparel</li>
+    </apparelTags>
+    <apparelMoney>200~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>300~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+      <li>RE_Implant</li>
+    </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>8~14</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_AsariTrader</defName>
+    <label>asari trader</label>
+    <trader>true</trader>
+    <combatPower>50</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelTags>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>300~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>8~14</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_Matriarch</defName>
+    <label>matriarch</label>
+    <combatPower>40</combatPower>
+    <itemQuality>Excellent</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelRequired>
+      <li>RE_Apparel_FormalJacket</li>
+      <li>RE_Apparel_FormalShirt</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~800</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>800~1800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+      <li>RE_Implant</li>
+    </techHediffsTags>
+    <modExtensions>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Throw</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>4</initialLevel>
+        <giveRandomAbilities>true</giveRandomAbilities>
+      </li>
+    </modExtensions>
+    <initialWillRange>3~4</initialWillRange>
+    <initialResistanceRange>18~28</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_AsariScientist</defName>
+    <label>asari scientist</label>
+    <combatPower>40</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>0.2~2.0</gearHealthRange>
+    <weaponTags>
+      <li>AllianceGunLight</li>
+    </weaponTags>
+    <weaponMoney>740~800</weaponMoney>
+    <apparelRequired>
+      <li>RE_Apparel_ScienceUniform</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>RE_SpacerApparelScience</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>200~800</apparelMoney>
+    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+    <techHediffsChance>0.08</techHediffsChance>
+    <techHediffsMoney>400~1000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+      <li>RE_Implant</li>
+    </techHediffsTags>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>10~18</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AsariPawnBase">
+    <defName>RE_AsariAdept</defName>
+    <label>asari adept</label>
+    <combatPower>315</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>0.8~2</gearHealthRange>
+    <apparelTags>
+      <li>RE_AllianceNavyGearLight</li>
+    </apparelTags>
+    <apparelMoney>3500~4500</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <weaponTags>
+	  <li>AllianceSMG</li>
+    </weaponTags>
+    <weaponMoney>1500~2400</weaponMoney>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>700~1200</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <factionColourApparelPartList>
+          <li>FullHead</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Torso</li>
+          <li>Legs</li>
+        </factionColourApparelPartList>
+        <factionColourApparelLayerList>
+          <li>Overhead</li>
+          <li>OnSkin</li>
+          <li>Middle</li>
+          <li>Shell</li>
+          <li>VFEC_OuterShell</li>
+          <li>OnSkin</li>
+        </factionColourApparelLayerList>
+      </li>
+      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+        <giveAbilities>
+          <li>RE_Biotic_Throw</li>
+        </giveAbilities>
+        <implantDef>RE_BioticAmpHediff</implantDef>
+        <initialLevel>2</initialLevel>
         <giveRandomAbilities>true</giveRandomAbilities>
       </li>
     </modExtensions>
