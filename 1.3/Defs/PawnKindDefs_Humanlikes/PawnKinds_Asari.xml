@@ -297,11 +297,11 @@
     <isFighter>true</isFighter>
     <gearHealthRange>0.8~2</gearHealthRange>
     <apparelTags>
-      <li>RE_CommandoArmoury</li>
+      <li>RE_JusticarArmoury</li>
     </apparelTags>
 	<apparelRequired>
-      <li>RE_Apparel_AsariCommandoArmor</li>
-	  <li>RE_Apparel_AsariCommandoArmor</li>
+      <li>RE_Apparel_AsariJusticarCrown</li>
+	  <li>RE_Apparel_AsariJusticarArmor</li>
     </apparelRequired>
     <apparelMoney>3500~4500</apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
