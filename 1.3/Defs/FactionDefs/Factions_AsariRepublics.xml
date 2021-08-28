@@ -176,9 +176,9 @@
             <li>(0.28, 0.44, 0.72)</li>
         </colorSpectrum>
       <modExtensions>
-	<li Class="KCSG.FactionSettlement">
-		<canSpawnSettlements>false</canSpawnSettlements>
-	</li>
+	        <li Class="KCSG.FactionSettlement">
+		        <canSpawnSettlements>false</canSpawnSettlements>
+	        </li>
       </modExtensions>
     </FactionDef>
 
