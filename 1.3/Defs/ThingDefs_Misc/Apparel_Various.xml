@@ -116,7 +116,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Items/Apparel/AsariJusticarArmor/AsariJusticarArmor</texPath>
+      <texPath>Things/Items/Apparel/AsariCommandoOutfit/AsariCommandoOutfit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -153,7 +153,7 @@
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Items/Apparel/AsariJusticarArmor/AsariJusticarArmor</wornGraphicPath>
+      <wornGraphicPath>Things/Items/Apparel/AsariCommandoOutfit/AsariCommandoOutfit</wornGraphicPath>
       <layers>
         <li>Middle</li>
       </layers>
