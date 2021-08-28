@@ -15,8 +15,8 @@
         <fixedLeaderKinds>
             <li>RE_Matriarch</li>
         </fixedLeaderKinds>
+        <fixedName>Asari Republics</fixedName>
         <factionIconPath>UI/FactionIcons/AsariFaction</factionIconPath>
-        <factionNameMaker>NamerFaction_SystemsAlliance</factionNameMaker>
         <settlementNameMaker>NamerFactionBases_SystemsAlliance</settlementNameMaker>
         <techLevel>Ultra</techLevel>
         <disallowedMemes>
