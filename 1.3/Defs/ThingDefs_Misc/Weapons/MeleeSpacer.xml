@@ -26,7 +26,8 @@
 	  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
     </recipeMaker>
     <weaponTags Inherit='False'>
-      <li>RE_AsariGun</li>
+      <li>RE_CommandoSpecialist</li>
+	  <li>RE_AsariSword</li>
     </weaponTags>
     <comps>
       <li>

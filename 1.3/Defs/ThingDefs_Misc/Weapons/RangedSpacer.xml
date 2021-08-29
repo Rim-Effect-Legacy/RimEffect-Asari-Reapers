@@ -150,6 +150,7 @@
     </tradeTags>
     <weaponTags Inherit='False'>
       <li>RE_AsariGun</li>
+	  <li>RE_AsariGunLight</li>
     </weaponTags>
     <verbs>
       <li>
@@ -239,7 +240,8 @@
       <li>RE_AsariWeaponry</li>
     </tradeTags>
     <weaponTags Inherit='False'>
-      <li>RE_AsariGun</li>
+      <li>RE_AsariGunSniper</li>
+	  <li>RE_CommandoSpecialist</li>
     </weaponTags>
     <verbs>
       <li>
