@@ -50,13 +50,19 @@
                 <categories>
                     <li>Offworld</li>
                 </categories>
-                <commonality>0.25</commonality>
+                <commonality>0.1</commonality>
+            </li>
+            <li>
+                <categories>
+                    <li>AsariRepublics</li>
+                </categories>
+                <commonality>0.5</commonality>
             </li>
             <li>
                 <categories>
                     <li>SystemsAlliance</li>
                 </categories>
-                <commonality>0.75</commonality>
+                <commonality>0.4</commonality>
             </li>
         </backstoryFilters>
         <geneticVariance>0.8</geneticVariance>
