@@ -12,7 +12,7 @@
     <fillPercent>1.0</fillPercent>
     <size>(3,6)</size>
     <graphicData>
-      <texPath>Things/Building/Misc/KodiakShuttleAsari/KodiakShuttleAsari</texPath>
+      <texPath>Things/Building/KodiakShuttleAsari/KodiakShuttleAsari</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(7,8)</drawSize>
       <shadowData>
