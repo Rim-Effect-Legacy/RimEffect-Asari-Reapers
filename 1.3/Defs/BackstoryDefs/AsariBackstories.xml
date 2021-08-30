@@ -1051,4 +1051,218 @@
     </workDisables>
 </AlienRace.BackstoryDef>
 
+<AlienRace.BackstoryDef>
+    <defName>RE_ArdatYakshi1</defName>
+    <title>Ardat-Yakshi</title>
+    <titleShort>Ardat-Yakshi</titleShort>
+    <baseDescription>[PAWN_nameDef] was found to be a Ardak-Yakshi at a young age, and was sequestered in a monastery, while this lifestyle promoted intellectual thought, [PAWN_nameDef] was unfamiliar with the outside world.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_XenoAnthropologist</defName>
+    <title>Xeno anthropologist</title>
+    <titleShort>Anthropologist</titleShort>
+    <baseDescription>[PAWN_nameDef] has always been fascinated by alien cultures, and [PAWN_pronoun] knew [PAWN_pronoun] would become a xeno anthropologist. Shortly after getting  [PAWN_possessive] degree in the University of Thessia, [PAWN_pronoun] took a journey to the stars to study other species directly.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_ReformedSister</defName>
+    <title>Reformed sister</title>
+    <titleShort>Reformed sister</titleShort>
+    <baseDescription>[PAWN_nameDef] decided that [PAWN_pronoun] needed thrill and emotion in [PAWN_possessive] life, so [PAWN_pronoun] decided to join the Sisters of Eclipse. Tradition in eclipse demands that in order to earn a suit and a place among them, it is necessary first to kill someone. However, when the moment to pull the trigger came, [PAWN_nameDef] just couldn't do it. [PAWN_pronoun] got kicked shortly after, but [PAWN_pronoun] learnt a new thing about [PAWN_possessive]self.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	    <li>Violent</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_VaeniaObsessed</defName>
+    <title>Vaenia obsessed</title>
+    <titleShort>Vaenia fan</titleShort>
+    <baseDescription>When the romantic film "Vaenia" aired in Citadel Space, it rapidly gained both fame and controversy due to depicting the romance of a "pure blood" asari couple. [PAWN_nameDef] fell in love with the movie and started consuming all the merchandising and watching the vid every night. Suddenly, [PAWN_possessive] whole life revolved around the movie, and [PAWN_pronoun] spent most of her time fantasizing about becoming a glamorous woman, just like the ones in Vaenia.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_TerminusTrader</defName>
+    <title>Terminus trader</title>
+    <titleShort>Trader</titleShort>
+    <baseDescription>[PAWN_nameDef] used several contacts around the Terminus Systems to acquire all types of trade goods. Due to the nature of Terminus, [PAWN_pronoun] never questioned the origin of said goods; As long as they were profitable, [PAWN_pronoun] didn't care. Taking advantage of Illium's trade policies, [PAWN_nameDef] became rich very quickly.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_IndenturedServant</defName>
+    <title>Indentured servant</title>
+    <titleShort>Servant</titleShort>
+    <baseDescription>[PAWN_nameDef] was always good with numbers, and [PAWN_pronoun] thought that [PAWN_pronoun] could make a quick fortune in Illium. However, things didn't go as [PAWN_pronoun] expected. [PAWN_nameDef] found [PAWN_possessive]self drowning in a sea of debts and loans. Shortly after, [PAWN_nameDef] gave up, and became an indentured servant under a contract in Illium.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_RedSandAddict</defName>
+    <title>Red sand addict</title>
+    <titleShort>Addict</titleShort>
+    <baseDescription>As an asari, [PAWN_nameDef] had natural biotic skills. In order to enhance [PAWN_possessive] biotic capabilites, [PAWN_nameDef] started to consume the biotic-enhancing drug called "Red Sand". As time passed, [PAWN_nameDef] found [PAWN_possessive]self becoming an addict, and incapable of performing as a normal being without having a taste of the substance.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_Helium3Miner</defName>
+    <title>Asteroid miner</title>
+    <titleShort>Miner</titleShort>
+    <baseDescription>[PAWN_nameDef] worked in an orbital station around a gas giant, where the fuel used by starships would be extracted. There, [PAWN_nameDef] learnt all about capturing and breaking asteroids.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_CorporateResearcher</defName>
+    <title>Corporate researcer</title>
+    <titleShort>Researcher</titleShort>
+    <baseDescription>[PAWN_nameDef] was an incredibly skilled scientist, and after graduating, [PAWN_pronoun] became a researcher. During centuries, [PAWN_pronoun] worked for some of the most powerful corporations in the galaxy, where [PAWN_pronoun] would get generously payed.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
 </Defs>
