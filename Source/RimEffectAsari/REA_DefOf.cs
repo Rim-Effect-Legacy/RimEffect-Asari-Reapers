@@ -2,6 +2,7 @@
 {
     using RimWorld;
     using Verse;
+    using Verse.AI;
 
     [DefOf]
     public static class REA_DefOf
@@ -21,5 +22,13 @@
         public static ThoughtDef RE_EmbracingEternity;
         public static ThoughtDef RE_CharmThought;
         public static FleckDef   RE_Fleck_EmbracingEternity;
+
+        public static ThingDef   RE_AsariShuttleIncoming;
+        public static ThingDef   RE_AsariShuttleLeaving;
+        public static ThingDef   RE_AsariShuttleLanded;
+        public static FactionDef RE_AsariRepublics;
+        public static JobDef     RE_EnterShuttle;
+        public static DutyDef    RE_LeaveOnShuttle;
+        public static DutyDef    RE_LeaveOnShuttleAndDefendSelf;
     }
 }

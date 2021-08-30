@@ -37,7 +37,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="AlienRace">
-      <HintPath>..\..\..\AlienRaces\1.3\Assemblies\AlienRace.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\839005762\1.3\Assemblies\AlienRace.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -76,6 +76,7 @@
     <Compile Include="HarmonyPatches\Lovin_Patch.cs" />
     <Compile Include="HarmonyPatches\RecruitChanceFinal_Patch.cs" />
     <Compile Include="HarmonyPatches\SkinColor_Patch.cs" />
+    <Compile Include="HarmonyPatches\TraderCaravanArrival_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="REA_DefOf.cs" />
     <Compile Include="StatWorker_ArdatYakshiPower.cs" />

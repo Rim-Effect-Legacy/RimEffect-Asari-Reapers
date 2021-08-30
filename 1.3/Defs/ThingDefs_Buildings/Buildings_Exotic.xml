@@ -57,4 +57,52 @@
     <techLevel>Ultra</techLevel>
   </ThingDef>
 
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_AsariShuttleLanded</defName>
+    <label>asari shuttle (landed)</label>
+    <thingClass>RimEffectAsari.AsariShuttleLanded</thingClass>
+    <description>An advanced shuttle propelled using small directional thrusters and a mass effect based repulsion system, this model is a common sight throughout the galaxy thanks to it's robust design and ability to make limited FTL jumps.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <fillPercent>1.0</fillPercent>
+    <size>(3,6)</size>
+    <graphicData>
+      <texPath>Things/Building/KodiakShuttleAsari/KodiakShuttleAsari</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,8)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 4.1)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>1</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <killedLeavings>
+      <Plasteel>100</Plasteel>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </killedLeavings>
+    <rotatable>true</rotatable>
+    <defaultPlacingRot>West</defaultPlacingRot>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <drawerType>MapMeshOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <uiIconScale>1.0</uiIconScale>
+    <building>
+      <claimable>false</claimable>
+      <soundAmbient>ShuttleIdle_Ambience</soundAmbient>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <techLevel>Ultra</techLevel>
+  </ThingDef>
+
 </Defs>
