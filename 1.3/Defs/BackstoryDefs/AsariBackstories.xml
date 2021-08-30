@@ -713,4 +713,342 @@
     </skillGains>
 </AlienRace.BackstoryDef>
 
+<AlienRace.BackstoryDef>
+    <defName>RE_DaughterOfBrigands</defName>
+    <title>Daughter of brigands</title>
+    <titleShort>Outcast</titleShort>
+    <baseDescription>[PAWN_nameDef] was born outside of Asari society and raised by [PAWN_possessive] parents in a lawless society. Because of this, they picked up various bad habits from “criminal scum” that formed the backbone of [PAWN_possessive] survival instincts. Upon reaching maturity, [PAWN_pronoun] decided to strike out and make [PAWN_possessive] own fortune.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Artistic</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_PirateQueensDaughter</defName>
+    <title>Pirate queen's daughter</title>
+    <titleShort>Pirate</titleShort>
+    <baseDescription>[PAWN_nameDef] was born outside of asari society and raised by [PAWN_possessive] parents in a pirate society with [PAWN_possessive] own mother having declared herself as the pirate queen. The decadent lifestyle brought by stolen merchandise eventually came crashing down and [PAWN_nameDef] made [PAWN_possessive] escape in order to evade the authorities.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_MilitaryBrat</defName>
+    <title>Military brat</title>
+    <titleShort>Military brat</titleShort>
+    <baseDescription>[PAWN_nameDef] was born to parents who both either served or continue to serve in their respective militaries and as a result received a very strict and comprehensive military education. However, as is tradition in Asari society,when [PAWN_pronoun] reached maturity [PAWN_pronoun] decided to strike out on [PAWN_possessive] own outside of the rigid military.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Childhood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_AsariCommando</defName>
+    <title>Asari commando</title>
+    <titleShort>Commando</titleShort>
+    <baseDescription>[PAWN_nameDef] served as an officially sanctioned huntress in the asari military, with [PAWN_possessive] merits earning [PAWN_possessive] the position as the bodyguard of an esteemed matriarch. After she died of natural causes, [PAWN_pronoun] took a leave of absence in order to see more of the galaxy that [PAWN_pronoun] had learned to appreciate over the decades.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_UnsanctionedMercenary</defName>
+    <title>Unsanctioned mercenary</title>
+    <titleShort>Mercenary</titleShort>
+    <baseDescription>[PAWN_nameDef] had immense difficulty in creating biotic fields which excluded [PAWN_possessive] from serving in the official military. Instead, training physically to make up for this deficit, [PAWN_pronoun] served in whichever outfit which would take [PAWN_possessive]. The diversity of tactics used by [PAWN_possessive] squad leaders made [PAWN_possessive] very adept at dealing with any situation.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_ExoticDancer</defName>
+    <title>Exotic dancer</title>
+    <titleShort>Dancer</titleShort>
+    <baseDescription>[PAWN_nameDef] thoroughly enjoyed [PAWN_possessive] time as a dancer back on Omega, as the credits were good and there was plenty of opportunities to practice [PAWN_possessive] martial arts to both liberate the patrons from their possessions and “escort” them from the bar in case they got too handsy. However, a misunderstanding with a big-time client required [PAWN_possessive] to find a new place of employment.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_PirateQueen</defName>
+    <title>Pirate queen</title>
+    <titleShort>Pirate queen</titleShort>
+    <baseDescription>[PAWN_nameDef] decided that [PAWN_pronoun] likes living fast and hard, and preferably on someone else’s dime. What better way to live life than by commanding the meanest band of misfits and terrorising those weaker than them? Eventually, the consequences of [PAWN_possessive] actions caught up with [PAWN_possessive], causing [PAWN_possessive] to flee far away from the long arm of the law.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+	<li>Hauling</li>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_LowLevelGangMember</defName>
+    <title>Low level gang member</title>
+    <titleShort>Thug</titleShort>
+    <baseDescription>[PAWN_nameDef] likes to cause chaos but feels [PAWN_pronoun] is still far too young to actually take responsibility for it. By performing adequately well in a gang and letting others do most of the difficult work, [PAWN_nameDef] has managed to get away with living a relatively comfortable life, blissfully ignoring that [PAWN_pronoun] stands on a knife’s edge.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_ExtranetHistorian</defName>
+    <title>Extranet historian</title>
+    <titleShort>Historian</titleShort>
+    <baseDescription>[PAWN_nameDef] spent quite a number of years of [PAWN_possessive] life working with an anonymous group to document the vast amounts of information available on the extranet that influenced societies and their consequences. Sometimes the gullibility of people truly astounds [PAWN_pronoun], and believes it’s important to take a small break in a completely different region of space.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_ColonistAsari</defName>
+    <title>Colonist</title>
+    <titleShort>Colonist</titleShort>
+    <baseDescription>For whatever reason, [PAWN_nameDef] has decided to spend [PAWN_possessive] years working in a colony environment. It’s not a glamorous lifestyle, but someone has to do it and [NAME_pronoun] takes pride in [NAME_possessive] skills in helping a colony survive and prosper.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_WanderingSoul</defName>
+    <title>Wandering soul</title>
+    <titleShort>Wanderer</titleShort>
+    <baseDescription>An asari lifetime is incredibly long and very few ever feel rushed or find it necessary to dedicate to a single lifestyle. [PAWN_nameDef] adopts this approach thoroughly, never settling in one place for long and striving to experience everything life has to offer [PAWN_possessive]. This lack of attachment does lead to some disregard for the state of [PAWN_possessive] possessions, though.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+    <defName>RE_ExtraspeciesDoctor</defName>
+    <title>Extraspecies doctor</title>
+    <titleShort>Doctor</titleShort>
+    <baseDescription>[PAWN_nameDef] once realized that [PAWN_pronoun] has a rather morbid curiosity in how the bodies function of [PAWN_possessive] own and those of other species. As it goes, [PAWN_pronoun] has become a very efficient surgeon and can use their skills to heal or hurt as needs dictate.</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+      <li>AsariRepublics</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+</AlienRace.BackstoryDef>
+
 </Defs>
