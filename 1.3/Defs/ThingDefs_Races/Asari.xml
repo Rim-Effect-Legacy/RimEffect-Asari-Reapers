@@ -53,6 +53,10 @@
               <drawnInBed>true</drawnInBed>
               <drawnDesiccated>true</drawnDesiccated>
               <colorChannel>skin</colorChannel>
+              <hiddenUnderApparelFor>
+                <li>FullHead</li>
+				<li>UpperHead</li>
+              </hiddenUnderApparelFor>
             </li>
             <li>
               <bodyPart>Head</bodyPart>
@@ -79,8 +83,11 @@
                 </east>
               </offsets>
               <drawnInBed>true</drawnInBed>
-              <drawnDesiccated>true</drawnDesiccated>
+              <drawnDesiccated>false</drawnDesiccated>
               <colorChannel>tattoo</colorChannel>
+              <hiddenUnderApparelFor>
+                <li>FullHead</li>
+              </hiddenUnderApparelFor>
             </li>
           </bodyAddons>
           <aliencrowntypes>
