@@ -36,17 +36,17 @@
               <offsets>
                 <north>
                   <bodyTypes>
-                    <Female>(0, 0.52)</Female>
+                    <Female>(0, 0)</Female>
                   </bodyTypes>
                 </north>
                 <south>
                   <bodyTypes>
-                    <Female>(-0.424, 0.22)</Female>
+                    <Female>(0, 0)</Female>
                   </bodyTypes>
                 </south>
                 <east>
                   <bodyTypes>
-                    <Female>(-0.4, 0.26)</Female>
+                    <Female>(0, 0)</Female>
                   </bodyTypes>
                 </east>
               </offsets>
