@@ -32,6 +32,7 @@
     <costList>
       <Plasteel>55</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
+	  <RE_ElementZero>5</RE_ElementZero>
     </costList>
     <thingSetMakerTags>
       <li>RE_AsariWeaponry</li>
@@ -141,6 +142,7 @@
     <costList>
       <Plasteel>50</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
+	  <RE_ElementZero>5</RE_ElementZero>
     </costList>
     <thingSetMakerTags>
       <li>RE_AsariWeaponry</li>
@@ -232,6 +234,7 @@
     <costList>
       <Plasteel>65</Plasteel>
       <ComponentSpacer>3</ComponentSpacer>
+	  <RE_ElementZero>5</RE_ElementZero>
     </costList>
     <thingSetMakerTags>
       <li>RE_AsariWeaponry</li>
@@ -324,8 +327,9 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Plasteel>40</Plasteel>
+      <Plasteel>35</Plasteel>
       <ComponentSpacer>1</ComponentSpacer>
+	  <RE_ElementZero>2</RE_ElementZero>
     </costList>
     <thingSetMakerTags>
       <li>RE_AsariWeaponry</li>
