@@ -91,6 +91,9 @@
         <armorPenetration>0.2</armorPenetration>
       </li>
     </tools>
+    <equippedStatOffsets>
+      <RE_BioticEnergyRecoveryRate>0.1</RE_BioticEnergyRecoveryRate>
+    </equippedStatOffsets>
         <modExtensions>
 	            <li Class="VFECore.ThingDefExtension">
                 <usableWithShields>true</usableWithShields>
