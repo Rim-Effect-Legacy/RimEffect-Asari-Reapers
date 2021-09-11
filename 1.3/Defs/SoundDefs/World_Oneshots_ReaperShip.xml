@@ -42,6 +42,8 @@
             <clipFolderPath>ReaperShipSounds/ReaperOrbitalBeam_Targeting</clipFolderPath>
           </li>
         </grains>
+        <volumeRange>300~300</volumeRange>
+        <distRange>300~500</distRange>
       </li>
     </subSounds>
   </SoundDef>
