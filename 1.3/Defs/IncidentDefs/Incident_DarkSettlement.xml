@@ -12,7 +12,7 @@
         <minRefireDays>0</minRefireDays>
         <letterDef>ThreatBig</letterDef>
         <letterLabel>Settlement gone dark</letterLabel>
-        <letterText>A local settlement has stopped responding to communications.\nThere were reports of Reaper activity around that area, so many fear the worst.text_todo</letterText>
+        <letterText>A local settlement has stopped responding to communications.\n\nThere were reports of Reaper activity around that area, so many fear the worst.\n\nVisiting this settlement could give you a clue about the Reaper strength in the area, but you should be prepared for a fight. Defeating the Reaper forces will allow you to loot any items you can find.</letterText>
     </IncidentDef>
     <IncidentDef>
         <defName>RE_DarkSettlementReclaimed</defName>
@@ -26,6 +26,6 @@
         <minRefireDays>0</minRefireDays>
         <letterDef>PositiveEvent</letterDef>
         <letterLabel>Dark settlement reclaimed</letterLabel>
-        <letterText>A local settlement that had gone dark has been taken back from the reapers by {0}.text_todo</letterText>
+        <letterText>A local settlement that had gone dark before has been taken back from the reapers by {0}.</letterText>
     </IncidentDef>
 </Defs>
