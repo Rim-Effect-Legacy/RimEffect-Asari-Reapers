@@ -177,6 +177,8 @@
         <defName>RE_AsariRepublics</defName>
         <label>Asari Republics</label>
         <description>The Asari Republics are collectively one of the major nations in Citadel Space; actually a coalition of asari republican governments with a tradition of true and total democracy. They utilise light-weight weaponry and powerful biotics.\n\nThey are open to alliances and xenophilic in regards to contact with other races.\n\nAsari Republics does not have any bases on the planet and instead reside in orbit, on passing ships. They sometimes come down to the surface on their shuttles to trade.</description>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>12</configurationListOrderPriority>
         <colorSpectrum>
             <li>(0.53, 0.27, 0.72)</li>
             <li>(0.55, 0.29, 0.74)</li>
