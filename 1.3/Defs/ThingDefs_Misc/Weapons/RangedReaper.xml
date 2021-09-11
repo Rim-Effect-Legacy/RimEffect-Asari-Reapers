@@ -93,7 +93,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>10</damageAmountBase>
       <speed>90</speed>
 	  <armorPenetrationBase>0.55</armorPenetrationBase>
     </projectile>
@@ -208,7 +208,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>14</damageAmountBase>
       <armorPenetrationBase>0.7</armorPenetrationBase>
       <speed>80</speed>
     </projectile>
