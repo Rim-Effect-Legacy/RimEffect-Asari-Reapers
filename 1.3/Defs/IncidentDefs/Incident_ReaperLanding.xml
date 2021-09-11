@@ -12,7 +12,7 @@
         <minRefireDays>0</minRefireDays>
         <letterDef>RE_ReaperLanding</letterDef>
         <letterLabel>Reaper Landed</letterLabel>
-        <letterText>A Reaper has landed not far from your location.\nEach Reaper increases the Reaper presence on the surface, resulting in larger assault forces patrolling the area and a bigger invasion force when attacking settlements - yours included.\nDestroying the Reaper can be very difficult, but will decrease their presence on the planet.</letterText>
+        <letterText>A Reaper has landed not far from your location.\n\nEach Reaper increases the Reaper presence on the surface, resulting in larger assault forces patrolling the area and a bigger invasion force when attacking settlements - yours included.\n\nDestroying the Reaper can be very difficult, but will decrease their presence on the planet.</letterText>
         <modExtensions>
             <li Class="RimEffectReapers.ReaperIncidentExtension">
               <baseToPlace>RE_Reaper</baseToPlace>
@@ -37,10 +37,10 @@
             <li>World</li>
         </targetTags>
         <workerClass>RimEffectReapers.IncidentWorker_ReaperDown</workerClass>
-        <baseChance>0.01</baseChance>
+        <baseChance>0.02</baseChance>
         <minRefireDays>0</minRefireDays>
         <letterDef>PositiveEvent</letterDef>
         <letterLabel>Reaper destroyed</letterLabel>
-        <letterText>{0} has successfully destroyed the reaper {1}. This is a huge moment for the survival of everyone.text_todo</letterText>
+        <letterText>{0} has successfully destroyed the reaper {1}. This is a huge event, but not cause for a celebration yet, as more Reapers are bound to land.\n\nThe more Reapers land on your planet, the more husks will show up with each Reaper patrol and attack force.\n\n{0} ultimately lowered that number for time being, but the war is not over yet.</letterText>
     </IncidentDef>
 </Defs>
