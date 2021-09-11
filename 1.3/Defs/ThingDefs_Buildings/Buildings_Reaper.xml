@@ -486,7 +486,7 @@
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperIndoctrinationCore</defName>
 		<label>reaper indoctrination core</label>
-		<description>A massive reaper construction that influences all the organic creatures.</description>
+		<description>A massive reaper construction that influences all the organic creatures. Indoctrination will slowly turn everyone berserk unless the core is disabled or destroyed.</description>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_IndoctrinationCore</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -536,7 +536,7 @@
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperUnitStorage</defName>
 		<label>reaper unit storage</label>
-		<description>A large shell storing reaper units.</description>
+		<description>A large shell storing reaper units. When the Reaper is damaged, Unit storage will release the reinforcements.</description>
 		<thingClass>RimEffectReapers.Building_Reaper_UnitStorage</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_UnitStorage</texPath>
@@ -627,7 +627,7 @@
 	<ThingDef ParentName="RE_ReaperPart">
 		<defName>RE_ReaperLongRangeMissileLauncher</defName>
 		<label>reaper long range missile launcher</label>
-		<description>A battery of devastating missiles.</description>
+		<description>A battery of devastating missiles. Missiles fired by the long range missile launcher raise into low orbit before they come crashing down on unsuspecting victims.</description>
 		<thingClass>RimEffectReapers.Building_Reaper_LongRangeMissile</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_LongRangeMissileBay</texPath>
@@ -1482,7 +1482,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_Turret_ReaperOrbitalBeamTargeter</defName>
 		<label>reaper orbital beam targeter</label>
-		<description>A large laser targeter that takes a long time to mark the target, which then gets bombarded by a Reaper beam from orbit.</description>
+		<description>A large laser targeter that takes a long time to mark the target, which then gets bombarded by a Reaper beam from orbit. Reaper beam is absolutely devastating, but the targeter can be tricked by running from cover to cover.</description>
 		<thingClass>RimEffectReapers.Building_ReaperTurret_MarkTarget</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_BeamTargeter_Base</texPath>
@@ -1577,7 +1577,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>RE_Turret_ReaperBeam</defName>
 		<label>reaper beam</label>
-		<description>A large laser cannon.</description>
+		<description>A powerful, magnetohydrodynamic weapon which ejects a stream of molten metal at a fraction of the speed of light, capable of tearing through a cruiser in a single sustained burst. It requires line of sight, but once it fires, the area it hits and anyone in it becomes completely annihilated.</description>
 		<thingClass>RimEffectReapers.Building_ReaperTurret_MarkTarget</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Base</texPath>
