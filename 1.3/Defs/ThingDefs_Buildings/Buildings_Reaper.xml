@@ -1058,6 +1058,7 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>-->
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<size>(1,1)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_BolterTurret_Top</uiIconPath>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -1109,6 +1110,7 @@
 			<texPath>Things/Building/Reaper/Reaper_BolterTurret_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<weaponTags>
 			<li>Reaper_Turret</li>
 		</weaponTags>
@@ -1163,6 +1165,7 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>-->
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<size>(2,2)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_HeavyBolter_Top</uiIconPath>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -1215,6 +1218,7 @@
 			<texPath>Things/Building/Reaper/Reaper_HeavyBolter_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<weaponTags>
 			<li>Reaper_Turret</li>
 		</weaponTags>
@@ -1270,6 +1274,7 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>-->
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<size>(2,2)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_MissileLauncher_Top</uiIconPath>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -1322,6 +1327,7 @@
 			<texPath>Things/Building/Reaper/Reaper_MissileLauncher_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<weaponTags>
 			<li>Reaper_Turret</li>
 		</weaponTags>
@@ -1379,6 +1385,7 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>-->
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<size>(3,3)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_KineticArtillery_Top</uiIconPath>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -1430,6 +1437,7 @@
 			<texPath>Things/Building/Reaper/Reaper_KineticArtillery_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<weaponTags>
 			<li>Reaper_Turret</li>
 		</weaponTags>
@@ -1489,6 +1497,7 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>-->
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<size>(3,3)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_BeamTargeter_Top</uiIconPath>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -1540,6 +1549,7 @@
 			<texPath>Things/Building/Reaper/Reaper_BeamTargeter_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<weaponTags>
 			<li>Reaper_Turret</li>
 			<li>Artillery_BaseDestroyer</li>
@@ -1582,6 +1592,7 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<size>(5,5)</size>
 		<uiIconPath>Things/Building/Reaper/Reaper_ReaperBeam_Top</uiIconPath>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -1633,6 +1644,7 @@
 			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
 		<weaponTags>
 			<li>Reaper_Turret</li>
 		</weaponTags>
