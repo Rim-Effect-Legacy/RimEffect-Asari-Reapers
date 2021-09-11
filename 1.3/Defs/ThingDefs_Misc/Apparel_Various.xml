@@ -43,7 +43,7 @@
     <costList>
       <ComponentSpacer>3</ComponentSpacer>
       <Plasteel>75</Plasteel>
-      <Uranium>10</Uranium>
+      <RE_ElementZero>30</RE_ElementZero>
     </costList>
     <apparel>
       <bodyPartGroups>
@@ -132,7 +132,7 @@
       <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.98</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.51</ArmorRating_Heat>
+      <ArmorRating_Heat>0.41</ArmorRating_Heat>
       <Insulation_Cold>36</Insulation_Cold>
       <Insulation_Heat>12</Insulation_Heat>
       <EquipDelay>11</EquipDelay>
@@ -144,6 +144,7 @@
       <ComponentSpacer>3</ComponentSpacer>
       <Plasteel>75</Plasteel>
       <Uranium>10</Uranium>
+      <RE_ElementZero>10</RE_ElementZero>
     </costList>
     <apparel>
       <bodyPartGroups>
@@ -191,8 +192,8 @@
       <li>RE_AsariReward</li>
     </thingSetMakerTags>
     <equippedStatOffsets>
-      <RE_BioticEnergyMax>1.0</RE_BioticEnergyMax>
-	  <RE_BioticEnergyRecoveryRate>1.0</RE_BioticEnergyRecoveryRate>
+      <RE_BioticEnergyMax>0.5</RE_BioticEnergyMax>
+	  <RE_BioticEnergyRecoveryRate>0.5</RE_BioticEnergyRecoveryRate>
     </equippedStatOffsets>
     <comps>
       <li Class="CompProperties_Biocodable"/>
@@ -202,7 +203,7 @@
    <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_DancerBodysuit</defName>
     <label>dancer bodysuit</label>
-    <description>The standard uniform for dancers.</description>
+    <description>The standard uniform for dancers. Whilst it increases social impact, it greatly reduces the ability to be taken seriously during trade talks.</description>
     <recipeMaker>
       <researchPrerequisite>RE_AsariApparel</researchPrerequisite>
     </recipeMaker>
@@ -222,9 +223,9 @@
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>3200</WorkToMake>
       <Mass>0.25</Mass>
-      <StuffEffectMultiplierArmor>0.22</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.28</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.22</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierArmor>0.12</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.14</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.28</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.75</EquipDelay>
     </statBases>
     <apparel>
@@ -262,9 +263,12 @@
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_AmbassadorOutfit</defName>
     <label>ambassador outfit</label>
-    <description>A full-body elegant outfit befitting of the finest elite and ambassadors.</description>
+    <description>A full-body elegant outfit befitting of the finest elite and ambassadors. Improves the ability to reach a fair trade as well as social interactions.</description>
     <recipeMaker>
       <researchPrerequisite>RE_AsariApparel</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Items/Apparel/AmbassadorOutfit/AmbassadorOutfit</texPath>
@@ -337,12 +341,16 @@
     <tradeTags>
       <li>RE_AsariApparel</li>
     </tradeTags>
+    <equippedStatOffsets>
+      <SocialImpact>0.20</SocialImpact>
+	  <TradePriceImprovement>0.20</TradePriceImprovement>
+    </equippedStatOffsets>
   </ThingDef>
   
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_AsariDress</defName>
     <label>asari-style dress</label>
-    <description>A full-body elegant outfit for asari.</description>
+    <description>A full-body elegant dress for asari. Often worn among the finest Asari elite, it is known to increase the social impact.</description>
     <recipeMaker>
       <researchPrerequisite>RE_AsariApparel</researchPrerequisite>
     </recipeMaker>
@@ -363,8 +371,8 @@
       <MaxHitPoints>160</MaxHitPoints>
       <WorkToMake>10000</WorkToMake>
       <Mass>1.5</Mass>
-      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.58</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
@@ -418,14 +426,20 @@
     <tradeTags>
       <li>RE_AsariApparel</li>
     </tradeTags>
+    <equippedStatOffsets>
+      <SocialImpact>0.20</SocialImpact>
+    </equippedStatOffsets>
   </ThingDef>
   
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_MatriarchDress</defName>
     <label>matriarch dress</label>
-    <description>A full-body elegant dress befitting of the Matriarch title.</description>
+    <description>A full-body elegant dress befitting of the Matriarch title. This dress is not only connected with the most important title in the Asari culture, but it also greatly improves biotic abilities of the person wearing it. Creation of such a dress requires extremely high degree of crafting knowledge.</description>
     <recipeMaker>
       <researchPrerequisite>RE_AsariApparel</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Items/Apparel/MatriarchDress/MatriarchDress</texPath>
@@ -449,6 +463,9 @@
       <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
+    <costList>
+      <RE_ElementZero>30</RE_ElementZero>
+    </costList>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -501,6 +518,8 @@
     </tradeTags>
     <equippedStatOffsets>
       <SocialImpact>0.35</SocialImpact>
+      <RE_BioticEnergyMax>2.0</RE_BioticEnergyMax>
+	  <RE_BioticEnergyRecoveryRate>2.0</RE_BioticEnergyRecoveryRate>
     </equippedStatOffsets>
   </ThingDef>
 
