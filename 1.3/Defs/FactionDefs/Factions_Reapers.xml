@@ -110,6 +110,10 @@
     </pawnGroupMakers>
     <settlementTexturePath>UI/FactionIcons/ReaperShip</settlementTexturePath>
     <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+    <colorSpectrum>
+      <li>(88,88,117)</li>
+      <li>(88,88,117)</li>
+    </colorSpectrum>
   </FactionDef>
   
   <ThingSetMakerDef>
