@@ -3,16 +3,22 @@ using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 using Verse.Sound;
 
 namespace RimEffectReapers
 {
-    public class Building_Reaper_LongRangeMissile : Building_Reaper
+    public class Building_Reaper_LongRangeMissile : Building_Reaper, IAttackTargetSearcher
     {
         private static readonly int COOLDOWN_TICKS = 30f.SecondsToTicks();
         private static readonly FloatRange INCOMING_DELAY_RANGE = new FloatRange(1f, 2f);
         private int cooldownTicksLeft;
         private List<int> incoming = new List<int>();
+
+        public Thing Thing => this;
+        public Verb CurrentEffectiveVerb => null;
+        public LocalTargetInfo LastAttackedTarget { get; private set; }
+        public int LastAttackTargetTick { get; private set; }
 
         public override void DrawExtraSelectionOverlays()
         {
@@ -36,7 +42,7 @@ namespace RimEffectReapers
             if (cooldownTicksLeft > 0) cooldownTicksLeft--;
             if (cooldownTicksLeft <= 0)
             {
-                Fire();
+                if (Map.attackTargetsCache.TargetsHostileToFaction(Faction).Any()) Fire();
                 cooldownTicksLeft = COOLDOWN_TICKS;
             }
 
@@ -58,9 +64,9 @@ namespace RimEffectReapers
 
         public void Incoming()
         {
-            var target = Map.listerThings.ThingsInGroup(ThingRequestGroup.AttackTarget)
-                .Where(t => t.Faction.HostileTo(Faction))
-                .Concat(Map.mapPawns.AllPawnsSpawned.Where(p => p.Faction.HostileTo(Faction))).RandomElement();
+            var target = Map.attackTargetsCache.GetPotentialTargetsFor(this).RandomElement().Thing;
+            LastAttackedTarget = target;
+            LastAttackTargetTick = Find.TickManager.TicksGame;
             if (target == null)
             {
                 incoming.Add(
@@ -89,11 +95,9 @@ namespace RimEffectReapers
             Scribe_Collections.Look(ref incoming, "incoming");
         }
 
-        public override string GetInspectString()
-        {
-            return base.GetInspectString() +
-                   "RE_LongRangeMissile_Inspect".Translate(cooldownTicksLeft.ToStringSecondsFromTicks());
-        }
+        public override string GetInspectString() =>
+            base.GetInspectString() +
+            "RE_LongRangeMissile_Inspect".Translate(cooldownTicksLeft.ToStringSecondsFromTicks());
     }
 
     public class LongRangeMissile : Skyfaller
