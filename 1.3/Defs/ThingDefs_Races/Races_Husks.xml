@@ -315,8 +315,7 @@
   <ThingDef ParentName="BaseHusk">
     <defName>RE_Husk_Husk</defName>
     <label>husk</label>
-    <description>Synthetic-organic zombie created by dragon’s teeth - huge reaper-tech spikes that pierce the abdomen of a humanoid and slowly enhance their DNA with reaper nanites. Whilst weak and feeble, husks pose a great threat to morale and are an excellent psychological weapon.\n\nThe Husk is a baseline Human which has been converted into a scrambling Reaper frontline unit through the use of impaling devices, nicknamed "dragon's teeth". The process replaces all their bodily content with cybernetics, allowing them to generate an electric charge used for offense.\n\nHusks retain no vestiges of their former personalities and are used as powerful psychological shock troops against the Alliance, as former colleagues scramble to attack them in a similar fashion to zombies from ancient media culture.
-</description>
+    <description>Synthetic-organic zombie created by dragon’s teeth - huge reaper-tech spikes that pierce the abdomen of a humanoid and slowly enhance their DNA with reaper nanites. Whilst weak and feeble, husks pose a great threat to morale and are an excellent psychological weapon.\n\nThe Husk is a baseline Human which has been converted into a scrambling Reaper frontline unit through the use of impaling devices, nicknamed "dragon's teeth". The process replaces all their bodily content with cybernetics, allowing them to generate an electric charge used for offense.\n\nHusks retain no vestiges of their former personalities and are used as powerful psychological shock troops against the Alliance, as former colleagues scramble to attack them in a similar fashion to zombies from ancient media culture.</description>
     <statBases>
       <MoveSpeed>3.2</MoveSpeed>
       <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
