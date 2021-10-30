@@ -4,7 +4,7 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="RE_Asari">
     <defName>RE_Asari</defName>
     <label>asari</label>
-    <description>The asari, native to the planet Thessia, are often considered the most influential and respected sentient species in the galaxy, and are known for their elegance, diplomacy, and biotic aptitude.</description>
+    <description>Elegant, diplomatic and influential mono-gender race.</description>
     <alienRace>
       <generalSettings>
         <forcedRaceTraitEntries>
