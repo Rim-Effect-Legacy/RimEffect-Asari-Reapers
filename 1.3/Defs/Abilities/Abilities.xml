@@ -123,7 +123,7 @@
     <description>Using biotic energy, lift yourself in the air to travel a short distance over any obstacles.</description>
     <abilityClass>RimEffectAsari.Ability_Flight</abilityClass>
     <targetMode>Location</targetMode>
-    <castTime>60</castTime>
+    <castTime>0</castTime>
     <range>10</range>
     <castSound>RE_Biotic_Pull</castSound>
     <iconPath>UI/Abilities/Biotic_Flight</iconPath>
