@@ -15,20 +15,17 @@
         <li>questName->Saving Ardat Yakshi</li>
         <li>questName->The Salvation of Ardat Yakshi</li>
         <li>questName->Helping Ardat Yakshi</li>
-        <li>questName->Accepting Ardat Yakshi]</li>
-        <li>questName->[enemyFaction_pawnsPlural] hunting Ardat Yakshi</li>
+        <li>questName->Accepting Ardat Yakshi</li>
         <li>questName->Ardat Yakshi on the Run</li>
         <li>questName->Ardat Yakshi Seeks a Home</li>
-        <li>questName->Ardat Yakshi Chased by [enemyFaction_pawnsPlural]</li>
-        <li>questName->Ardat Yakshi and [enemyFaction_pawnsPlural]</li>
       </rulesStrings>
     </questNameRules>
     <questDescriptionRules>
       <rulesStrings>
-        <li>questDescription->An Ardat Yakshi named [joiner_nameDef] is calling from nearby. [joiner_pronoun] is being chased by [enemyFaction_pawnsPlural] from [enemyFaction_name]!
-\n[joiner_pronoun] begs for safety and offers to join you at [map_definite].[joiner_relationInfo]
-\nIf you accept, you'll have to fight off the [enemyFaction_pawnsPluralDef] on [joiner_possessive] tail. The group of [enemyFaction_pawnsPlural] is composed of: \n\n[raid/raidPawnKinds]
-\n[joiner_nameDef] is too frantic to offer more information.</li>
+        <li>questDescription->An Ardat Yakshi named [asker_nameDef] is calling from nearby. She is being hunted by asari forces from Asari Repiblics!
+\nShe begs for safety and offers to join you at [map_definite].[asker_relationInfo]
+\nIf you accept, you'll have to fight off the squad on her tail. The group is composed of: \n\n[raid/raidPawnKinds]
+\n[asker_nameDef] is too frantic to offer more information.</li>
       </rulesStrings>
     </questDescriptionRules>
     <root Class="QuestNode_Sequence">
@@ -41,16 +38,20 @@
         <!-- Get a walk-in spot so joiner and raid come from the same spot -->
         <li Class="QuestNode_GetWalkInSpot" /> 
 
-        <!-- Get raider faction -->
-        <li Class="QuestNode_GetFaction">
-          <allowEnemy>true</allowEnemy>
-          <mustBePermanentEnemy>true</mustBePermanentEnemy>
-          <storeAs>enemyFaction</storeAs>
+        <!-- Get ardat yakshi -->
+        <li Class="QuestNode_GeneratePawn">
+          <kindDef>RE_ArdatYakshi</kindDef>
+          <storeAs>asker</storeAs>
+          <faction>RE_AsariRepublics</faction>
         </li>
-
-         <!-- Charity on accept -->
-        <li Class="QuestNode_RecordHistoryEvent" MayRequire="Ludeon.RimWorld.Ideology">
-          <historyDef>CharityFulfilled_ThreatReward_Joiner</historyDef>
+		
+        <!-- Asari become hostile -->
+        <li Class="QuestNode_ChangeFactionGoodwill">
+          <faction>RE_AsariRepublics</faction>
+          <change>-100</change>
+          <canSendLetter>false</canSendLetter>
+          <canSendMessage>false</canSendMessage>
+          <ensureHostile>true</ensureHostile>
         </li>
 
         <!-- Joiner arrives -->
@@ -73,11 +74,10 @@
               <inSignal>$inSignal</inSignal>
               <map>$map</map>
               <points>$points</points>
-              <enemyFaction>$enemyFaction</enemyFaction>
+              <enemyFaction>RE_AsariRepublics</enemyFaction>
               <walkInSpot>$walkInSpot</walkInSpot>
-              <customLetterLabel TKey="LetterLabelCashing">{BASELABEL} chasing [../joiner_nameDef]</customLetterLabel>
-              <customLetterText TKey="LetterTextCashing">{BASETEXT}
-              \nThe [enemyFaction_pawnsPlural] have come to get [../joiner_nameDef].</customLetterText>
+              <customLetterLabel TKey="LetterLabelCashing">{BASELABEL}: Asari squad</customLetterLabel>
+              <customLetterText TKey="LetterTextCashing">{BASETEXT}\n\nThis is the asari squad that was hunting [../asker_nameFull].</customLetterText>
             </parms>
           </node>
         </li>
@@ -119,18 +119,18 @@
     <defName>Util_JoinerWalkIn_ArdatYakshi</defName>
     <questDescriptionRules>
       <rulesStrings>
-        <li>rewardDescription->a [joiner_age]-year-old Ardat Yakshi named [joiner_nameDef] will arrive and join you. [joiner_relationInfo]</li>
+        <li>rewardDescription->a [asker_age]-year-old Ardat Yakshi named [asker_nameDef] will arrive and join you. [asker_relationInfo]</li>
       </rulesStrings>
     </questDescriptionRules>
     <root Class="QuestNode_Sequence">
       <nodes>
         <li Class="QuestNode_GeneratePawn">
-          <storeAs>joiner</storeAs>
+          <storeAs>asker</storeAs>
           <kindDef>RE_ArdatYakshi</kindDef>
         </li>
 
         <li Class="QuestNode_PawnsArrive">
-          <pawns>$joiner</pawns>
+          <pawns>$asker</pawns>
           <joinPlayer>true</joinPlayer>
           <customLetterLabel>$customLetterLabel</customLetterLabel>
           <customLetterText>$customLetterText</customLetterText>
