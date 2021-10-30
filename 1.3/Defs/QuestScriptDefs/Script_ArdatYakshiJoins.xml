@@ -24,7 +24,7 @@
       <rulesStrings>
         <li>questDescription->An Ardat Yakshi named [asker_nameDef] is calling from nearby. She is being hunted by asari forces from Asari Repiblics!
 \nShe begs for safety and offers to join you at [map_definite].[asker_relationInfo]
-\nIf you accept, you'll have to fight off the squad on her tail. The group is composed of: \n\n[raid/raidPawnKinds]
+\nBeware - If you accept [asker_nameDef], you will become an enemy of Asari Republics!You'll have to fight off the squad on her tail. The group is composed of: \n\n[raid/raidPawnKinds]
 \n[asker_nameDef] is too frantic to offer more information.</li>
       </rulesStrings>
     </questDescriptionRules>
