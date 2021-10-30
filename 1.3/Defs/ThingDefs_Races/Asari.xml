@@ -58,37 +58,6 @@
 				<li>UpperHead</li>
               </hiddenUnderApparelFor>
             </li>
-            <li>
-              <bodyPart>Head</bodyPart>
-              <path>Things/Pawn/Asari/Tattoos</path>
-              <inFrontOfBody>true</inFrontOfBody>
-              <layerInvert>false</layerInvert>
-              <alignWithHead>true</alignWithHead>
-              <drawSize>0.9</drawSize>
-              <offsets>
-                <north>
-                  <bodyTypes>
-                    <Female>(0, 0.32)</Female>
-                  </bodyTypes>
-                </north>
-                <south>
-                  <bodyTypes>
-                    <Female>(-0.424, 0.02)</Female>
-                  </bodyTypes>
-                </south>
-                <east>
-                  <bodyTypes>
-                    <Female>(-0.4, 0.06)</Female>
-                  </bodyTypes>
-                </east>
-              </offsets>
-              <drawnInBed>true</drawnInBed>
-              <drawnDesiccated>false</drawnDesiccated>
-              <colorChannel>tattoo</colorChannel>
-              <hiddenUnderApparelFor>
-                <li>FullHead</li>
-              </hiddenUnderApparelFor>
-            </li>
           </bodyAddons>
           <aliencrowntypes>
             <li>Asari_Average_Normal</li>
@@ -132,10 +101,7 @@
                   </li>
                 </options>
               </first>
-            </li>
-            <li>
-              <name>tattoo</name>
-              <first Class="ColorGenerator_Options">
+              <second Class="ColorGenerator_Options">
                 <options>
                   <li>
                     <weight>20</weight>
@@ -162,7 +128,7 @@
                     <only>RGB(191,181,190)</only>
                   </li>
                 </options>
-              </first>
+              </second>
             </li>
           </colorChannels>
           <useGenderedHeads>false</useGenderedHeads>
@@ -179,6 +145,7 @@
       <graphicPaths>
         <li>
           <head>Things/Pawn/Asari/Heads/</head>
+          <headMasks>Things/Pawn/Asari/Tattoos/Tattoo</headMasks>
         </li>
       </graphicPaths>
       <raceRestriction>
