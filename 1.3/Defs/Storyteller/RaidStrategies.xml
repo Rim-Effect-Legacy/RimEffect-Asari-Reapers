@@ -16,9 +16,9 @@
       </points>
     </selectionWeightPerPointsCurve>
     <letterLabelEnemy>Reaper planetfall</letterLabelEnemy>
-    <arrivalTextEnemy>Reaper units that landed with it will attack immediately. The Reaper will lay covering fire and begin the siege as soon as possible.text_todo</arrivalTextEnemy>
-    <letterLabelFriendly>Friendlies</letterLabelFriendly>
-    <arrivalTextFriendly>It looks like they want to use siege tactics to help you.</arrivalTextFriendly>
+    <arrivalTextEnemy>A Reaper is landing on your local area. Units that landed with it will attack immediately. The Reaper will lay covering fire and begin the siege as soon as possible.\n\nBe prepared for a long and hard fight. Reapers have numerous armaments and tools that give then an edge over organic beings.</arrivalTextEnemy>
+    <letterLabelFriendly>Reaper...friend?</letterLabelFriendly>
+    <arrivalTextFriendly>A reaper is landing on your map but it just wants to cuddle uwu. No, seriously, report it as a bug.</arrivalTextFriendly>
     <modExtensions>
       <li Class="KCSG.FallingStructure">
         <weightedStruct>
