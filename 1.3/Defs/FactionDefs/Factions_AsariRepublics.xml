@@ -34,7 +34,17 @@
            <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
            <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
            <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophobia</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+		    <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
         </disallowedMemes>
+        <allowedCultures>
+		    <li>Astropolitan</li>
+		</allowedCultures>
+    <requiredMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
+    </requiredMemes>
     <structureMemeWeights>
       <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
       <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
