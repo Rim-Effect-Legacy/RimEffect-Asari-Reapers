@@ -132,6 +132,7 @@
       <minimumLevel>1</minimumLevel>
     </requiredHediff>
     <requiredTrait>RE_ArdatYakshi</requiredTrait>
+	<casterHediff>RE_Biotic_Flight</casterHediff>
     <targetFlecks>
       <li>RE_Fleck_BioticDistortion</li>
     </targetFlecks>
@@ -141,6 +142,25 @@
       </li>
     </modExtensions>
   </VFECore.Abilities.AbilityDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>RE_Biotic_Flight</defName>
+    <label>biotic flight</label>
+    <labelNoun>biotic flight</labelNoun>
+    <description>Biotic flight state.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>300~300</disappearsAfterTicks>
+      </li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>RE_Dominate</stateEffecter>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
 
   <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Charm</defName>
