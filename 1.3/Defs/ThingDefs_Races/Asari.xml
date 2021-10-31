@@ -35,8 +35,8 @@
               <drawSize>0.9</drawSize>
               <offsets>
                 <north>
+				  <layerOffset>-0.27</layerOffset>
                   <bodyTypes>
-                    <layerOffset>-0.27</layerOffset>
                     <Female>(0, 0)</Female>
                   </bodyTypes>
                 </north>
