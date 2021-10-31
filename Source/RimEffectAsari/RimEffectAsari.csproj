@@ -77,9 +77,12 @@
     <Compile Include="HarmonyPatches\RecruitChanceFinal_Patch.cs" />
     <Compile Include="HarmonyPatches\SkinColor_Patch.cs" />
     <Compile Include="HarmonyPatches\TraderCaravanArrival_Patch.cs" />
+    <Compile Include="JobDriver_BansheeTeleport.cs" />
+    <Compile Include="JobGiver_BansheeTeleport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="REA_DefOf.cs" />
     <Compile Include="StatWorker_ArdatYakshiPower.cs" />
+    <Compile Include="ThinkNode_ConditionalIsBanshee.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

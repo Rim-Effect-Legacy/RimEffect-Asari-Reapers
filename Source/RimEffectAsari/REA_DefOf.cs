@@ -31,6 +31,8 @@
         public static DutyDef    RE_LeaveOnShuttle;
         public static DutyDef    RE_LeaveOnShuttleAndDefendSelf;
 
-        public static ThingDef   RE_AbilityFlyer_Flight;
+        public static ThingDef RE_AbilityFlyer_Flight;
+        public static ThingDef RE_Husk_Banshee;
+        public static JobDef   RE_BansheeTeleport;
     }
 }
