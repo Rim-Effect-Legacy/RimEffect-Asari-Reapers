@@ -34,5 +34,6 @@
         public static ThingDef RE_AbilityFlyer_Flight;
         public static ThingDef RE_Husk_Banshee;
         public static JobDef   RE_BansheeTeleport;
+        public static SoundDef RE_Pawn_Husk_Banshee_Call;
     }
 }

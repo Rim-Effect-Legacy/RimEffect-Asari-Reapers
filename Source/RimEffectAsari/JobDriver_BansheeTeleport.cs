@@ -11,6 +11,7 @@ namespace RimEffectAsari
     using UnityEngine;
     using Verse;
     using Verse.AI;
+    using Verse.Sound;
 
     public class JobDriver_BansheeTeleport : JobDriver
     {
@@ -18,7 +19,9 @@ namespace RimEffectAsari
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
-            yield return Toils_General.Wait(GenTicks.TicksPerRealSecond, TargetIndex.A).WithProgressBarToilDelay(TargetIndex.A);
+            Toil waitToil = Toils_General.Wait(GenTicks.TicksPerRealSecond, TargetIndex.A).WithProgressBarToilDelay(TargetIndex.A);
+            waitToil.AddPreInitAction(() => REA_DefOf.RE_Pawn_Husk_Banshee_Call.PlayOneShot(SoundInfo.InMap(this.pawn)));
+            yield return waitToil;
             yield return new Toil()
                          {
                              initAction = () =>
