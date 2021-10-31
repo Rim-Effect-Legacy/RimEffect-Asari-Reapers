@@ -184,6 +184,7 @@ namespace RimEffectAsari
             Scribe_Values.Look(ref this.damage, nameof(this.damage));
 
             Scribe_Values.Look(ref this.curRotation, nameof(this.curRotation));
+            Scribe_Defs.Look(ref this.fleck, nameof(this.fleck));
         }
     }
 }
