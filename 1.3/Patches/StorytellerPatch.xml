@@ -5,7 +5,7 @@
       <xpath>Defs/StorytellerDef[@Name="RE_SpacerTechResearchBench"]/comps</xpath>
       <value>
          <li Class="StorytellerCompProperties_SingleOnceFixed">
-            <fireAfterDaysPassed>26</fireAfterDaysPassed>
+            <fireAfterDaysPassed>30</fireAfterDaysPassed>
             <incident>GiveQuest_Intro_ArdatYakshi</incident>
             <skipIfOnExtremeBiome>true</skipIfOnExtremeBiome>
             <allowedTargetTags>
