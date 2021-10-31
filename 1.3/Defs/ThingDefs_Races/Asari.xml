@@ -36,15 +36,18 @@
               <offsets>
                 <north>
                   <bodyTypes>
+                    <layerOffset>-0.27</layerOffset>
                     <Female>(0, 0)</Female>
                   </bodyTypes>
                 </north>
                 <south>
+                  <layerOffset>-0.27</layerOffset>
                   <bodyTypes>
                     <Female>(0, 0)</Female>
                   </bodyTypes>
                 </south>
                 <east>
+                  <layerOffset>-0.27</layerOffset>
                   <bodyTypes>
                     <Female>(0, 0)</Female>
                   </bodyTypes>
