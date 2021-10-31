@@ -545,6 +545,12 @@
     <gearHealthRange>0.8~2</gearHealthRange>
     <apparelTags>
       <li>RE_CommandoArmoury</li>
+	  <li>RE_AllianceNavyGearLight</li>
+      <li>RE_SpacerApparelCivilian</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
     </apparelTags>
 	<apparelRequired>
       <li>RE_Apparel_AsariCommandoArmor</li>
@@ -563,24 +569,6 @@
     </techHediffsTags>
     <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
     <modExtensions>
-      <li Class="VFECore.PawnKindDefExtension">
-        <factionColourApparelPartList>
-          <li>FullHead</li>
-          <li>Torso</li>
-          <li>Torso</li>
-          <li>Torso</li>
-          <li>Torso</li>
-          <li>Legs</li>
-        </factionColourApparelPartList>
-        <factionColourApparelLayerList>
-          <li>Overhead</li>
-          <li>OnSkin</li>
-          <li>Middle</li>
-          <li>Shell</li>
-          <li>VFEC_OuterShell</li>
-          <li>OnSkin</li>
-        </factionColourApparelLayerList>
-      </li>
       <li Class="VFECore.Abilities.PawnKindAbilityExtension">
         <giveAbilities>
           <li>RE_Biotic_Flight</li>
