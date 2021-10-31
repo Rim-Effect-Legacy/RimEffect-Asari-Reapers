@@ -279,6 +279,7 @@
       <hediffGiverSets>
         <li>OrganicStandard</li>
         <li>Human</li>
+        <li>REA_Asari</li>
       </hediffGiverSets>
     </race>
   </AlienRace.ThingDef_AlienRace>
