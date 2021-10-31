@@ -371,4 +371,13 @@
     <drawOffscreen>true</drawOffscreen>
     <seeThroughFog>true</seeThroughFog>
   </ThingDef>
+
+  <ThingDef ParentName="PawnFlyerBase">
+    <defName>RE_AbilityFlyer_Flight</defName>
+    <thingClass>VFECore.Abilities.AbilityPawnFlyer</thingClass>
+    <pawnFlyer>
+      <flightDurationMin>1</flightDurationMin>
+      <flightSpeed>10</flightSpeed>
+    </pawnFlyer>
+  </ThingDef>
 </Defs>

@@ -66,4 +66,22 @@
           </li>
         </children>
       </EffecterDef>
+
+  <HediffGiverSetDef>
+    <defName>REA_Asari</defName>
+    <hediffGivers>
+        <li Class="HediffGiver_Birthday">
+            <hediff>RE_BioticNatural</hediff>
+            <partsToAffect>
+                <li>Brain</li>
+            </partsToAffect>
+            <countToAffect>1</countToAffect>
+            <ageFractionChanceCurve>
+                <points>
+                    <li>(0, 1)</li>
+                </points>
+            </ageFractionChanceCurve>
+        </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
 </Defs>

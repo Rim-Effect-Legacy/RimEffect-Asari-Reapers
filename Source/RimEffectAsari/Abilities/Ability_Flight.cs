@@ -16,9 +16,9 @@
                                             {
                                                 Map     map         = this.pawn.Map;
 
-                                                AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(VFE_DefOf_Abilities.VFEA_AbilityFlyer, this.pawn, target.Cell);
+                                                AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(REA_DefOf.RE_AbilityFlyer_Flight, this.pawn, target.Cell);
                                                 flyer.ability = this;
-                                                flyer.target  = target.Cell.ToVector3() + new Vector3(0, 1, 0);
+                                                flyer.target  = target.Cell.ToVector3() + new Vector3(0, 0, 0);
                                                 GenSpawn.Spawn(flyer, target.Cell, map);
                                             }, "flightAbility", false, null);
         }
