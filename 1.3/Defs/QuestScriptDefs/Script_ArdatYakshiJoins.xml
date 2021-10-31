@@ -75,6 +75,7 @@
               <map>$map</map>
               <points>$points</points>
               <enemyFaction>RE_AsariRepublics</enemyFaction>
+			  <raidPawnKind>RE_AsariJusticar</raidPawnKind>
               <walkInSpot>$walkInSpot</walkInSpot>
               <customLetterLabel TKey="LetterLabelCashing">{BASELABEL}: Asari squad</customLetterLabel>
               <customLetterText TKey="LetterTextCashing">{BASETEXT}\n\nThis is the asari squad that was hunting [../asker_nameFull].</customLetterText>
