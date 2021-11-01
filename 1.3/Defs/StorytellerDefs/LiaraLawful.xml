@@ -4,7 +4,7 @@
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>RE_LiaraLawful</defName>
 		<label>Liara Lawful</label>
-		<description>TBD</description>
+		<description>Liara creates story events on a classic increasing curve of challenge and tension. She will start you off with good events, and then slowly start sending harder and harder threats, until she bestows good events on you once more.</description>
 		<portraitLarge>HeroArt/LiaraLawful</portraitLarge>
 		<portraitTiny>HeroArt/LiaraLawfulTiny</portraitTiny>
 		<listOrder>95</listOrder>

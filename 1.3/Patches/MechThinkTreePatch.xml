@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationInsert">
+        <xpath>/Defs/ThinkTreeDef/thinkRoot/subNodes/li[@Class="ThinkNode_QueuedJob"]</xpath>
+        <value>
+            <li Class="RimEffectAsari.ThinkNode_ConditionalIsBanshee">
+                <subNodes>
+                    <li Class="ThinkNode_ChancePerHour_Constant">
+                        <mtbHours>0.35</mtbHours>
+                        <subNodes>
+                            <li Class="RimEffectAsari.JobGiver_BansheeTeleport" />
+                        </subNodes>
+                    </li>
+                </subNodes>
+            </li>
+		</value>
+    </Operation>
+	
+</Patch>

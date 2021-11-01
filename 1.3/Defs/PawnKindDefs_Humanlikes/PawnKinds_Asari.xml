@@ -236,7 +236,7 @@
   <PawnKindDef ParentName="AsariPawnBase">
     <defName>RE_AsariJusticar</defName>
     <label>asari commando</label>
-    <combatPower>315</combatPower>
+    <combatPower>515</combatPower>
     <isFighter>true</isFighter>
     <gearHealthRange>0.8~2</gearHealthRange>
     <apparelTags>
@@ -409,7 +409,7 @@
   <PawnKindDef ParentName="AsariPawnBase">
     <defName>RE_Matriarch</defName>
     <label>matriarch</label>
-    <combatPower>40</combatPower>
+    <combatPower>650</combatPower>
     <itemQuality>Excellent</itemQuality>
     <isFighter>false</isFighter>
     <gearHealthRange>0.2~2.0</gearHealthRange>
@@ -540,7 +540,7 @@
   <PawnKindDef ParentName="AsariPawnBase">
     <defName>RE_ArdatYakshi</defName>
     <label>ardat yakshi</label>
-    <combatPower>315</combatPower>
+    <combatPower>1015</combatPower>
     <isFighter>true</isFighter>
     <gearHealthRange>0.8~2</gearHealthRange>
     <apparelTags>
