@@ -150,10 +150,10 @@
     <description>Biotic flight state.</description>
     <comps>
       <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>300~300</disappearsAfterTicks>
+        <disappearsAfterTicks>60~60</disappearsAfterTicks>
       </li>
       <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>RE_Dominate</stateEffecter>
+        <stateEffecter>RE_Flight</stateEffecter>
       </li>
     </comps>
     <stages>
@@ -161,6 +161,21 @@
       </li>
     </stages>
   </HediffDef>
+
+  <EffecterDef>
+    <defName>RE_Flight</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <scale>0.7~0.9</scale>
+        <chancePerTick>0.5</chancePerTick>
+        <positionRadius>0.3</positionRadius>
+        <moteDef>Mote_Dominate</moteDef>
+        <speed>0.18~0.18</speed>
+        <angle>10~80</angle>
+      </li>
+    </children>
+  </EffecterDef>
 
   <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Charm</defName>

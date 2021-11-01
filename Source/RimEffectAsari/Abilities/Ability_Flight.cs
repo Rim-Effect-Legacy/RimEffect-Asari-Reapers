@@ -12,6 +12,7 @@
         public override void Cast(LocalTargetInfo target)
         {
             base.Cast(target);
+            this.CastEffects(target);
             LongEventHandler.QueueLongEvent(() =>
                                             {
                                                 Map     map         = this.pawn.Map;
