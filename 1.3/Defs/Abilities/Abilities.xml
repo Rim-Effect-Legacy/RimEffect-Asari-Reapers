@@ -3,7 +3,7 @@
   <VFECore.Abilities.AbilityDef>
     <defName>RE_Biotic_Lance</defName>
     <label>biotic lance</label>
-    <description>Devastates a small area with a swiftly thrown shaft of energy</description>
+    <description>Devastates a small area with a swiftly thrown shaft of energy.</description>
     <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
     <targetMode>Location</targetMode>
     <castTime>60</castTime>
@@ -269,7 +269,7 @@
         <hediff>RE_Biotic_StasisHediff</hediff>
       </li>
       <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>10</energyUsed>
+        <energyUsed>75</energyUsed>
       </li>
     </modExtensions>
   </VFECore.Abilities.AbilityDef>
@@ -335,7 +335,7 @@
         <hediff>RE_Biotic_SphereHediff</hediff>
       </li>
       <li Class="RimEffect.AbilityExtension_Biotic">
-        <energyUsed>25</energyUsed>
+        <energyUsed>60</energyUsed>
       </li>
     </modExtensions>
   </VFECore.Abilities.AbilityDef>

@@ -9,7 +9,7 @@
         <label>ardat yakshi</label>
         <description>{PAWN_nameDef} is a Demon of the Night Winds.</description>
         <statFactors>
-          <RE_BioticEnergyMax>2</RE_BioticEnergyMax>
+          <RE_BioticEnergyMax>1.5</RE_BioticEnergyMax>
           <RE_BioticEnergyRecoveryRate>2</RE_BioticEnergyRecoveryRate>
           <RE_BioticAbilityCostMultiplier>0.5</RE_BioticAbilityCostMultiplier>
         </statFactors>
@@ -31,7 +31,7 @@
     <defName>RE_ArdatYakshiPower</defName>
     <workerClass>RimEffectAsari.StatWorker_ArdatYakshiPower</workerClass>
     <label>ardat yakshi multiplier</label>
-    <description>How much energy the ardat yakshi accumulated</description>
+    <description>How much energy the ardat yakshi accumulated.</description>
     <category>PawnMisc</category>
     <minValue>0</minValue>
     <hideAtValue>0</hideAtValue>
