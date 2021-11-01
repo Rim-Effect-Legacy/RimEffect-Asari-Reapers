@@ -2,7 +2,7 @@
 <Patch>
 
    <Operation Class="PatchOperationAdd">
-      <xpath>Defs/StorytellerDef[@Name="RE_SpacerTechResearchBench"]/comps</xpath>
+      <xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps</xpath>
       <value>
          <li Class="StorytellerCompProperties_SingleOnceFixed">
             <fireAfterDaysPassed>30</fireAfterDaysPassed>
