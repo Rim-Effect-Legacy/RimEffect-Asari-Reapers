@@ -6,7 +6,7 @@
 		<label>Lone Asari Explorer</label>
 		<description>You always wanted to explore new worlds but nobody you knew would come with you, one day you just decided to leave them behind, go out on your own and fulfil your dreams of setting foot on an unexplored planet far away from home. You only have basic supplies with you, knowing full well that it will make life very difficult.</description>
 		<scenario>
-			<summary>One Asari explorer out to experience the universe. Extra difficult.</summary>
+			<summary>One Asari explorer out to experience the universe. Very difficult.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>RE_AsariPlayerColony</factionDef>

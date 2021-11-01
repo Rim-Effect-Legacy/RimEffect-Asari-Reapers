@@ -3,8 +3,8 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>RE_AsariPlayerColony</defName>
-		<label>Asari Colony</label>
-		<description>Your own Asari community.</description>
+		<label>Player Sanctuary</label>
+		<description>Your own sanctuary.</description>
 		<basicMemberKind>RE_AsariColonist</basicMemberKind>
 		<pawnsPlural>colonists</pawnsPlural>
 		<isPlayer>true</isPlayer>
@@ -25,8 +25,8 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/AsariSanctuaryExpanding</settlementTexturePath>
+		<factionIconPath>World/WorldObjects/Expanding/AsariSanctuary</factionIconPath>
 		<startingResearchTags>
 			<li>ClassicStart</li>
 		</startingResearchTags>
