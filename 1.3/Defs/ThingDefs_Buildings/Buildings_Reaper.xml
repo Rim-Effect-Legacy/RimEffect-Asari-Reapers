@@ -1534,7 +1534,7 @@
 			<combatPower>300</combatPower>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>RE_Gun_ReaperOrbitalBeamTargeter</turretGunDef>
-			<turretBurstCooldownTime>8</turretBurstCooldownTime>
+			<turretBurstCooldownTime>60</turretBurstCooldownTime>
 			<turretBurstWarmupTime>7</turretBurstWarmupTime>
 		</building>
 		<!-- <designationCategory Inherit='False' /> -->
@@ -1565,7 +1565,7 @@
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<requireLineOfSight>false</requireLineOfSight>
+				<requireLineOfSight>true</requireLineOfSight>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
