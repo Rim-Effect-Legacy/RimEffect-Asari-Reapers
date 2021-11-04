@@ -7,7 +7,7 @@
     <pawnSingular>husk</pawnSingular>
     <pawnsPlural>husks</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <factionNameMaker>NamerFactionMechanoid</factionNameMaker>
+    <factionNameMaker>RE_NamerFactionReaper</factionNameMaker>
     <factionIconPath>UI/FactionIcons/ReaperShip</factionIconPath>
     <raidCommonalityFromPointsCurve>
       <points>
