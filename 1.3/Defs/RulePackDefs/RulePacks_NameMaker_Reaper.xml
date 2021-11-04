@@ -15,5 +15,17 @@
       </rulesRaw>
     </rulePack>
   </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RE_NamerFactionReaper</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[reaper]</li>
+
+        <li>reaper->The Reapers</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
 </Defs>
