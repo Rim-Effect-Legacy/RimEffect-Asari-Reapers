@@ -8,6 +8,7 @@
     <expandingIcon>true</expandingIcon>
     <texture>UI/FactionIcons/ReaperShip</texture>
     <expandingIconTexture>UI/FactionIcons/ReaperShip</expandingIconTexture>
+	<expandingIconColor>(88,88,117)</expandingIconColor>
     <canBePlayerHome>false</canBePlayerHome>
     <comps>
       <li Class="WorldObjectCompProperties_Abandon" />
