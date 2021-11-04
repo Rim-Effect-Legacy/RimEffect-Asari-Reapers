@@ -651,7 +651,7 @@
     <defName>RE_HiddenHeritage</defName>
     <title>Hidden heritage</title>
     <titleShort>Pariah</titleShort>
-    <baseDescription>Most Asari are at least familiar with what race their father was, however in the case of [PAWN_namDef], [PAWN_possessive] mother never told [PAWN_possessive]. This lack of cultural identity has caused [PAWN_possessive] to become somewhat of an outcast among [PAWN_possesive] peers.</baseDescription>
+    <baseDescription>Most Asari are at least familiar with what race their father was, however in the case of [PAWN_nameDef], [PAWN_possessive] mother never told [PAWN_possessive]. This lack of cultural identity has caused [PAWN_possessive] to become somewhat of an outcast among [PAWN_possesive] peers.</baseDescription>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
