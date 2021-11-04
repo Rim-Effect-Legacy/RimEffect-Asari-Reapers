@@ -4,7 +4,7 @@
     <HediffDef>
         <defName>RER_DirectControl</defName>
         <label>direct control</label>
-        <description>This reaper unit has been put under the direct control of a reaper.text_todo</description>
+        <description>This reaper unit has been put under the direct control of a reaper. It will not be significantly faster and can utilise cover.</description>
         <hediffClass>RimEffectReapers.HediffFromBuilding</hediffClass>
         <stages>
             <li>
@@ -21,7 +21,7 @@
     <HediffDef>
         <defName>RER_Indoctrinated</defName>
         <label>indoctrinated</label>
-        <description>Being indoctrinated by a reaper.text_todo</description>
+        <description>Being indoctrinated by a reaper. The increasing headache will eventually lead to mental breaks and insanity.</description>
         <hediffClass>RimEffectReapers.HediffFromBuilding</hediffClass>
         <initialSeverity>0</initialSeverity>
         <stages>

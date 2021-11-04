@@ -152,7 +152,7 @@
   <ThingDef ParentName="BaseGunWithQuality">
     <defName>RE_Gun_MarauderRifle</defName>
     <label>marauder rifle</label>
-    <description>Derived from a Turian Pheaston rifle improved with Reaper tech, this rifle is capable of dealing tremendous damage in long, controlled bursts</description>
+    <description>Derived from a Turian Phaeston rifle improved with Reaper tech, this rifle is capable of dealing tremendous damage in long, controlled bursts.</description>
     <graphicData>
       <texPath>Things/Pawn/Reaper/Marauder/MarauderRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>

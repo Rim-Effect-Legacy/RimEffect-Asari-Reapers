@@ -4,7 +4,7 @@
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>RE_Apparel_AsariJusticarArmor</defName>
     <label>asari justicar armor</label>
-    <description>A suit of light armor most often used by Biotics who require more flexibility and less encumbrance. This lighter armor is also available to Alliance colonists making their new lives out on the edge of civilization. \n\nThis armored hardsuit consists of several layers. The base layer is fabric with kinetic padding, with ablative plates over vital areas. The outer layer consists of kinetic barriers that trigger automatically when incoming projectiles are detected, providing a combination of protection and maneuverability that other armor technologies can't match.</description>
+    <description>A suit of medium armor most often used by Biotics who require more flexibility and less encumbrance. Often worn by the Justicar order, this armor greatly increases biotic potential of the wearer.\n\nThis armored hardsuit consists of several layers. The base layer is fabric with kinetic padding, with ablative plates over vital areas. The outer layer consists of kinetic barriers that trigger automatically when incoming projectiles are detected, providing a combination of protection and maneuverability that other armor technologies can't match.</description>
     <techLevel>Ultra</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -350,7 +350,7 @@
   <ThingDef ParentName="RE_SpacerApparelMakeableBase">
     <defName>RE_Apparel_AsariDress</defName>
     <label>asari-style dress</label>
-    <description>A full-body elegant dress for asari. Often worn among the finest Asari elite, it is known to increase the social impact.</description>
+    <description>A full-body elegant dress for asari. Often worn among the finest Asari elite, it is known to catch everyone's attention and make social interactions a bit more pleasant.</description>
     <recipeMaker>
       <researchPrerequisite>RE_AsariApparel</researchPrerequisite>
     </recipeMaker>

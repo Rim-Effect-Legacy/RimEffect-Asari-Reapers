@@ -4,7 +4,7 @@
         <defName>RER_ReaperLightningStorm</defName>
         <label>reaper lightning storm</label>
         <isBad>true</isBad>
-        <description>An unnatural lightning storm caused by reaper activity.text_todo</description>
+        <description>An unnatural lightning storm caused by reaper activity. Strong, ominous electrical discharges will bombard the local area, causing huge fires.</description>
         <windSpeedFactor>1.5</windSpeedFactor>
         <windSpeedOffset>1.25</windSpeedOffset>
         <ambientSounds>

@@ -4,7 +4,7 @@
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="RE_Asari">
     <defName>RE_Asari</defName>
     <label>asari</label>
-    <description>Elegant, diplomatic and influential mono-gender race.</description>
+    <description>Elegant mono-gender race. Native to the planet Thessia, Asari are often considered the most influential and respected sentient species in the galaxy, and are known for their, diplomacy and biotic aptitude. Asari can often use biotic powers without the need of biotic amplifiers.</description>
     <alienRace>
       <generalSettings>
         <forcedRaceTraitEntries>
@@ -165,9 +165,9 @@
       <LeatherAmount>50</LeatherAmount>
       <RoyalFavorValue>4</RoyalFavorValue>
       <PawnBeauty>2</PawnBeauty>
-      <RE_BioticEnergyMax>2</RE_BioticEnergyMax>
-      <RE_BioticEnergyRecoveryRate>2</RE_BioticEnergyRecoveryRate>
-      <RE_BioticAbilityCostMultiplier>0.5</RE_BioticAbilityCostMultiplier>
+      <RE_BioticEnergyMax>1.5</RE_BioticEnergyMax>
+      <RE_BioticEnergyRecoveryRate>1</RE_BioticEnergyRecoveryRate>
+      <RE_BioticAbilityCostMultiplier>1</RE_BioticAbilityCostMultiplier>
     </statBases>
     <tools>
       <li>
