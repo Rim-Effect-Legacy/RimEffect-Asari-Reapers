@@ -8,6 +8,8 @@ using Verse.Sound;
 
 namespace RimEffectReapers
 {
+    using HarmonyLib;
+
     public class Building_Reaper_LongRangeMissile : Building_Reaper, IAttackTargetSearcher
     {
         private static readonly int COOLDOWN_TICKS = 30f.SecondsToTicks();
@@ -55,9 +57,7 @@ namespace RimEffectReapers
 
         public void Fire()
         {
-            var missile =
-                (LongRangeMissile) SkyfallerMaker.SpawnSkyfaller(RER_DefOf.RER_ReaperLongRangeMissile_Leaving, Position,
-                    Map);
+            var missile = (LongRangeMissile) SkyfallerMaker.SpawnSkyfaller(RER_DefOf.RER_ReaperLongRangeMissile_Leaving, Position, Map);
             missile.Init(this);
             RER_DefOf.RE_Launch_ReaperLongRangeMissile.PlayOneShot(SoundInfo.InMap(missile, MaintenanceType.PerTick));
         }
@@ -69,17 +69,13 @@ namespace RimEffectReapers
             LastAttackTargetTick = Find.TickManager.TicksGame;
             if (target == null)
             {
-                incoming.Add(
-                    Find.TickManager.TicksGame + (INCOMING_DELAY_RANGE.RandomInRange * 5f).SecondsToTicks());
+                incoming.Add(Find.TickManager.TicksGame + (INCOMING_DELAY_RANGE.RandomInRange * 5f).SecondsToTicks());
                 return;
             }
 
-            var missile =
-                (LongRangeMissile) SkyfallerMaker.SpawnSkyfaller(RER_DefOf.RER_ReaperLongRangeMissile_Arriving,
-                    target.Position, Map);
+            var missile = (LongRangeMissile) SkyfallerMaker.SpawnSkyfaller(RER_DefOf.RER_ReaperLongRangeMissile_Arriving, target.Position, Map);
             missile.Init(this);
-            missile.angle =
-                new Vector3(Map.Size.ToVector3().x, target.DrawPos.y, DrawPos.z).AngleToFlat(target.DrawPos);
+            missile.angle = 0; //new Vector3(Map.Size.ToVector3().x, target.DrawPos.y, DrawPos.z).AngleToFlat(target.DrawPos);
             RER_DefOf.RE_Incoming_ReaperLongRangeMissile.PlayOneShot(SoundInfo.InMap(missile, MaintenanceType.PerTick));
         }
 
@@ -102,30 +98,22 @@ namespace RimEffectReapers
 
     public class LongRangeMissile : Skyfaller
     {
-        private int betterTicksToImpact;
-        private int betterTicksToImpactMax;
+        private int                              betterTicksToImpact;
+        private int                              betterTicksToImpactMax;
         private Building_Reaper_LongRangeMissile launcher;
-
-        public override Vector3 DrawPos
-        {
-            get
-            {
-                if (def.skyfaller.reversed)
-                    return this.TrueCenter() + new Vector3(0, 0,
-                        Mathf.Pow(betterTicksToImpactMax - betterTicksToImpact, def.skyfaller.speed) * 0.05f +
-                        (betterTicksToImpactMax - betterTicksToImpact) * 0.1f);
-                return base.DrawPos;
-            }
-        }
+        private int                              ticksToImpactMaxPrivate;
+        
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
+            this.angle = 0;
             if (!respawningAfterLoad && def.skyfaller.reversed)
             {
                 betterTicksToImpactMax = betterTicksToImpact = def.skyfaller.ticksToImpactRange.RandomInRange;
-                ticksToImpact = 0;
             }
+
+            this.ticksToImpactMaxPrivate = (int)AccessTools.Field(typeof(Skyfaller), "ticksToImpactMax").GetValue(this);
         }
 
         public void Init(Building_Reaper_LongRangeMissile l)
@@ -146,15 +134,54 @@ namespace RimEffectReapers
             base.Tick();
             if (def.skyfaller.reversed)
             {
-                if (betterTicksToImpact > 0)
-                {
-                    ticksToImpact = 0;
-                    betterTicksToImpact--;
-                }
-
-                if (betterTicksToImpact <= 0) ticksToImpact = 219;
                 if (Find.TickManager.TicksGame % 3 == 0)
                     FleckMaker.ThrowSmoke(DrawPos - new Vector3(0, 0, Graphic.drawSize.y / 2), Map, 1.5f);
+            }
+            Vector3 drawPos = this.GetDrawPosForMotes();
+
+            if (this.Map == null || !drawPos.InBounds(this.Map))
+                return;
+
+
+
+            FleckMaker.ThrowSmoke(drawPos, this.Map, 2f);
+
+            FleckCreationData data = FleckMaker.GetDataStatic(drawPos, this.Map, RER_DefOf.RER_ReaperGlow, Rand.Range(4f, 6f) * 2);
+            data.rotationRate  = Rand.Range(-3f, 3f);
+            data.velocityAngle = Rand.Range(0,   360);
+            data.velocitySpeed = 0.12f;
+            this.Map.flecks.CreateFleck(data);
+
+        }
+
+        public override void DrawAt(Vector3 drawLoc, bool flip = false)
+        {
+            Graphic.Draw(drawLoc, flip ? this.Rotation.Opposite : this.Rotation, this, this.def.skyfaller.movementType == SkyfallerMovementType.Decelerate ? 0 : 180);
+        }
+
+        private Vector3 GetDrawPosForMotes()
+        {
+            float currentSpeed            = 1f;
+            float timeInAnim              = 1;
+            int   ticksToImpactPrediction = 220;
+
+            switch (this.def.skyfaller.movementType)
+            {
+                case SkyfallerMovementType.Accelerate:
+                    ticksToImpactPrediction = this.ticksToImpact - GenTicks.TicksPerRealSecond / 2;
+                    timeInAnim              = 1                  - ticksToImpactPrediction     / this.ticksToImpactMaxPrivate;
+                    currentSpeed            = (this.def.skyfaller.speedCurve?.Evaluate(timeInAnim) ?? 1) * this.def.skyfaller.speed;
+                    return SkyfallerDrawPosUtility.DrawPos_Accelerate(base.DrawPos, ticksToImpactPrediction, this.angle, currentSpeed);
+                case SkyfallerMovementType.ConstantSpeed:
+                    return SkyfallerDrawPosUtility.DrawPos_ConstantSpeed(base.DrawPos, ticksToImpactPrediction, this.angle, currentSpeed);
+                case SkyfallerMovementType.Decelerate:
+                    ticksToImpactPrediction = this.ticksToImpact + GenTicks.TicksPerRealSecond / 2;
+                    timeInAnim              = (float)ticksToImpactPrediction                     / 220f;
+                    currentSpeed            = this.def.skyfaller.speedCurve.Evaluate(timeInAnim) * this.def.skyfaller.speed;
+                    return SkyfallerDrawPosUtility.DrawPos_Decelerate(base.DrawPos, ticksToImpactPrediction, this.angle, currentSpeed);
+                default:
+                    Log.ErrorOnce("SkyfallerMovementType not handled: " + this.def.skyfaller.movementType, this.thingIDNumber ^ 0x7424EBC7);
+                    return SkyfallerDrawPosUtility.DrawPos_Accelerate(base.DrawPos, ticksToImpactPrediction, this.angle, currentSpeed);
             }
         }
 

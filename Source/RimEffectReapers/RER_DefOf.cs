@@ -24,5 +24,6 @@ namespace RimEffectReapers
         public static GenStepDef       RE_DragonsTeeth;
         public static RulePackDef      RE_NameGenerate;
         public static ThingDef         RE_Husk_Brute;
+        public static FleckDef         RER_ReaperGlow;
     }
 }
