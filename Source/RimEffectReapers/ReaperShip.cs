@@ -13,12 +13,6 @@ namespace RimEffectReapers
             trader = null;
         }
 
-        public override Material Material =>
-            def.Material;
-
-        public override Texture2D ExpandingIcon =>
-            def.ExpandingIconTexture;
-
         public override string GetInspectString()
         {
             var text = base.GetInspectString();
