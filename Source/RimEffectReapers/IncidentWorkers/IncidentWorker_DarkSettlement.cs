@@ -4,18 +4,22 @@ using Verse;
 
 namespace RimEffectReapers
 {
+    using System.Collections.Generic;
+    using RimWorld.Planet;
+
     public class IncidentWorker_DarkSettlement : IncidentWorker
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
-            return base.CanFireNowSub(parms) && ReaperUtils.ReaperPresence() > 0;
+            return base.CanFireNowSub(parms) && ReaperUtils.ReaperPresence() > 1;
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
-            var settlement = Find.WorldObjects.Settlements
-                .Where(s => s.Faction.def != RER_DefOf.RE_Reapers && !s.Faction.IsPlayer)
-                .RandomElement();
+            IEnumerable<IGrouping<Faction, Settlement>> validBases = Find.WorldObjects.Settlements.GroupBy(s => s.Faction).Where(g => g.Key.def != RER_DefOf.RE_Reapers && !g.Key.IsPlayer);
+
+            IEnumerable<IGrouping<Faction, Settlement>> validBasesFromValidFactions = validBases.Where(g => g.Count() > 1);
+            Settlement settlement = (validBasesFromValidFactions.Any() ? validBasesFromValidFactions : validBases).RandomElement().RandomElement();
 
             if (settlement == null) return false;
 
