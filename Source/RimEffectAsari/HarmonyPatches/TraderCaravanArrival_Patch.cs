@@ -58,7 +58,7 @@
             shuttle.Rotation = Rot4.East;
 
             Map map = parms.target as Map;
-            SkyfallerMaker.SpawnSkyfaller(REA_DefOf.RE_AsariShuttleIncoming, shuttle, DropCellFinder.GetBestShuttleLandingSpot(map, parms.faction), map);
+            SkyfallerMaker.SpawnSkyfaller(REA_DefOf.RE_AsariShuttleIncoming, shuttle, DropCellFinder.GetBestShuttleLandingSpot(map, parms.faction), map).Rotation = Rot4.North;
         }
     }
 

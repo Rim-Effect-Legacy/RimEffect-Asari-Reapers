@@ -89,7 +89,7 @@
       <ComponentSpacer>4</ComponentSpacer>
     </killedLeavings>
     <rotatable>true</rotatable>
-    <defaultPlacingRot>West</defaultPlacingRot>
+    <defaultPlacingRot>East</defaultPlacingRot>
     <selectable>true</selectable>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
