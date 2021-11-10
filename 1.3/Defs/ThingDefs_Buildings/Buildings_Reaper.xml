@@ -18,8 +18,7 @@
 		<drawerType>MapMeshOnly</drawerType>
 		<repairEffect>ConstructMetal</repairEffect>
 		<forceDebugSpawnable>true</forceDebugSpawnable>
-		<!-- <designationCategory Inherit='False' /> -->
-		<designationCategory>Ship</designationCategory>
+		<designationCategory Inherit='False' />
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
