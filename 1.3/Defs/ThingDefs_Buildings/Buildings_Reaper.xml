@@ -1362,6 +1362,7 @@
 		<projectile>
 			<damageDef>Bomb</damageDef>
 			<explosionRadius>3.9</explosionRadius>
+			<flyOverhead>true</flyOverhead>
 			<speed>60</speed>
 		</projectile>
 	</ThingDef>
