@@ -3,6 +3,7 @@
 
   <ThingDef Name="RE_AsariShuttleSkyfaller" ParentName="SkyfallerBase" Abstract="True">
     <size>(5,3)</size>
+    <thingClass>RimEffectAsari.AsariShuttleFlying</thingClass>
     <graphicData>
       <texPath>Things/Building/KodiakShuttleAsari/KodiakShuttleAsariSkyfaller</texPath>
       <graphicClass>Graphic_Single</graphicClass>
