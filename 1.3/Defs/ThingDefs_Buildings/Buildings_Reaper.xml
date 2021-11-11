@@ -1097,8 +1097,7 @@
 			<turretBurstCooldownTime>1.5</turretBurstCooldownTime>
 			<turretBurstWarmupTime>1</turretBurstWarmupTime>
 		</building>
-		<!-- <designationCategory Inherit='False' /> -->
-		<designationCategory>Ship</designationCategory>
+		<designationCategory Inherit='False' />
 	</ThingDef>
 
 	<ThingDef ParentName="BaseWeaponTurret">
@@ -1205,8 +1204,7 @@
 			<turretBurstCooldownTime>2</turretBurstCooldownTime>
 			<turretBurstWarmupTime>1.5</turretBurstWarmupTime>
 		</building>
-		<!-- <designationCategory Inherit='False' /> -->
-		<designationCategory>Ship</designationCategory>
+		<designationCategory Inherit='False' />
 	</ThingDef>
 
 	<ThingDef ParentName="BaseWeaponTurret">
@@ -1314,8 +1312,7 @@
 			<turretBurstCooldownTime>4</turretBurstCooldownTime>
 			<turretBurstWarmupTime>3</turretBurstWarmupTime>
 		</building>
-		<!-- <designationCategory Inherit='False' /> -->
-		<designationCategory>Ship</designationCategory>
+		<designationCategory Inherit='False' />
 	</ThingDef>
 
 	<ThingDef ParentName="BaseWeaponTurret">
@@ -1425,8 +1422,7 @@
 			<turretBurstCooldownTime>6</turretBurstCooldownTime>
 			<turretBurstWarmupTime>5</turretBurstWarmupTime>
 		</building>
-		<!-- <designationCategory Inherit='False' /> -->
-		<designationCategory>Ship</designationCategory>
+		<designationCategory Inherit='False' />
 	</ThingDef>
 
 	<ThingDef ParentName="BaseWeaponTurret">
@@ -1537,8 +1533,7 @@
 			<turretBurstCooldownTime>60</turretBurstCooldownTime>
 			<turretBurstWarmupTime>7</turretBurstWarmupTime>
 		</building>
-		<!-- <designationCategory Inherit='False' /> -->
-		<designationCategory>Ship</designationCategory>
+		<designationCategory Inherit='False' />
 	</ThingDef>
 
 	<ThingDef ParentName="BaseWeaponTurret">
@@ -1632,8 +1627,7 @@
 			<turretBurstCooldownTime>12</turretBurstCooldownTime>
 			<turretBurstWarmupTime>11</turretBurstWarmupTime>
 		</building>
-		<!-- <designationCategory Inherit='False' /> -->
-		<designationCategory>Ship</designationCategory>
+		<designationCategory Inherit='False' />
 	</ThingDef>
 
 	<ThingDef ParentName="BaseWeaponTurret">
