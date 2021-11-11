@@ -136,6 +136,7 @@
           </colorChannels>
           <useGenderedHeads>false</useGenderedHeads>
         </alienPartGenerator>
+		<humanRecipeImport>true</humanRecipeImport>
       </generalSettings>
             <styleSettings>
                 <li>
