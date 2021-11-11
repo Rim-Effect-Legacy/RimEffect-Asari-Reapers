@@ -4,6 +4,7 @@ namespace RimEffectReapers
 {
     using RimWorld;
     using RimWorld.Planet;
+    using UnityEngine;
     using Verse;
 
     public class ReaperWorldComponent : WorldComponent
@@ -38,7 +39,7 @@ namespace RimEffectReapers
                     }
                 }
 
-                int ticksTillNextInvasion = ReaperMod.settings.reaperTimeInterval.RandomInRange * (1000 * 1 / ReaperUtils.ReaperPresence());
+                int ticksTillNextInvasion = Mathf.Max(Mathf.RoundToInt(ReaperMod.settings.reaperTimeInterval.RandomInRange * (1000f * 1f / ReaperUtils.ReaperPresence())), GenDate.TicksPerHour / 4);
                 this.nextReaperSpawn = Find.TickManager.TicksGame + ticksTillNextInvasion;
             }
         }
