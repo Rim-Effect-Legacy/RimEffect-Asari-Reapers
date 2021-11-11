@@ -123,5 +123,20 @@
             </operations>
         </match>
     </Operation>
+	
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+
+      <value>
+        <li>RE_AsariPlayerColony</li>
+		<li>RE_AsariRepublics</li>
+      </value>
+    </match>
+  </Operation>
 </Patch>
 
