@@ -185,6 +185,11 @@
 
         public AsariShuttleLanded Shuttle;
 
+        public LordJob_TradeWithColonyFromShuttle()
+        {
+
+        }
+
         public LordJob_TradeWithColonyFromShuttle(Faction faction, IntVec3 chillSpot, AsariShuttleLanded shuttle)
         {
             this.faction   = faction;
