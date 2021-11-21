@@ -90,6 +90,9 @@
         <damageDef>Blunt</damageDef>
         <baseDamage>20</baseDamage>
       </li>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>600~600</disappearsAfterTicks>
+      </li>
     </comps>
     <stages Inherit="False">
       <li>
