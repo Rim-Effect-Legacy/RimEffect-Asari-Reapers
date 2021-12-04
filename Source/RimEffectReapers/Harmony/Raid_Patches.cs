@@ -17,14 +17,14 @@ namespace RimEffectReapers.Harmony
                     .First(t => t.GetMethods(AccessTools.all).Any(mi =>
                         mi.Name.Contains(nameof(PawnGroupMakerUtility.TryGetRandomFactionForCombatPawnGroup)) &&
                         mi.GetParameters()[0].ParameterType == typeof(Faction))).GetMethods(AccessTools.all)
-                    .First(mi => mi.ReturnType == typeof(bool));
+                    .First(mi => mi.ReturnType == typeof(float));
             }
 
             [HarmonyPrefix]
-            public static bool Prefix(Faction f, ref bool __result)
+            public static bool Prefix(Faction f, ref float __result)
             {
-                if (f.def != RER_DefOf.RE_Reapers || ReaperUtils.ReaperPresence() > 0) return true;
-                __result = false;
+                if (f.def != RER_DefOf.RE_Reapers || ReaperUtils.ReaperPresence() > 1) return true;
+                __result = 0f;
                 return false;
             }
         }
