@@ -302,7 +302,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Items/Apparel/AmbassadorOutfit/AmbassadorOutfit</wornGraphicPath>
       <layers>
-        <li>Shell</li>
+        <li>OnSkin</li>
       </layers>
       <tags>
         <li>RE_AsariApparelCivilian</li>
@@ -386,7 +386,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Items/Apparel/AsariDress/AsariDress</wornGraphicPath>
       <layers>
-        <li>Shell</li>
+        <li>OnSkin</li>
       </layers>
       <tags>
 		<li>RE_RoyaltyAllowed</li>
@@ -476,7 +476,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Items/Apparel/MatriarchDress/MatriarchDress</wornGraphicPath>
       <layers>
-        <li>Shell</li>
+        <li>OnSkin</li>
       </layers>
       <tags>
         <li>RE_AsariApparelMatriarch</li>
