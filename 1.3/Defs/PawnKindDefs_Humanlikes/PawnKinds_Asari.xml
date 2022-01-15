@@ -363,7 +363,6 @@
     </apparelTags>
     <apparelRequired>
       <li>RE_Apparel_AsariDress</li>
-      <li>RE_Apparel_FormalShirt</li>
     </apparelRequired>
     <apparelMoney>200~600</apparelMoney>
     <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
