@@ -45,20 +45,21 @@
             var shuttle = (AsariShuttleLanded) ThingMaker.MakeThing(REA_DefOf.RE_AsariShuttleLanded);
             shuttle.SetFactionDirect(parms.faction);
             foreach (var pawn in pawns) pawn.DeSpawn();
-            // pawns.RemoveAll(pawn =>
-            // {
-            //     if (!pawn.RaceProps.Animal) return false;
-            //
-            //     pawn.Destroy();
-            //     return true;
-            // });
 
             shuttle.GetDirectlyHeldThings().TryAddRangeOrTransfer(pawns);
             shuttle.State    = AsariShuttleLanded.ShuttleState.Unloading;
             shuttle.Rotation = Rot4.East;
 
-            var map = parms.target as Map;
-            SkyfallerMaker.SpawnSkyfaller(REA_DefOf.RE_AsariShuttleIncoming, shuttle, DropCellFinder.GetBestShuttleLandingSpot(map, parms.faction), map).Rotation = Rot4.North;
+            var map  = parms.target as Map;
+            var cell = DropCellFinder.TryFindSafeLandingSpotCloseToColony(map, shuttle.RotatedSize, parms.faction);
+            if (!cell.IsValid && !DropCellFinder.FindSafeLandingSpot(out cell, parms.faction, map, size: shuttle.RotatedSize + new IntVec2(2, 2)))
+            {
+                cell = DropCellFinder.RandomDropSpot(map);
+                if (!cell.IsValid) cell                                                                                            = DropCellFinder.RandomDropSpot(map, false);
+                if (DropCellFinder.TryFindDropSpotNear(cell, map, out var newCell, false, false, false, shuttle.RotatedSize)) cell = newCell;
+            }
+
+            SkyfallerMaker.SpawnSkyfaller(REA_DefOf.RE_AsariShuttleIncoming, shuttle, cell, map).Rotation = Rot4.North;
         }
     }
 
@@ -187,7 +188,6 @@
 
         public LordJob_TradeWithColonyFromShuttle()
         {
-
         }
 
         public LordJob_TradeWithColonyFromShuttle(Faction faction, IntVec3 chillSpot, AsariShuttleLanded shuttle)
