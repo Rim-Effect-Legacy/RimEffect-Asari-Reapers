@@ -9,6 +9,7 @@ namespace RimEffectAsari
     using HarmonyLib;
     using RimEffect;
     using RimWorld;
+    using RimWorld.Planet;
     using UnityEngine;
     using Verse;
     using Verse.Sound;
@@ -17,9 +18,9 @@ namespace RimEffectAsari
 
     public class Ability_Sphere : Ability
     {
-        public override void Cast(LocalTargetInfo target)
+        public override void Cast(params GlobalTargetInfo[] targets)
         {
-            base.Cast(target);
+            base.Cast(targets);
             BioticSphere bioticSphere = (BioticSphere) GenSpawn.Spawn(REA_DefOf.RE_Biotic_SphereShield, this.Caster.Position, this.pawn.Map);
             bioticSphere.caster    = this.pawn;
             bioticSphere.bioticAmp = this.Hediff as Hediff_BioticAmp;
@@ -30,9 +31,9 @@ namespace RimEffectAsari
                 bioticSphere.fleck = this.def.targetFlecks.First();
         }
 
-        public override void CheckCastEffects(LocalTargetInfo targetInfo, out bool cast, out bool target, out bool hediffApply)
+        public override void CheckCastEffects(GlobalTargetInfo[] targetInfos, out bool cast, out bool target, out bool hediffApply)
         {
-            base.CheckCastEffects(targetInfo, out cast, out _, out hediffApply);
+            base.CheckCastEffects(targetInfos, out cast, out _, out hediffApply);
             target = false;
         }
     }

@@ -1,7 +1,9 @@
 ﻿namespace RimEffectAsari
 {
+    using System.Linq;
     using RimEffect;
     using RimWorld;
+    using RimWorld.Planet;
     using UnityEngine;
     using Verse;
     using VFECore.Abilities;
@@ -9,18 +11,18 @@
 
     public class Ability_Flight : Ability
     {
-        public override void Cast(LocalTargetInfo target)
+        public override void Cast(params GlobalTargetInfo[] targets)
         {
-            base.Cast(target);
-            this.CastEffects(target);
+            base.Cast(targets);
+            this.CastEffects(targets);
             LongEventHandler.QueueLongEvent(() =>
                                             {
                                                 Map     map         = this.pawn.Map;
 
-                                                AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(REA_DefOf.RE_AbilityFlyer_Flight, this.pawn, target.Cell);
+                                                AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(REA_DefOf.RE_AbilityFlyer_Flight, this.pawn, targets.First().Cell);
                                                 flyer.ability = this;
-                                                flyer.target  = target.Cell.ToVector3() + new Vector3(0, 0, 0);
-                                                GenSpawn.Spawn(flyer, target.Cell, map);
+                                                flyer.target  = targets.First().Cell.ToVector3() + new Vector3(0, 0, 0);
+                                                GenSpawn.Spawn(flyer, targets.First().Cell, map);
                                             }, "flightAbility", false, null);
         }
 
