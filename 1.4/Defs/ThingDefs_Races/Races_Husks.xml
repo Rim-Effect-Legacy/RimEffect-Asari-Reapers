@@ -5,7 +5,7 @@
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <statBases>
       <PsychicSensitivity>0.5</PsychicSensitivity>
-      <ToxicSensitivity>0</ToxicSensitivity>
+      <ToxicResistance>0</ToxicResistance>
       <Flammability>0</Flammability>
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>250</ComfyTemperatureMax>
