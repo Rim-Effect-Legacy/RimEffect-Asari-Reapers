@@ -5,10 +5,10 @@
 	<defName>RE_AsariReapers</defName>
 	<label>Rim-Effect: Asari and Reapers</label>
 	<description>Hello!</description>
-	<Features>
-		<RangedAnimals>true</RangedAnimals>
-		<IntegratedToggle>true</IntegratedToggle>
-	</Features>
+	<ActivateFeatures>
+		<li>RangedAnimals</li>
+		<li>IntegratedToggle</li>
+	</ActivateFeatures>
 </MVCF.ModDef>
 
 </Defs>
