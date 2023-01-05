@@ -62,17 +62,17 @@
               </hiddenUnderApparelFor>
             </li>
           </bodyAddons>
-          <aliencrowntypes>
-            <li>Asari_Average_Normal</li>
-            <li>Asari_Average_Pointy</li>
-            <li>Asari_Average_Wide</li>
-            <li>Asari_Narrow_Normal</li>
-            <li>Asari_Narrow_Pointy</li>
-            <li>Asari_Narrow_Wide</li>
-          </aliencrowntypes>
-          <alienbodytypes>
+          <headTypes>
+            <li>RE_Asari_AverageNormal</li>
+            <li>RE_Asari_AveragePointy</li>
+            <li>RE_Asari_AverageWide</li>
+            <li>RE_Asari_NarrowNormal</li>
+            <li>RE_Asari_NarrowPointy</li>
+            <li>RE_Asari_NarrowWide</li>
+          </headTypes>
+          <bodyTypes>
             <li>Female</li>
-          </alienbodytypes>
+          </bodyTypes>
           <colorChannels>
             <li>
               <name>skin</name>
@@ -134,7 +134,6 @@
               </second>
             </li>
           </colorChannels>
-          <useGenderedHeads>false</useGenderedHeads>
         </alienPartGenerator>
 		<humanRecipeImport>true</humanRecipeImport>
       </generalSettings>
@@ -147,10 +146,12 @@
                 </li>
 			</styleSettings>
       <graphicPaths>
-        <li>
-          <head>Things/Pawn/Asari/Heads/</head>
-          <headMasks>Things/Pawn/Asari/Tattoos/Tattoo</headMasks>
-        </li>
+          <head>
+		    <path>Things/Pawn/Asari/Heads/</path>
+		  </head>
+          <headMasks>
+		    <path>Things/Pawn/Asari/Tattoos/Tattoo</path>
+		  </headMasks>
       </graphicPaths>
       <raceRestriction>
         <apparelList>
