@@ -86,9 +86,9 @@
         <li>
           <def>MechanoidFullyFormed</def>
           <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
-          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+          <soundWounded>RE_Pawn_Husk_Banshee_Wounded</soundWounded>
+          <soundDeath>RE_Pawn_Husk_Banshee_Death</soundDeath>
+          <soundCall>RE_Pawn_Husk_Banshee_Call</soundCall>
         </li>
       </lifeStageAges>
       <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
@@ -906,8 +906,8 @@
           <def>MechanoidFullyFormed</def>
           <minAge>0</minAge>
           <soundWounded>RE_Pawn_Husk_Brute_Wounded</soundWounded>
-          <soundDeath>RE_Pawn_Husk_Brute_Death</soundDeath>
-          <soundCall>RE_Pawn_Husk_Brute_Call</soundCall>
+          <soundDeath>RE_Pawn_Husk_Colossus_Death</soundDeath>
+          <soundCall>RE_Pawn_Husk_Colossus_Call</soundCall>
         </li>
       </lifeStageAges>
       <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
