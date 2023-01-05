@@ -8,8 +8,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>ReaperShipSounds/ReaperLongRangeMissile_Incoming</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/ReaperLongRangeMissile_Incoming</clipPath>
           </li>
         </grains>
       </li>
@@ -23,8 +23,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>ReaperShipSounds/ReaperLongRangeMissile_Launch</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/ReaperLongRangeMissile_Launch</clipPath>
           </li>
         </grains>
       </li>
@@ -38,8 +38,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>ReaperShipSounds/ReaperOrbitalBeam_Targeting</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/ReaperOrbitalBeam_Targeting</clipPath>
           </li>
         </grains>
         <volumeRange>100~100</volumeRange>
@@ -57,8 +57,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>ReaperShipSounds/ReaperOrbitalBombardment</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/ReaperOrbitalBombardment</clipPath>
           </li>
         </grains>
         <pitchRange>0.99~1.01</pitchRange>
@@ -77,8 +77,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>ReaperShipSounds/Shot_HeavyBolter</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_HeavyBolter</clipPath>
           </li>
         </grains>
       </li>
@@ -92,8 +92,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>ReaperShipSounds/Shot_ReaperBeam</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_ReaperBeam</clipPath>
           </li>
         </grains>
         <volumeRange>300~300</volumeRange>
@@ -109,8 +109,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>ReaperShipSounds/Shot_ReaperBolter</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_ReaperBolter</clipPath>
           </li>
         </grains>
       </li>
@@ -124,8 +124,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>ReaperShipSounds/Shot_ReaperKineticArtillery</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_ReaperKineticArtillery</clipPath>
           </li>
         </grains>
       </li>
@@ -139,8 +139,8 @@
     <subSounds>
       <li>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>ReaperShipSounds/Shot_ReaperMissileLauncher</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_ReaperMissileLauncher</clipPath>
           </li>
         </grains>
       </li>
