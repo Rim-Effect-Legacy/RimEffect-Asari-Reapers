@@ -21,7 +21,7 @@
     <arrivalTextFriendly>A reaper is landing on your map but it just wants to cuddle uwu. No, seriously, report it as a bug.</arrivalTextFriendly>
     <modExtensions>
       <li Class="KCSG.FallingStructure">
-        <weightedStruct>
+        <structures>
           <li>RE_Reaper1_North</li>
           <li>RE_Reaper1_South</li>
           <li>RE_Reaper1_East</li>
@@ -38,7 +38,7 @@
           <li>RE_Reaper4_South</li>
           <li>RE_Reaper4_East</li>
           <li>RE_Reaper4_West</li>
-        </weightedStruct>
+        </structures>
         <canBeUsedBy>
           <li>RE_Reapers</li>
         </canBeUsedBy>
