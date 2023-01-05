@@ -8,8 +8,8 @@ namespace RimEffectReapers
         public override void Draw()
         {
         }
-
-        protected override void Impact(Thing hitThing)
+        
+        protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             base.Impact(null);
             var graphic = (ReaperBeamDraw) ThingMaker.MakeThing(RER_DefOf.RER_ReaperBeamGraphic);

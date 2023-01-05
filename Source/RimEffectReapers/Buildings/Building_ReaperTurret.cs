@@ -4,6 +4,8 @@ using Verse;
 
 namespace RimEffectReapers
 {
+    using System.Text;
+
     public class Building_ReaperTurret : Building_TurretGun
     {
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
@@ -14,7 +16,7 @@ namespace RimEffectReapers
             base.PreApplyDamage(ref dinfo, out absorbed);
         }
 
-        public override bool ClaimableBy(Faction by)
+        public override bool ClaimableBy(Faction by, StringBuilder reason = null)
         {
             return false;
         }

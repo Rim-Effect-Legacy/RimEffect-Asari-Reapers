@@ -28,7 +28,6 @@ namespace RimEffectReapers
             PawnGenerationRequest request = new PawnGenerationRequest(
                 kind: props.kindDef,
                 faction: faction,
-                newborn: true,
                 forceGenerateNewPawn: true,
                 canGeneratePawnRelations: false
             );
