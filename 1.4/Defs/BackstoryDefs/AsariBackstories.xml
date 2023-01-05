@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CuriousExplorer</defName>
     <title>Curious explorer</title>
     <titleShort>Explorer</titleShort>
-    <baseDescription>[PAWN_nameDef] comes from mysterious origins, circling [PAWN_pronoun] list of places [PAWN_pronoun] wants to investigate and explore, all for the benefit of knowledge and curiousity. [PAWN_nameDef] is a pacifist, not believing in violence or combat of any kind as a means to an actual positive resolution to conflict.</baseDescription>
+    <baseDesc>[PAWN_nameDef] comes from mysterious origins, circling [PAWN_pronoun] list of places [PAWN_pronoun] wants to investigate and explore, all for the benefit of knowledge and curiousity. [PAWN_nameDef] is a pacifist, not believing in violence or combat of any kind as a means to an actual positive resolution to conflict.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -14,25 +14,25 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_StationChild</defName>
     <title>Station child</title>
     <titleShort>Spacer</titleShort>
-    <baseDescription>Not all Asari grow up on beautiful capitol planets, [PAWN_nameDef] was unlucky enough to be born to parents involved with a remote mining station gang. Like most such places, the station was as much about criminal smuggling as mining, so [PAWN_pronoun] was forced to learn to brawl and tinker at young age.</baseDescription>
+    <baseDesc>Not all Asari grow up on beautiful capitol planets, [PAWN_nameDef] was unlucky enough to be born to parents involved with a remote mining station gang. Like most such places, the station was as much about criminal smuggling as mining, so [PAWN_pronoun] was forced to learn to brawl and tinker at young age.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -41,24 +41,24 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <key>Melee</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>3</amount>
+        <key>Crafting</key>
+        <value>3</value>
       </li>
     </skillGains>
     <workDisables>
         <li>Animals</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Pureblooded</defName>
     <title>Pureblooded</title>
     <titleShort>Pureblood</titleShort>
-    <baseDescription>Both parents of [PAWN_nameDef] are Asari. [PAWN_nameDef] lived most of [PAWN_pronoun] madienhood in the worry and shame of being a potential Ardat-Yakshi, and had problems with having friends. Due to being picked on, [PAWN_pronoun] learned to fight back.</baseDescription>
+    <baseDesc>Both parents of [PAWN_nameDef] are Asari. [PAWN_nameDef] lived most of [PAWN_pronoun] madienhood in the worry and shame of being a potential Ardat-Yakshi, and had problems with having friends. Due to being picked on, [PAWN_pronoun] learned to fight back.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -67,28 +67,28 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <key>Melee</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>-2</amount>
+        <key>Social</key>
+        <value>-2</value>
       </li>
     </skillGains>
     <workDisables>
         <li>Caring</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_MatriarchsChild</defName>
     <title>Matriarch's child</title>
     <titleShort>Child</titleShort>
-    <baseDescription>[PAWN_nameDef] has a powerful and influential Matriarch as [PAWN_pronoun] only parent. Due to the blood ties with such an influential figure, [PAWN_pronoun] got to get away with a lot of mistakes and poor choices in [PAWN_pronoun] maidenhood stage, and this made [PAWN_possessive] life one of expecting everybody else to forgive [PAWN_pronoun].</baseDescription>
+    <baseDesc>[PAWN_nameDef] has a powerful and influential Matriarch as [PAWN_pronoun] only parent. Due to the blood ties with such an influential figure, [PAWN_pronoun] got to get away with a lot of mistakes and poor choices in [PAWN_pronoun] maidenhood stage, and this made [PAWN_possessive] life one of expecting everybody else to forgive [PAWN_pronoun].</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -97,21 +97,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_SeductiveDancer</defName>
     <title>Seductive dancer</title>
     <titleShort>Dancer</titleShort>
-    <baseDescription>[PAWN_nameDef] worked in a asari dancers club. [PAWN_pronoun] entertained several people a day and improved [PAWN_pronoun] social skills along the way.</baseDescription>
+    <baseDesc>[PAWN_nameDef] worked in a asari dancers club. [PAWN_pronoun] entertained several people a day and improved [PAWN_pronoun] social skills along the way.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -121,17 +121,17 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>6</amount>
+        <key>Social</key>
+        <value>6</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AsariArchitect</defName>
     <title>Asari architect</title>
     <titleShort>Architect</titleShort>
-    <baseDescription>[PAWN_nameDef] is an asari architect back on Thessia. [PAWN_pronoun] practiced traditional Asari buildings, planned ornate centerpieces to courtyards, and designed houses that could keep even Salarians calm. Asari architecture requires both building knowledge and artistic skill, and [PAWN_pronoun] knew it.</baseDescription>
+    <baseDesc>[PAWN_nameDef] is an asari architect back on Thessia. [PAWN_pronoun] practiced traditional Asari buildings, planned ornate centerpieces to courtyards, and designed houses that could keep even Salarians calm. Asari architecture requires both building knowledge and artistic skill, and [PAWN_pronoun] knew it.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -140,21 +140,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Construction</defName>
-        <amount>3</amount>
+        <key>Construction</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>3</amount>
+        <key>Artistic</key>
+        <value>3</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_EarlyMatriarch</defName>
     <title>Early matriarch</title>
     <titleShort>matriarch</titleShort>
-    <baseDescription>Due to never melding as a matron, [PAWN_nameDef] became a Matriarch extremely early. This made [PAWN_nameDef] an outcast, without the young looks of a Matron nor the Wisdom of a Matriarch. Paranoid that people will make fun of [PAWN_pronoun], [PAWN_nameDef] signed up to fighting lessons.</baseDescription>
+    <baseDesc>Due to never melding as a matron, [PAWN_nameDef] became a Matriarch extremely early. This made [PAWN_nameDef] an outcast, without the young looks of a Matron nor the Wisdom of a Matriarch. Paranoid that people will make fun of [PAWN_pronoun], [PAWN_nameDef] signed up to fighting lessons.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -164,21 +164,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <key>Melee</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Justicar</defName>
     <title>Justicar</title>
     <titleShort>Justicar</titleShort>
-    <baseDescription>After swearing [PAWN_pronoun]self to the Code of the Justicars, [PAWN_nameDef] became a well-known Justicar. Being powerful enough in combat to make Spectres intimidated, [PAWN_pronoun] gave away all [PAWN_possessive] items except [PAWN_possessive] weapons in honor of the organization.</baseDescription>
+    <baseDesc>After swearing [PAWN_pronoun]self to the Code of the Justicars, [PAWN_nameDef] became a well-known Justicar. Being powerful enough in combat to make Spectres intimidated, [PAWN_pronoun] gave away all [PAWN_possessive] items except [PAWN_possessive] weapons in honor of the organization.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -187,24 +187,24 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>4</amount>
+        <key>Shooting</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
 		<li>Social</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AsariScientist</defName>
     <title>Asari scientist</title>
     <titleShort>Scientist</titleShort>
-    <baseDescription>As a scientist, [PAWN_nameDef] worked at an asari lab. [PAWN_pronoun] occasionally made small breakthroughs in several fields of science, but most of [PAWN_possessive] was spent maintaining science equipment and feeding genetically altered fauna.</baseDescription>
+    <baseDesc>As a scientist, [PAWN_nameDef] worked at an asari lab. [PAWN_pronoun] occasionally made small breakthroughs in several fields of science, but most of [PAWN_possessive] was spent maintaining science equipment and feeding genetically altered fauna.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -213,17 +213,17 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>4</amount>
+        <key>Intellectual</key>
+        <value>4</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_SmallArmsPoliceOfficer</defName>
     <title>Small-arms police officer</title>
     <titleShort>Police officer</titleShort>
-    <baseDescription>Coming from a small asari town, [PAWN_nameDef] was only one of few police officers there. [PAWN_pronoun] guarded the town, imprisoned people who have done petty crime, and surveyed the 100 or so inhabitants for a chance of finding a criminal case.</baseDescription>
+    <baseDesc>Coming from a small asari town, [PAWN_nameDef] was only one of few police officers there. [PAWN_pronoun] guarded the town, imprisoned people who have done petty crime, and surveyed the 100 or so inhabitants for a chance of finding a criminal case.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -232,21 +232,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>3</amount>
+        <key>Shooting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CitadelWanderer</defName>
     <title>Citadel wanderer</title>
     <titleShort>Wanderer</titleShort>
-    <baseDescription>To full fill the desire for entertainment and travel that a young asari has, [PAWN_nameDef] wandered the shops and bars of the citadel. Not that skillful at most tasks, [PAWN_pronoun] just talked and watched.</baseDescription>
+    <baseDesc>To full fill the desire for entertainment and travel that a young asari has, [PAWN_nameDef] wandered the shops and bars of the citadel. Not that skillful at most tasks, [PAWN_pronoun] just talked and watched.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -255,21 +255,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AsariTrader</defName>
     <title>Asari trader</title>
     <titleShort>trader</titleShort>
-    <baseDescription>[PAWN_nameDef] is an asari trader. [PAWN_pronoun] sold small trinkets and other items for Citadel travelers and tourists strait out of asari colonies. [PAWN_pronoun] knew how to prompt people to buying, and [PAWN_pronoun] knew how to ward of a rude customer.</baseDescription>
+    <baseDesc>[PAWN_nameDef] is an asari trader. [PAWN_pronoun] sold small trinkets and other items for Citadel travelers and tourists strait out of asari colonies. [PAWN_pronoun] knew how to prompt people to buying, and [PAWN_pronoun] knew how to ward of a rude customer.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -279,21 +279,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_InformationBroker</defName>
     <title>Information broker</title>
     <titleShort>Broker</titleShort>
-    <baseDescription>As an information broker located on the Citadel, [PAWN_nameDef] found out about both people's and organisation's private information. After getting a foothold in the Citadel's Political hiearchy, [PAWN_pronoun] became a highly saught-after figure, be it for employing, or assasination.</baseDescription>
+    <baseDesc>As an information broker located on the Citadel, [PAWN_nameDef] found out about both people's and organisation's private information. After getting a foothold in the Citadel's Political hiearchy, [PAWN_pronoun] became a highly saught-after figure, be it for employing, or assasination.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -302,24 +302,24 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>3</amount>
+        <key>Intellectual</key>
+        <value>3</value>
       </li>
     </skillGains>
     <workDisables>
 	<li>Hauling</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CitadelGuard</defName>
     <title>Citadel guard</title>
     <titleShort>Guard</titleShort>
-    <baseDescription>After finding out the Citadel lacked guards on [PAWN_pronoun] sector, [PAWN_nameDef] signed up to be one. The rather rigorous training from the citadel didn't quite pay off after realising [PAWN_pronoun] would only be used for easing bar fights and greeting visitors.</baseDescription>
+    <baseDesc>After finding out the Citadel lacked guards on [PAWN_pronoun] sector, [PAWN_nameDef] signed up to be one. The rather rigorous training from the citadel didn't quite pay off after realising [PAWN_pronoun] would only be used for easing bar fights and greeting visitors.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -328,25 +328,25 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_TraumaScarred</defName>
     <title>Trauma-scarred</title>
     <titleShort>Scarred</titleShort>
-    <baseDescription>After a terrorist-fueled security breach on the Citadel, [PAWN_nameDef] lost most of [PAWN_pronoun] friends and family. This broke [PAWN_nameDef], making [PAWN_possessive] unable to even hold weaponry, knowing how it can ruin lives.</baseDescription>
+    <baseDesc>After a terrorist-fueled security breach on the Citadel, [PAWN_nameDef] lost most of [PAWN_pronoun] friends and family. This broke [PAWN_nameDef], making [PAWN_possessive] unable to even hold weaponry, knowing how it can ruin lives.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -355,24 +355,24 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Medicine</defName>
-        <amount>3</amount>
+        <key>Medicine</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
 	<li>Violent</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_PlantCaretaker</defName>
     <title>Plant caretaker</title>
     <titleShort>Planter</titleShort>
-    <baseDescription>As [PAWN_pronoun] job, [PAWN_nameDef] took care of the plants of the Citadel's many gardens. [PAWN_pronoun] job included replanting, trimming, and even creating new breeds of Citadel plants. This made [PAWN_possessive] extremely knowledgeable about most plants, but all the years of passive life dimmed down [PAWN_possessive] combat expertise.</baseDescription>
+    <baseDesc>As [PAWN_pronoun] job, [PAWN_nameDef] took care of the plants of the Citadel's many gardens. [PAWN_pronoun] job included replanting, trimming, and even creating new breeds of Citadel plants. This made [PAWN_possessive] extremely knowledgeable about most plants, but all the years of passive life dimmed down [PAWN_possessive] combat expertise.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -381,21 +381,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Plants</defName>
-        <amount>5</amount>
+        <key>Plants</key>
+        <value>5</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>-1</amount>
+        <key>Melee</key>
+        <value>-1</value>
       </li> 
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ColonialTrooper</defName>
     <title>Colonial trooper</title>
     <titleShort>Trooper</titleShort>
-    <baseDescription>Sent from the Citadel to a thriving colony to help around, [PAWN_nameDef] was brought to this rimworld. To survive in a rimworld, a soldier needs more than combat skill. [PAWN_nameDef] knew that [PAWN_pronoun] had to be a jack-of-all trades, so [PAWN_pronoun] took up farming and construction as a hobby.</baseDescription>
+    <baseDesc>Sent from the Citadel to a thriving colony to help around, [PAWN_nameDef] was brought to this rimworld. To survive in a rimworld, a soldier needs more than combat skill. [PAWN_nameDef] knew that [PAWN_pronoun] had to be a jack-of-all trades, so [PAWN_pronoun] took up farming and construction as a hobby.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -404,25 +404,25 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li> 
       <li>
-        <defName>Construction</defName>
-        <amount>2</amount>
+        <key>Construction</key>
+        <value>2</value>
       </li> 
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ColonialManpower</defName>
     <title>Colonial manpower</title>
     <titleShort>Hauler</titleShort>
-    <baseDescription>Sent from the Citadel to a colony that lacks manpower, [PAWN_nameDef] was brought to this rimworld to do un-skilled work. [PAWN_pronoun] took care of hauling and cleaning. This made [PAWN_nameDef] incapable of most skilled tasks.</baseDescription>
+    <baseDesc>Sent from the Citadel to a colony that lacks manpower, [PAWN_nameDef] was brought to this rimworld to do un-skilled work. [PAWN_pronoun] took care of hauling and cleaning. This made [PAWN_nameDef] incapable of most skilled tasks.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -432,13 +432,13 @@
     <workDisables>
 	<li>ManualSkilled</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_DecorationsArtist</defName>
     <title>Decorations artist</title>
     <titleShort>Artist</titleShort>
-    <baseDescription>Working for the governing body of the Citadel, [PAWN_nameDef] made paintings and decorations for the many stores, corridors, and cafes of the Citadel. With some bussineses paying extra credits to get more intricate artwork, this made [PAWN_possessive] quite wealthy.</baseDescription>
+    <baseDesc>Working for the governing body of the Citadel, [PAWN_nameDef] made paintings and decorations for the many stores, corridors, and cafes of the Citadel. With some bussineses paying extra credits to get more intricate artwork, this made [PAWN_possessive] quite wealthy.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -447,23 +447,23 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Crafting</defName>
-        <amount>2</amount>
+        <key>Crafting</key>
+        <value>2</value>
       </li> 
       <li>
-        <defName>Artistic</defName>
-        <amount>4</amount>
+        <key>Artistic</key>
+        <value>4</value>
       </li> 
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CitadelResident</defName>
     <title>Citadel resident</title>
     <titleShort>Resident</titleShort>
-    <baseDescription>As a permanent resident residing in Citadel space, [PAWN_nameDef] had most of [PAWN_possessive] basic needs taken care of by just working part-time in a local establishment. This resulted in [PAWN_possessive] many hobbies such as ameteur sculpting, firearm study, and gazing at many records of ancient history.</baseDescription>
+    <baseDesc>As a permanent resident residing in Citadel space, [PAWN_nameDef] had most of [PAWN_possessive] basic needs taken care of by just working part-time in a local establishment. This resulted in [PAWN_possessive] many hobbies such as ameteur sculpting, firearm study, and gazing at many records of ancient history.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -472,29 +472,29 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>1</amount>
+        <key>Construction</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>1</amount>
+        <key>Artistic</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li> 	  
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 <!--======================================================== ===========================================================-->
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_KroganHeritage</defName>
     <title>Krogan heritage</title>
     <titleShort>Part-krogan</titleShort>
-    <baseDescription>A relative of [PAWN_nameDef] was a Krogan, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to aggression, resilience and resolution of conflicts via a head butt.</baseDescription>
+    <baseDesc>A relative of [PAWN_nameDef] was a Krogan, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to aggression, resilience and resolution of conflicts via a head butt.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -503,24 +503,24 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>3</amount>
+        <key>Melee</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>-2</amount>
+        <key>Social</key>
+        <value>-2</value>
       </li> 
     </skillGains>
     <workDisables>
 	    <li>Caring</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_TurianHeritage</defName>
     <title>Turian heritage</title>
     <titleShort>Part-turian</titleShort>
-    <baseDescription>A relative of [PAWN_nameDef] was a Turian, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to self-discipline, meat-based foods and an affinity for facial markings.</baseDescription>
+    <baseDesc>A relative of [PAWN_nameDef] was a Turian, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to self-discipline, meat-based foods and an affinity for facial markings.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -529,21 +529,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>3</amount>
+        <key>Shooting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_SalarianHeritage</defName>
     <title>Salarian heritage</title>
     <titleShort>Part-salarian</titleShort>
-    <baseDescription>A relative of [PAWN_nameDef] was a Salarian, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to researching, fidgeting and an interest in patter songs.</baseDescription>
+    <baseDesc>A relative of [PAWN_nameDef] was a Salarian, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to researching, fidgeting and an interest in patter songs.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -552,23 +552,23 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>3</amount>
+        <key>Intellectual</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>2</amount>
+        <key>Artistic</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_VorchaHeritage</defName>
     <title>Vorcha heritage</title>
     <titleShort>Part-vorcha</titleShort>
-    <baseDescription>A relative of [PAWN_nameDef] was a Vorcha, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to conflict, adaptability and an allergy to dairy products.</baseDescription>
+    <baseDesc>A relative of [PAWN_nameDef] was a Vorcha, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to conflict, adaptability and an allergy to dairy products.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -577,25 +577,25 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>1</amount>
+        <key>Plants</key>
+        <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_HumanHeritage</defName>
     <title>Human heritage</title>
     <titleShort>Part-human</titleShort>
-    <baseDescription>A relative of [PAWN_nameDef] was a Human, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does have an unusual affinity for a variety of tasks involving menial labour.</baseDescription>
+    <baseDesc>A relative of [PAWN_nameDef] was a Human, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does have an unusual affinity for a variety of tasks involving menial labour.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -604,31 +604,31 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>1</amount>
+        <key>Construction</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>2</amount>
+        <key>Crafting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_QuarianHeritage</defName>
     <title>Quarian heritage</title>
     <titleShort>Part-quarian</titleShort>
-    <baseDescription>A relative of [PAWN_nameDef] was a Quarian, a rare occurrence, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to physical resilience, frequent allergies and improved eyesight in the ultraviolet spectrum.</baseDescription>
+    <baseDesc>A relative of [PAWN_nameDef] was a Quarian, a rare occurrence, part of whom’s genetic traits have been passed on down to [PAWN_possessive]. Although there is no substantial evidence backing the claims of inherited traits, [PAWN_nameDef] does display greater tendencies to physical resilience, frequent allergies and improved eyesight in the ultraviolet spectrum.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -637,21 +637,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_HiddenHeritage</defName>
     <title>Hidden heritage</title>
     <titleShort>Pariah</titleShort>
-    <baseDescription>Most Asari are at least familiar with what race their father was, however in the case of [PAWN_nameDef], [PAWN_possessive] mother never told [PAWN_possessive]. This lack of cultural identity has caused [PAWN_possessive] to become somewhat of an outcast among [PAWN_possesive] peers.</baseDescription>
+    <baseDesc>Most Asari are at least familiar with what race their father was, however in the case of [PAWN_nameDef], [PAWN_possessive] mother never told [PAWN_possessive]. This lack of cultural identity has caused [PAWN_possessive] to become somewhat of an outcast among [PAWN_possesive] peers.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -660,37 +660,37 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>1</amount>
+        <key>Medicine</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>1</amount>
+        <key>Construction</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ProudDaughter</defName>
     <title>Proud daughter</title>
     <titleShort>Proud daughter</titleShort>
-    <baseDescription>Both of the parents of [PAWN_nameDef] were asari, which has given [PAWN_possessive] the insulting nickname of “pureblood” among the more contemporary asari. While somewhat stigmatized, [PAWN_pronoun] is proud of the legacy of [PAWN_possessive] parents and strives to prove [PAWN_pronoun] is more than just [PAWN_possessive] genetics.</baseDescription>
+    <baseDesc>Both of the parents of [PAWN_nameDef] were asari, which has given [PAWN_possessive] the insulting nickname of “pureblood” among the more contemporary asari. While somewhat stigmatized, [PAWN_pronoun] is proud of the legacy of [PAWN_possessive] parents and strives to prove [PAWN_pronoun] is more than just [PAWN_possessive] genetics.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -699,25 +699,25 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_DaughterOfBrigands</defName>
     <title>Daughter of brigands</title>
     <titleShort>Outcast</titleShort>
-    <baseDescription>[PAWN_nameDef] was born outside of Asari society and raised by [PAWN_possessive] parents in a lawless society. Because of this, they picked up various bad habits from “criminal scum” that formed the backbone of [PAWN_possessive] survival instincts. Upon reaching maturity, [PAWN_pronoun] decided to strike out and make [PAWN_possessive] own fortune.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was born outside of Asari society and raised by [PAWN_possessive] parents in a lawless society. Because of this, they picked up various bad habits from “criminal scum” that formed the backbone of [PAWN_possessive] survival instincts. Upon reaching maturity, [PAWN_pronoun] decided to strike out and make [PAWN_possessive] own fortune.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -726,24 +726,24 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
 	<li>Artistic</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_PirateQueensDaughter</defName>
     <title>Pirate queen's daughter</title>
     <titleShort>Pirate</titleShort>
-    <baseDescription>[PAWN_nameDef] was born outside of asari society and raised by [PAWN_possessive] parents in a pirate society with [PAWN_possessive] own mother having declared herself as the pirate queen. The decadent lifestyle brought by stolen merchandise eventually came crashing down and [PAWN_nameDef] made [PAWN_possessive] escape in order to evade the authorities.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was born outside of asari society and raised by [PAWN_possessive] parents in a pirate society with [PAWN_possessive] own mother having declared herself as the pirate queen. The decadent lifestyle brought by stolen merchandise eventually came crashing down and [PAWN_nameDef] made [PAWN_possessive] escape in order to evade the authorities.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -752,25 +752,25 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>2</amount>
+        <key>Crafting</key>
+        <value>2</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_MilitaryBrat</defName>
     <title>Military brat</title>
     <titleShort>Military brat</titleShort>
-    <baseDescription>[PAWN_nameDef] was born to parents who both either served or continue to serve in their respective militaries and as a result received a very strict and comprehensive military education. However, as is tradition in Asari society,when [PAWN_pronoun] reached maturity [PAWN_pronoun] decided to strike out on [PAWN_possessive] own outside of the rigid military.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was born to parents who both either served or continue to serve in their respective militaries and as a result received a very strict and comprehensive military education. However, as is tradition in Asari society,when [PAWN_pronoun] reached maturity [PAWN_pronoun] decided to strike out on [PAWN_possessive] own outside of the rigid military.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Childhood</slot>
@@ -779,27 +779,27 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>-1</amount>
+        <key>Social</key>
+        <value>-1</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_AsariCommando</defName>
     <title>Asari commando</title>
     <titleShort>Commando</titleShort>
-    <baseDescription>[PAWN_nameDef] served as an officially sanctioned huntress in the asari military, with [PAWN_possessive] merits earning [PAWN_possessive] the position as the bodyguard of an esteemed matriarch. After she died of natural causes, [PAWN_pronoun] took a leave of absence in order to see more of the galaxy that [PAWN_pronoun] had learned to appreciate over the decades.</baseDescription>
+    <baseDesc>[PAWN_nameDef] served as an officially sanctioned huntress in the asari military, with [PAWN_possessive] merits earning [PAWN_possessive] the position as the bodyguard of an esteemed matriarch. After she died of natural causes, [PAWN_pronoun] took a leave of absence in order to see more of the galaxy that [PAWN_pronoun] had learned to appreciate over the decades.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -808,23 +808,23 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>3</amount>
+        <key>Shooting</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_UnsanctionedMercenary</defName>
     <title>Unsanctioned mercenary</title>
     <titleShort>Mercenary</titleShort>
-    <baseDescription>[PAWN_nameDef] had immense difficulty in creating biotic fields which excluded [PAWN_possessive] from serving in the official military. Instead, training physically to make up for this deficit, [PAWN_pronoun] served in whichever outfit which would take [PAWN_possessive]. The diversity of tactics used by [PAWN_possessive] squad leaders made [PAWN_possessive] very adept at dealing with any situation.</baseDescription>
+    <baseDesc>[PAWN_nameDef] had immense difficulty in creating biotic fields which excluded [PAWN_possessive] from serving in the official military. Instead, training physically to make up for this deficit, [PAWN_pronoun] served in whichever outfit which would take [PAWN_possessive]. The diversity of tactics used by [PAWN_possessive] squad leaders made [PAWN_possessive] very adept at dealing with any situation.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -833,27 +833,27 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ExoticDancer</defName>
     <title>Exotic dancer</title>
     <titleShort>Dancer</titleShort>
-    <baseDescription>[PAWN_nameDef] thoroughly enjoyed [PAWN_possessive] time as a dancer back on Omega, as the credits were good and there was plenty of opportunities to practice [PAWN_possessive] martial arts to both liberate the patrons from their possessions and “escort” them from the bar in case they got too handsy. However, a misunderstanding with a big-time client required [PAWN_possessive] to find a new place of employment.</baseDescription>
+    <baseDesc>[PAWN_nameDef] thoroughly enjoyed [PAWN_possessive] time as a dancer back on Omega, as the credits were good and there was plenty of opportunities to practice [PAWN_possessive] martial arts to both liberate the patrons from their possessions and “escort” them from the bar in case they got too handsy. However, a misunderstanding with a big-time client required [PAWN_possessive] to find a new place of employment.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -862,25 +862,25 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>1</amount>
+        <key>Artistic</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_PirateQueen</defName>
     <title>Pirate queen</title>
     <titleShort>Pirate queen</titleShort>
-    <baseDescription>[PAWN_nameDef] decided that [PAWN_pronoun] likes living fast and hard, and preferably on someone else’s dime. What better way to live life than by commanding the meanest band of misfits and terrorising those weaker than them? Eventually, the consequences of [PAWN_possessive] actions caught up with [PAWN_possessive], causing [PAWN_possessive] to flee far away from the long arm of the law.</baseDescription>
+    <baseDesc>[PAWN_nameDef] decided that [PAWN_pronoun] likes living fast and hard, and preferably on someone else’s dime. What better way to live life than by commanding the meanest band of misfits and terrorising those weaker than them? Eventually, the consequences of [PAWN_possessive] actions caught up with [PAWN_possessive], causing [PAWN_possessive] to flee far away from the long arm of the law.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -889,28 +889,28 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
 	<li>Hauling</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_LowLevelGangMember</defName>
     <title>Low level gang member</title>
     <titleShort>Thug</titleShort>
-    <baseDescription>[PAWN_nameDef] likes to cause chaos but feels [PAWN_pronoun] is still far too young to actually take responsibility for it. By performing adequately well in a gang and letting others do most of the difficult work, [PAWN_nameDef] has managed to get away with living a relatively comfortable life, blissfully ignoring that [PAWN_pronoun] stands on a knife’s edge.</baseDescription>
+    <baseDesc>[PAWN_nameDef] likes to cause chaos but feels [PAWN_pronoun] is still far too young to actually take responsibility for it. By performing adequately well in a gang and letting others do most of the difficult work, [PAWN_nameDef] has managed to get away with living a relatively comfortable life, blissfully ignoring that [PAWN_pronoun] stands on a knife’s edge.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -919,27 +919,27 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ExtranetHistorian</defName>
     <title>Extranet historian</title>
     <titleShort>Historian</titleShort>
-    <baseDescription>[PAWN_nameDef] spent quite a number of years of [PAWN_possessive] life working with an anonymous group to document the vast amounts of information available on the extranet that influenced societies and their consequences. Sometimes the gullibility of people truly astounds [PAWN_pronoun], and believes it’s important to take a small break in a completely different region of space.</baseDescription>
+    <baseDesc>[PAWN_nameDef] spent quite a number of years of [PAWN_possessive] life working with an anonymous group to document the vast values of information available on the extranet that influenced societies and their consequences. Sometimes the gullibility of people truly astounds [PAWN_pronoun], and believes it’s important to take a small break in a completely different region of space.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -948,19 +948,19 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>3</amount>
+        <key>Intellectual</key>
+        <value>3</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ColonistAsari</defName>
     <title>Colonist</title>
     <titleShort>Colonist</titleShort>
-    <baseDescription>For whatever reason, [PAWN_nameDef] has decided to spend [PAWN_possessive] years working in a colony environment. It’s not a glamorous lifestyle, but someone has to do it and [NAME_pronoun] takes pride in [NAME_possessive] skills in helping a colony survive and prosper.</baseDescription>
+    <baseDesc>For whatever reason, [PAWN_nameDef] has decided to spend [PAWN_possessive] years working in a colony environment. It’s not a glamorous lifestyle, but someone has to do it and [NAME_pronoun] takes pride in [NAME_possessive] skills in helping a colony survive and prosper.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -969,27 +969,27 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Construction</defName>
-        <amount>2</amount>
+        <key>Construction</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_WanderingSoul</defName>
     <title>Wandering soul</title>
     <titleShort>Wanderer</titleShort>
-    <baseDescription>An asari lifetime is incredibly long and very few ever feel rushed or find it necessary to dedicate to a single lifestyle. [PAWN_nameDef] adopts this approach thoroughly, never settling in one place for long and striving to experience everything life has to offer [PAWN_possessive]. This lack of attachment does lead to some disregard for the state of [PAWN_possessive] possessions, though.</baseDescription>
+    <baseDesc>An asari lifetime is incredibly long and very few ever feel rushed or find it necessary to dedicate to a single lifestyle. [PAWN_nameDef] adopts this approach thoroughly, never settling in one place for long and striving to experience everything life has to offer [PAWN_possessive]. This lack of attachment does lead to some disregard for the state of [PAWN_possessive] possessions, though.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -998,31 +998,31 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Crafting</defName>
-        <amount>1</amount>
+        <key>Crafting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
+        <key>Shooting</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ExtraspeciesDoctor</defName>
     <title>Extraspecies doctor</title>
     <titleShort>Doctor</titleShort>
-    <baseDescription>[PAWN_nameDef] once realized that [PAWN_pronoun] has a rather morbid curiosity in how the bodies function of [PAWN_possessive] own and those of other species. As it goes, [PAWN_pronoun] has become a very efficient surgeon and can use their skills to heal or hurt as needs dictate.</baseDescription>
+    <baseDesc>[PAWN_nameDef] once realized that [PAWN_pronoun] has a rather morbid curiosity in how the bodies function of [PAWN_possessive] own and those of other species. As it goes, [PAWN_pronoun] has become a very efficient surgeon and can use their skills to heal or hurt as needs dictate.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1031,31 +1031,31 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>-2</amount>
+        <key>Shooting</key>
+        <value>-2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>-1</amount>
+        <key>Melee</key>
+        <value>-1</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>4</amount>
+        <key>Medicine</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ArdatYakshi1</defName>
     <title>Ardat-Yakshi</title>
     <titleShort>Ardat-Yakshi</titleShort>
-    <baseDescription>[PAWN_nameDef] was found to be a Ardak-Yakshi at a young age, and was sequestered in a monastery, while this lifestyle promoted intellectual thought, [PAWN_nameDef] was unfamiliar with the outside world.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was found to be a Ardak-Yakshi at a young age, and was sequestered in a monastery, while this lifestyle promoted intellectual thought, [PAWN_nameDef] was unfamiliar with the outside world.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1064,23 +1064,23 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>4</amount>
+        <key>Intellectual</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>-2</amount>
+        <key>Social</key>
+        <value>-2</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_XenoAnthropologist</defName>
     <title>Xeno anthropologist</title>
     <titleShort>Anthropologist</titleShort>
-    <baseDescription>[PAWN_nameDef] has always been fascinated by alien cultures, and [PAWN_pronoun] knew [PAWN_pronoun] would become a xeno anthropologist. Shortly after getting  [PAWN_possessive] degree in the University of Thessia, [PAWN_pronoun] took a journey to the stars to study other species directly.</baseDescription>
+    <baseDesc>[PAWN_nameDef] has always been fascinated by alien cultures, and [PAWN_pronoun] knew [PAWN_pronoun] would become a xeno anthropologist. Shortly after getting  [PAWN_possessive] degree in the University of Thessia, [PAWN_pronoun] took a journey to the stars to study other species directly.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1089,23 +1089,23 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Medicine</defName>
-        <amount>2</amount>
+        <key>Medicine</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>3</amount>
+        <key>Intellectual</key>
+        <value>3</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_ReformedSister</defName>
     <title>Reformed sister</title>
     <titleShort>Reformed sister</titleShort>
-    <baseDescription>[PAWN_nameDef] decided that [PAWN_pronoun] needed thrill and emotion in [PAWN_possessive] life, so [PAWN_pronoun] decided to join the Sisters of Eclipse. Tradition in eclipse demands that in order to earn a suit and a place among them, it is necessary first to kill someone. However, when the moment to pull the trigger came, [PAWN_nameDef] just couldn't do it. [PAWN_pronoun] got kicked shortly after, but [PAWN_pronoun] learnt a new thing about [PAWN_possessive]self.</baseDescription>
+    <baseDesc>[PAWN_nameDef] decided that [PAWN_pronoun] needed thrill and emotion in [PAWN_possessive] life, so [PAWN_pronoun] decided to join the Sisters of Eclipse. Tradition in eclipse demands that in order to earn a suit and a place among them, it is necessary first to kill someone. However, when the moment to pull the trigger came, [PAWN_nameDef] just couldn't do it. [PAWN_pronoun] got kicked shortly after, but [PAWN_pronoun] learnt a new thing about [PAWN_possessive]self.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1114,24 +1114,24 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>2</amount>
+        <key>Social</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
     </skillGains>
     <workDisables>
 	    <li>Violent</li>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_VaeniaObsessed</defName>
     <title>Vaenia obsessed</title>
     <titleShort>Vaenia fan</titleShort>
-    <baseDescription>When the romantic film "Vaenia" aired in Citadel Space, it rapidly gained both fame and controversy due to depicting the romance of a "pure blood" asari couple. [PAWN_nameDef] fell in love with the movie and started consuming all the merchandising and watching the vid every night. Suddenly, [PAWN_possessive] whole life revolved around the movie, and [PAWN_pronoun] spent most of her time fantasizing about becoming a glamorous woman, just like the ones in Vaenia.</baseDescription>
+    <baseDesc>When the romantic film "Vaenia" aired in Citadel Space, it rapidly gained both fame and controversy due to depicting the romance of a "pure blood" asari couple. [PAWN_nameDef] fell in love with the movie and started consuming all the merchandising and watching the vid every night. Suddenly, [PAWN_possessive] whole life revolved around the movie, and [PAWN_pronoun] spent most of her time fantasizing about becoming a glamorous woman, just like the ones in Vaenia.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1140,19 +1140,19 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>4</amount>
+        <key>Social</key>
+        <value>4</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_TerminusTrader</defName>
     <title>Terminus trader</title>
     <titleShort>Trader</titleShort>
-    <baseDescription>[PAWN_nameDef] used several contacts around the Terminus Systems to acquire all types of trade goods. Due to the nature of Terminus, [PAWN_pronoun] never questioned the origin of said goods; As long as they were profitable, [PAWN_pronoun] didn't care. Taking advantage of Illium's trade policies, [PAWN_nameDef] became rich very quickly.</baseDescription>
+    <baseDesc>[PAWN_nameDef] used several contacts around the Terminus Systems to acquire all types of trade goods. Due to the nature of Terminus, [PAWN_pronoun] never questioned the origin of said goods; As long as they were profitable, [PAWN_pronoun] didn't care. Taking advantage of Illium's trade policies, [PAWN_nameDef] became rich very quickly.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1161,23 +1161,23 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>3</amount>
+        <key>Social</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>1</amount>
+        <key>Intellectual</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_IndenturedServant</defName>
     <title>Indentured servant</title>
     <titleShort>Servant</titleShort>
-    <baseDescription>[PAWN_nameDef] was always good with numbers, and [PAWN_pronoun] thought that [PAWN_pronoun] could make a quick fortune in Illium. However, things didn't go as [PAWN_pronoun] expected. [PAWN_nameDef] found [PAWN_possessive]self drowning in a sea of debts and loans. Shortly after, [PAWN_nameDef] gave up, and became an indentured servant under a contract in Illium.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was always good with numbers, and [PAWN_pronoun] thought that [PAWN_pronoun] could make a quick fortune in Illium. However, things didn't go as [PAWN_pronoun] expected. [PAWN_nameDef] found [PAWN_possessive]self drowning in a sea of debts and loans. Shortly after, [PAWN_nameDef] gave up, and became an indentured servant under a contract in Illium.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1186,21 +1186,21 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_RedSandAddict</defName>
     <title>Red sand addict</title>
     <titleShort>Addict</titleShort>
-    <baseDescription>As an asari, [PAWN_nameDef] had natural biotic skills. In order to enhance [PAWN_possessive] biotic capabilites, [PAWN_nameDef] started to consume the biotic-enhancing drug called "Red Sand". As time passed, [PAWN_nameDef] found [PAWN_possessive]self becoming an addict, and incapable of performing as a normal being without having a taste of the substance.</baseDescription>
+    <baseDesc>As an asari, [PAWN_nameDef] had natural biotic skills. In order to enhance [PAWN_possessive] biotic capabilites, [PAWN_nameDef] started to consume the biotic-enhancing drug called "Red Sand". As time passed, [PAWN_nameDef] found [PAWN_possessive]self becoming an addict, and incapable of performing as a normal being without having a taste of the substance.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1209,23 +1209,23 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>1</amount>
+        <key>Social</key>
+        <value>1</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
+        <key>Melee</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_Helium3Miner</defName>
     <title>Asteroid miner</title>
     <titleShort>Miner</titleShort>
-    <baseDescription>[PAWN_nameDef] worked in an orbital station around a gas giant, where the fuel used by starships would be extracted. There, [PAWN_nameDef] learnt all about capturing and breaking asteroids.</baseDescription>
+    <baseDesc>[PAWN_nameDef] worked in an orbital station around a gas giant, where the fuel used by starships would be extracted. There, [PAWN_nameDef] learnt all about capturing and breaking asteroids.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1234,23 +1234,23 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Mining</defName>
-        <amount>3</amount>
+        <key>Mining</key>
+        <value>3</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>1</amount>
+        <key>Construction</key>
+        <value>1</value>
       </li>
     </skillGains>
     <workDisables>
     </workDisables>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
-<AlienRace.BackstoryDef>
+<BackstoryDef>
     <defName>RE_CorporateResearcher</defName>
     <title>Corporate researcer</title>
     <titleShort>Researcher</titleShort>
-    <baseDescription>[PAWN_nameDef] was an incredibly skilled scientist, and after graduating, [PAWN_pronoun] became a researcher. During centuries, [PAWN_pronoun] worked for some of the most powerful corporations in the galaxy, where [PAWN_pronoun] would get generously payed.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was an incredibly skilled scientist, and after graduating, [PAWN_pronoun] became a researcher. During centuries, [PAWN_pronoun] worked for some of the most powerful corporations in the galaxy, where [PAWN_pronoun] would get generously payed.</baseDesc>
 	<bodyTypeMale>Male</bodyTypeMale>
 	<bodyTypeFemale>Female</bodyTypeFemale>
 	<slot>Adulthood</slot>
@@ -1259,10 +1259,10 @@
     </spawnCategories>
     <skillGains>
       <li>
-        <defName>Intellectual</defName>
-        <amount>6</amount>
+        <key>Intellectual</key>
+        <value>6</value>
       </li>
     </skillGains>
-</AlienRace.BackstoryDef>
+</BackstoryDef>
 
 </Defs>
