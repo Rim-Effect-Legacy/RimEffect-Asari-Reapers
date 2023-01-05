@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="RE_BaseMeleeAsariWeapon_Sharp_Quality" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Ultra</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <researchPrerequisite>RE_AsariWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+	  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+    <weaponTags Inherit='False'>
+      <li>RE_CommandoSpecialist</li>
+	  <li>RE_AsariSword</li>
+    </weaponTags>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>RE_AsariWeaponry</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="RE_BaseMeleeAsariWeapon_Sharp_Quality">
+    <defName>RE_MeleeWeapon_AsariSword</defName>
+    <label>asari sword</label>
+    <description>A light monomolecular sword with high attack speed and armor penetration. \n\nThe favored weapon of the asari commandos. These blades are devastating in their hands, as they hide and then strike from the shadows in extreme close range.</description>
+    <soundInteract>RE_Interact_AsariSword</soundInteract>
+    <meleeHitSound>RE_MeleeHit_AsariSword</meleeHitSound>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Items/Weapons/AsariSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<statBases>
+	<Mass>1.2</Mass>
+    <WorkToMake>14000</WorkToMake>
+	</statBases>
+    <costList>
+      <Plasteel>35</Plasteel>
+	  <RE_ElementZero>10</RE_ElementZero>
+    </costList>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.3</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+      </li>
+    </tools>
+    <equippedStatOffsets>
+      <RE_BioticEnergyRecoveryRate>0.1</RE_BioticEnergyRecoveryRate>
+    </equippedStatOffsets>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
+  </ThingDef>
+  
+</Defs>

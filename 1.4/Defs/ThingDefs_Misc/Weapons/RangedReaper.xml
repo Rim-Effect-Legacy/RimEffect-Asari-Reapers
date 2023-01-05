@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_GoliathCannon</defName>
+    <label>goliath cannon shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_GoliathCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>RE_Gun_GoliathCannon</defName>
+    <label>goliath cannon</label>
+    <description>Advanced charge blaster design improved with Reaper tech, Goliath cannons can melt through heavy defenses in no time.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Reaper/Goliath/GoliathCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>22</Mass>
+      <AccuracyTouch>0.2</AccuracyTouch>
+      <AccuracyShort>0.28</AccuracyShort>
+      <AccuracyMedium>0.28</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
+      <RangedWeapon_Cooldown>7.5</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_GoliathCannon</defaultProjectile>
+        <warmupTime>1.3</warmupTime>
+        <range>26.9</range>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>26</burstShotCount>
+        <soundCast>RE_Shot_GoliathCannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>GoliathCannon</li>
+    </weaponTags>
+	<relicChance>0</relicChance>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_RavagerRocket</defName>
+    <label>ravager cannon shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_RavagerCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>2</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>2.9</explosionRadius>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_CannibalCaster</defName>
+    <label>cannibal caster shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_CannibalCaster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>90</speed>
+	  <armorPenetrationBase>0.55</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>RE_Gun_CannibalCaster</defName>
+    <label>cannibal caster</label>
+    <description>A large reaper-tech mass-accelerator caster, firing sharp spike-like projectiles with high armour piercing.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Reaper/Cannibal/CannibalCaster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>18</Mass>
+      <AccuracyTouch>0.6</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.8</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_CannibalCaster</defaultProjectile>
+        <warmupTime>1.3</warmupTime>
+        <range>19.9</range>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>RE_Shot_CannibalCaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>CannibalCaster</li>
+    </weaponTags>
+	<relicChance>0</relicChance>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>RE_Gun_MarauderRifle</defName>
+    <label>marauder rifle</label>
+    <description>Derived from a Turian Phaeston rifle improved with Reaper tech, this rifle is capable of dealing tremendous damage in long, controlled bursts.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Reaper/Marauder/MarauderRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>6.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.6</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_MarauderRifle</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+        <burstShotCount>4</burstShotCount>
+        <soundCast>RE_Shot_MarauderRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>MarauderRifle</li>
+    </weaponTags>
+	<relicChance>0</relicChance>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_MarauderRifle</defName>
+    <label>marauder rifle shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_MarauderRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.7</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseGun">
+    <defName>RE_Gun_ColossusArtillery</defName>
+    <label>colossus artillery</label>
+    <description>Powerful, long range missile launcher used by Colossi to bombard the fortified enemy positions with mass torpedoes.</description>
+    <tickerType>Normal</tickerType>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Reaper/Colossus/ColossusArtillery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>56</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>true</destroyOnDrop>
+    <weaponTags>
+      <li>ColossusArtillery</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_ColossusRocket</defaultProjectile>
+        <forcedMissRadius>4.9</forcedMissRadius>
+        <warmupTime>14.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+		<requireLineOfSight>false</requireLineOfSight>
+        <range>200.9</range>
+		<minRange>10.9</minRange>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>RE_Shot_ColossusArtillery</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+	<relicChance>0</relicChance>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_ColossusRocket</defName>
+    <label>colossus artillery shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_ColossusArtillery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+	  <drawSize>2.5</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>4.9</explosionRadius>
+      <speed>50</speed>
+	  <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
+
+</Defs>

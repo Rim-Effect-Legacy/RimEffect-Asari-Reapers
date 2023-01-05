@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>RE_NameGenerate</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[ReaperName]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>ReaperName</keyword>
+          <path>Names/Names_Reaper</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RE_NamerFactionReaper</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[reaper]</li>
+
+        <li>reaper->The Reapers</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

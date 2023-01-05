@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="OrbitalStrikeBase">
+    <defName>RE_ReaperPowerBeam</defName>
+    <label>reaper power beam</label>
+    <thingClass>PowerBeam</thingClass>
+    <comps>
+      <li Class="CompProperties_OrbitalBeam">
+        <width>8</width>
+        <color>(255,0,0,255)</color>
+        <sound>RE_ReaperOrbitalBombardment</sound> <!-- Custom sound for reaper orbital strike can go here -->
+      </li>
+      <li Class="CompProperties_CameraShaker">
+        <mag>0.05</mag>
+      </li>
+      <li Class="CompProperties_AffectsSky">
+        <skyColors>
+          <sky>(255, 230, 200)</sky>
+          <shadow>(225, 220, 185)</shadow>
+          <overlay>(255,0,0,255)</overlay>
+          <saturation>1.3</saturation>
+        </skyColors>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>RER_ReaperLongRangeMissile_Leaving</defName>
+    <label>long range reaper missile</label>
+    <thingClass>RimEffectReapers.LongRangeMissile</thingClass>
+    <size>(1, 1)</size>
+    <graphicData>
+      <texPath>Things/Projectiles/Reaper_LongRangeMissile_Shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>Decelerate</movementType>
+      <reversed>true</reversed>
+      <ticksToImpactRange>
+        <min>-40</min>
+        <max>-15</max>
+      </ticksToImpactRange>
+      <speedCurve>
+        <points>
+          <li>0, 0</li>
+          <li>0.2, 0.1</li>
+          <li>0.4, 0.2</li>
+          <li>0.5, 0.5</li>
+          <li>1, 1</li>
+        </points>
+      </speedCurve>
+    </skyfaller>
+  </ThingDef>
+  <ThingDef ParentName="SkyfallerBase">
+    <defName>RER_ReaperLongRangeMissile_Arriving</defName>
+    <label>long range reaper missile</label>
+    <thingClass>RimEffectReapers.LongRangeMissile</thingClass>
+    <size>(1, 1)</size>
+    <graphicData>
+      <texPath>Things/Projectiles/Reaper_LongRangeMissile_Shot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <shadowSize>(3, 3)</shadowSize>
+      <explosionRadius>6</explosionRadius>
+      <explosionDamage>Bomb</explosionDamage>
+      <explosionDamageFactor>0.5</explosionDamageFactor>
+      <speed>0.4</speed>
+      <movementType>Accelerate</movementType>
+      <ticksToImpactRange>300~300</ticksToImpactRange>
+    </skyfaller>
+  </ThingDef>
+  
+  <ThingDef>
+    <defName>RER_ReaperBeamGraphic</defName>
+    <thingClass>RimEffectReapers.ReaperBeamDraw</thingClass>
+    <drawOffscreen>true</drawOffscreen>
+    <label>reaper beam</label>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <comps>
+      <li Class="CompProperties_AffectsSky">
+        <skyColors>
+          <sky>(120, 90, 90)</sky>
+          <shadow>(0, 0, 0)</shadow>
+          <overlay>(0,0,0,200)</overlay>
+          <saturation>1.3</saturation>
+        </skyColors>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>RER_ReaperGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/ReaperGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>2.6</fadeInTime>
+    <solidTime>1.5</solidTime>
+    <fadeOutTime>3.3</fadeOutTime>
+  </FleckDef>
+</Defs>

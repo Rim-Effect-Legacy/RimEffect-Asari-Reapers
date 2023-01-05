@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Asari Assault Rifle -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>RE_Gun_AsariAssaultRifle</defName>
+    <label>asari assault rifle</label>
+    <description>An ultralight micromunition assault rifle. This weapon uses shells packed with microscale submunitions to deal staggering amounts of damage, punching far above it's weight class.\n\nThe Priestess is a medium range assault rifle, made incredibly light for use by Asari biotic commandos.</description>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Things/Items/Weapons/AsariAssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>RE_Interact_AsariAssaultRifle</soundInteract>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>1.75</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>RE_AsariWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>55</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+	  <RE_ElementZero>5</RE_ElementZero>
+    </costList>
+    <thingSetMakerTags>
+      <li>RE_AsariWeaponry</li>
+    </thingSetMakerTags>
+    <tradeTags>
+      <li>RE_AsariWeaponry</li>
+    </tradeTags>
+    <weaponTags Inherit='False'>
+      <li>RE_AsariGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_AsariAssaultRifle</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>27.9</range>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>RE_Shot_AsariAssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_AsariAssaultRifle</defName>
+    <label>accelerated shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_BioticSharp_Large</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>17</damageAmountBase>
+      <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+<!-- Asari Shotgun -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_AsariShotgun</defName>
+    <label>accelerated blast</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_BioticSharp_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+	  <armorPenetrationBase>0.45</armorPenetrationBase>
+      <stoppingPower>3</stoppingPower>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>RE_Gun_AsariShotgun</defName>
+    <label>asari shotgun</label>
+    <description>An ultralight micromunition Shotgun. This weapon uses shells packed with microscale submunitions to deal staggering amounts of damage, punching far above it's weight class.\n\nThe Disciple is a shotgun, originally designed exclusively for the use of the Justicars, it has since made its way into the hands of other Asari biotic commandos.</description>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Things/Items/Weapons/AsariShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>RE_Interact_AsariShotgun</soundInteract>
+    <statBases>
+      <Mass>1.5</Mass>
+      <AccuracyTouch>0.7</AccuracyTouch>
+      <AccuracyShort>0.67</AccuracyShort>
+      <AccuracyMedium>0.52</AccuracyMedium>
+      <AccuracyLong>0.49</AccuracyLong>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+      <WorkToMake>40000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>RE_AsariWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>50</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+	  <RE_ElementZero>5</RE_ElementZero>
+    </costList>
+    <thingSetMakerTags>
+      <li>RE_AsariWeaponry</li>
+    </thingSetMakerTags>
+    <tradeTags>
+      <li>RE_AsariWeaponry</li>
+    </tradeTags>
+    <weaponTags Inherit='False'>
+      <li>RE_AsariGun</li>
+	  <li>RE_AsariGunLight</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_AsariShotgun</defaultProjectile>
+        <warmupTime>0.7</warmupTime>
+        <range>14.9</range>
+		<burstShotCount>1</burstShotCount>
+        <soundCast>RE_Shot_AsariShotgun</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+<!-- Asari Sniper Rifle -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_AsariSniperRifle</defName>
+    <label>accelerated sniper shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_BioticBlunt_Large</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetrationBase>0.35</armorPenetrationBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>RE_Gun_AsariSniperRifle</defName>
+    <label>asari sniper rifle</label>
+    <description>An ultralight warp sniper rifle. Firing fire advanced ammunition similar to that of an impact-triggered resonant warp bomb, its projectile deals blunt damage.\n\nThe Huntress is a long range blunt weapon, made incredibly light for use by Asari biotic commandos.</description>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Things/Items/Weapons/AsariSniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.14</drawSize>
+    </graphicData>
+	<comps>
+      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+    <soundInteract>RE_Interact_AsariSniperRifle</soundInteract>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>2.0</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.73</AccuracyShort>
+      <AccuracyMedium>0.86</AccuracyMedium>
+      <AccuracyLong>0.88</AccuracyLong>
+      <RangedWeapon_Cooldown>2.10</RangedWeapon_Cooldown>
+    </statBases>
+	<equippedAngleOffset>50</equippedAngleOffset>
+    <recipeMaker>
+      <researchPrerequisite>RE_AsariWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>65</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+	  <RE_ElementZero>5</RE_ElementZero>
+    </costList>
+    <thingSetMakerTags>
+      <li>RE_AsariWeaponry</li>
+    </thingSetMakerTags>
+    <tradeTags>
+      <li>RE_AsariWeaponry</li>
+    </tradeTags>
+    <weaponTags Inherit='False'>
+      <li>RE_AsariGunSniper</li>
+	  <li>RE_CommandoSpecialist</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_AsariSniperRifle</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>49.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>RE_Shot_AsariSniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <!-- Asari Pistol -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>RE_Bullet_AsariPistol</defName>
+    <label>accelerated shot</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Shot_BioticBlunt_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+	  <armorPenetrationBase>0.1</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>RE_Gun_AsariPistol</defName>
+    <label>asari pistol</label>
+    <description>An ultralight warp pistol. Firing fire advanced ammunition similar to that of an impact-triggered resonant warp bomb, its projectile deals blunt damage.\n\nThe Acolyte is a short range blunt weapon, and is the standard sidearm used by Asari biotic commandos.</description>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Things/Items/Weapons/AsariPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>RE_Interact_AsariPistol</soundInteract>
+    <statBases>
+      <Mass>0.75</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.37</AccuracyLong>
+      <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+      <WorkToMake>34000</WorkToMake>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>RE_AsariWeaponry</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>RE_ManufacturingBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>35</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+	  <RE_ElementZero>2</RE_ElementZero>
+    </costList>
+    <thingSetMakerTags>
+      <li>RE_AsariWeaponry</li>
+    </thingSetMakerTags>
+    <tradeTags>
+      <li>RE_AsariWeaponry</li>
+    </tradeTags>
+    <weaponTags Inherit='False'>
+      <li>RE_AsariGun</li>
+	  <li>RE_AsariGunLight</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>RE_Bullet_AsariPistol</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>RE_Shot_AsariPistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
+  </ThingDef>
+
+</Defs>

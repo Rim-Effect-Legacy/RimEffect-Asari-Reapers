@@ -1,0 +1,1680 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Base -->
+
+	<ThingDef ParentName="BuildingBase" Name="RE_ReaperPart" Abstract="True">
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<thingClass>RimEffectReapers.Building_Reaper</thingClass>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<passability>Impassable</passability>
+		<fillPercent>1.0</fillPercent>
+		<tickerType>Normal</tickerType>
+		<rotatable>true</rotatable>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<selectable>true</selectable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<drawerType>MapMeshOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<designationCategory Inherit='False' />
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<soundAmbient>CrashedShipPart_Ambience</soundAmbient>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<statBases>
+			<Flammability>0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<castEdgeShadows>false</castEdgeShadows>
+	</ThingDef>
+
+	<!-- 1x1 hull piece -->
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_Reaper1x1Hull</defName>
+		<label>reaper ship hull</label>
+		<description>A block of nearly impenetrable plasteel shield. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperHull</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,1.05)</drawSize>
+			<shadowData>
+				<volume>(1, 0.2, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>5</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- support beam -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperSupportBeam</defName>
+		<label>reaper support beam</label>
+		<description>A structural beam to support a ship. It can be destroyed to obtain valuable resources. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_SupportBeam4x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.8,4.1)</drawSize>
+			<shadowData>
+				<volume>(1.04, 1.0, 3.75)</volume>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>8000</WorkToBuild>
+			<MaxHitPoints>1050</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<uiIconScale>1.2</uiIconScale>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- reaper machinery -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperMachinery</defName>
+		<label>reaper machinery</label>
+		<description>A block of machinery with various components. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperMachinery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,1.05)</drawSize>
+			<shadowData>
+				<volume>(1, 0.2, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>5</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- resource container -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperResourceContainer</defName>
+		<label>reaper resource container</label>
+		<description>A cargo module containing various raw resources often used by reapers to fix existing units or construct new ones. It can be destroyed to obtain valuable, exotic resources. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperResourceContainer</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.2,3)</drawSize>
+			<!--<shadowData>
+				<volume>(0.9, 1.0, 0.9)</volume>
+			</shadowData>-->
+			<damageData>
+				<rect>(0.5, 0.1, 3, 2.8)</rect>
+			</damageData>
+		</graphicData>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,3)</size>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<Steel>100</Steel>
+			<Gold>10</Gold>
+			<Uranium>20</Uranium>
+		</killedLeavings>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_LootOnDestroy">
+				<amount>150</amount>
+				<maxValuePerItem>10</maxValuePerItem>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 2x2 hull plate -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_Reaper2x2Hull</defName>
+		<label>reaper hull plate</label>
+		<description>A block of nearly impenetrable plasteel shield. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperHullPlate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.05,2.05)</drawSize>
+			<shadowData>
+				<volume>(2, 0.2, 2)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.6</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>15</Plasteel>
+			<Uranium>5</Uranium>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- cargo module -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperCargoModule</defName>
+		<label>reaper cargo module</label>
+		<description>A cargo module containing various raw resources often used by reapers to fix existing units or construct new ones. It can be destroyed to obtain valuable, exotic resources. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperCargoModule</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.1,2)</drawSize>
+			<shadowData>
+				<volume>(0.9, 1.0, 0.9)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.5, 0.1, 3, 2.8)</rect>
+			</damageData>
+		</graphicData>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
+			<Plasteel>60</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Steel>140</Steel>
+			<Gold>25</Gold>
+			<Uranium>35</Uranium>
+		</killedLeavings>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_LootOnDestroy">
+				<amount>200</amount>
+				<maxValuePerItem>20</maxValuePerItem>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- fuel cell -->
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperFuelCell</defName>
+		<label>reaper fuel cell</label>
+		<description>A cell with element zero. Extremely vulnerable to damage, explodes upon destruction.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperFuelCell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,1.05)</drawSize>
+			<shadowData>
+				<volume>(1, 0.2, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>5</Plasteel>
+			<RE_ElementZero>5</RE_ElementZero>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>9.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explodeOnKilled>true</explodeOnKilled>
+				<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+				<extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 3x3 hull layer -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_Reaper3x3Hull</defName>
+		<label>reaper hull layer</label>
+		<description>A block of nearly impenetrable plasteel shield. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_HullLayer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.05,3.05)</drawSize>
+			<shadowData>
+				<volume>(3, 0.2, 3)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,3)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>40</Plasteel>
+			<Uranium>15</Uranium>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- eezoo core -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperElementZeroCore</defName>
+		<label>reaper element zero core</label>
+		<description>A massive element zero core which, coupled with the likely enormous quantities of energies at its disposal, allows it to generate the staggering mass effect field needed to land ships of their size on a planet. This element is usually a part of a much larger ship.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ElementZeroCore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.05,4.05)</drawSize>
+			<shadowData>
+				<volume>(4, 0.2, 4)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>100</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>1800</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(4,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>100</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+			<RE_ElementZero>80</RE_ElementZero>
+			<Uranium>80</Uranium>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- storm generator -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperStormGenerator</defName>
+		<label>reaper storm generator</label>
+		<description>A large, complex machinery that summons a perpetual reaper storm wherever it is.</description>
+		<thingClass>RimEffectReapers.Building_Reaper_Storm</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperStormGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.05,4.05)</drawSize>
+			<shadowData>
+				<volume>(4, 0.2, 4)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>100</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(4,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<RE_ElementZero>40</RE_ElementZero>
+			<Uranium>60</Uranium>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- storm generator -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperIndoctrinationCore</defName>
+		<label>reaper indoctrination core</label>
+		<description>A massive reaper construction that influences all the organic creatures. Indoctrination will slowly turn everyone berserk unless the core is disabled or destroyed.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_IndoctrinationCore</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.05,4.05)</drawSize>
+			<shadowData>
+				<volume>(4, 0.2, 4)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>100</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<tickerType>Rare</tickerType>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<size>(4,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>60</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+			<RE_ElementZero>60</RE_ElementZero>
+			<Uranium>50</Uranium>
+		</killedLeavings>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_Hediff">
+				<compClass>RimEffectReapers.CompMapWideHediff</compClass>
+				<affectNonReapers>true</affectNonReapers>
+				<hediff>RER_Indoctrinated</hediff>
+				<severityPerTick>0.0001</severityPerTick>
+				<relevantStat>PsychicSensitivity</relevantStat>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- unit storage -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperUnitStorage</defName>
+		<label>reaper unit storage</label>
+		<description>A large shell storing reaper units. When the Reaper is damaged, Unit storage will release the reinforcements.</description>
+		<thingClass>RimEffectReapers.Building_Reaper_UnitStorage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_UnitStorage</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.05,4.05)</drawSize>
+			<shadowData>
+				<volume>(4, 0.2, 4)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>100</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(4,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<RE_ElementZero>35</RE_ElementZero>
+			<Uranium>40</Uranium>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- control node -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperControlNode</defName>
+		<label>reaper control node</label>
+		<description>A reaper module that greatly enhances surrounding reaper forces, allowing them to utilise cover.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperControlNode</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5.05,5.05)</drawSize>
+			<shadowData>
+				<volume>(4, 0.2, 4)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>100</pathCost>
+		<fillPercent>0.8</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(5,5)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>65</Plasteel>
+			<ComponentSpacer>7</ComponentSpacer>
+			<RE_ElementZero>30</RE_ElementZero>
+			<Uranium>45</Uranium>
+		</killedLeavings>
+		<comps>
+			<li Class="RimEffectReapers.CompProperties_Hediff">
+				<compClass>RimEffectReapers.CompMapWideHediff</compClass>
+				<affectReapers>true</affectReapers>
+				<hediff>RER_DirectControl</hediff>
+				<vanishesInstantly>true</vanishesInstantly>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- long range missile launcher -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperLongRangeMissileLauncher</defName>
+		<label>reaper long range missile launcher</label>
+		<description>A battery of devastating missiles. Missiles fired by the long range missile launcher raise into low orbit before they come crashing down on unsuspecting victims.</description>
+		<thingClass>RimEffectReapers.Building_Reaper_LongRangeMissile</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_LongRangeMissileBay</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.05,3.05)</drawSize>
+			<shadowData>
+				<volume>(3, 0.2, 3)</volume>
+			</shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>100</pathCost>
+		<fillPercent>0.6</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,3)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+			<RE_ElementZero>10</RE_ElementZero>
+			<Uranium>30</Uranium>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- claws -->
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawRight</defName>
+		<label>reaper claw (right)</label>
+		<description>A reaper's claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawRight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.05,2.05)</drawSize>
+			<!--<shadowData>
+				<volume>(3,0, 0.2, 1)</volume>
+			</shadowData>-->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(4,2)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>20</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawLeft</defName>
+		<label>reaper claw (left)</label>
+		<description>A reaper's claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawLeft</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.05,2.05)</drawSize>
+			<!-- <shadowData>
+				<volume>(3,0, 0.2, 1)</volume>
+			</shadowData> -->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(4,2)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>20</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawSmallLeft</defName>
+		<label>reaper small claw (left)</label>
+		<description>A reaper's small claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawSmallLeft</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,4.05)</drawSize>
+			<!-- <shadowData>
+				<volume>(0,5, 0.2, 2)</volume>
+			</shadowData> -->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>15</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawSmallRight</defName>
+		<label>reaper small claw (right)</label>
+		<description>A reaper's small claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawSmallRight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,4.05)</drawSize>
+			<!-- <shadowData>
+				<volume>(0,5, 0.2, 2)</volume>
+			</shadowData> -->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>15</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawLargeLeft</defName>
+		<label>reaper large claw (left)</label>
+		<description>A reaper's large claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawLargeLeft</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.05,6.05)</drawSize>
+			<!--<shadowData>
+				<volume>(2, 0.2, 6)</volume>
+			</shadowData>-->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,6)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>25</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_ReaperClawLargeRight</defName>
+		<label>reaper large claw (right)</label>
+		<description>A reaper's large claw.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ClawLargeRight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.05,6.05)</drawSize>
+			<!--<shadowData>
+				<volume>(2, 0.2, 6)</volume>
+			</shadowData>-->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,6)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>25</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<!-- ramps -->
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_Reaper1x4RampLeft</defName>
+		<label>reaper small ramp (left)</label>
+		<description>A reaper's small ramp.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_Ramp4x1Left</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,4.05)</drawSize>
+			<!--<shadowData>
+				<volume>(1, 0.2, 4)</volume>
+			</shadowData>-->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>15</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_Reaper1x4RampRight</defName>
+		<label>reaper small ramp (right)</label>
+		<description>A reaper's small ramp.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_Ramp4x1Right</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.05,4.05)</drawSize>
+			<!--<shadowData>
+				<volume>(1, 0.2, 4)</volume>
+			</shadowData>-->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,4)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>15</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_Reaper2x5RampLeft</defName>
+		<label>reaper large ramp (left)</label>
+		<description>A reaper's large ramp.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_Ramp5x2Left</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.05,5.05)</drawSize>
+			<!--<shadowData>
+				<volume>(2, 0.2, 5)</volume>
+			</shadowData>-->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,5)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>25</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="RE_ReaperPart">
+		<defName>RE_Reaper2x5RampRight</defName>
+		<label>reaper large ramp (right)</label>
+		<description>A reaper's large ramp.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_Ramp5x2Right</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.05,5.05)</drawSize>
+			<!--<shadowData>
+				<volume>(2, 0.2, 5)</volume>
+			</shadowData>-->
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<blockWind>true</blockWind>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,5)</size>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<killedLeavings>
+			<Plasteel>25</Plasteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<!--============================================ Turrets =============================================-->
+
+	<!-- reaper bolter -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_Turret_ReaperBolter</defName>
+		<label>reaper bolter</label>
+		<description>A small turret with low damage and 3 shot burst.</description>
+		<thingClass>RimEffectReapers.Building_ReaperTurret</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_BolterTurret_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,1.1)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<!--<shadowData>
+				<volume>(1.27,0.25,1.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>-->
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<size>(1,1)</size>
+		<uiIconPath>Things/Building/Reaper/Reaper_BolterTurret_Top</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>225</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>25</Mass>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tickerType>Normal</tickerType>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</killedLeavings>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<turretTopDrawSize>2.5</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+			<combatPower>100</combatPower>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RE_Gun_ReaperBolter</turretGunDef>
+			<turretBurstCooldownTime>1.5</turretBurstCooldownTime>
+			<turretBurstWarmupTime>1</turretBurstWarmupTime>
+		</building>
+		<designationCategory Inherit='False' />
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RE_Gun_ReaperBolter</defName>
+		<label>reaper bolter</label>
+		<description>A powerful, reaper-tech bolter.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_BolterTurret_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<weaponTags>
+			<li>Reaper_Turret</li>
+		</weaponTags>
+		<uiIconScale>1</uiIconScale>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>RE_Bullet_ReaperBolter</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>24.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>RE_Shot_ReaperBolter</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RE_Bullet_ReaperBolter</defName>
+		<label>reaper bolter shot</label>
+		<graphicData>
+			<texPath>Things/Projectiles/Shot_MarauderRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- reaper heavy bolter -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_Turret_ReaperHeavyBolter</defName>
+		<label>reaper heavy bolter</label>
+		<description>A medium-sized turret that fires bursts of 2 shots.</description>
+		<thingClass>RimEffectReapers.Building_ReaperTurret</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_LargeTurret_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.1,2.1)</drawSize>
+			<!-- <drawOffset>(0,0,-0.11)</drawOffset> -->
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<!--<shadowData>
+				<volume>(2.27,0.25,2.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>-->
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<size>(2,2)</size>
+		<uiIconPath>Things/Building/Reaper/Reaper_HeavyBolter_Top</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>35</Mass>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tickerType>Normal</tickerType>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</killedLeavings>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<turretTopDrawSize>3.5</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+			<combatPower>125</combatPower>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RE_Gun_ReaperHeavyBolter</turretGunDef>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+			<turretBurstWarmupTime>1.5</turretBurstWarmupTime>
+		</building>
+		<designationCategory Inherit='False' />
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RE_Gun_ReaperHeavyBolter</defName>
+		<label>reaper heavy bolter</label>
+		<description>A powerful, reaper-tech heavy bolter.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_HeavyBolter_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<weaponTags>
+			<li>Reaper_Turret</li>
+		</weaponTags>
+		<uiIconScale>1</uiIconScale>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>RE_Bullet_ReaperHeavyBolter</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>RE_Shot_HeavyBolter</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RE_Bullet_ReaperHeavyBolter</defName>
+		<label>reaper heavy bolter shot</label>
+		<graphicData>
+			<texPath>Things/Projectiles/ReaperHeavyBolter_Shot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.7</armorPenetrationBase>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- missile launcher -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_Turret_ReaperMissileLauncher</defName>
+		<label>reaper missile launcher</label>
+		<description>A medium-sized missile turret that fires single missiles over medium range.</description>
+		<thingClass>RimEffectReapers.Building_ReaperTurret</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_LargeTurret_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.1,2.1)</drawSize>
+			<!-- <drawOffset>(0,0,-0.11)</drawOffset> -->
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<!--<shadowData>
+				<volume>(2.27,0.25,2.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>-->
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<size>(2,2)</size>
+		<uiIconPath>Things/Building/Reaper/Reaper_MissileLauncher_Top</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>35</Mass>
+			<ShootingAccuracyTurret>0.86</ShootingAccuracyTurret>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tickerType>Normal</tickerType>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</killedLeavings>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<turretTopDrawSize>3.5</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+			<combatPower>150</combatPower>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RE_Gun_ReaperMissileLauncher</turretGunDef>
+			<turretBurstCooldownTime>4</turretBurstCooldownTime>
+			<turretBurstWarmupTime>3</turretBurstWarmupTime>
+		</building>
+		<designationCategory Inherit='False' />
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RE_Gun_ReaperMissileLauncher</defName>
+		<label>reaper missile launcher</label>
+		<description>A powerful, reaper-tech missile launcher.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_MissileLauncher_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<weaponTags>
+			<li>Reaper_Turret</li>
+		</weaponTags>
+		<uiIconScale>1</uiIconScale>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>RE_Bullet_ReaperMissileLauncher</defaultProjectile>
+				<warmupTime>4.5</warmupTime>
+				<range>30.9</range>
+				<forcedMissRadius>3.9</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>3.9</ai_AvoidFriendlyFireRadius>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>RE_Shot_ReaperMissileLauncher</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RE_Bullet_ReaperMissileLauncher</defName>
+		<label>reaper missile launcher rocket</label>
+		<graphicData>
+			<texPath>Things/Projectiles/ReaperMissileLauncher_Shot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>3.9</explosionRadius>
+			<flyOverhead>true</flyOverhead>
+			<speed>60</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- kinetic artillery -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_Turret_ReaperKineticArtillery</defName>
+		<label>reaper kinetic artillery</label>
+		<description>A large kinetic artillery, firing devastating improved bolter shells over long distances at low accuracy.</description>
+		<thingClass>RimEffectReapers.Building_ReaperTurret</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_KineticArtillery_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.1,3.1)</drawSize>
+			<!-- <drawOffset>(0,0,-0.11)</drawOffset> -->
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<!--<shadowData>
+				<volume>(3.27,0.25,3.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>-->
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<size>(3,3)</size>
+		<uiIconPath>Things/Building/Reaper/Reaper_KineticArtillery_Top</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>50</Mass>
+			<ShootingAccuracyTurret>0.72</ShootingAccuracyTurret>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tickerType>Normal</tickerType>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</killedLeavings>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<turretTopDrawSize>4.5</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+			<combatPower>250</combatPower>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RE_Gun_ReaperKineticArtillery</turretGunDef>
+			<turretBurstCooldownTime>6</turretBurstCooldownTime>
+			<turretBurstWarmupTime>5</turretBurstWarmupTime>
+		</building>
+		<designationCategory Inherit='False' />
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RE_Gun_ReaperKineticArtillery</defName>
+		<label>reaper kinetic artillery</label>
+		<description>A powerful, reaper-tech kinetic artillery.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_KineticArtillery_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<weaponTags>
+			<li>Reaper_Turret</li>
+		</weaponTags>
+		<uiIconScale>1</uiIconScale>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>RE_Bullet_ReaperKineticArtillery</defaultProjectile>
+				<warmupTime>6</warmupTime>
+				<range>59.9</range>
+				<minRange>10.9</minRange>
+				<forcedMissRadius>5.9</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>5.9</ai_AvoidFriendlyFireRadius>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>RE_Shot_ReaperKineticArtillery</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RE_Bullet_ReaperKineticArtillery</defName>
+		<label>reaper kinetic artillery shot</label>
+		<graphicData>
+			<texPath>Things/Projectiles/KineticArtillery_Shot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>3.0</drawSize>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<explosionRadius>5.9</explosionRadius>
+			<speed>70</speed>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+	<!-- orbital beam targeter -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_Turret_ReaperOrbitalBeamTargeter</defName>
+		<label>reaper orbital beam targeter</label>
+		<description>A large laser targeter that takes a long time to mark the target, which then gets bombarded by a Reaper beam from orbit. Reaper beam is absolutely devastating, but the targeter can be tricked by running from cover to cover.</description>
+		<thingClass>RimEffectReapers.Building_ReaperTurret_MarkTarget</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_BeamTargeter_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.1,3.1)</drawSize>
+			<!-- <drawOffset>(0,0,-0.11)</drawOffset> -->
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<!--<shadowData>
+				<volume>(3.27,0.25,3.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>-->
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<size>(3,3)</size>
+		<uiIconPath>Things/Building/Reaper/Reaper_BeamTargeter_Top</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>50</Mass>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tickerType>Normal</tickerType>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</killedLeavings>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<turretTopDrawSize>2.5</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+			<combatPower>300</combatPower>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RE_Gun_ReaperOrbitalBeamTargeter</turretGunDef>
+			<turretBurstCooldownTime>60</turretBurstCooldownTime>
+			<turretBurstWarmupTime>7</turretBurstWarmupTime>
+		</building>
+		<designationCategory Inherit='False' />
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RE_Gun_ReaperOrbitalBeamTargeter</defName>
+		<label>reaper orbital beam targeter</label>
+		<description>A reaper-tech orbital beam targeter.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_BeamTargeter_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<weaponTags>
+			<li>Reaper_Turret</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<uiIconScale>1</uiIconScale>
+		<verbs>
+			<li>
+				<verbClass>RimEffectReapers.Verb_ReaperOrbitalBeam</verbClass>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>4</warmupTime>
+				<minRange>12.9</minRange>
+				<range>500</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<requireLineOfSight>true</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!-- reaper beam -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>RE_Turret_ReaperBeam</defName>
+		<label>reaper beam</label>
+		<description>A powerful, magnetohydrodynamic weapon which ejects a stream of molten metal at a fraction of the speed of light, capable of tearing through a cruiser in a single sustained burst. It requires line of sight, but once it fires, the area it hits and anyone in it becomes completely annihilated.</description>
+		<thingClass>RimEffectReapers.Building_ReaperTurret_MarkTarget</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5.1,5.1)</drawSize>
+			<!-- <drawOffset>(0,0,-0.11)</drawOffset> -->
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(5.27,0.25,5.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<size>(5,5)</size>
+		<uiIconPath>Things/Building/Reaper/Reaper_ReaperBeam_Top</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<stealable>false</stealable>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<tickerType>Normal</tickerType>
+		<killedLeavings>
+			<Plasteel>70</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+			<RE_ElementZero>30</RE_ElementZero>
+			<Uranium>40</Uranium>
+		</killedLeavings>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>RE_Reaper</li>
+			</buildingTags>
+			<turretTopDrawSize>4.5</turretTopDrawSize>
+			<turretTopOffset>(0, 0)</turretTopOffset>
+			<combatPower>500</combatPower>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretGunDef>RE_Gun_ReaperBeam</turretGunDef>
+			<turretBurstCooldownTime>12</turretBurstCooldownTime>
+			<turretBurstWarmupTime>11</turretBurstWarmupTime>
+		</building>
+		<designationCategory Inherit='False' />
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>RE_Gun_ReaperBeam</defName>
+		<label>reaper beam cannon</label>
+		<description>A reaper-tech massive beam cannon.</description>
+		<graphicData>
+			<texPath>Things/Building/Reaper/Reaper_ReaperBeam_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<weaponTags>
+			<li>Reaper_Turret</li>
+		</weaponTags>
+		<uiIconScale>1</uiIconScale>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>RE_Bullet_ReaperBeam</defaultProjectile>
+				<warmupTime>11</warmupTime>
+				<range>299.9</range>
+				<minRange>19.9</minRange>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<soundCast>RE_Shot_ReaperBeam</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<forcedMissRadius>10</forcedMissRadius>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>RE_Bullet_ReaperBeam</defName>
+		<label>reaper beam</label>
+		<thingClass>RimEffectReapers.ReaperBeam</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/ReaperBeam</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>500</damageAmountBase>
+			<explosionRadius>5.9</explosionRadius>
+			<armorPenetrationBase>5</armorPenetrationBase>
+			<speed>10000</speed>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+</Defs>

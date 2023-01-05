@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+   <Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Ideology</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+         <operations>
+            <li Class="PatchOperationAdd">
+               <xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements</xpath>
+               <value>
+                  <li>
+                     <requirement>
+                        <bodyPartGroupsMatchAny>
+                           <li>FullHead</li>
+                        </bodyPartGroupsMatchAny>
+                        <requiredDefs>
+                           <li>RE_Apparel_MatriarchCrown</li>
+                        </requiredDefs>
+                     </requirement>
+                  </li>
+                  <li>
+                     <requirement>
+                        <bodyPartGroupsMatchAny>
+                           <li>Neck</li>
+						   <li>Torso</li>
+						   <li>Shoulders</li>
+                           <li>Arms</li>
+						   <li>Legs</li>
+                        </bodyPartGroupsMatchAny>
+                        <requiredDefs>
+                           <li>RE_Apparel_MatriarchDress</li>
+                        </requiredDefs>
+                     </requirement>
+                  </li>
+               </value>
+            </li>
+         </operations>
+      </match>
+   </Operation>
+   
+</Patch>

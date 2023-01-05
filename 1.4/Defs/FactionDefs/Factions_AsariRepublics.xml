@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase" Name="RE_AsariFactionBase" Abstract="True">
+        <pawnSingular>asari</pawnSingular>
+        <pawnsPlural>asari</pawnsPlural>
+        <categoryTag>RE_AsariRepublics</categoryTag>
+        <listOrderPriority>30</listOrderPriority>
+        <settlementGenerationWeight>0.8</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>matriarch</leaderTitle>
+        <fixedLeaderKinds>
+            <li>RE_Matriarch</li>
+        </fixedLeaderKinds>
+        <fixedName>Asari Republics</fixedName>
+        <factionIconPath>UI/FactionIcons/AsariFaction</factionIconPath>
+        <settlementNameMaker>NamerFactionBases_SystemsAlliance</settlementNameMaker>
+        <techLevel>Ultra</techLevel>
+        <disallowedMemes>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+           <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophobia</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+		    <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+        </disallowedMemes>
+        <allowedCultures>
+		    <li>Astropolitan</li>
+		</allowedCultures>
+    <requiredMemes>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
+    </requiredMemes>
+    <structureMemeWeights>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+    </structureMemeWeights>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Offworld</li>
+                </categories>
+                <commonality>0.1</commonality>
+            </li>
+            <li>
+                <categories>
+                    <li>AsariRepublics</li>
+                </categories>
+                <commonality>0.5</commonality>
+            </li>
+            <li>
+                <categories>
+                    <li>SystemsAlliance</li>
+                </categories>
+                <commonality>0.4</commonality>
+            </li>
+        </backstoryFilters>
+        <geneticVariance>0.8</geneticVariance>
+        <caravanTraderKinds>
+            <li>RE_Caravan_Asari_BulkGoods</li>
+            <li>RE_Caravan_Asari_CombatSupplier</li>
+            <li>RE_Caravan_Asari_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>RE_Visitor_Asari_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>RE_Base_Asari_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <raidLootMaker>RE_AsariRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, standard mix -->
+                <kindDef>Combat</kindDef>
+                <options>
+                    <RE_Alliance_AsariMarine>10</RE_Alliance_AsariMarine>
+                    <RE_AsariCommando>5</RE_AsariCommando>
+                    <RE_AsariMarineSniper>8</RE_AsariMarineSniper>
+                    <RE_AsariJusticar>2</RE_AsariJusticar>
+                    <RE_AsariCommandoSpecialist>3</RE_AsariCommandoSpecialist>
+                </options>
+            </li>
+            <li>
+                <!-- adepts -->
+                <kindDef>Combat</kindDef>
+                <options>
+                    <RE_Alliance_AsariMarine>10</RE_Alliance_AsariMarine>
+                    <RE_AsariCommando>5</RE_AsariCommando>
+                    <RE_AsariMarineSniper>8</RE_AsariMarineSniper>
+                    <RE_AsariJusticar>2</RE_AsariJusticar>
+                    <RE_AsariCommandoSpecialist>3</RE_AsariCommandoSpecialist>
+                    <RE_AsariAdept>10</RE_AsariAdept>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <RE_AsariDancer>1</RE_AsariDancer>
+                    <RE_AsariExplorer>7</RE_AsariExplorer>
+                    <RE_AsariOfficial>5</RE_AsariOfficial>
+                    <RE_AsariScientist>3</RE_AsariScientist>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <RE_AsariTrader>1</RE_AsariTrader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <RE_AsariDancer>1</RE_AsariDancer>
+                    <RE_AsariExplorer>7</RE_AsariExplorer>
+                    <RE_AsariOfficial>5</RE_AsariOfficial>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <RE_AsariDancer>1</RE_AsariDancer>
+					<RE_Matriarch>1</RE_Matriarch>
+                    <RE_AsariExplorer>7</RE_AsariExplorer>
+                    <RE_AsariOfficial>5</RE_AsariOfficial>
+                    <RE_AsariScientist>3</RE_AsariScientist>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/AllianceColonyExpanding</settlementTexturePath>
+    </FactionDef>
+
+    <ThingSetMakerDef>
+        <defName>RE_AsariRaidLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>MedicineIndustrial</li>
+                        <li>ComponentIndustrial</li>
+                        <li>RE_PrefabComponent</li>
+                        <li>ComponentSpacer</li>
+                        <li>MealSurvivalPack</li>
+                        <li>Neutroamine</li>
+                        <li>RE_MediGel</li>
+                        <li>MedicineUltratech</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+    <FactionDef ParentName="RE_AsariFactionBase">
+        <defName>RE_AsariRepublics</defName>
+        <label>Asari Republics</label>
+        <description>The Asari Republics are collectively one of the major nations in Citadel Space; actually a coalition of asari republican governments with a tradition of true and total democracy. They utilise light-weight weaponry and powerful biotics.\n\nThey are open to alliances and xenophilic in regards to contact with other races.\n\nAsari Republics does not have any bases on the planet and instead reside in orbit, on passing ships. They sometimes come down to the surface on their shuttles to trade.</description>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>12</configurationListOrderPriority>
+        <colorSpectrum>
+            <li>(0.53, 0.27, 0.72)</li>
+            <li>(0.55, 0.29, 0.74)</li>
+        </colorSpectrum>
+      <modExtensions>
+	        <li Class="KCSG.FactionSettlement">
+		        <canSpawnSettlements>false</canSpawnSettlements>
+	        </li>
+      </modExtensions>
+    </FactionDef>
+
+</Defs>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<MVCF.ModDef>
+	<defName>RE_AsariReapers</defName>
+	<label>Rim-Effect: Asari and Reapers</label>
+	<description>Hello!</description>
+	<Features>
+		<RangedAnimals>true</RangedAnimals>
+		<IntegratedToggle>true</IntegratedToggle>
+	</Features>
+</MVCF.ModDef>
+
+</Defs>

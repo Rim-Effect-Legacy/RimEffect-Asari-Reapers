@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorldObjectDef>
+    <defName>RE_Reaper</defName>
+    <label>reaper</label>
+    <description>A landed Reaper.</description>
+    <worldObjectClass>RimEffectReapers.ReaperShip</worldObjectClass>
+    <expandingIcon>true</expandingIcon>
+    <texture>UI/FactionIcons/ReaperShip</texture>
+    <expandingIconTexture>UI/FactionIcons/ReaperShip</expandingIconTexture>
+	<expandingIconColor>(88,88,117)</expandingIconColor>
+    <canBePlayerHome>false</canBePlayerHome>
+    <comps>
+      <li Class="WorldObjectCompProperties_Abandon" />
+      <li Class="WorldObjectCompProperties_TradeRequest" />
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+      <li Class="WorldObjectCompProperties_TimedDetectionRaids" />
+      <li Class="WorldObjectCompProperties_EnterCooldown" />
+    </comps>
+    <modExtensions>
+      <li Class="RimEffectReapers.ReaperBaseExtension">
+        <raisesPresence>500</raisesPresence>
+        <nameMaker>RE_NameGenerate</nameMaker>
+      </li>
+      <li Class="KCSG.FactionSettlement">
+        <useStructureLayout>True</useStructureLayout>
+        <chooseFromlayouts>
+          <li>RE_Reaper1_North</li>
+          <li>RE_Reaper1_South</li>
+          <li>RE_Reaper1_East</li>
+          <li>RE_Reaper1_West</li>
+          <li>RE_Reaper2_North</li>
+          <li>RE_Reaper2_South</li>
+          <li>RE_Reaper2_East</li>
+          <li>RE_Reaper2_West</li>
+          <li>RE_Reaper3_North</li>
+          <li>RE_Reaper3_South</li>
+          <li>RE_Reaper3_East</li>
+          <li>RE_Reaper3_West</li>
+          <li>RE_Reaper4_North</li>
+          <li>RE_Reaper4_South</li>
+          <li>RE_Reaper4_East</li>
+          <li>RE_Reaper4_West</li>
+        </chooseFromlayouts>
+      </li>
+    </modExtensions>
+  </WorldObjectDef>
+</Defs>

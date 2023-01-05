@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>RE_AsariPlayerColony</defName>
+		<label>Player Sanctuary</label>
+		<description>Your own sanctuary.</description>
+		<basicMemberKind>RE_AsariColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+		<isPlayer>true</isPlayer>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<allowedCultures>
+			<li>Astropolitan</li>
+		</allowedCultures>
+		<colorSpectrum>
+			<li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+		<techLevel>Ultra</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>SystemsAlliance</li>
+                    <li>AsariRepublics</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<settlementTexturePath>World/WorldObjects/AsariSanctuaryExpanding</settlementTexturePath>
+		<factionIconPath>World/WorldObjects/Expanding/AsariSanctuary</factionIconPath>
+		<startingResearchTags>
+			<li>AllianceColonyStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>AllianceColonyStart</li>
+			<li>AllianceColonyStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Leather_Plain</li>
+				<li>Leather_Dog</li>
+				<li>Leather_Wolf</li>
+				<li>Leather_Panthera</li>
+				<li>Leather_Camel</li>
+				<li>Leather_Bluefur</li>
+				<li>Leather_Bear</li>
+				<li>Leather_GuineaPig</li>
+				<li>Leather_Pig</li>
+				<li>Leather_Light</li>
+				<li>Leather_Bird</li>
+				<li>Leather_Chinchilla</li>
+				<li>Leather_Fox</li>
+				<li>Leather_Lizard</li>
+				<li>Leather_Elephant</li>
+				<li>Leather_Heavy</li>
+				<li>Leather_Rhinoceros</li>
+				<li>Leather_Patch</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>
