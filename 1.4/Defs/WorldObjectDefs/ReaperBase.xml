@@ -23,7 +23,6 @@
         <nameMaker>RE_NameGenerate</nameMaker>
       </li>
       <li Class="KCSG.CustomGenOption">
-        <useStructureLayout>True</useStructureLayout>
         <chooseFromlayouts>
           <li>RE_Reaper1_North</li>
           <li>RE_Reaper1_South</li>
