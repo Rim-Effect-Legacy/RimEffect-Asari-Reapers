@@ -207,10 +207,6 @@
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.14</drawSize>
     </graphicData>
-	<comps>
-      <li> <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>RE_Interact_AsariSniperRifle</soundInteract>
     <statBases>
       <WorkToMake>50000</WorkToMake>
