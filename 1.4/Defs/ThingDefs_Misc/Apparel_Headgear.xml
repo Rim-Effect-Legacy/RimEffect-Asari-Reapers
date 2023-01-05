@@ -179,7 +179,7 @@
 		</thingSetMakerTags>
     <equippedStatOffsets>
 	  <RE_BioticEnergyMax>0.25</RE_BioticEnergyMax>
-	  <ToxicSensitivity>-0.75</ToxicSensitivity>
+	  <ToxicResistance>0.75</ToxicResistance>
     </equippedStatOffsets>
 		<comps>
 			<li Class="CompProperties_Biocodable"/>
