@@ -75,7 +75,6 @@
                 <commonality>0.4</commonality>
             </li>
         </backstoryFilters>
-        <geneticVariance>0.8</geneticVariance>
         <caravanTraderKinds>
             <li>RE_Caravan_Asari_BulkGoods</li>
             <li>RE_Caravan_Asari_CombatSupplier</li>
