@@ -137,14 +137,20 @@
         </alienPartGenerator>
 		<humanRecipeImport>true</humanRecipeImport>
       </generalSettings>
-            <styleSettings>
-                <li>
-                    <key>HairDef</key>
-                    <value>
-                        <hasStyle>false</hasStyle>
-                    </value>
-                </li>
-			</styleSettings>
+      <styleSettings>
+        <li>
+            <key>HairDef</key>
+            <value>
+                <hasStyle>false</hasStyle>
+            </value>
+        </li>
+        <li>
+            <key>BeardDef</key>
+            <value>
+                <hasStyle>false</hasStyle>
+            </value>
+        </li>
+	  </styleSettings>
       <graphicPaths>
           <head>
 		    <path>Things/Pawn/Asari/Heads/</path>
