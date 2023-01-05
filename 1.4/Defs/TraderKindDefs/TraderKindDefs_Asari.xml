@@ -90,8 +90,13 @@
       <!-- none -->
       
       <!-- Apparel -->
-      <li Class="StockGenerator_Clothes">
-        <countRange>10~10</countRange>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>BasicClothing</tradeTag>
+        <countRange>4~6</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Clothing</tradeTag>
+        <countRange>2~4</countRange>
       </li>
       
       <!-- Implants -->
