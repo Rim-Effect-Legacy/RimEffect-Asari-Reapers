@@ -163,6 +163,24 @@
         <apparelList>
           <li>RE_Apparel_AsariRespirator</li>
         </apparelList>
+        <whiteXenotypeList>
+            <li>Baseliner</li>
+        </whiteXenotypeList>
+        <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+        <blackGeneTags>
+            <li>BodyType</li>
+			<li>HairStyle</li>
+			<li>BeardStyle</li>
+			<li>SkinColorOverride</li>
+			<li>EyeColor</li>
+			<li>Tail</li>
+        </blackGeneTags>
+        <blackEndoCategories>
+            <li>HairColor</li>
+            <li>BodyType</li>
+            <li>Melanin</li>
+            <li>Voice</li>
+        </blackEndoCategories>
       </raceRestriction>
     </alienRace>
     <statBases>
