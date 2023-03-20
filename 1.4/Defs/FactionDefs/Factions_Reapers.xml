@@ -7,8 +7,12 @@
     <pawnSingular>husk</pawnSingular>
     <pawnsPlural>husks</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
     <factionNameMaker>RE_NamerFactionReaper</factionNameMaker>
     <factionIconPath>UI/FactionIcons/ReaperShip</factionIconPath>
+    <displayInFactionSelection>false</displayInFactionSelection>
     <raidCommonalityFromPointsCurve>
       <points>
         <li>(300,  0)</li>

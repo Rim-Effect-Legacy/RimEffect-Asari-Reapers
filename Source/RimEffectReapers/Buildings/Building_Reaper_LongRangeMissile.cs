@@ -64,15 +64,14 @@ namespace RimEffectReapers
 
         public void Incoming()
         {
-            var target = Map.attackTargetsCache.GetPotentialTargetsFor(this).RandomElement().Thing;
-            LastAttackedTarget = target;
             LastAttackTargetTick = Find.TickManager.TicksGame;
-            if (target == null)
+            if (!Map.attackTargetsCache.GetPotentialTargetsFor(this).TryRandomElement(out IAttackTarget targ))
             {
                 incoming.Add(Find.TickManager.TicksGame + (INCOMING_DELAY_RANGE.RandomInRange * 5f).SecondsToTicks());
                 return;
             }
-
+            Thing target = targ.Thing;
+            LastAttackedTarget = target;
             var missile = (LongRangeMissile) SkyfallerMaker.SpawnSkyfaller(RER_DefOf.RER_ReaperLongRangeMissile_Arriving, target.Position, Map);
             missile.Init(this);
             missile.angle = 0; //new Vector3(Map.Size.ToVector3().x, target.DrawPos.y, DrawPos.z).AngleToFlat(target.DrawPos);
