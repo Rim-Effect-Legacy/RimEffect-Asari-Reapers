@@ -28,6 +28,7 @@
     <label>long range reaper missile</label>
     <thingClass>RimEffectReapers.LongRangeMissile</thingClass>
     <size>(1, 1)</size>
+    <useHitPoints>false</useHitPoints>
     <graphicData>
       <texPath>Things/Projectiles/Reaper_LongRangeMissile_Shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -57,6 +58,7 @@
     <label>long range reaper missile</label>
     <thingClass>RimEffectReapers.LongRangeMissile</thingClass>
     <size>(1, 1)</size>
+    <useHitPoints>false</useHitPoints>
     <graphicData>
       <texPath>Things/Projectiles/Reaper_LongRangeMissile_Shot</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -122,7 +122,7 @@ namespace RimEffectReapers
 
         protected override void LeaveMap()
         {
-            Log.Message($"Leaving map after {betterTicksToImpactMax} ticks");
+            //Log.Message($"Leaving map after {betterTicksToImpactMax} ticks");
             if (launcher != null && launcher.Spawned)
                 launcher.QueueIncoming();
             base.LeaveMap();
@@ -182,6 +182,15 @@ namespace RimEffectReapers
                     Log.ErrorOnce("SkyfallerMovementType not handled: " + this.def.skyfaller.movementType, this.thingIDNumber ^ 0x7424EBC7);
                     return SkyfallerDrawPosUtility.DrawPos_Accelerate(base.DrawPos, ticksToImpactPrediction, this.angle, currentSpeed);
             }
+        }
+
+        public override void Kill(DamageInfo? dinfo = null, Hediff exactCulprit = null)
+        {
+            if (dinfo?.Def == DamageDefOf.Crush)
+            {
+
+            } else
+                base.Kill(dinfo, exactCulprit);
         }
 
         public override void ExposeData()
