@@ -10,6 +10,10 @@
             <li Class="HediffCompProperties_Effecter">
                 <stateEffecter>RE_Dominate</stateEffecter>
             </li>
+            <li Class="HediffCompProperties_Disappears">
+              <disappearsAfterTicks>45000~120000</disappearsAfterTicks>
+              <showRemainingTime>true</showRemainingTime>
+            </li>
         </comps>
     </HediffDef>
 
