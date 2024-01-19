@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using HarmonyLib;
 using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
@@ -10,6 +9,7 @@ namespace RimEffectReapers
     public class DarkSettlement : Settlement
     {
         public Faction OldFaction;
+        private Material cachedMat;
 
         public override IEnumerable<GenStepWithParams> ExtraGenStepDefs =>
             new[]
@@ -24,7 +24,6 @@ namespace RimEffectReapers
         {
             get
             {
-                var cachedMat = AccessTools.FieldRefAccess<Settlement, Material>(this, "cachedMat");
                 if (cachedMat == null)
                     cachedMat = MaterialPool.MatFrom(OldFaction.def.settlementTexturePath,
                         ShaderDatabase.WorldOverlayTransparentLit, Faction.Color,
