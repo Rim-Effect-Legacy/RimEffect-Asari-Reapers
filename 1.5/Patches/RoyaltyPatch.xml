@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="RE_ReaperPart">
+                            <defName>RE_ReaperLowBarrier</defName>
+                            <label>reaper low barrier</label>
+                            <description>A shielding device which projects a momentum repulsor field. Shots can go out, but not in.\n\nThis one is tuned to low angles, so it will block ground-level projectiles like bullets.\n\nThe unit can be temporarily disabled by EMP attacks, either by shocking the projector unit itself, or using EMP munitions on the shield.</description>
+                            <graphicData>
+                                <texPath>Things/Building/Reaper/Reaper_ReaperLowShield</texPath>
+                                <graphicClass>Graphic_Single</graphicClass>
+                                <drawSize>(4.05,4.05)</drawSize>
+                                <shadowData>
+                                    <volume>(4, 0.2, 4)</volume>
+                                </shadowData>
+                            </graphicData>
+                            <rotatable>false</rotatable>
+                            <passability>PassThroughOnly</passability>
+                            <pathCost>100</pathCost>
+                            <fillPercent>0.8</fillPercent>
+                            <blockWind>true</blockWind>
+                            <blockLight>true</blockLight>
+                            <canOverlapZones>false</canOverlapZones>
+                            <statBases>
+                                <WorkToBuild>16000</WorkToBuild>
+                                <MaxHitPoints>400</MaxHitPoints>
+                                <Flammability>0</Flammability>
+                            </statBases>
+                            <tickerType>Normal</tickerType>
+                            <size>(4,4)</size>
+                            <placeWorkers>
+                                <li>PlaceWorker_NotUnderRoof</li>
+                            </placeWorkers>
+                            <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+                            <building>
+                                <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+                            </building>
+                            <comps>
+                                <li Class="CompProperties_ProjectileInterceptor">
+                                    <radius>35</radius>
+                                    <interceptGroundProjectiles>true</interceptGroundProjectiles>
+                                    <color>(0.4, 0.4, 0.4)</color>
+                                    <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+                                    <activeSound>BulletShield_Ambience</activeSound>
+                                    <disarmedByEmpForTicks>1080</disarmedByEmpForTicks>
+                                    <chargeIntervalTicks>600000</chargeIntervalTicks>
+                                    <chargeDurationTicks>60000</chargeDurationTicks>
+                                </li>
+                            </comps>
+                            <killedLeavings>
+                                <Plasteel>40</Plasteel>
+                                <ComponentSpacer>8</ComponentSpacer>
+                                <RE_ElementZero>10</RE_ElementZero>
+                                <Uranium>20</Uranium>
+                            </killedLeavings>
+                        </ThingDef>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="RE_ReaperPart">
+                            <defName>RE_ReaperHighBarrier</defName>
+                            <label>reaper high barrier</label>
+                            <description>A shielding device which projects a momentum repulsor field. Shots can go out, but not in.\n\nThis one is tuned to high angles, so it will block mortar rounds.\n\nThe unit can be temporarily disabled by EMP attacks, either by shocking the projector unit itself, or using EMP munitions on the shield.</description>
+                            <graphicData>
+                                <texPath>Things/Building/Reaper/Reaper_ReaperHighShield</texPath>
+                                <graphicClass>Graphic_Single</graphicClass>
+                                <drawSize>(4.05,4.05)</drawSize>
+                                <shadowData>
+                                    <volume>(4, 0.2, 4)</volume>
+                                </shadowData>
+                            </graphicData>
+                            <rotatable>false</rotatable>
+                            <passability>PassThroughOnly</passability>
+                            <pathCost>100</pathCost>
+                            <fillPercent>0.8</fillPercent>
+                            <blockWind>true</blockWind>
+                            <blockLight>true</blockLight>
+                            <canOverlapZones>false</canOverlapZones>
+                            <statBases>
+                                <WorkToBuild>16000</WorkToBuild>
+                                <MaxHitPoints>400</MaxHitPoints>
+                                <Flammability>0</Flammability>
+                            </statBases>
+                            <tickerType>Normal</tickerType>
+                            <size>(4,4)</size>
+                            <placeWorkers>
+                                <li>PlaceWorker_NotUnderRoof</li>
+                            </placeWorkers>
+                            <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+                            <building>
+                                <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+                            </building>
+                            <comps>
+                                <li Class="CompProperties_ProjectileInterceptor">
+                                    <radius>35</radius>
+                                    <interceptAirProjectiles>true</interceptAirProjectiles>
+                                    <color>(0.6, 0.6, 0.6)</color>
+                                    <reactivateEffect>MortarShieldGenerator_Reactivate</reactivateEffect>
+                                    <activeSound>MortarShield_Ambience</activeSound>
+                                    <disarmedByEmpForTicks>1080</disarmedByEmpForTicks>
+                                    <chargeIntervalTicks>600000</chargeIntervalTicks>
+                                    <chargeDurationTicks>60000</chargeDurationTicks>
+                                </li>
+                            </comps>
+                            <killedLeavings>
+                                <Plasteel>40</Plasteel>
+                                <ComponentSpacer>8</ComponentSpacer>
+                                <RE_ElementZero>10</RE_ElementZero>
+                                <Uranium>20</Uranium>
+                            </killedLeavings>
+                        </ThingDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+	
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+
+      <value>
+        <li>RE_AsariPlayerColony</li>
+		<li>RE_AsariRepublics</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>
+

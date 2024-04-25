@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentDef>
+        <defName>RE_DarkSettlement</defName>
+        <label>dark settlement</label>
+        <category>ThreatBig</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <workerClass>RimEffectReapers.IncidentWorker_DarkSettlement</workerClass>
+        <baseChance>0.1</baseChance>
+        <minRefireDays>0</minRefireDays>
+        <letterDef>ThreatBig</letterDef>
+        <letterLabel>Settlement gone dark</letterLabel>
+        <letterText>A local settlement has stopped responding to communications.\n\nThere were reports of Reaper activity around that area, so many fear the worst.\n\nVisiting this settlement could give you a clue about the Reaper strength in the area, but you should be prepared for a fight. Defeating the Reaper forces will allow you to loot any items you can find.</letterText>
+    </IncidentDef>
+    <IncidentDef>
+        <defName>RE_DarkSettlementReclaimed</defName>
+        <label>dark settlement reclaimed</label>
+        <category>AllyAssistance</category>
+        <targetTags>
+            <li>World</li>
+        </targetTags>
+        <workerClass>RimEffectReapers.IncidentWorker_DarkSettlementReclaimed</workerClass>
+        <baseChance>0.01</baseChance>
+        <minRefireDays>0</minRefireDays>
+        <letterDef>PositiveEvent</letterDef>
+        <letterLabel>Dark settlement reclaimed</letterLabel>
+        <letterText>A local settlement that had gone dark before has been taken back from the reapers by {0}.</letterText>
+    </IncidentDef>
+</Defs>

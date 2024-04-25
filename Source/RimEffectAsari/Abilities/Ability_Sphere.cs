@@ -156,7 +156,7 @@ namespace RimEffectAsari
 
         public override Vector3 DrawPos => this.caster.DrawPos;
 
-        public override void DrawAt(Vector3 drawLoc, bool flip = false)
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             float   size = this.radius * 2 * Mathf.Lerp(0.9f, 1.1f, 1);
             Vector3 pos  = this.DrawPos;

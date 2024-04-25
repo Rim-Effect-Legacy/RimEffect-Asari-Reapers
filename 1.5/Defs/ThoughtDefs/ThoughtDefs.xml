@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThoughtDef>
+        <defName>RE_EmbracingEternity</defName>
+        <thoughtClass>Thought_MemorySocial</thoughtClass>
+        <durationDays>6</durationDays>
+        <stackLimit>20</stackLimit>
+        <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+        <stages>
+            <li>
+                <label>embracin' eternity</label>
+                <description>embraced eternity.</description>
+                <baseMoodEffect>16</baseMoodEffect>
+                <baseOpinionOffset>12</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

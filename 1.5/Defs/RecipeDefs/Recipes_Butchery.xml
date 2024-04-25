@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef Abstract="True" Name="RE_ButcherCorpseHuskBase">
+    <workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <efficiencyStat>ButcheryMechanoidEfficiency</efficiencyStat>
+    <effectWorking>ButcherMechanoid</effectWorking>
+    <uiIconThing>Plasteel</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <specialProducts>
+      <li>Butchery</li>
+    </specialProducts>
+    <fixedIngredientFilter>
+      <categories>
+        <li>RE_CorpsesHusk</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RE_ButcherCorpseHuskBase">
+    <defName>RE_ButcherCorpseHusk</defName>
+    <label>shred husk</label>
+    <description>Shred a dead husk to try to salvage usable material.</description>
+    <jobString>Shredding husk.</jobString>
+    <workAmount>300</workAmount>
+    <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="RE_ButcherCorpseHuskBase">
+    <defName>RE_SmashCorpseHusk</defName>
+    <label>smash husk</label>
+    <description>Smash a dead husk with simple hand tools to salvage usable material.</description>
+    <jobString>Smashing husk.</jobString>
+    <workAmount>450</workAmount>
+    <soundWorking>Recipe_SmashCorpseMechanoid</soundWorking>
+  </RecipeDef>
+</Defs>

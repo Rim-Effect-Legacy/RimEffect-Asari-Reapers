@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WeatherDef>
+        <defName>RER_ReaperLightningStorm</defName>
+        <label>reaper lightning storm</label>
+        <isBad>true</isBad>
+        <description>An unnatural lightning storm caused by reaper activity. Strong, ominous electrical discharges will bombard the local area, causing huge fires.</description>
+        <windSpeedFactor>1.5</windSpeedFactor>
+        <windSpeedOffset>1.25</windSpeedOffset>
+        <ambientSounds>
+            <li>Ambient_Wind_Storm</li>
+        </ambientSounds>
+        <eventMakers>
+            <li>
+                <averageInterval>1200</averageInterval>
+                <eventClass>RimEffectReapers.WeatherEvent_ReaperLightningFlash</eventClass>
+            </li>
+            <li>
+                <averageInterval>600</averageInterval>
+                <eventClass>RimEffectReapers.WeatherEvent_ReaperLightningStrike</eventClass>
+            </li>
+        </eventMakers>
+        <skyColorsDay>
+            <sky>(1.0,0.7,0.7)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(1.0,0.7,0.7)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(1,1,1)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(1.0,0.6,0.6)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(1.0,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(1.0,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(1.0,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(1.0,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+</Defs>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="PirateBase">
+		<defName>RE_AsariMercenary</defName>
+		<label>asari mercenary</label>
+		<race>RE_Asari</race>
+		<combatPower>120</combatPower>
+		<maxGenerationAge>45</maxGenerationAge>
+		<gearHealthRange>0.7~2.3</gearHealthRange>
+		<apparelMoney>740~2000</apparelMoney>
+		<apparelRequired>
+		  <li>RE_Apparel_AsariCommandoArmor</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+			<li>IndustrialMilitaryBasic</li>
+			<li>IndustrialMilitaryAdvanced</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<weaponMoney>1250~2400</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>AllianceGun</li>
+		</weaponTags>
+		<techHediffsChance>0.04</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>ImplantEmpireCommon</li>
+			<li>RE_Implant</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.9</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<biocodeWeaponChance>0.2</biocodeWeaponChance>
+		<initialWillRange>2~3</initialWillRange>
+		<initialResistanceRange>7~12</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>

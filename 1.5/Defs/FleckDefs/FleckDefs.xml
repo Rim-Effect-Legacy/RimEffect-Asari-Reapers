@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FleckDef ParentName="FleckGlowDistortBackground">
+    <defName>RE_Fleck_EmbracingEternity</defName>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+      <fadeInTime>0.5</fadeInTime>
+      <fadeOutTime>0.5</fadeOutTime>
+      <solidTime>0.25</solidTime>
+      <growthRate>1</growthRate>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.05</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>      
+      </shaderParameters>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+  </FleckDef>
+</Defs>

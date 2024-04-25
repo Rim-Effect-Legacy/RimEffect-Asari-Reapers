@@ -10,9 +10,11 @@ using Verse;
 
 namespace RimEffectReapers
 {
+    using Verse.AI.Group;
+
     public class DeathActionWorker_Spawner : DeathActionWorker
     {
-        public override void PawnDied(Corpse corpse)
+        public override void PawnDied(Corpse corpse, Lord prevLord)
         {
             DefModExt_DeathSpawnerProps props = corpse.InnerPawn?.def?.GetModExtension<DefModExt_DeathSpawnerProps>() ?? null;
 

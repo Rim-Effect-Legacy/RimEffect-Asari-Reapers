@@ -7,9 +7,9 @@ namespace RimEffectReapers
 {
     public class Building_ReaperTurret_MarkTarget : Building_ReaperTurret
     {
-        public override void Draw()
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
-            base.Draw();
+            base.DrawAt(drawLoc, flip);
             if (!TargetCurrentlyAimingAt.IsValid ||
                 TargetCurrentlyAimingAt.HasThing && !TargetCurrentlyAimingAt.Thing.Spawned) return;
 

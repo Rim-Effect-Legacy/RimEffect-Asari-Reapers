@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Banshee_Wounded</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Reaper/Banshee_Wounded</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Banshee_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Banshee_Death</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Banshee_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Banshee_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Brute_Wounded</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Brute_Wounded</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Brute_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Brute_Death</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Brute_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Brute_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Husk_Wounded</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Reaper/Husk_Wounded</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Husk_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Husk_Death</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Husk_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Husk_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Marauder_Wounded</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Marauder_Wounded</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Marauder_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Marauder_Death</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Marauder_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Marauder_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Ravager_Wounded</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Reaper/Ravager_Wounded</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Ravager_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Reaper/Ravager_Death</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Ravager_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Ravager_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Banshee_Teleport</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Banshee_Teleport</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Swarmer_Wounded</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Reaper/Swarmer_Wounded</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Swarmer_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Reaper/Swarmer_Death</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Swarmer_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Swarmer_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Goliath_Wounded</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Goliath_Wounded</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Goliath_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Goliath_Death</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Goliath_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Goliath_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Cannibal_Wounded</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Cannibal_Wounded</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Cannibal_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Cannibal_Death</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Cannibal_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Cannibal_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Colossus_Wounded</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>1</maxVoices>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Colossus_Wounded</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9541177~1.068824</pitchRange>      
+        <repeatMode>NeverTwice</repeatMode>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Colossus_Death</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Reaper/Colossus_Death</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RE_Pawn_Husk_Colossus_Call</defName>  
+    <context>MapOnly</context>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Reaper/Colossus_Call</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>0.9311765~1.045882</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

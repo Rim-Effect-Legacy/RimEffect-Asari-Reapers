@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SoundDef>
+    <defName>RE_Incoming_ReaperLongRangeMissile</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/ReaperLongRangeMissile_Incoming</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Launch_ReaperLongRangeMissile</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/ReaperLongRangeMissile_Launch</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Targeting_ReaperOrbitalBeam</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/ReaperOrbitalBeam_Targeting</clipPath>
+          </li>
+        </grains>
+        <volumeRange>100~100</volumeRange>
+        <distRange>300~500</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_ReaperOrbitalBombardment</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <sustain>true</sustain>
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/ReaperOrbitalBombardment</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>100~100</volumeRange>
+        <sustainAttack>0.25</sustainAttack>      
+        <sustainRelease>1</sustainRelease>
+        <muteWhenPaused>True</muteWhenPaused>    
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_HeavyBolter</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_HeavyBolter</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_ReaperBeam</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_ReaperBeam</clipPath>
+          </li>
+        </grains>
+        <volumeRange>300~300</volumeRange>
+        <distRange>300~500</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_ReaperBolter</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_ReaperBolter</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_ReaperKineticArtillery</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_ReaperKineticArtillery</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>RE_Shot_ReaperMissileLauncher</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ReaperShipSounds/Shot_ReaperMissileLauncher</clipPath>
+          </li>
+        </grains>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>

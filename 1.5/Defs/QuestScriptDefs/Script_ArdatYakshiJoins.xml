@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>RE_ArdatYakshiJoins</defName>
+    <rootSelectionWeight>0.6</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <expireDaysRange>0.3</expireDaysRange>
+    <rootIncreasesPopulation>true</rootIncreasesPopulation>
+    <defaultCharity>true</defaultCharity>
+    <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityFulfilled_ThreatReward_Joiner</successHistoryEvent>
+    <failedOrExpiredHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityRefused_ThreatReward_Joiner</failedOrExpiredHistoryEvent>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Saving Ardat Yakshi</li>
+        <li>questName->The Salvation of Ardat Yakshi</li>
+        <li>questName->Helping Ardat Yakshi</li>
+        <li>questName->Accepting Ardat Yakshi</li>
+        <li>questName->Ardat Yakshi on the Run</li>
+        <li>questName->Ardat Yakshi Seeks a Home</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->An Ardat Yakshi named [asker_nameDef] is calling from nearby. She is being hunted by a justicar from Asari Republics!
+\nShe begs for safety and offers to join you at [map_definite].[asker_relationInfo]
+\nBeware - If you accept [asker_nameDef], you will become an enemy of Asari Republics! You'll have to fight off the squad on her tail. The group is composed of: \n\n[raid/raidPawnKinds]
+\n[asker_nameDef] assures you of her value in your colony. Ardat Yakshi are superior biotic users with immense power, capable of feats not available to normal adepts, including biotic flight and the ability to charm prisoners.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_SubScript">
+          <def>Util_RandomizePointsChallengeRating</def>
+        </li>
+        <li Class="QuestNode_GetMap" />
+
+        <!-- Get a walk-in spot so joiner and raid come from the same spot -->
+        <li Class="QuestNode_GetWalkInSpot" /> 
+
+        <!-- Get ardat yakshi -->
+        <li Class="QuestNode_GeneratePawn">
+          <kindDef>RE_ArdatYakshi</kindDef>
+          <storeAs>asker</storeAs>
+          <faction>RE_AsariRepublics</faction>
+        </li>
+		
+        <!-- Asari become hostile -->
+        <li Class="QuestNode_ChangeFactionGoodwill">
+          <faction>RE_AsariRepublics</faction>
+          <change>-100</change>
+          <canSendLetter>false</canSendLetter>
+          <canSendMessage>false</canSendMessage>
+          <ensureHostile>true</ensureHostile>
+        </li>
+
+        <!-- Joiner arrives -->
+        <li Class="QuestNode_SubScript">
+          <def>Util_JoinerThreat_ArdatYakshi</def>
+        </li>
+
+        <!-- Raid arrives -->
+        <!-- Note that the joiner has a delay, so the raid needs an even longer delay -->
+        <li Class="QuestNode_Set">
+          <name>raidDelayTicks</name>
+          <value>$(roundToTicksRough(randInt(1800, 2400)))</value>
+        </li>
+        <li Class="QuestNode_Delay">
+          <delayTicks>$raidDelayTicks</delayTicks>
+          <node Class="QuestNode_SubScript">
+            <def>Util_Raid</def>
+            <prefix>raid</prefix>
+            <parms>
+              <inSignal>$inSignal</inSignal>
+              <map>$map</map>
+              <points>$points</points>
+              <enemyFaction>RE_AsariRepublics</enemyFaction>
+			  <raidPawnKind>RE_AsariJusticar</raidPawnKind>
+              <walkInSpot>$walkInSpot</walkInSpot>
+              <customLetterLabel TKey="LetterLabelCashing">{BASELABEL}: Asari squad</customLetterLabel>
+              <customLetterText TKey="LetterTextCashing">{BASETEXT}\n\nThis is the asari squad that was hunting [../asker_nameFull].</customLetterText>
+            </parms>
+          </node>
+        </li>
+
+        <!-- End a few seconds after raid arrives -->
+        <li Class="QuestNode_Delay">
+          <delayTicks>$($raidDelayTicks+600)</delayTicks>
+          <node Class="QuestNode_End" />
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+  
+  
+  <!-- util -->
+  
+  <QuestScriptDef>
+    <defName>Util_JoinerThreat_ArdatYakshi</defName>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_Delay">
+          <delayTicks>$(randInt(600,1200))</delayTicks>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_SubScript">
+                <def>Util_JoinerWalkIn_ArdatYakshi</def>
+              </li>
+              <li Class="QuestNode_SendSignals">
+                <outSignals>JoinerArrived</outSignals>
+              </li>
+            </nodes>
+          </node>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+  
+  <QuestScriptDef>
+    <defName>Util_JoinerWalkIn_ArdatYakshi</defName>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>rewardDescription->a [asker_age]-year-old Ardat Yakshi named [asker_nameDef] will arrive and join you. [asker_relationInfo]</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GeneratePawn">
+          <storeAs>asker</storeAs>
+          <kindDef>RE_ArdatYakshi</kindDef>
+        </li>
+
+        <li Class="QuestNode_PawnsArrive">
+          <pawns>$asker</pawns>
+          <joinPlayer>true</joinPlayer>
+          <customLetterLabel>$customLetterLabel</customLetterLabel>
+          <customLetterText>$customLetterText</customLetterText>
+          <customLetterLabelRules>$customLetterLabelRules</customLetterLabelRules>
+          <customLetterTextRules>$customLetterTextRules</customLetterTextRules>
+          <isSingleReward>true</isSingleReward>
+          <rewardDetailsHidden>true</rewardDetailsHidden>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+</Defs>

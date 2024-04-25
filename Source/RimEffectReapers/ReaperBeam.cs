@@ -5,10 +5,6 @@ namespace RimEffectReapers
 {
     internal class ReaperBeam : Projectile_Explosive
     {
-        public override void Draw()
-        {
-        }
-        
         protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             base.Impact(null);
@@ -55,7 +51,7 @@ namespace RimEffectReapers
             if (ticksRemaining <= 0) Destroy();
         }
 
-        public override void Draw()
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             Graphics.DrawMesh(MeshPool.plane10, drawMatrix,
                 FadedMaterialPool.FadedVersionOf(BeamMat, Mathf.Sin((float) ticksRemaining / LIFETIME * Mathf.PI)), 0);

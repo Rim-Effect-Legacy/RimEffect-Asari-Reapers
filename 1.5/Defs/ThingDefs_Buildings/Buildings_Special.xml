@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>RE_AsariTerminal</defName>
+    <label>asari terminal</label>
+    <description>A structure which enables nearby research benches to investigate advanced projects, it increases research speed and allows for researching of asari technologies.</description>
+    <graphicData>
+      <texPath>Things/Building/TerminalAsari/TerminalAsari</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <uiIconScale>0.45</uiIconScale>
+    <size>(1,1)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.2</fillPercent>
+	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	<designationCategory>Misc</designationCategory>
+	<defaultPlacingRot>South</defaultPlacingRot>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <statBases>
+	  <MarketValue>1500</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+	  <Beauty>0</Beauty>
+    </statBases>
+    <costList>
+      <Plasteel>50</Plasteel>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+      </li>
+    </comps>
+	<tradeability>All</tradeability>
+    <tradeTags>
+      <li>RE_AsariTerminal</li>
+    </tradeTags>
+    <researchPrerequisites>
+      <li>RE_AsariCooperation</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+	<techLevel>Ultra</techLevel>
+  </ThingDef>
+  
+</Defs>

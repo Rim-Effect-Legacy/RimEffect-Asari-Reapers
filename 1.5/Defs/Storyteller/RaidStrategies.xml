@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <RaidStrategyDef>
+    <defName>RE_ReaperPlanetfallStrategy</defName>
+    <workerClass>KCSG.FallingStructureStrategy</workerClass>
+    <minPawns>2</minPawns>
+    <raidLootValueFactor>1</raidLootValueFactor>
+    <arriveModes>
+      <li>RE_ReaperPlanetfallArrival</li>
+    </arriveModes>
+    <selectionWeightPerPointsCurve>
+      <points>
+        <li>(100, 0)</li>
+        <li>(300, 0.2)</li>
+        <li>(700, 0.6)</li>
+      </points>
+    </selectionWeightPerPointsCurve>
+    <letterLabelEnemy>Reaper planetfall</letterLabelEnemy>
+    <arrivalTextEnemy>A Reaper is landing on your local area. Units that landed with it will attack immediately. The Reaper will lay covering fire and begin the siege as soon as possible.\n\nBe prepared for a long and hard fight. Reapers have numerous armaments and tools that give then an edge over organic beings.</arrivalTextEnemy>
+    <letterLabelFriendly>Reaper...friend?</letterLabelFriendly>
+    <arrivalTextFriendly>A reaper is landing on your map but it just wants to cuddle uwu. No, seriously, report it as a bug.</arrivalTextFriendly>
+    <modExtensions>
+      <li Class="KCSG.FallingStructure">
+        <structures>
+          <li>
+            <layout>RE_Reaper1_North</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper1_South</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper1_East</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper1_West</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper2_North</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper2_South</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper2_East</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper2_West</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper3_North</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper3_South</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper3_East</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper3_West</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper4_North</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper4_South</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper4_East</layout>
+            <commonality>1</commonality>
+          </li>
+          <li>
+            <layout>RE_Reaper4_West</layout>
+            <commonality>1</commonality>
+          </li>
+        </structures>
+        <canBeUsedBy>
+          <li>RE_Reapers</li>
+        </canBeUsedBy>
+        <needToHaveSettlements>true</needToHaveSettlements>
+        <spawnDormantWhenPossible>false</spawnDormantWhenPossible>
+        <skyfaller>RimEffectReapers.Reaper_Skyfaller</skyfaller>
+      </li>
+    </modExtensions>
+  </RaidStrategyDef>
+</Defs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <PawnsArrivalModeDef>
+    <defName>RE_ReaperPlanetfallArrival</defName>
+    <workerClass>KCSG.FallingStructureArrival</workerClass>
+    <textEnemy>A Reaper ship has landed nearby. Units that landed with it will attack immediately. The Reaper will lay covering fire and begin the siege as soon as possible.\n\nBe prepared for a long and hard fight. Reapers have numerous armaments and tools that give then an edge over organic beings.</textEnemy>
+    <selectionWeightCurve>
+      <points>
+        <li>(100, 0)</li>
+        <li>(300, 0.2)</li>
+        <li>(700, 0.6)</li>
+      </points>
+    </selectionWeightCurve>
+  </PawnsArrivalModeDef>
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>RE_Asari_AverageNormal</defName>
+    <graphicPath>Things/Pawn/Asari/Heads/Asari_Average_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>RE_Asari_AveragePointy</defName>
+    <graphicPath>Things/Pawn/Asari/Heads/Asari_Average_Pointy</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>RE_Asari_AverageWide</defName>
+    <graphicPath>Things/Pawn/Asari/Heads/Asari_Average_Wide</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>RE_Asari_NarrowNormal</defName>
+    <graphicPath>Things/Pawn/Asari/Heads/Asari_Narrow_Normal</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>RE_Asari_NarrowPointy</defName>
+    <graphicPath>Things/Pawn/Asari/Heads/Asari_Narrow_Pointy</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>RE_Asari_NarrowWide</defName>
+    <graphicPath>Things/Pawn/Asari/Heads/Asari_Narrow_Wide</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+
+</Defs>

@@ -153,7 +153,7 @@ namespace RimEffectReapers
 
         }
 
-        public override void DrawAt(Vector3 drawLoc, bool flip = false)
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             Graphic.Draw(drawLoc, flip ? this.Rotation.Opposite : this.Rotation, this, this.def.skyfaller.movementType == SkyfallerMovementType.Decelerate ? 0 : 180);
         }
@@ -168,7 +168,7 @@ namespace RimEffectReapers
             {
                 case SkyfallerMovementType.Accelerate:
                     ticksToImpactPrediction = this.ticksToImpact - GenTicks.TicksPerRealSecond / 2;
-                    timeInAnim              = 1                  - ticksToImpactPrediction     / this.ticksToImpactMaxPrivate;
+                    timeInAnim              = 1                  - (float) ticksToImpactPrediction     / this.ticksToImpactMaxPrivate;
                     currentSpeed            = (this.def.skyfaller.speedCurve?.Evaluate(timeInAnim) ?? 1) * this.def.skyfaller.speed;
                     return SkyfallerDrawPosUtility.DrawPos_Accelerate(base.DrawPos, ticksToImpactPrediction, this.angle, currentSpeed);
                 case SkyfallerMovementType.ConstantSpeed:
