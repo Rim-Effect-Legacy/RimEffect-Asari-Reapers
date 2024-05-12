@@ -16,7 +16,7 @@ namespace RimEffectReapers
         }
     }
 
-    [HarmonyPatch(typeof(Trigger_UrgentlyHungry), "ActivateOn")]
+    [HarmonyPatch(typeof(Trigger_UrgentlyHungry), nameof(Trigger_UrgentlyHungry.ActivateOn))]
     public class Trigger_UrgentlyHungry_Patch
     {
         [HarmonyPrefix]
