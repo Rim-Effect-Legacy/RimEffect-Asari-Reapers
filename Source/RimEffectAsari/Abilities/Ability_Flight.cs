@@ -21,7 +21,6 @@
 
                                                 AbilityPawnFlyer flyer = (AbilityPawnFlyer) PawnFlyer.MakeFlyer(REA_DefOf.RE_AbilityFlyer_Flight, this.pawn, targets.First().Cell, null, null);
                                                 flyer.ability = this;
-                                                flyer.target  = targets.First().Cell.ToVector3() + new Vector3(0, 0, 0);
                                                 GenSpawn.Spawn(flyer, targets.First().Cell, map);
                                             }, "flightAbility", false, null);
         }

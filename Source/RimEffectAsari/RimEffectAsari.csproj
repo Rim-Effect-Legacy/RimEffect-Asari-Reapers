@@ -38,7 +38,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RimEffect">
-      <HintPath>..\..\..\RimEffect-Core\1.4\Assemblies\RimEffect.dll</HintPath>
+      <HintPath>..\..\..\RimEffect-Core\1.5\Assemblies\RimEffect.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -54,7 +54,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="VFECore">
-      <HintPath>..\..\..\VanillaExpandedFramework\1.4\Assemblies\VFECore.dll</HintPath>
+      <HintPath>..\..\..\VanillaExpandedFramework\1.5\Assemblies\VFECore.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
