@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>	
-	
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>RE_Apparel_AsariJusticarCrown</defName>
 		<label>asari justicar crown</label>
@@ -59,7 +59,14 @@
 			</defaultOutfitTags>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
+			<drawData>
+				<dataNorth>
+					<layer>-3</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
@@ -85,14 +92,14 @@
 		<thingSetMakerTags>
 			<li>RE_AsariReward</li>
 		</thingSetMakerTags>
-    <equippedStatOffsets>
-	  <RE_BioticEnergyRecoveryRate>2.0</RE_BioticEnergyRecoveryRate>
-    </equippedStatOffsets>
+		<equippedStatOffsets>
+			<RE_BioticEnergyRecoveryRate>2.0</RE_BioticEnergyRecoveryRate>
+		</equippedStatOffsets>
 		<comps>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable" />
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
 		<defName>RE_Apparel_AsariRespirator</defName>
 		<label>asari respirator</label>
@@ -177,98 +184,98 @@
 		<thingSetMakerTags>
 			<li>RE_AsariReward</li>
 		</thingSetMakerTags>
-    <equippedStatOffsets>
-	  <RE_BioticEnergyMax>0.25</RE_BioticEnergyMax>
-	  <ToxicResistance>0.75</ToxicResistance>
-    </equippedStatOffsets>
+		<equippedStatOffsets>
+			<RE_BioticEnergyMax>0.25</RE_BioticEnergyMax>
+			<ToxicResistance>0.75</ToxicResistance>
+		</equippedStatOffsets>
 		<comps>
-			<li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Biocodable" />
 		</comps>
 	</ThingDef>
-	
-  <ThingDef ParentName="RE_SpacerApparelMakeableBase">
-    <defName>RE_Apparel_MatriarchCrown</defName>
-    <label>matriarch crown</label>
-    <description>An elegant crown befitting of the Matriarch title. This headdress is not only connected with the most important title in the Asari culture, but it also greatly improves biotic abilities of the person wearing it. Creation of such a dress requires extremely high degree of crafting knowledge.</description>
-    <recipeMaker>
-      <researchPrerequisite>RE_AsariApparel</researchPrerequisite>
-    </recipeMaker>
-    <graphicData>
-      <texPath>Things/Items/Apparel/MatriarchDress/MatriarchCrown</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.85</drawSize>
-    </graphicData>
-    <costStuffCount>45</costStuffCount>
-    <costList>
-      <RE_ElementZero>10</RE_ElementZero>
-    </costList>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <thingCategories>
-      <li>Headgear</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>6000</WorkToMake>
-      <Mass>1.5</Mass>
-      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-    </statBases>
-    <apparel>
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Items/Apparel/MatriarchDress/MatriarchCrown</wornGraphicPath>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags>
-        <li>RE_AsariApparelMatriarch</li>
-		<li>RE_RoyaltyAllowed</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-      </defaultOutfitTags>
-	  <gender>Female</gender>
-    </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.33,0.33,0.33)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.65,0.65,0.65)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(0.4,0.3,0.15)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <min>(0.3,0.3,0.3)</min>
-          <max>(0.5,0.5,0.5)</max>
-        </li>
-        <li>
-          <weight>6</weight>
-          <min>(0.5,0.5,0.5)</min>
-          <max>(1,1,1)</max>
-        </li>
-      </options>
-    </colorGenerator>
-    <tradeTags>
-      <li>RE_AsariApparel</li>
-    </tradeTags>
-    <equippedStatOffsets>
-      <SocialImpact>0.2</SocialImpact>
-      <RE_BioticEnergyMax>0.7</RE_BioticEnergyMax>
-	  <RE_BioticEnergyRecoveryRate>0.5</RE_BioticEnergyRecoveryRate>
-    </equippedStatOffsets>
-  </ThingDef>
+
+	<ThingDef ParentName="RE_SpacerApparelMakeableBase">
+		<defName>RE_Apparel_MatriarchCrown</defName>
+		<label>matriarch crown</label>
+		<description>An elegant crown befitting of the Matriarch title. This headdress is not only connected with the most important title in the Asari culture, but it also greatly improves biotic abilities of the person wearing it. Creation of such a dress requires extremely high degree of crafting knowledge.</description>
+		<recipeMaker>
+			<researchPrerequisite>RE_AsariApparel</researchPrerequisite>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Apparel/MatriarchDress/MatriarchCrown</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<costStuffCount>45</costStuffCount>
+		<costList>
+			<RE_ElementZero>10</RE_ElementZero>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.5</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/MatriarchDress/MatriarchCrown</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>RE_AsariApparelMatriarch</li>
+				<li>RE_RoyaltyAllowed</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<gender>Female</gender>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+		<tradeTags>
+			<li>RE_AsariApparel</li>
+		</tradeTags>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<RE_BioticEnergyMax>0.7</RE_BioticEnergyMax>
+			<RE_BioticEnergyRecoveryRate>0.5</RE_BioticEnergyRecoveryRate>
+		</equippedStatOffsets>
+	</ThingDef>
 
 </Defs>

@@ -3,7 +3,7 @@
 
   <QuestScriptDef>
     <defName>RE_ArdatYakshiJoins</defName>
-    <rootSelectionWeight>0.6</rootSelectionWeight>
+    <rootSelectionWeight>0</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
     <expireDaysRange>0.3</expireDaysRange>
     <rootIncreasesPopulation>true</rootIncreasesPopulation>
